@@ -1,0 +1,544 @@
+2024-08-02 12:22:31.20 Server      Microsoft SQL Server 2022 (RTM-CU14) (KB5038325) - 16.0.4135.4 (X64) 
+	Jul 10 2024 14:09:09 
+	Copyright (C) 2022 Microsoft Corporation
+	Developer Edition (64-bit) on Linux (Ubuntu 22.04.4 LTS) <X64>
+2024-08-02 12:22:31.20 Server      UTC adjustment: 2:00
+2024-08-02 12:22:31.20 Server      (c) Microsoft Corporation.
+2024-08-02 12:22:31.21 Server      All rights reserved.
+2024-08-02 12:22:31.21 Server      Server process ID is 484.
+2024-08-02 12:22:31.21 Server      Logging SQL Server messages in file '/var/opt/mssql/log/errorlog'.
+2024-08-02 12:22:31.21 Server      Registry startup parameters: 
+	 -d /var/opt/mssql/data/master.mdf
+	 -l /var/opt/mssql/data/mastlog.ldf
+	 -e /var/opt/mssql/log/errorlog
+2024-08-02 12:22:31.23 Server      SQL Server detected 1 sockets with 4 cores per socket and 8 logical processors per socket, 8 total logical processors; using 8 logical processors based on SQL Server licensing. This is an informational message; no user action is required.
+2024-08-02 12:22:31.24 Server      SQL Server is starting at normal priority base (=7). This is an informational message only. No user action is required.
+2024-08-02 12:22:31.24 Server      Detected 4096 MB of RAM. This is an informational message; no user action is required.
+2024-08-02 12:22:31.24 Server      Using conventional memory in the memory manager.
+2024-08-02 12:22:31.25 Server      Detected pause instruction latency: 34 cycles.
+2024-08-02 12:22:31.25 Server      SQL Server detected the following NUMA node configuration (NUMA Node number 0, Processor Group number 0, CPU Mask 0x00000000000000ff).
+2024-08-02 12:22:31.25 Server      Page exclusion bitmap is enabled.
+2024-08-02 12:22:31.29 Server      Buffer pool extension is not supported on Linux platform.
+2024-08-02 12:22:31.30 Server      Buffer Pool: Allocating 1048576 bytes for 547766 hashPages.
+2024-08-02 12:22:31.46 Server      Buffer pool extension is already disabled. No action is necessary.
+2024-08-02 12:22:31.93 Server      Installing Client TLS certificates to the store.
+2024-08-02 12:22:31.95 Server      CPU vectorization level(s) detected:  SSE SSE2 SSE3 SSSE3 SSE41 SSE42 AVX AVX2 POPCNT BMI1 BMI2
+2024-08-02 12:22:32.03 Server      Successfully initialized the TLS configuration. Allowed TLS protocol versions are ['1.0 1.1 1.2']. Allowed TLS ciphers are ['ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-AES128-SHA256:ECDHE-ECDSA-AES256-SHA384:ECDHE-ECDSA-AES256-SHA:ECDHE-ECDSA-AES128-SHA:AES256-GCM-SHA384:AES128-GCM-SHA256:AES256-SHA256:AES128-SHA256:AES256-SHA:AES128-SHA:!DHE-RSA-AES256-GCM-SHA384:!DHE-RSA-AES128-GCM-SHA256:!DHE-RSA-AES256-SHA:!DHE-RSA-AES128-SHA'].
+2024-08-02 12:22:32.08 Server      Query Store settings initialized with enabled = 1, 
+2024-08-02 12:22:32.10 Server      The maximum number of dedicated administrator connections for this instance is '1'
+2024-08-02 12:22:32.11 Server      Node configuration: node 0: CPU mask: 0x00000000000000ff:0 Active CPU mask: 0x00000000000000ff:0. This message provides a description of the NUMA configuration for this computer. This is an informational message only. No user action is required.
+2024-08-02 12:22:32.13 Server      Using dynamic lock allocation.  Initial allocation of 2500 Lock blocks and 5000 Lock Owner blocks per node.  This is an informational message only.  No user action is required.
+2024-08-02 12:22:32.17 Server      In-Memory OLTP initialized on lowend machine.
+2024-08-02 12:22:32.23 Server      CLR version v4.0.30319 loaded.
+2024-08-02 12:22:32.59 Server      [INFO] Created Extended Events session 'hkenginexesession'
+2024-08-02 12:22:32.60 Server      Database Instant File Initialization: enabled. For security and performance considerations see the topic 'Database Instant File Initialization' in SQL Server Books Online. This is an informational message only. No user action is required.
+2024-08-02 12:22:33.01 Server      Total Log Writer threads: 2. This is an informational message; no user action is required.
+2024-08-02 12:22:33.02 Server      clflushopt is selected for pmem flush operation.
+2024-08-02 12:22:33.03 Server      Software Usage Metrics is disabled.
+2024-08-02 12:22:33.06 spid26s     [1]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
+2024-08-02 12:22:33.06 spid26s     Starting up database 'master'.
+2024-08-02 12:22:33.46 Server      Common language runtime (CLR) functionality initialized.
+2024-08-02 12:22:33.77 spid26s     The tail of the log for database master is being rewritten to match the new sector size of 4096 bytes.  1024 bytes at offset 396288 in file /var/opt/mssql/data/mastlog.ldf will be written.
+2024-08-02 12:22:33.90 spid26s     Converting database 'master' from version 927 to the current version 957.
+2024-08-02 12:22:33.90 spid26s     Database 'master' running the upgrade step from version 927 to version 928.
+2024-08-02 12:22:33.96 spid26s     Database 'master' running the upgrade step from version 928 to version 929.
+2024-08-02 12:22:34.15 spid26s     Database 'master' running the upgrade step from version 929 to version 930.
+2024-08-02 12:22:34.16 spid26s     Database 'master' running the upgrade step from version 930 to version 931.
+2024-08-02 12:22:34.18 spid26s     Database 'master' running the upgrade step from version 931 to version 932.
+2024-08-02 12:22:34.19 spid26s     Database 'master' running the upgrade step from version 932 to version 933.
+2024-08-02 12:22:34.20 spid26s     Database 'master' running the upgrade step from version 933 to version 934.
+2024-08-02 12:22:34.22 spid26s     Database 'master' running the upgrade step from version 934 to version 935.
+2024-08-02 12:22:34.39 spid26s     Database 'master' running the upgrade step from version 935 to version 936.
+2024-08-02 12:22:34.41 spid26s     Database 'master' running the upgrade step from version 936 to version 937.
+2024-08-02 12:22:34.42 spid26s     Database 'master' running the upgrade step from version 937 to version 938.
+2024-08-02 12:22:34.49 Server      External governance manager initialized
+2024-08-02 12:22:34.60 spid26s     Database 'master' running the upgrade step from version 938 to version 939.
+2024-08-02 12:22:34.61 spid26s     Database 'master' running the upgrade step from version 939 to version 940.
+2024-08-02 12:22:34.62 spid26s     Database 'master' running the upgrade step from version 940 to version 941.
+2024-08-02 12:22:34.63 spid26s     Database 'master' running the upgrade step from version 941 to version 942.
+2024-08-02 12:22:34.65 spid26s     Database 'master' running the upgrade step from version 942 to version 943.
+2024-08-02 12:22:35.13 spid26s     Database 'master' running the upgrade step from version 943 to version 944.
+2024-08-02 12:22:35.14 spid26s     Database 'master' running the upgrade step from version 944 to version 945.
+2024-08-02 12:22:35.17 spid26s     Database 'master' running the upgrade step from version 945 to version 946.
+2024-08-02 12:22:35.22 spid26s     Database 'master' running the upgrade step from version 946 to version 947.
+2024-08-02 12:22:35.24 spid26s     Database 'master' running the upgrade step from version 947 to version 948.
+2024-08-02 12:22:35.26 spid26s     Database 'master' running the upgrade step from version 948 to version 949.
+2024-08-02 12:22:35.28 spid26s     Database 'master' running the upgrade step from version 949 to version 950.
+2024-08-02 12:22:35.30 spid26s     Database 'master' running the upgrade step from version 950 to version 951.
+2024-08-02 12:22:35.35 spid26s     Database 'master' running the upgrade step from version 951 to version 952.
+2024-08-02 12:22:35.37 spid26s     Database 'master' running the upgrade step from version 952 to version 953.
+2024-08-02 12:22:35.39 spid26s     Database 'master' running the upgrade step from version 953 to version 954.
+2024-08-02 12:22:35.40 spid26s     Database 'master' running the upgrade step from version 954 to version 955.
+2024-08-02 12:22:35.41 spid26s     Database 'master' running the upgrade step from version 955 to version 956.
+2024-08-02 12:22:35.47 spid26s     Database 'master' running the upgrade step from version 956 to version 957.
+2024-08-02 12:22:35.65 spid29s     [32767]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
+2024-08-02 12:22:35.66 spid29s     Starting up database 'mssqlsystemresource'.
+2024-08-02 12:22:35.66 spid37s     Password policy update was successful.
+2024-08-02 12:22:35.67 spid29s     The resource database build version is 16.00.4135. This is an informational message only. No user action is required.
+2024-08-02 12:22:35.72 spid29s     [3]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
+2024-08-02 12:22:35.73 spid29s     Starting up database 'model'.
+2024-08-02 12:22:36.49 spid26s     [32762]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
+2024-08-02 12:22:36.49 spid26s     Starting up database 'model_replicatedmaster'.
+2024-08-02 12:22:37.13 spid29s     The tail of the log for database model is being rewritten to match the new sector size of 4096 bytes.  2048 bytes at offset 75776 in file /var/opt/mssql/data/modellog.ldf will be written.
+2024-08-02 12:22:37.26 spid29s     Converting database 'model' from version 927 to the current version 957.
+2024-08-02 12:22:37.26 spid29s     Database 'model' running the upgrade step from version 927 to version 928.
+2024-08-02 12:22:37.28 spid29s     Database 'model' running the upgrade step from version 928 to version 929.
+2024-08-02 12:22:37.28 spid37s     A self-generated certificate was successfully loaded for encryption.
+2024-08-02 12:22:37.30 spid37s     Server is listening on [ 'any' <ipv6> 1433] accept sockets 1.
+2024-08-02 12:22:37.30 spid37s     Server is listening on [ 'any' <ipv4> 1433] accept sockets 1.
+2024-08-02 12:22:37.30 Server      Server is listening on [ ::1 <ipv6> 1434] accept sockets 1.
+2024-08-02 12:22:37.31 Server      Server is listening on [ 127.0.0.1 <ipv4> 1434] accept sockets 1.
+2024-08-02 12:22:37.31 Server      Dedicated admin connection support was established for listening locally on port 1434.
+2024-08-02 12:22:37.32 spid37s     Server is listening on [ ::1 <ipv6> 1431] accept sockets 1.
+2024-08-02 12:22:37.33 spid37s     Server is listening on [ 127.0.0.1 <ipv4> 1431] accept sockets 1.
+2024-08-02 12:22:37.33 spid37s     SQL Server is now ready for client connections. This is an informational message; no user action is required.
+2024-08-02 12:22:37.44 spid29s     Database 'model' running the upgrade step from version 929 to version 930.
+2024-08-02 12:22:37.47 spid29s     Database 'model' running the upgrade step from version 930 to version 931.
+2024-08-02 12:22:37.49 spid29s     Database 'model' running the upgrade step from version 931 to version 932.
+2024-08-02 12:22:37.51 spid29s     Database 'model' running the upgrade step from version 932 to version 933.
+2024-08-02 12:22:37.53 spid29s     Database 'model' running the upgrade step from version 933 to version 934.
+2024-08-02 12:22:37.56 spid29s     Database 'model' running the upgrade step from version 934 to version 935.
+2024-08-02 12:22:37.58 spid29s     Database 'model' running the upgrade step from version 935 to version 936.
+2024-08-02 12:22:37.59 spid29s     Database 'model' running the upgrade step from version 936 to version 937.
+2024-08-02 12:22:37.60 spid26s     The tail of the log for database model_replicatedmaster is being rewritten to match the new sector size of 4096 bytes.  2560 bytes at offset 99840 in file /var/opt/mssql/data/model_replicatedmaster.ldf will be written.
+2024-08-02 12:22:37.61 spid29s     Database 'model' running the upgrade step from version 937 to version 938.
+2024-08-02 12:22:37.63 spid29s     Database 'model' running the upgrade step from version 938 to version 939.
+2024-08-02 12:22:37.64 spid29s     Database 'model' running the upgrade step from version 939 to version 940.
+2024-08-02 12:22:37.66 spid29s     Database 'model' running the upgrade step from version 940 to version 941.
+2024-08-02 12:22:37.67 spid29s     Database 'model' running the upgrade step from version 941 to version 942.
+2024-08-02 12:22:37.69 spid29s     Database 'model' running the upgrade step from version 942 to version 943.
+2024-08-02 12:22:37.70 spid26s     Converting database 'model_replicatedmaster' from version 927 to the current version 957.
+2024-08-02 12:22:37.71 spid26s     Database 'model_replicatedmaster' running the upgrade step from version 927 to version 928.
+2024-08-02 12:22:37.72 spid26s     Database 'model_replicatedmaster' running the upgrade step from version 928 to version 929.
+2024-08-02 12:22:37.73 spid29s     Database 'model' running the upgrade step from version 943 to version 944.
+2024-08-02 12:22:37.75 spid29s     Database 'model' running the upgrade step from version 944 to version 945.
+2024-08-02 12:22:37.77 spid29s     Database 'model' running the upgrade step from version 945 to version 946.
+2024-08-02 12:22:37.79 spid29s     Database 'model' running the upgrade step from version 946 to version 947.
+2024-08-02 12:22:37.80 spid26s     Database 'model_replicatedmaster' running the upgrade step from version 929 to version 930.
+2024-08-02 12:22:37.81 spid29s     Database 'model' running the upgrade step from version 947 to version 948.
+2024-08-02 12:22:37.82 spid29s     Database 'model' running the upgrade step from version 948 to version 949.
+2024-08-02 12:22:37.84 spid29s     Database 'model' running the upgrade step from version 949 to version 950.
+2024-08-02 12:22:37.85 spid29s     Database 'model' running the upgrade step from version 950 to version 951.
+2024-08-02 12:22:37.88 spid29s     Database 'model' running the upgrade step from version 951 to version 952.
+2024-08-02 12:22:37.89 spid29s     Database 'model' running the upgrade step from version 952 to version 953.
+2024-08-02 12:22:37.92 spid29s     Database 'model' running the upgrade step from version 953 to version 954.
+2024-08-02 12:22:37.93 spid29s     Database 'model' running the upgrade step from version 954 to version 955.
+2024-08-02 12:22:37.95 spid29s     Database 'model' running the upgrade step from version 955 to version 956.
+2024-08-02 12:22:37.99 spid29s     Database 'model' running the upgrade step from version 956 to version 957.
+2024-08-02 12:22:38.02 spid26s     Database 'model_replicatedmaster' running the upgrade step from version 930 to version 931.
+2024-08-02 12:22:38.04 spid26s     Database 'model_replicatedmaster' running the upgrade step from version 931 to version 932.
+2024-08-02 12:22:38.07 spid26s     Database 'model_replicatedmaster' running the upgrade step from version 932 to version 933.
+2024-08-02 12:22:38.09 spid26s     Database 'model_replicatedmaster' running the upgrade step from version 933 to version 934.
+2024-08-02 12:22:38.11 spid26s     Database 'model_replicatedmaster' running the upgrade step from version 934 to version 935.
+2024-08-02 12:22:38.13 spid26s     Database 'model_replicatedmaster' running the upgrade step from version 935 to version 936.
+2024-08-02 12:22:38.15 spid26s     Database 'model_replicatedmaster' running the upgrade step from version 936 to version 937.
+2024-08-02 12:22:38.17 spid26s     Database 'model_replicatedmaster' running the upgrade step from version 937 to version 938.
+2024-08-02 12:22:38.19 spid26s     Database 'model_replicatedmaster' running the upgrade step from version 938 to version 939.
+2024-08-02 12:22:38.20 spid26s     Database 'model_replicatedmaster' running the upgrade step from version 939 to version 940.
+2024-08-02 12:22:38.22 spid26s     Database 'model_replicatedmaster' running the upgrade step from version 940 to version 941.
+2024-08-02 12:22:38.23 spid26s     Database 'model_replicatedmaster' running the upgrade step from version 941 to version 942.
+2024-08-02 12:22:38.25 spid26s     Database 'model_replicatedmaster' running the upgrade step from version 942 to version 943.
+2024-08-02 12:22:38.62 spid26s     Database 'model_replicatedmaster' running the upgrade step from version 943 to version 944.
+2024-08-02 12:22:38.63 spid26s     Database 'model_replicatedmaster' running the upgrade step from version 944 to version 945.
+2024-08-02 12:22:38.65 spid26s     Database 'model_replicatedmaster' running the upgrade step from version 945 to version 946.
+2024-08-02 12:22:38.66 spid26s     Database 'model_replicatedmaster' running the upgrade step from version 946 to version 947.
+2024-08-02 12:22:38.71 spid26s     Database 'model_replicatedmaster' running the upgrade step from version 947 to version 948.
+2024-08-02 12:22:38.72 spid26s     Database 'model_replicatedmaster' running the upgrade step from version 948 to version 949.
+2024-08-02 12:22:38.74 spid26s     Database 'model_replicatedmaster' running the upgrade step from version 949 to version 950.
+2024-08-02 12:22:38.75 spid26s     Database 'model_replicatedmaster' running the upgrade step from version 950 to version 951.
+2024-08-02 12:22:38.78 spid26s     Database 'model_replicatedmaster' running the upgrade step from version 951 to version 952.
+2024-08-02 12:22:38.79 spid26s     Database 'model_replicatedmaster' running the upgrade step from version 952 to version 953.
+2024-08-02 12:22:38.81 spid26s     Database 'model_replicatedmaster' running the upgrade step from version 953 to version 954.
+2024-08-02 12:22:38.82 spid26s     Database 'model_replicatedmaster' running the upgrade step from version 954 to version 955.
+2024-08-02 12:22:39.04 spid26s     Database 'model_replicatedmaster' running the upgrade step from version 955 to version 956.
+2024-08-02 12:22:39.08 spid26s     Database 'model_replicatedmaster' running the upgrade step from version 956 to version 957.
+2024-08-02 12:22:39.81 spid26s     [32761]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
+2024-08-02 12:22:39.82 spid26s     Starting up database 'model_msdb'.
+2024-08-02 12:22:40.42 spid26s     Converting database 'model_msdb' from version 927 to the current version 957.
+2024-08-02 12:22:40.43 spid26s     Database 'model_msdb' running the upgrade step from version 927 to version 928.
+2024-08-02 12:22:40.44 spid26s     Database 'model_msdb' running the upgrade step from version 928 to version 929.
+2024-08-02 12:22:40.54 spid26s     Database 'model_msdb' running the upgrade step from version 929 to version 930.
+2024-08-02 12:22:40.57 spid26s     Database 'model_msdb' running the upgrade step from version 930 to version 931.
+2024-08-02 12:22:40.58 spid26s     Database 'model_msdb' running the upgrade step from version 931 to version 932.
+2024-08-02 12:22:40.59 spid26s     Database 'model_msdb' running the upgrade step from version 932 to version 933.
+2024-08-02 12:22:40.76 spid26s     Database 'model_msdb' running the upgrade step from version 933 to version 934.
+2024-08-02 12:22:40.78 spid26s     Database 'model_msdb' running the upgrade step from version 934 to version 935.
+2024-08-02 12:22:40.79 spid26s     Database 'model_msdb' running the upgrade step from version 935 to version 936.
+2024-08-02 12:22:40.80 spid26s     Database 'model_msdb' running the upgrade step from version 936 to version 937.
+2024-08-02 12:22:40.82 spid26s     Database 'model_msdb' running the upgrade step from version 937 to version 938.
+2024-08-02 12:22:40.83 spid26s     Database 'model_msdb' running the upgrade step from version 938 to version 939.
+2024-08-02 12:22:40.84 spid26s     Database 'model_msdb' running the upgrade step from version 939 to version 940.
+2024-08-02 12:22:40.86 spid26s     Database 'model_msdb' running the upgrade step from version 940 to version 941.
+2024-08-02 12:22:40.87 spid26s     Database 'model_msdb' running the upgrade step from version 941 to version 942.
+2024-08-02 12:22:40.89 spid26s     Database 'model_msdb' running the upgrade step from version 942 to version 943.
+2024-08-02 12:22:41.08 spid26s     Database 'model_msdb' running the upgrade step from version 943 to version 944.
+2024-08-02 12:22:41.09 spid26s     Database 'model_msdb' running the upgrade step from version 944 to version 945.
+2024-08-02 12:22:41.24 spid26s     Database 'model_msdb' running the upgrade step from version 945 to version 946.
+2024-08-02 12:22:41.26 spid26s     Database 'model_msdb' running the upgrade step from version 946 to version 947.
+2024-08-02 12:22:41.27 spid26s     Database 'model_msdb' running the upgrade step from version 947 to version 948.
+2024-08-02 12:22:41.28 spid26s     Database 'model_msdb' running the upgrade step from version 948 to version 949.
+2024-08-02 12:22:41.30 spid26s     Database 'model_msdb' running the upgrade step from version 949 to version 950.
+2024-08-02 12:22:41.31 spid26s     Database 'model_msdb' running the upgrade step from version 950 to version 951.
+2024-08-02 12:22:41.35 spid26s     Database 'model_msdb' running the upgrade step from version 951 to version 952.
+2024-08-02 12:22:41.36 spid26s     Database 'model_msdb' running the upgrade step from version 952 to version 953.
+2024-08-02 12:22:41.38 spid26s     Database 'model_msdb' running the upgrade step from version 953 to version 954.
+2024-08-02 12:22:41.39 spid26s     Database 'model_msdb' running the upgrade step from version 954 to version 955.
+2024-08-02 12:22:41.40 spid26s     Database 'model_msdb' running the upgrade step from version 955 to version 956.
+2024-08-02 12:22:41.45 spid26s     Database 'model_msdb' running the upgrade step from version 956 to version 957.
+2024-08-02 12:22:41.53 spid26s     Resource governor reconfiguration succeeded.
+2024-08-02 12:22:41.53 spid43s     Attribute synchronization initialized
+2024-08-02 12:22:41.54 spid26s     SQL Server Audit is starting the audits. This is an informational message. No user action is required.
+2024-08-02 12:22:41.54 spid43s     Attribute synchronization manager initialized
+2024-08-02 12:22:41.55 spid26s     SQL Server Audit has started the audits. This is an informational message. No user action is required.
+2024-08-02 12:22:41.55 spid26s     XE session 'system_health' started.
+2024-08-02 12:22:42.03 spid26s     SQL Trace ID 1 was started by login "sa".
+2024-08-02 12:22:42.08 spid26s     Server name is '895ff2009cf2'. This is an informational message only. No user action is required.
+2024-08-02 12:22:42.11 spid61s     Always On: The availability replica manager is starting. This is an informational message only. No user action is required.
+2024-08-02 12:22:42.11 spid29s     Clearing tempdb database.
+2024-08-02 12:22:42.11 spid62s     [4]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
+2024-08-02 12:22:42.12 spid61s     Always On: The availability replica manager is waiting for the instance of SQL Server to allow client connections. This is an informational message only. No user action is required.
+2024-08-02 12:22:42.13 spid62s     Starting up database 'msdb'.
+2024-08-02 12:22:43.05 spid27s     Using 'dbghelp.dll' version '4.0.5'
+2024-08-02 12:22:43.64 spid62s     Converting database 'msdb' from version 927 to the current version 957.
+2024-08-02 12:22:43.65 spid62s     Database 'msdb' running the upgrade step from version 927 to version 928.
+2024-08-02 12:22:43.66 spid62s     Database 'msdb' running the upgrade step from version 928 to version 929.
+2024-08-02 12:22:43.80 spid62s     Database 'msdb' running the upgrade step from version 929 to version 930.
+2024-08-02 12:22:43.83 spid62s     Database 'msdb' running the upgrade step from version 930 to version 931.
+2024-08-02 12:22:43.84 spid62s     Database 'msdb' running the upgrade step from version 931 to version 932.
+2024-08-02 12:22:43.86 spid62s     Database 'msdb' running the upgrade step from version 932 to version 933.
+2024-08-02 12:22:44.38 spid62s     Database 'msdb' running the upgrade step from version 933 to version 934.
+2024-08-02 12:22:44.39 spid62s     Database 'msdb' running the upgrade step from version 934 to version 935.
+2024-08-02 12:22:44.41 spid62s     Database 'msdb' running the upgrade step from version 935 to version 936.
+2024-08-02 12:22:44.43 spid62s     Database 'msdb' running the upgrade step from version 936 to version 937.
+2024-08-02 12:22:44.44 spid62s     Database 'msdb' running the upgrade step from version 937 to version 938.
+2024-08-02 12:22:44.45 spid62s     Database 'msdb' running the upgrade step from version 938 to version 939.
+2024-08-02 12:22:44.47 spid62s     Database 'msdb' running the upgrade step from version 939 to version 940.
+2024-08-02 12:22:44.49 spid62s     Database 'msdb' running the upgrade step from version 940 to version 941.
+2024-08-02 12:22:44.50 spid62s     Database 'msdb' running the upgrade step from version 941 to version 942.
+2024-08-02 12:22:44.52 spid62s     Database 'msdb' running the upgrade step from version 942 to version 943.
+2024-08-02 12:22:44.74 spid62s     Database 'msdb' running the upgrade step from version 943 to version 944.
+2024-08-02 12:22:44.75 spid62s     Database 'msdb' running the upgrade step from version 944 to version 945.
+2024-08-02 12:22:44.91 spid62s     Database 'msdb' running the upgrade step from version 945 to version 946.
+2024-08-02 12:22:44.93 spid62s     Database 'msdb' running the upgrade step from version 946 to version 947.
+2024-08-02 12:22:44.94 spid29s     [2]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
+2024-08-02 12:22:44.94 spid29s     Starting up database 'tempdb'.
+2024-08-02 12:22:44.95 spid62s     Database 'msdb' running the upgrade step from version 947 to version 948.
+2024-08-02 12:22:44.97 spid62s     Database 'msdb' running the upgrade step from version 948 to version 949.
+2024-08-02 12:22:44.99 spid62s     Database 'msdb' running the upgrade step from version 949 to version 950.
+2024-08-02 12:22:45.01 spid62s     Database 'msdb' running the upgrade step from version 950 to version 951.
+2024-08-02 12:22:45.04 spid62s     Database 'msdb' running the upgrade step from version 951 to version 952.
+2024-08-02 12:22:45.05 spid62s     Database 'msdb' running the upgrade step from version 952 to version 953.
+2024-08-02 12:22:45.07 spid62s     Database 'msdb' running the upgrade step from version 953 to version 954.
+2024-08-02 12:22:45.08 spid62s     Database 'msdb' running the upgrade step from version 954 to version 955.
+2024-08-02 12:22:45.10 spid62s     Database 'msdb' running the upgrade step from version 955 to version 956.
+2024-08-02 12:22:45.30 spid62s     Database 'msdb' running the upgrade step from version 956 to version 957.
+2024-08-02 12:22:45.63 spid29s     The tempdb database has 1 data file(s).
+2024-08-02 12:22:45.64 spid61s     The Service Broker endpoint is in disabled or stopped state.
+2024-08-02 12:22:45.65 spid61s     The Database Mirroring endpoint is in disabled or stopped state.
+2024-08-02 12:22:45.67 spid26s     Recovery is complete. This is an informational message only. No user action is required.
+2024-08-02 12:22:45.67 spid61s     Service Broker manager has started.
+2024-08-02 12:22:45.69 spid35s     The default language (LCID 0) has been set for engine and full-text services.
+2024-08-02 12:22:45.78 spid35s     Warning ******************
+2024-08-02 12:22:45.78 spid35s     Attempting to change default collation to Latin1_General_CI_AI.
+2024-08-02 12:22:46.25 spid35s      index restored for master.syspriorities.
+2024-08-02 12:22:46.26 spid35s      index restored for master.sysbrickfiles.
+2024-08-02 12:22:46.26 spid35s      index restored for master.sysowners.
+2024-08-02 12:22:46.27 spid35s      index restored for master.sysdbreg.
+2024-08-02 12:22:46.28 spid35s      index restored for master.sysschobjs.
+2024-08-02 12:22:46.28 spid35s      index restored for master.sysextsources.
+2024-08-02 12:22:46.28 spid35s      index restored for master.sysextfileformats.
+2024-08-02 12:22:46.29 spid35s      index restored for master.syscolpars.
+2024-08-02 12:22:46.29 spid35s      index restored for master.sysxlgns.
+2024-08-02 12:22:46.29 spid35s      index restored for master.sysxsrvs.
+2024-08-02 12:22:46.30 spid35s      index restored for master.sysnsobjs.
+2024-08-02 12:22:46.30 spid35s      index restored for master.syscerts.
+2024-08-02 12:22:46.30 spid35s      index restored for master.sysrmtlgns.
+2024-08-02 12:22:46.30 spid35s      index restored for master.sysxprops.
+2024-08-02 12:22:46.31 spid35s      index restored for master.sysscalartypes.
+2024-08-02 12:22:46.31 spid35s      index restored for master.sysidxstats.
+2024-08-02 12:22:46.31 spid35s      index restored for master.sysendpts.
+2024-08-02 12:22:46.32 spid35s      index restored for master.sysclsobjs.
+2024-08-02 12:22:46.32 spid35s      index restored for master.sysremsvcbinds.
+2024-08-02 12:22:46.33 spid35s      index restored for master.sysrts.
+2024-08-02 12:22:46.33 spid35s      index restored for master.sysasymkeys.
+2024-08-02 12:22:46.33 spid35s      index restored for master.syssqlguides.
+2024-08-02 12:22:46.33 spid35s      index restored for master.syssoftobjrefs.
+2024-08-02 12:22:46.34 spid35s      index restored for master.MSreplication_options.
+2024-08-02 12:22:46.38 spid35s      index restored for tempdb.syspriorities.
+2024-08-02 12:22:46.39 spid35s      index restored for tempdb.sysowners.
+2024-08-02 12:22:46.39 spid35s      index restored for tempdb.sysdbreg.
+2024-08-02 12:22:46.40 spid35s      index restored for tempdb.sysschobjs.
+2024-08-02 12:22:46.40 spid35s      index restored for tempdb.sysextsources.
+2024-08-02 12:22:46.40 spid35s      index restored for tempdb.sysextfileformats.
+2024-08-02 12:22:46.41 spid35s      index restored for tempdb.syscolpars.
+2024-08-02 12:22:46.41 spid35s      index restored for tempdb.sysxlgns.
+2024-08-02 12:22:46.41 spid35s      index restored for tempdb.sysxsrvs.
+2024-08-02 12:22:46.42 spid35s      index restored for tempdb.sysnsobjs.
+2024-08-02 12:22:46.42 spid35s      index restored for tempdb.syscerts.
+2024-08-02 12:22:46.42 spid35s      index restored for tempdb.sysrmtlgns.
+2024-08-02 12:22:46.43 spid35s      index restored for tempdb.sysxprops.
+2024-08-02 12:22:46.43 spid35s      index restored for tempdb.sysscalartypes.
+2024-08-02 12:22:46.44 spid35s      index restored for tempdb.sysidxstats.
+2024-08-02 12:22:46.44 spid35s      index restored for tempdb.sysendpts.
+2024-08-02 12:22:46.44 spid35s      index restored for tempdb.sysclsobjs.
+2024-08-02 12:22:46.44 spid35s      index restored for tempdb.sysremsvcbinds.
+2024-08-02 12:22:46.45 spid35s      index restored for tempdb.sysrts.
+2024-08-02 12:22:46.45 spid35s      index restored for tempdb.sysasymkeys.
+2024-08-02 12:22:46.45 spid35s      index restored for tempdb.syssqlguides.
+2024-08-02 12:22:46.46 spid35s      index restored for tempdb.syssoftobjrefs.
+2024-08-02 12:22:46.51 spid35s      index restored for model.syspriorities.
+2024-08-02 12:22:46.51 spid35s      index restored for model.sysowners.
+2024-08-02 12:22:46.52 spid35s      index restored for model.sysdbreg.
+2024-08-02 12:22:46.53 spid35s      index restored for model.sysschobjs.
+2024-08-02 12:22:46.53 spid35s      index restored for model.sysextsources.
+2024-08-02 12:22:46.53 spid35s      index restored for model.sysextfileformats.
+2024-08-02 12:22:46.54 spid35s      index restored for model.syscolpars.
+2024-08-02 12:22:46.54 spid35s      index restored for model.sysxlgns.
+2024-08-02 12:22:46.54 spid35s      index restored for model.sysxsrvs.
+2024-08-02 12:22:46.54 spid35s      index restored for model.sysnsobjs.
+2024-08-02 12:22:46.55 spid35s      index restored for model.syscerts.
+2024-08-02 12:22:46.55 spid35s      index restored for model.sysrmtlgns.
+2024-08-02 12:22:46.55 spid35s      index restored for model.sysxprops.
+2024-08-02 12:22:46.56 spid35s      index restored for model.sysscalartypes.
+2024-08-02 12:22:46.56 spid35s      index restored for model.sysidxstats.
+2024-08-02 12:22:46.56 spid35s      index restored for model.sysendpts.
+2024-08-02 12:22:46.57 spid35s      index restored for model.sysclsobjs.
+2024-08-02 12:22:46.57 spid35s      index restored for model.sysremsvcbinds.
+2024-08-02 12:22:46.57 spid35s      index restored for model.sysrts.
+2024-08-02 12:22:46.58 spid35s      index restored for model.sysasymkeys.
+2024-08-02 12:22:46.58 spid35s      index restored for model.syssqlguides.
+2024-08-02 12:22:46.58 spid35s      index restored for model.syssoftobjrefs.
+2024-08-02 12:22:46.63 spid76      Configuration option 'show advanced options' changed from 0 to 1. Run the RECONFIGURE statement to install.
+2024-08-02 12:22:46.65 spid76      Configuration option 'Agent XPs' changed from 0 to 1. Run the RECONFIGURE statement to install.
+2024-08-02 12:22:46.67 spid76      Configuration option 'show advanced options' changed from 1 to 0. Run the RECONFIGURE statement to install.
+2024-08-02 12:22:47.95 spid35s      index restored for msdb.syspriorities.
+2024-08-02 12:22:47.95 spid35s      index restored for msdb.sysowners.
+2024-08-02 12:22:47.96 spid35s      index restored for msdb.sysdbreg.
+2024-08-02 12:22:48.11 spid35s      index restored for msdb.sysschobjs.
+2024-08-02 12:22:48.11 spid35s      index restored for msdb.sysextsources.
+2024-08-02 12:22:48.12 spid35s      index restored for msdb.sysextfileformats.
+2024-08-02 12:22:48.34 spid35s      index restored for msdb.syscolpars.
+2024-08-02 12:22:48.34 spid35s      index restored for msdb.sysxlgns.
+2024-08-02 12:22:48.34 spid35s      index restored for msdb.sysxsrvs.
+2024-08-02 12:22:48.34 spid35s      index restored for msdb.sysnsobjs.
+2024-08-02 12:22:48.35 spid35s      index restored for msdb.syscerts.
+2024-08-02 12:22:48.36 spid35s      index restored for msdb.sysrmtlgns.
+2024-08-02 12:22:48.36 spid35s      index restored for msdb.sysxprops.
+2024-08-02 12:22:48.36 spid35s      index restored for msdb.sysscalartypes.
+2024-08-02 12:22:48.38 spid35s      index restored for msdb.sysidxstats.
+2024-08-02 12:22:48.38 spid35s      index restored for msdb.sysendpts.
+2024-08-02 12:22:48.38 spid35s      index restored for msdb.sysclsobjs.
+2024-08-02 12:22:48.39 spid35s      index restored for msdb.sysremsvcbinds.
+2024-08-02 12:22:48.39 spid35s      index restored for msdb.sysrts.
+2024-08-02 12:22:48.40 spid35s      index restored for msdb.sysasymkeys.
+2024-08-02 12:22:48.40 spid35s      index restored for msdb.syssqlguides.
+2024-08-02 12:22:48.41 spid35s      index restored for msdb.syssoftobjrefs.
+2024-08-02 12:22:48.42 spid35s      index restored for msdb.syscachedcredentials.
+2024-08-02 12:22:48.42 spid35s      index restored for msdb.syscollector_blobs_internal.
+2024-08-02 12:22:48.44 spid35s      index restored for msdb.syspolicy_system_health_state_internal.
+2024-08-02 12:22:48.46 spid35s      index restored for msdb.sysmanagement_shared_server_groups_internal.
+2024-08-02 12:22:48.47 spid35s      index restored for msdb.sysssispackages.
+2024-08-02 12:22:48.48 spid35s      index restored for msdb.sysmanagement_shared_registered_servers_internal.
+2024-08-02 12:22:48.49 spid35s      index restored for msdb.sysssispackagefolders.
+2024-08-02 12:22:48.51 spid35s      index restored for msdb.sysutility_mi_smo_properties_to_collect_internal.
+2024-08-02 12:22:48.53 spid35s      index restored for msdb.syspolicy_configuration_internal.
+2024-08-02 12:22:48.53 spid35s      index restored for msdb.log_shipping_primary_databases.
+2024-08-02 12:22:48.54 spid35s      index restored for msdb.syspolicy_management_facets.
+2024-08-02 12:22:49.01 spid35s      index restored for msdb.syspolicy_facet_events.
+2024-08-02 12:22:49.02 spid35s      index restored for msdb.syscollector_config_store_internal.
+2024-08-02 12:22:49.03 spid35s      index restored for msdb.sysutility_ucp_dac_health_internal.
+2024-08-02 12:22:49.03 spid35s      index restored for msdb.sysmail_profile.
+2024-08-02 12:22:49.04 spid35s      index restored for msdb.MSdbms.
+2024-08-02 12:22:49.05 spid35s      index restored for msdb.log_shipping_primary_secondaries.
+2024-08-02 12:22:49.07 spid35s      index restored for msdb.syspolicy_conditions_internal.
+2024-08-02 12:22:49.08 spid35s      index restored for msdb.MSdbms_datatype.
+2024-08-02 12:22:49.09 spid35s      index restored for msdb.log_shipping_monitor_primary.
+2024-08-02 12:22:49.09 spid35s      index restored for msdb.log_shipping_monitor_history_detail.
+2024-08-02 12:22:49.10 spid35s      index restored for msdb.log_shipping_monitor_error_detail.
+2024-08-02 12:22:49.11 spid35s      index restored for msdb.log_shipping_secondary.
+2024-08-02 12:22:49.11 spid35s      index restored for msdb.log_shipping_secondary_databases.
+2024-08-02 12:22:49.41 spid35s      index restored for msdb.sysutility_ucp_managed_instances_internal.
+2024-08-02 12:22:49.42 spid35s      index restored for msdb.log_shipping_monitor_secondary.
+2024-08-02 12:22:49.43 spid35s      index restored for msdb.sysmail_account.
+2024-08-02 12:22:49.44 spid35s      index restored for msdb.sysutility_ucp_mi_health_internal.
+2024-08-02 12:22:49.44 spid35s      index restored for msdb.sysdac_instances_internal.
+2024-08-02 12:22:49.46 spid35s      index restored for msdb.syscollector_collection_sets_internal.
+2024-08-02 12:22:49.49 spid35s      index restored for msdb.syspolicy_policy_categories_internal.
+2024-08-02 12:22:49.49 spid35s      index restored for msdb.sysdac_history_internal.
+2024-08-02 12:22:49.51 spid35s      index restored for msdb.sysmail_servertype.
+2024-08-02 12:22:49.57 spid35s      index restored for msdb.syspolicy_object_sets_internal.
+2024-08-02 12:22:49.57 spid35s      index restored for msdb.sysutility_ucp_health_policies_internal.
+2024-08-02 12:22:49.59 spid35s      index restored for msdb.sysmail_server.
+2024-08-02 12:22:49.59 spid35s      index restored for msdb.sysutility_ucp_filegroups_with_policy_violations_internal.
+2024-08-02 12:22:49.62 spid35s      index restored for msdb.sysutility_ucp_policy_check_conditions_internal.
+2024-08-02 12:22:49.64 spid35s      index restored for msdb.syscollector_collector_types_internal.
+2024-08-02 12:22:49.68 spid35s      index restored for msdb.syspolicy_policies_internal.
+2024-08-02 12:22:49.69 spid35s      index restored for msdb.sysutility_ucp_policy_target_conditions_internal.
+2024-08-02 12:22:49.80 spid35s      index restored for msdb.sysmail_configuration.
+2024-08-02 12:22:49.95 spid35s      index restored for msdb.external_libraries_installed.
+2024-08-02 12:22:49.96 spid35s      index restored for msdb.sysdbmaintplan_databases.
+2024-08-02 12:22:49.97 spid35s      index restored for msdb.sysutility_ucp_configuration_internal.
+2024-08-02 12:22:49.98 spid35s      index restored for msdb.sysproxies.
+2024-08-02 12:22:49.98 spid35s      index restored for msdb.syssubsystems.
+2024-08-02 12:22:50.00 spid35s      index restored for msdb.syscollector_collection_items_internal.
+2024-08-02 12:22:50.01 spid35s      index restored for msdb.sysdownloadlist.
+2024-08-02 12:22:50.03 spid35s      index restored for msdb.sysoriginatingservers.
+2024-08-02 12:22:50.05 spid35s      index restored for msdb.autoadmin_managed_databases.
+2024-08-02 12:22:50.06 spid35s      index restored for msdb.sysjobs.
+2024-08-02 12:22:50.07 spid35s      index restored for msdb.smart_backup_files.
+2024-08-02 12:22:50.08 spid35s      index restored for msdb.backupset.
+2024-08-02 12:22:50.09 spid35s      index restored for msdb.sysjobsteps.
+2024-08-02 12:22:50.10 spid35s      index restored for msdb.syscollector_execution_stats_internal.
+2024-08-02 12:22:50.11 spid35s      index restored for msdb.sysutility_ucp_mi_file_space_health_internal.
+2024-08-02 12:22:50.13 spid35s      index restored for msdb.syspolicy_target_sets_internal.
+2024-08-02 12:22:50.14 spid35s      index restored for msdb.sysschedules.
+2024-08-02 12:22:50.16 spid35s      index restored for msdb.sysutility_ucp_mi_database_health_internal.
+2024-08-02 12:22:50.17 spid35s      index restored for msdb.logmarkhistory.
+2024-08-02 12:22:50.18 spid35s      index restored for msdb.sysutility_ucp_dac_file_space_health_internal.
+2024-08-02 12:22:50.19 spid35s      index restored for msdb.syscategories.
+2024-08-02 12:22:50.20 spid35s      index restored for msdb.systargetservers.
+2024-08-02 12:22:50.20 spid35s      index restored for msdb.sysutility_ucp_mi_volume_space_health_internal.
+2024-08-02 12:22:50.23 spid35s      index restored for msdb.sysutility_mi_dac_execution_statistics_internal.
+2024-08-02 12:22:50.23 spid35s      index restored for msdb.systargetservergroups.
+2024-08-02 12:22:50.24 spid35s      index restored for msdb.syspolicy_policy_category_subscriptions_internal.
+2024-08-02 12:22:50.25 spid35s      index restored for msdb.sysalerts.
+2024-08-02 12:22:50.26 spid35s      index restored for msdb.sysutility_ucp_computer_cpu_health_internal.
+2024-08-02 12:22:50.27 spid35s      index restored for msdb.sysutility_mi_session_statistics_internal.
+2024-08-02 12:22:50.29 spid35s      index restored for msdb.sysoperators.
+2024-08-02 12:22:51.17 spid76      Attempting to load library 'xpsqlbot.dll' into memory. This is an informational message only. No user action is required.
+2024-08-02 12:22:51.17 spid76      Using 'xpsqlbot.dll' version '2022.160.4135' to execute extended stored procedure 'xp_qv'. This is an informational message only; no user action is required.
+2024-08-02 12:22:51.22 spid76      Attempting to load library 'xpstar.dll' into memory. This is an informational message only. No user action is required.
+2024-08-02 12:22:51.23 spid76      Using 'xpstar.dll' version '2022.160.4135' to execute extended stored procedure 'xp_sqlagent_notify'. This is an informational message only; no user action is required.
+2024-08-02 12:22:52.35 spid35s      index restored for model_msdb.syspriorities.
+2024-08-02 12:22:52.35 spid35s      index restored for model_msdb.sysowners.
+2024-08-02 12:22:52.36 spid35s      index restored for model_msdb.sysdbreg.
+2024-08-02 12:22:52.53 spid35s      index restored for model_msdb.sysschobjs.
+2024-08-02 12:22:52.53 spid35s      index restored for model_msdb.sysextsources.
+2024-08-02 12:22:52.53 spid35s      index restored for model_msdb.sysextfileformats.
+2024-08-02 12:22:52.71 spid35s      index restored for model_msdb.syscolpars.
+2024-08-02 12:22:52.72 spid35s      index restored for model_msdb.sysxlgns.
+2024-08-02 12:22:52.72 spid35s      index restored for model_msdb.sysxsrvs.
+2024-08-02 12:22:52.72 spid35s      index restored for model_msdb.sysnsobjs.
+2024-08-02 12:22:52.72 spid35s      index restored for model_msdb.syscerts.
+2024-08-02 12:22:52.73 spid35s      index restored for model_msdb.sysrmtlgns.
+2024-08-02 12:22:52.73 spid35s      index restored for model_msdb.sysxprops.
+2024-08-02 12:22:52.74 spid35s      index restored for model_msdb.sysscalartypes.
+2024-08-02 12:22:52.75 spid35s      index restored for model_msdb.sysidxstats.
+2024-08-02 12:22:52.75 spid35s      index restored for model_msdb.sysendpts.
+2024-08-02 12:22:52.76 spid35s      index restored for model_msdb.sysclsobjs.
+2024-08-02 12:22:52.76 spid35s      index restored for model_msdb.sysremsvcbinds.
+2024-08-02 12:22:52.76 spid35s      index restored for model_msdb.sysrts.
+2024-08-02 12:22:52.77 spid35s      index restored for model_msdb.sysasymkeys.
+2024-08-02 12:22:52.77 spid35s      index restored for model_msdb.syssqlguides.
+2024-08-02 12:22:52.78 spid35s      index restored for model_msdb.syssoftobjrefs.
+2024-08-02 12:22:52.79 spid35s      index restored for model_msdb.syscachedcredentials.
+2024-08-02 12:22:52.80 spid35s      index restored for model_msdb.syscollector_blobs_internal.
+2024-08-02 12:22:52.81 spid35s      index restored for model_msdb.syspolicy_system_health_state_internal.
+2024-08-02 12:22:52.83 spid35s      index restored for model_msdb.sysmanagement_shared_server_groups_internal.
+2024-08-02 12:22:52.85 spid35s      index restored for model_msdb.sysssispackages.
+2024-08-02 12:22:52.86 spid35s      index restored for model_msdb.sysmanagement_shared_registered_servers_internal.
+2024-08-02 12:22:52.88 spid35s      index restored for model_msdb.sysssispackagefolders.
+2024-08-02 12:22:52.89 spid35s      index restored for model_msdb.sysutility_mi_smo_properties_to_collect_internal.
+2024-08-02 12:22:52.90 spid35s      index restored for model_msdb.syspolicy_configuration_internal.
+2024-08-02 12:22:52.91 spid35s      index restored for model_msdb.log_shipping_primary_databases.
+2024-08-02 12:22:52.92 spid35s      index restored for model_msdb.syspolicy_management_facets.
+2024-08-02 12:22:53.12 spid35s      index restored for model_msdb.syspolicy_facet_events.
+2024-08-02 12:22:53.13 spid35s      index restored for model_msdb.syscollector_config_store_internal.
+2024-08-02 12:22:53.13 spid35s      index restored for model_msdb.sysutility_ucp_dac_health_internal.
+2024-08-02 12:22:53.14 spid35s      index restored for model_msdb.sysmail_profile.
+2024-08-02 12:22:53.14 spid35s      index restored for model_msdb.MSdbms.
+2024-08-02 12:22:53.15 spid35s      index restored for model_msdb.log_shipping_primary_secondaries.
+2024-08-02 12:22:53.17 spid35s      index restored for model_msdb.syspolicy_conditions_internal.
+2024-08-02 12:22:53.17 spid35s      index restored for model_msdb.MSdbms_datatype.
+2024-08-02 12:22:53.18 spid35s      index restored for model_msdb.log_shipping_monitor_primary.
+2024-08-02 12:22:53.18 spid35s      index restored for model_msdb.log_shipping_monitor_history_detail.
+2024-08-02 12:22:53.18 spid35s      index restored for model_msdb.log_shipping_monitor_error_detail.
+2024-08-02 12:22:53.19 spid35s      index restored for model_msdb.log_shipping_secondary.
+2024-08-02 12:22:53.37 spid35s      index restored for model_msdb.log_shipping_secondary_databases.
+2024-08-02 12:22:53.38 spid35s      index restored for model_msdb.sysutility_ucp_managed_instances_internal.
+2024-08-02 12:22:53.40 spid35s      index restored for model_msdb.log_shipping_monitor_secondary.
+2024-08-02 12:22:53.40 spid35s      index restored for model_msdb.sysmail_account.
+2024-08-02 12:22:53.41 spid35s      index restored for model_msdb.sysutility_ucp_mi_health_internal.
+2024-08-02 12:22:53.42 spid35s      index restored for model_msdb.sysdac_instances_internal.
+2024-08-02 12:22:53.43 spid35s      index restored for model_msdb.syscollector_collection_sets_internal.
+2024-08-02 12:22:53.44 spid35s      index restored for model_msdb.syspolicy_policy_categories_internal.
+2024-08-02 12:22:53.45 spid35s      index restored for model_msdb.sysdac_history_internal.
+2024-08-02 12:22:53.47 spid35s      index restored for model_msdb.sysmail_servertype.
+2024-08-02 12:22:53.50 spid35s      index restored for model_msdb.syspolicy_object_sets_internal.
+2024-08-02 12:22:53.50 spid35s      index restored for model_msdb.sysutility_ucp_health_policies_internal.
+2024-08-02 12:22:53.53 spid35s      index restored for model_msdb.sysmail_server.
+2024-08-02 12:22:53.54 spid35s      index restored for model_msdb.sysutility_ucp_filegroups_with_policy_violations_internal.
+2024-08-02 12:22:53.56 spid35s      index restored for model_msdb.sysutility_ucp_policy_check_conditions_internal.
+2024-08-02 12:22:53.58 spid35s      index restored for model_msdb.syscollector_collector_types_internal.
+2024-08-02 12:22:53.60 spid35s      index restored for model_msdb.syspolicy_policies_internal.
+2024-08-02 12:22:53.61 spid35s      index restored for model_msdb.sysutility_ucp_policy_target_conditions_internal.
+2024-08-02 12:22:53.77 spid35s      index restored for model_msdb.sysmail_configuration.
+2024-08-02 12:22:53.78 spid35s      index restored for model_msdb.external_libraries_installed.
+2024-08-02 12:22:53.78 spid35s      index restored for model_msdb.sysdbmaintplan_databases.
+2024-08-02 12:22:53.81 spid35s      index restored for model_msdb.sysutility_ucp_configuration_internal.
+2024-08-02 12:22:53.82 spid35s      index restored for model_msdb.sysproxies.
+2024-08-02 12:22:53.82 spid35s      index restored for model_msdb.syssubsystems.
+2024-08-02 12:22:53.84 spid35s      index restored for model_msdb.syscollector_collection_items_internal.
+2024-08-02 12:22:53.85 spid35s      index restored for model_msdb.sysdownloadlist.
+2024-08-02 12:22:53.86 spid35s      index restored for model_msdb.sysoriginatingservers.
+2024-08-02 12:22:53.87 spid35s      index restored for model_msdb.autoadmin_managed_databases.
+2024-08-02 12:22:53.88 spid35s      index restored for model_msdb.sysjobs.
+2024-08-02 12:22:53.89 spid35s      index restored for model_msdb.smart_backup_files.
+2024-08-02 12:22:53.90 spid35s      index restored for model_msdb.backupset.
+2024-08-02 12:22:53.91 spid35s      index restored for model_msdb.sysjobsteps.
+2024-08-02 12:22:53.91 spid35s      index restored for model_msdb.syscollector_execution_stats_internal.
+2024-08-02 12:22:53.91 spid35s      index restored for model_msdb.sysutility_ucp_mi_file_space_health_internal.
+2024-08-02 12:22:53.94 spid35s      index restored for model_msdb.syspolicy_target_sets_internal.
+2024-08-02 12:22:53.94 spid35s      index restored for model_msdb.sysschedules.
+2024-08-02 12:22:53.95 spid35s      index restored for model_msdb.sysutility_ucp_mi_database_health_internal.
+2024-08-02 12:22:53.96 spid35s      index restored for model_msdb.logmarkhistory.
+2024-08-02 12:22:53.96 spid35s      index restored for model_msdb.sysutility_ucp_dac_file_space_health_internal.
+2024-08-02 12:22:53.98 spid35s      index restored for model_msdb.syscategories.
+2024-08-02 12:22:53.99 spid35s      index restored for model_msdb.systargetservers.
+2024-08-02 12:22:53.99 spid35s      index restored for model_msdb.sysutility_ucp_mi_volume_space_health_internal.
+2024-08-02 12:22:54.01 spid35s      index restored for model_msdb.sysutility_mi_dac_execution_statistics_internal.
+2024-08-02 12:22:54.01 spid35s      index restored for model_msdb.systargetservergroups.
+2024-08-02 12:22:54.02 spid35s      index restored for model_msdb.syspolicy_policy_category_subscriptions_internal.
+2024-08-02 12:22:54.02 spid35s      index restored for model_msdb.sysalerts.
+2024-08-02 12:22:54.03 spid35s      index restored for model_msdb.sysutility_ucp_computer_cpu_health_internal.
+2024-08-02 12:22:54.04 spid35s      index restored for model_msdb.sysutility_mi_session_statistics_internal.
+2024-08-02 12:22:54.05 spid35s      index restored for model_msdb.sysoperators.
+2024-08-02 12:22:54.51 spid35s      index restored for model_replicatedmaster.syspriorities.
+2024-08-02 12:22:54.52 spid35s      index restored for model_replicatedmaster.sysbrickfiles.
+2024-08-02 12:22:54.53 spid35s      index restored for model_replicatedmaster.sysowners.
+2024-08-02 12:22:54.53 spid35s      index restored for model_replicatedmaster.sysdbreg.
+2024-08-02 12:22:54.55 spid35s      index restored for model_replicatedmaster.sysschobjs.
+2024-08-02 12:22:54.56 spid35s      index restored for model_replicatedmaster.sysextsources.
+2024-08-02 12:22:54.56 spid35s      index restored for model_replicatedmaster.sysextfileformats.
+2024-08-02 12:22:54.57 spid35s      index restored for model_replicatedmaster.syscolpars.
+2024-08-02 12:22:54.57 spid35s      index restored for model_replicatedmaster.sysxlgns.
+2024-08-02 12:22:54.58 spid35s      index restored for model_replicatedmaster.sysxsrvs.
+2024-08-02 12:22:54.58 spid35s      index restored for model_replicatedmaster.sysnsobjs.
+2024-08-02 12:22:54.58 spid35s      index restored for model_replicatedmaster.syscerts.
+2024-08-02 12:22:54.59 spid35s      index restored for model_replicatedmaster.sysrmtlgns.
+2024-08-02 12:22:54.60 spid35s      index restored for model_replicatedmaster.sysxprops.
+2024-08-02 12:22:54.60 spid35s      index restored for model_replicatedmaster.sysscalartypes.
+2024-08-02 12:22:54.61 spid35s      index restored for model_replicatedmaster.sysidxstats.
+2024-08-02 12:22:54.62 spid35s      index restored for model_replicatedmaster.sysendpts.
+2024-08-02 12:22:54.63 spid35s      index restored for model_replicatedmaster.sysclsobjs.
+2024-08-02 12:22:54.64 spid35s      index restored for model_replicatedmaster.sysremsvcbinds.
+2024-08-02 12:22:54.64 spid35s      index restored for model_replicatedmaster.sysrts.
+2024-08-02 12:22:54.65 spid35s      index restored for model_replicatedmaster.sysasymkeys.
+2024-08-02 12:22:54.66 spid35s      index restored for model_replicatedmaster.syssqlguides.
+2024-08-02 12:22:54.66 spid35s      index restored for model_replicatedmaster.syssoftobjrefs.
+2024-08-02 12:22:54.67 spid35s      index restored for model_replicatedmaster.MSreplication_options.
+2024-08-02 12:22:54.70 spid35s     The default collation was successfully changed.
+2024-08-02 12:23:00.30 spid35s     The tempdb database has 8 data file(s).
+2024-08-02 12:26:57.10 Logon       Error: 18456, Severity: 14, State: 38.
+2024-08-02 12:26:57.10 Logon       Login failed for user 'sa'. Reason: Failed to open the explicitly specified database 'KledijModule-dev'. [CLIENT: 172.19.0.3]
+2024-08-02 12:27:07.13 Logon       Error: 18456, Severity: 14, State: 38.
+2024-08-02 12:27:07.13 Logon       Login failed for user 'sa'. Reason: Failed to open the explicitly specified database 'KledijModule-dev'. [CLIENT: 172.19.0.3]
+2024-08-02 12:27:26.85 Logon       Error: 18456, Severity: 14, State: 5.
+2024-08-02 12:27:26.85 Logon       Login failed for user 'NT AUTHORITY\ANONYMOUS LOGON'. Reason: Could not find a login matching the name provided. [CLIENT: 172.19.0.1]
+2024-08-02 12:27:31.65 spid51      XE session 'telemetry_xevents' started.
+2024-08-02 12:27:41.39 spid51      Attempting to load library 'xplog70.dll' into memory. This is an informational message only. No user action is required.
+2024-08-02 12:27:41.42 spid51      Using 'xplog70.dll' version '2022.160.4135' to execute extended stored procedure 'xp_msver'. This is an informational message only; no user action is required.
+2024-08-02 12:28:44.61 spid26s     Always On: The availability replica manager is going offline because SQL Server is shutting down. This is an informational message only. No user action is required.
+2024-08-02 12:28:44.62 spid26s     SQL Server is terminating in response to a 'stop' request from Service Control Manager. This is an informational message only. No user action is required.
+2024-08-02 12:28:44.63 spid26s     .NET Framework runtime has been stopped.
+2024-08-02 12:28:44.86 spid26s     SQL Trace was stopped due to server shutdown. Trace ID = '1'. This is an informational message only; no user action is required.

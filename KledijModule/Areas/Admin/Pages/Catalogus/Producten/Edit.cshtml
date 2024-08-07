@@ -1,0 +1,181 @@
+﻿@page
+@using KledijModule.Areas.Admin.Pages.Catalogus.Producten
+@using ProjectCore.Domain.Entities.Catalogus
+@model EditModel
+@{
+}
+
+@*TODO: hier kan met viewcomponents gewerkt worden, maar nu wordt voor het product, alle details in 1 keer binnengehaald. Kiezen en opkuisen graag!!*@
+@*Product Details section TODO : onderliggende tables dan opkuisen, komt nu rechtstreeks uit een test versie*@
+<div class="row">
+    <div class="col-md-12">
+        <form method="post">
+            <div id="accordion">
+                <div class="card mb-3 ">
+
+                    <div class="card-header">
+                        <h2 class="mb-0 d-grid">
+                            <button class="btn btn-light text-start collapsed p-3 rounded-0 border-bottom-custom" type="button" data-bs-toggle="collapse" data-bs-target="#info" aria-expanded="false" aria-controls="info">
+                                <i class="fas fa-info"></i>
+                                ProductMetDetails info
+                            </button>
+                        </h2>
+                    </div>
+
+                    <div id="info" class="collapse show p-2">
+                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                        <input type="hidden" asp-for="ProductMetDetails.Id" />
+                        <div class="form-group">
+                            <label asp-for="ProductMetDetails.Naam" class="control-label"></label>
+                            <input asp-for="ProductMetDetails.Naam" class="form-control" autofocus />
+                            <span asp-validation-for="ProductMetDetails.Naam" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="ProductMetDetails.Beschrijving" class="control-label"></label>
+                            <input asp-for="ProductMetDetails.Beschrijving" class="form-control" />
+                            <span asp-validation-for="ProductMetDetails.Beschrijving" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="ProductMetDetails.CategorieId" class="control-label"></label>
+                            <select asp-for="ProductMetDetails.CategorieId" class="form-control" asp-items="ViewBag.Categories"></select>
+                            <span asp-validation-for="ProductMetDetails.CategorieId" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="ProductMetDetails.Prijs" class="control-label"></label>
+                            <input asp-for="ProductMetDetails.Prijs" class="form-control" />
+                            <span asp-validation-for="ProductMetDetails.Prijs" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="ProductMetDetails.ArtikelNummer" class="control-label"></label>
+                            <input asp-for="ProductMetDetails.ArtikelNummer" class="form-control" />
+                            <span asp-validation-for="ProductMetDetails.ArtikelNummer" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="ProductMetDetails.Geslacht" class="control-label"></label>
+                            <select asp-for="ProductMetDetails.Geslacht" class="form-control" asp-items="Html.GetEnumSelectList<Geslacht>()"></select>
+                            <span asp-validation-for="ProductMetDetails.Geslacht" class="text-danger"></span>
+                        </div>
+                        <br />
+                        <div class="form-group">
+                            <fieldset>
+                                <legend>Vervangingstermijn</legend>
+                                <div class="form-group">
+                                    <label asp-for="ProductMetDetails.MaxAantalBestelbaar" class="control-label"></label>
+                                    <input asp-for="ProductMetDetails.MaxAantalBestelbaar" class="form-control" />
+                                    <span asp-validation-for="ProductMetDetails.MaxAantalBestelbaar" class="text-danger"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label asp-for="ProductMetDetails.PerAantalJaar" class="control-label"></label>
+                                    <input asp-for="ProductMetDetails.PerAantalJaar" class="form-control" />
+                                    <span asp-validation-for="ProductMetDetails.PerAantalJaar" class="text-danger"></span>
+                                </div>
+                            </fieldset>
+                        </div>
+
+                        <div class="form-group form-check">
+                            <label class="form-check-label">
+                                <input class="form-check-input" asp-for="ProductMetDetails.Beschikbaar" /> @Html.DisplayNameFor(model => model.ProductMetDetails.Beschikbaar)
+                            </label>
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" value="Opslaan" class="btn btn-dark" />
+                        </div>
+        </form>
+    </div>
+</div>
+
+<div class="card mb-3">
+    <div class="card-header">
+        <h2 class="mb-0 d-grid">
+            <button class="btn btn-light text-start collapsed p-3 rounded-0 border-bottom-custom" type="button" data-bs-toggle="collapse" data-bs-target="#matencard-body" aria-expanded="false" aria-controls="maten">
+                <i class="fas fa-paperclip"></i>
+                Maten
+            </button>
+        </h2>
+    </div>
+        <div class="card-body" id="matencard-body">
+            <div id="maten"><partial name="_ProductMatenList" model="@Model.ProductMetDetails" /></div>
+            <a class="btn btn-outline-dark" onclick="javascript:OpenWindow('@(Url.Page("./MapSizeToProduct", new { ProductId = Model.ProductMetDetails.Id, ProductNaam = Model.ProductMetDetails.Naam }))', 800, 750, true);return false;">Voeg waarde toe</a>
+        </div>
+</div>
+
+
+<div class="card mb-3">
+    <div class="card-header">
+        <h2 class="mb-0 d-grid">
+            <button class="btn btn-light text-start collapsed p-3 rounded-0 border-bottom-custom" type="button" data-bs-toggle="collapse" data-bs-target="#kleurencard-body" aria-expanded="false" aria-controls="kleuren">
+                <i class="fa-solid fa-paint-roller"></i>
+                Kleuren
+            </button>
+        </h2>
+    </div>
+    <div class="card-body" id="kleurencard-body">
+            <div id="kleuren">@await Component.InvokeAsync("KleurenForProductTable", new { ProductId = Model.ProductMetDetails.Id }) </div>
+            <a class="btn btn-outline-dark" onclick="javascript:OpenWindow('@(Url.Page("./MapColorToProduct", new { ProductId = Model.ProductMetDetails.Id, ProductNaam = Model.ProductMetDetails.Naam}))',800,750,true);return false;">Voeg waarde toe</a>
+    </div>
+</div>
+<div class="card mb-3">
+    <div class="card-header">
+        <h2 class="mb-0 d-grid">
+            <button class="btn btn-light text-start collapsed p-3 rounded-0 border-bottom-custom" type="button" data-bs-toggle="collapse" data-bs-target="#kleurencard-body" aria-expanded="false" aria-controls="kleuren">
+                <i class="fa-solid fa-paint-roller"></i>
+                Media
+            </button>
+        </h2>
+    </div>
+    <div class="card-body" id="mediacard-body">
+@*         <table class="table align-middle text-center">
+            <thead>
+                <tr>
+                    <th>Foto</th>
+                    <th>Display Order</th>
+                    <th>Acties</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach(var foto in Model.ProductMetDetails.Fotos)
+                {
+                    <tr>
+                        <td>
+                            <img src="@foto.ImageUrl" alt="" style="width:100px; height:100px;"/>
+                        </td>
+                        <td>@foto.Volgorde</td>
+                        <td>
+                        <td>
+                            <a class="btn btn-default" asp-page="./Edit" asp-route-Id="@item.Id"><i class="fa-solid fa-pen-to-square"></i> Edit</a> |
+                            <form asp-page="./Delete" asp-page-handler="Delete" asp-route-KleurenToDelete="@item.Id" style="display: inline;">
+                                <button type="submit" class="btn btn-default" onclick="return confirm('Bent u zeker dat u dit item wil verwijderen?')"><i class="fa-solid fa-trash"></i> Delete</button>
+                            </form>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table> *@
+        @await Component.InvokeAsync("FotosForProductTable", new { ProductId = Model.ProductMetDetails.Id })
+    </div>
+@*         <form enctype="multipart/form-data" method="post" asp-page-handler="UploadImages">
+            <input type="hidden" asp-for="ProductMetDetails.Id">
+            <div class="form-group">
+                <label asp-for="ProductImages">Upload Images (enkel png en jpg): </label>
+                <input type="file" id="productImages" asp-for="ProductImages" multiple />
+            </div>
+            <button type="submit" class="btn btn-outline-dark">Upload</button>
+       </form> *@
+    <form hx-encoding='multipart/form-data' hx-post='@Url.Page("","UploadImages")' hx-target="#mediacard-body">
+            <input type="hidden" asp-for="ProductMetDetails.Id">
+            <div class="form-group">
+                <label asp-for="ProductImages">Upload Images (enkel png en jpg): </label>
+                <input type="file" id="productImages" asp-for="ProductImages" multiple />
+            </div>
+            <button type="submit" class="btn btn-outline-dark">Upload</button>
+        <progress id='progress' value='0' max='100'></progress>
+       </form>
+        @section Scripts{
+        <script>
+            htmx.on('#form', 'htmx:xhr:progress', function (evt) {
+                htmx.find('#progress').setAttribute('value', evt.detail.loaded / evt.detail.total * 100)
+            });
+        </script>
+        }
+    </div>
+</div>

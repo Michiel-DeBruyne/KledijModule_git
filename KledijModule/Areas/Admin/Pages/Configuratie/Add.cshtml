@@ -1,0 +1,20 @@
+﻿@page
+@using KledijModule.Areas.Admin.Pages.Configuratie
+@model AddModel
+@{
+}
+
+<h2 class="mb-4">Nieuwe Bestelperiode</h2>
+<form method="post">
+    <div class="form-group">
+        <label asp-for="BestelPeriode.OpeningDate" class="font-weight-bold">Openingsdatum:</label>
+        <input asp-for="BestelPeriode.OpeningDate" class="form-control" />
+        <span asp-validation-for="BestelPeriode.OpeningDate" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="BestelPeriode.ClosingDate" class="font-weight-bold">Sluitingsdatum:</label>
+        <input asp-for="BestelPeriode.ClosingDate" class="form-control" />
+        <span asp-validation-for="BestelPeriode.ClosingDate" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">Aanmaken</button>
+</form>

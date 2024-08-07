@@ -1,0 +1,21 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome op de admin kant van de kledijmodule</h1>
+</div>
+
+<div class="container-fluid dashboard">
+    <div class="row">
+        <div class="col-md-6">
+            @await Component.InvokeAsync("OrderItemsStatusCountList")
+        </div>
+        <div class="col-md-6">
+            @await Component.InvokeAsync("IsWebShopOpen")
+@*             <vc:web-shop-open-dates></vc:web-shop-open-dates> *@
+        </div>
+    </div>
+</div>

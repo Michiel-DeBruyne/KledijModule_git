@@ -1,0 +1,61 @@
+﻿@page
+@using KledijModule.Areas.Admin.Pages.Orders
+@model DetailsModel
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>OrderDetails</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.OrderDetails.UserNaam)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.OrderDetails.UserNaam)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.OrderDetails.CreatedDate)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.OrderDetails.CreatedDate)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.OrderDetails.TotaalPrijs)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.OrderDetails.TotaalPrijs)
+        </dd>
+        <dd class="col-sm-12">
+            <table class="table table-bordered">
+                <thead class="thead-light">
+                    <tr>
+                        <th>Product</th>
+                        <th>Hoeveelheid</th>
+                        <th class="text-center">Prijs</th>
+                        <th class="text-center">Subtotaal</th>
+                        <th class="text-center">Status</th>
+                        <th class="text-center">Acties</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var orderItem in Model.OrderDetails.OrderItems)
+                    {
+                        @await Html.PartialAsync("_OrderItemRow",orderItem)
+                    }
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3" class="text-right">Totaal:</td>
+                        <td class="text-right">
+                            <strong>@Html.DisplayFor(model => model.OrderDetails.TotaalPrijs) punten</strong>
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+        </dd>
+    </dl>
+</div>

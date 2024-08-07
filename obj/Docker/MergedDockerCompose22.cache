@@ -1,0 +1,77 @@
+name: dockercompose4288636069821850313
+services:
+  kledijmodule:
+    build:
+      context: C:\Users\ADM448386944\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded
+      dockerfile: KledijModule/Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_HTTP_PORTS: "8080"
+      ASPNETCORE_HTTPS_PORTS: "8081"
+    image: kledijmodule
+    networks:
+      default: null
+    ports:
+      - mode: ingress
+        target: 8080
+        published: "5000"
+        protocol: tcp
+      - mode: ingress
+        target: 8081
+        published: "5001"
+        protocol: tcp
+      - mode: ingress
+        target: 8080
+        protocol: tcp
+      - mode: ingress
+        target: 8081
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: C:\Users\ADM448386944\AppData\Roaming/Microsoft/UserSecrets
+        target: /home/app/.microsoft/usersecrets
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Users\ADM448386944\AppData\Roaming/ASP.NET/Https
+        target: /home/app/.aspnet/https
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Users\ADM448386944\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\wwwroot
+        target: /app/wwwroot
+        bind:
+          create_host_path: true
+  mssql:
+    container_name: sql_server_container_dev
+    environment:
+      ACCEPT_EULA: "y"
+      SA_PASSWORD: A&VeryComplex123Password!
+      TZ: Europe/Brussels
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    networks:
+      default: null
+    ports:
+      - mode: ingress
+        target: 1433
+        published: "1433"
+        protocol: tcp
+    restart: unless-stopped
+    volumes:
+      - type: volume
+        source: sql_data
+        target: /var/opt/mssql
+        volume: {}
+      - type: bind
+        source: C:\Users\ADM448386944\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\SQLServer\logs
+        target: /var/opt/mssql/log
+        bind:
+          create_host_path: true
+networks:
+  default:
+    name: dockercompose4288636069821850313_default
+volumes:
+  sql_data:
+    name: dockercompose4288636069821850313_sql_data

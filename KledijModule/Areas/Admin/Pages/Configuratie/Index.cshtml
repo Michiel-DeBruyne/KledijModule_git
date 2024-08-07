@@ -1,0 +1,39 @@
+﻿@page
+@using KledijModule.Areas.Admin.Pages.Configuratie
+@model IndexModel
+@{
+}
+
+<div class="d-flex justify-content-end my-3 clearfix">
+    <h3 class="me-auto">Bestelperiodes</h3>
+    <a asp-page="Add" class="btn btn-success me-1"><i class="fa-solid fa-plus"></i> Bestelperiode Toevoegen</a>
+</div>
+
+
+    <div class="table-responsive">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Openingsdatum</th>
+                    <th>Sluitingsdatum</th>
+                    <th>Acties</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model.Data)
+                {
+                    <tr>
+                        <td>@item.OpeningDate</td>
+                        <td>@item.ClosingDate</td>
+                        <td>
+                            <a class="btn btn-default" asp-page="./Edit" asp-route-Id="@item.Id"><i class="fa-solid fa-pen-to-square"></i> Edit</a> |
+                            <form asp-page="./Delete" asp-route-Id="@item.Id" method="post" style="display: inline;">
+                                @* asp-route-... moet overeenkomen met property binnen de command *@
+                                <button type="submit" class="btn btn-default" onclick="return confirm('Are you sure you want to delete this item?')"><i class="fa-solid fa-trash"></i> Delete</button>
+                            </form>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>

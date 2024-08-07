@@ -1,0 +1,39 @@
+﻿@model Boolean
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .opening-hours {
+            margin: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .open-period {
+            font-weight: bold;
+            color: green;
+        }
+
+        .closed-period {
+            font-weight: bold;
+            color: red;
+        }
+    </style>
+
+
+    <div class="opening-hours card">
+        <h2>Webshop Openingsuren</h2>
+        <p>
+            @if (Model)
+            {
+                <span class="open-period">De webshop is momenteel OPEN!</span>
+            }
+            else
+            {
+                <span class="closed-period">De webshop is momenteel GESLOTEN.</span>
+            }
+        </p>
+    </div>

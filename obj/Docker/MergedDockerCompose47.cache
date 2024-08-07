@@ -1,0 +1,107 @@
+name: dockercompose3103561830658402323
+services:
+  kledijmodule:
+    build:
+      context: C:\Users\mdebr\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded
+      dockerfile: KledijModule/Dockerfile
+    depends_on:
+      mssql:
+        condition: service_completed_successfully
+        restart: true
+        required: true
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_HTTP_PORTS: "8080"
+      ASPNETCORE_HTTPS_PORTS: "8081"
+    image: kledijmodule
+    networks:
+      default: null
+    ports:
+      - mode: ingress
+        target: 8080
+        published: "5000"
+        protocol: tcp
+      - mode: ingress
+        target: 8081
+        published: "5001"
+        protocol: tcp
+      - mode: ingress
+        target: 8080
+        protocol: tcp
+      - mode: ingress
+        target: 8081
+        protocol: tcp
+    restart: unless-stopped
+    volumes:
+      - type: bind
+        source: C:\Users\mdebr\AppData\Roaming/Microsoft/UserSecrets
+        target: /home/app/.microsoft/usersecrets
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Users\mdebr\AppData\Roaming/ASP.NET/Https
+        target: /home/app/.aspnet/https
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Users\mdebr\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\uploads
+        target: /app/wwwroot/Images
+        bind:
+          create_host_path: true
+  mssql:
+    container_name: sql_server_container_dev
+    environment:
+      ACCEPT_EULA: "y"
+      MSSQL_AGENT_ENABLED: "true"
+      MSSQL_BACKUP_DIR: /var/opt/mssql/backups
+      MSSQL_COLLATION: Latin1_General_CI_AI
+      MSSQL_DATA_DIR: /var/opt/mssql/data
+      MSSQL_LOG_DIR: /var/opt/mssql/logs
+      MSSQL_MEMORY_LIMIT_MB: "4096"
+      MSSQL_PID: Developer
+      MSSQL_SA_PASSWORD: A&VeryComplex123Password!
+      MSSQL_TCP_PORT: "1433"
+      SA_PASSWORD: A&VeryComplex123Password!
+      TZ: Europe/Brussels
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    networks:
+      default: null
+    ports:
+      - mode: ingress
+        target: 1433
+        published: "1433"
+        protocol: tcp
+    restart: unless-stopped
+    volumes:
+      - type: bind
+        source: C:\Users\mdebr\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\SQLServer\data
+        target: /var/opt/mssql/data
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Users\mdebr\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\SQLServer\logs
+        target: /var/opt/mssql/logs
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Users\mdebr\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\SQLServer\backups
+        target: /var/opt/mssql/backups
+        bind:
+          create_host_path: true
+      - type: volume
+        source: sql_data
+        target: /var/opt/mssql
+        volume: {}
+      - type: bind
+        source: C:\Users\mdebr\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\SQLServer\logs
+        target: /var/opt/mssql/log
+        bind:
+          create_host_path: true
+networks:
+  default:
+    name: dockercompose3103561830658402323_default
+volumes:
+  sql_data:
+    name: dockercompose3103561830658402323_sql_data

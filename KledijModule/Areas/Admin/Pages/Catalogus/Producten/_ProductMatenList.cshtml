@@ -1,0 +1,32 @@
+﻿@model             EditModel.EditProductViewModel
+
+<table class="table align-middle text-center">
+    <thead>
+        <tr>
+            <th>Naam</th>
+            <th>Acties</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.Maten)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Maat)
+                </td>
+                <td>
+@*                     <form method="post" asp-page="./DeleteSizeFromProduct" asp-route-ProductId="@Model.Id" asp-route-MaatId="@item.Id">
+                        <button type="submit" class="btn btn-default"><i class="fa-solid fa-trash"></i> Delete</button>
+                    </form> *@
+                    <form hx-post="@Url.Page("DeleteSizeFromProduct")" hx-vals='{"ProductId": "@Model.Id", "MaatId": "@item.Id"}' hx-target="#maten">
+                        @Html.AntiForgeryToken()
+                        <button type="submit" class="btn btn-default"><i class="fa-solid fa-trash"></i> Delete</button>
+                    </form>
+
+
+
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

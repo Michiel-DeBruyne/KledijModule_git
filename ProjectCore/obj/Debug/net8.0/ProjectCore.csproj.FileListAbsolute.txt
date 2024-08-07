@@ -1,0 +1,274 @@
+C:\Users\448386944\source\repos\Kledij_TestAPP_FeaturesSeparated\ProjectCore\obj\Debug\net8.0\ProjectCore.csproj.AssemblyReference.cache
+C:\Users\448386944\source\repos\Kledij_TestAPP_FeaturesSeparated\ProjectCore\obj\Debug\net8.0\ProjectCore.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\448386944\source\repos\Kledij_TestAPP_FeaturesSeparated\ProjectCore\obj\Debug\net8.0\ProjectCore.AssemblyInfoInputs.cache
+C:\Users\448386944\source\repos\Kledij_TestAPP_FeaturesSeparated\ProjectCore\obj\Debug\net8.0\ProjectCore.AssemblyInfo.cs
+C:\Users\448386944\source\repos\Kledij_TestAPP_FeaturesSeparated\ProjectCore\obj\Debug\net8.0\ProjectCore.csproj.CoreCompileInputs.cache
+C:\Users\448386944\source\repos\Kledij_TestAPP_FeaturesSeparated\ProjectCore\bin\Debug\net8.0\ProjectCore.deps.json
+C:\Users\448386944\source\repos\Kledij_TestAPP_FeaturesSeparated\ProjectCore\bin\Debug\net8.0\ProjectCore.dll
+C:\Users\448386944\source\repos\Kledij_TestAPP_FeaturesSeparated\ProjectCore\bin\Debug\net8.0\ProjectCore.pdb
+C:\Users\448386944\source\repos\Kledij_TestAPP_FeaturesSeparated\ProjectCore\obj\Debug\net8.0\ProjectCore.dll
+C:\Users\448386944\source\repos\Kledij_TestAPP_FeaturesSeparated\ProjectCore\obj\Debug\net8.0\refint\ProjectCore.dll
+C:\Users\448386944\source\repos\Kledij_TestAPP_FeaturesSeparated\ProjectCore\obj\Debug\net8.0\ProjectCore.pdb
+C:\Users\448386944\source\repos\Kledij_TestAPP_FeaturesSeparated\ProjectCore\obj\Debug\net8.0\ref\ProjectCore.dll
+C:\Users\448386944\source\repos\Kledij_TestAPP_FeaturesSeparated\ProjectCore\bin\Debug\net8.0\ProjectCore.runtimeconfig.json
+C:\Users\448386944\source\repos\Kledij_TestAPP_FeaturesSeparated\ProjectCore\obj\Debug\net8.0\ProjectCore.genruntimeconfig.cache
+C:\Users\448386944\OneDrive - Office 365 GPI\Secret_shared_corner\Kledij_TestAPP_FeaturesSeparated\ProjectCore\bin\Debug\net8.0\ProjectCore.deps.json
+C:\Users\448386944\OneDrive - Office 365 GPI\Secret_shared_corner\Kledij_TestAPP_FeaturesSeparated\ProjectCore\bin\Debug\net8.0\ProjectCore.runtimeconfig.json
+C:\Users\448386944\OneDrive - Office 365 GPI\Secret_shared_corner\Kledij_TestAPP_FeaturesSeparated\ProjectCore\bin\Debug\net8.0\ProjectCore.dll
+C:\Users\448386944\OneDrive - Office 365 GPI\Secret_shared_corner\Kledij_TestAPP_FeaturesSeparated\ProjectCore\bin\Debug\net8.0\ProjectCore.pdb
+C:\Users\448386944\OneDrive - Office 365 GPI\Secret_shared_corner\Kledij_TestAPP_FeaturesSeparated\ProjectCore\obj\Debug\net8.0\ProjectCore.csproj.AssemblyReference.cache
+C:\Users\448386944\OneDrive - Office 365 GPI\Secret_shared_corner\Kledij_TestAPP_FeaturesSeparated\ProjectCore\obj\Debug\net8.0\ProjectCore.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\448386944\OneDrive - Office 365 GPI\Secret_shared_corner\Kledij_TestAPP_FeaturesSeparated\ProjectCore\obj\Debug\net8.0\ProjectCore.AssemblyInfoInputs.cache
+C:\Users\448386944\OneDrive - Office 365 GPI\Secret_shared_corner\Kledij_TestAPP_FeaturesSeparated\ProjectCore\obj\Debug\net8.0\ProjectCore.AssemblyInfo.cs
+C:\Users\448386944\OneDrive - Office 365 GPI\Secret_shared_corner\Kledij_TestAPP_FeaturesSeparated\ProjectCore\obj\Debug\net8.0\ProjectCore.csproj.CoreCompileInputs.cache
+C:\Users\448386944\OneDrive - Office 365 GPI\Secret_shared_corner\Kledij_TestAPP_FeaturesSeparated\ProjectCore\obj\Debug\net8.0\ProjectCore.dll
+C:\Users\448386944\OneDrive - Office 365 GPI\Secret_shared_corner\Kledij_TestAPP_FeaturesSeparated\ProjectCore\obj\Debug\net8.0\refint\ProjectCore.dll
+C:\Users\448386944\OneDrive - Office 365 GPI\Secret_shared_corner\Kledij_TestAPP_FeaturesSeparated\ProjectCore\obj\Debug\net8.0\ProjectCore.pdb
+C:\Users\448386944\OneDrive - Office 365 GPI\Secret_shared_corner\Kledij_TestAPP_FeaturesSeparated\ProjectCore\obj\Debug\net8.0\ProjectCore.genruntimeconfig.cache
+C:\Users\448386944\OneDrive - Office 365 GPI\Secret_shared_corner\Kledij_TestAPP_FeaturesSeparated\ProjectCore\obj\Debug\net8.0\ref\ProjectCore.dll
+C:\Users\mdebr\OneDrive - Office 365 GPI\Secret_shared_corner\Kledij_TestAPP_FeaturesSeparated\ProjectCore\bin\Debug\net8.0\ProjectCore.deps.json
+C:\Users\mdebr\OneDrive - Office 365 GPI\Secret_shared_corner\Kledij_TestAPP_FeaturesSeparated\ProjectCore\bin\Debug\net8.0\ProjectCore.runtimeconfig.json
+C:\Users\mdebr\OneDrive - Office 365 GPI\Secret_shared_corner\Kledij_TestAPP_FeaturesSeparated\ProjectCore\bin\Debug\net8.0\ProjectCore.dll
+C:\Users\mdebr\OneDrive - Office 365 GPI\Secret_shared_corner\Kledij_TestAPP_FeaturesSeparated\ProjectCore\bin\Debug\net8.0\ProjectCore.pdb
+C:\Users\mdebr\OneDrive - Office 365 GPI\Secret_shared_corner\Kledij_TestAPP_FeaturesSeparated\ProjectCore\obj\Debug\net8.0\ProjectCore.csproj.AssemblyReference.cache
+C:\Users\mdebr\OneDrive - Office 365 GPI\Secret_shared_corner\Kledij_TestAPP_FeaturesSeparated\ProjectCore\obj\Debug\net8.0\ProjectCore.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mdebr\OneDrive - Office 365 GPI\Secret_shared_corner\Kledij_TestAPP_FeaturesSeparated\ProjectCore\obj\Debug\net8.0\ProjectCore.AssemblyInfoInputs.cache
+C:\Users\mdebr\OneDrive - Office 365 GPI\Secret_shared_corner\Kledij_TestAPP_FeaturesSeparated\ProjectCore\obj\Debug\net8.0\ProjectCore.AssemblyInfo.cs
+C:\Users\mdebr\OneDrive - Office 365 GPI\Secret_shared_corner\Kledij_TestAPP_FeaturesSeparated\ProjectCore\obj\Debug\net8.0\ProjectCore.csproj.CoreCompileInputs.cache
+C:\Users\mdebr\OneDrive - Office 365 GPI\Secret_shared_corner\Kledij_TestAPP_FeaturesSeparated\ProjectCore\obj\Debug\net8.0\ProjectCore.dll
+C:\Users\mdebr\OneDrive - Office 365 GPI\Secret_shared_corner\Kledij_TestAPP_FeaturesSeparated\ProjectCore\obj\Debug\net8.0\refint\ProjectCore.dll
+C:\Users\mdebr\OneDrive - Office 365 GPI\Secret_shared_corner\Kledij_TestAPP_FeaturesSeparated\ProjectCore\obj\Debug\net8.0\ProjectCore.pdb
+C:\Users\mdebr\OneDrive - Office 365 GPI\Secret_shared_corner\Kledij_TestAPP_FeaturesSeparated\ProjectCore\obj\Debug\net8.0\ProjectCore.genruntimeconfig.cache
+C:\Users\mdebr\OneDrive - Office 365 GPI\Secret_shared_corner\Kledij_TestAPP_FeaturesSeparated\ProjectCore\obj\Debug\net8.0\ref\ProjectCore.dll
+C:\Users\mdebr\OneDrive - Office 365 GPI\Secret_shared_corner\Kledij_TestAPP_FeaturesSeparated_AfterResult\ProjectCore\bin\Debug\net8.0\ProjectCore.deps.json
+C:\Users\mdebr\OneDrive - Office 365 GPI\Secret_shared_corner\Kledij_TestAPP_FeaturesSeparated_AfterResult\ProjectCore\bin\Debug\net8.0\ProjectCore.runtimeconfig.json
+C:\Users\mdebr\OneDrive - Office 365 GPI\Secret_shared_corner\Kledij_TestAPP_FeaturesSeparated_AfterResult\ProjectCore\bin\Debug\net8.0\ProjectCore.dll
+C:\Users\mdebr\OneDrive - Office 365 GPI\Secret_shared_corner\Kledij_TestAPP_FeaturesSeparated_AfterResult\ProjectCore\bin\Debug\net8.0\ProjectCore.pdb
+C:\Users\mdebr\OneDrive - Office 365 GPI\Secret_shared_corner\Kledij_TestAPP_FeaturesSeparated_AfterResult\ProjectCore\obj\Debug\net8.0\ProjectCore.csproj.AssemblyReference.cache
+C:\Users\mdebr\OneDrive - Office 365 GPI\Secret_shared_corner\Kledij_TestAPP_FeaturesSeparated_AfterResult\ProjectCore\obj\Debug\net8.0\ProjectCore.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mdebr\OneDrive - Office 365 GPI\Secret_shared_corner\Kledij_TestAPP_FeaturesSeparated_AfterResult\ProjectCore\obj\Debug\net8.0\ProjectCore.AssemblyInfoInputs.cache
+C:\Users\mdebr\OneDrive - Office 365 GPI\Secret_shared_corner\Kledij_TestAPP_FeaturesSeparated_AfterResult\ProjectCore\obj\Debug\net8.0\ProjectCore.AssemblyInfo.cs
+C:\Users\mdebr\OneDrive - Office 365 GPI\Secret_shared_corner\Kledij_TestAPP_FeaturesSeparated_AfterResult\ProjectCore\obj\Debug\net8.0\ProjectCore.csproj.CoreCompileInputs.cache
+C:\Users\mdebr\OneDrive - Office 365 GPI\Secret_shared_corner\Kledij_TestAPP_FeaturesSeparated_AfterResult\ProjectCore\obj\Debug\net8.0\ProjectCore.dll
+C:\Users\mdebr\OneDrive - Office 365 GPI\Secret_shared_corner\Kledij_TestAPP_FeaturesSeparated_AfterResult\ProjectCore\obj\Debug\net8.0\refint\ProjectCore.dll
+C:\Users\mdebr\OneDrive - Office 365 GPI\Secret_shared_corner\Kledij_TestAPP_FeaturesSeparated_AfterResult\ProjectCore\obj\Debug\net8.0\ProjectCore.pdb
+C:\Users\mdebr\OneDrive - Office 365 GPI\Secret_shared_corner\Kledij_TestAPP_FeaturesSeparated_AfterResult\ProjectCore\obj\Debug\net8.0\ProjectCore.genruntimeconfig.cache
+C:\Users\mdebr\OneDrive - Office 365 GPI\Secret_shared_corner\Kledij_TestAPP_FeaturesSeparated_AfterResult\ProjectCore\obj\Debug\net8.0\ref\ProjectCore.dll
+C:\Users\448386944\OneDrive - Office 365 GPI\Secret_shared_corner\Kledij_TestAPP_FeaturesSeparated_AfterResult\ProjectCore\obj\Debug\net8.0\ProjectCore.csproj.AssemblyReference.cache
+C:\Users\448386944\OneDrive - Office 365 GPI\Secret_shared_corner\Kledij_TestAPP_FeaturesSeparated_AfterResult\ProjectCore\obj\Debug\net8.0\ProjectCore.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\448386944\OneDrive - Office 365 GPI\Secret_shared_corner\Kledij_TestAPP_FeaturesSeparated_AfterResult\ProjectCore\obj\Debug\net8.0\ProjectCore.AssemblyInfoInputs.cache
+C:\Users\448386944\OneDrive - Office 365 GPI\Secret_shared_corner\Kledij_TestAPP_FeaturesSeparated_AfterResult\ProjectCore\obj\Debug\net8.0\ProjectCore.AssemblyInfo.cs
+C:\Users\448386944\OneDrive - Office 365 GPI\Secret_shared_corner\Kledij_TestAPP_FeaturesSeparated_AfterResult\ProjectCore\obj\Debug\net8.0\ProjectCore.csproj.CoreCompileInputs.cache
+C:\Users\448386944\OneDrive - Office 365 GPI\Secret_shared_corner\Kledij_TestAPP_FeaturesSeparated_AfterResult\ProjectCore\obj\Debug\net8.0\ProjectCore.dll
+C:\Users\448386944\OneDrive - Office 365 GPI\Secret_shared_corner\Kledij_TestAPP_FeaturesSeparated_AfterResult\ProjectCore\obj\Debug\net8.0\refint\ProjectCore.dll
+C:\Users\448386944\OneDrive - Office 365 GPI\Secret_shared_corner\Kledij_TestAPP_FeaturesSeparated_AfterResult\ProjectCore\obj\Debug\net8.0\ProjectCore.pdb
+C:\Users\448386944\OneDrive - Office 365 GPI\Secret_shared_corner\Kledij_TestAPP_FeaturesSeparated_AfterResult\ProjectCore\bin\Debug\net8.0\ProjectCore.deps.json
+C:\Users\448386944\OneDrive - Office 365 GPI\Secret_shared_corner\Kledij_TestAPP_FeaturesSeparated_AfterResult\ProjectCore\bin\Debug\net8.0\ProjectCore.runtimeconfig.json
+C:\Users\448386944\OneDrive - Office 365 GPI\Secret_shared_corner\Kledij_TestAPP_FeaturesSeparated_AfterResult\ProjectCore\bin\Debug\net8.0\ProjectCore.dll
+C:\Users\448386944\OneDrive - Office 365 GPI\Secret_shared_corner\Kledij_TestAPP_FeaturesSeparated_AfterResult\ProjectCore\bin\Debug\net8.0\ProjectCore.pdb
+C:\Users\448386944\OneDrive - Office 365 GPI\Secret_shared_corner\Kledij_TestAPP_FeaturesSeparated_AfterResult\ProjectCore\obj\Debug\net8.0\ProjectCore.genruntimeconfig.cache
+C:\Users\448386944\OneDrive - Office 365 GPI\Secret_shared_corner\Kledij_TestAPP_FeaturesSeparated_AfterResult\ProjectCore\obj\Debug\net8.0\ref\ProjectCore.dll
+C:\Users\448386944\OneDrive - Office 365 GPI\Secret_shared_corner\Kledij_TestAPP_FeaturesSeparated_IdentityAuthenticationConfigured\ProjectCore\bin\Debug\net8.0\ProjectCore.deps.json
+C:\Users\448386944\OneDrive - Office 365 GPI\Secret_shared_corner\Kledij_TestAPP_FeaturesSeparated_IdentityAuthenticationConfigured\ProjectCore\bin\Debug\net8.0\ProjectCore.runtimeconfig.json
+C:\Users\448386944\OneDrive - Office 365 GPI\Secret_shared_corner\Kledij_TestAPP_FeaturesSeparated_IdentityAuthenticationConfigured\ProjectCore\bin\Debug\net8.0\ProjectCore.dll
+C:\Users\448386944\OneDrive - Office 365 GPI\Secret_shared_corner\Kledij_TestAPP_FeaturesSeparated_IdentityAuthenticationConfigured\ProjectCore\bin\Debug\net8.0\ProjectCore.pdb
+C:\Users\448386944\OneDrive - Office 365 GPI\Secret_shared_corner\Kledij_TestAPP_FeaturesSeparated_IdentityAuthenticationConfigured\ProjectCore\obj\Debug\net8.0\ProjectCore.csproj.AssemblyReference.cache
+C:\Users\448386944\OneDrive - Office 365 GPI\Secret_shared_corner\Kledij_TestAPP_FeaturesSeparated_IdentityAuthenticationConfigured\ProjectCore\obj\Debug\net8.0\ProjectCore.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\448386944\OneDrive - Office 365 GPI\Secret_shared_corner\Kledij_TestAPP_FeaturesSeparated_IdentityAuthenticationConfigured\ProjectCore\obj\Debug\net8.0\ProjectCore.AssemblyInfoInputs.cache
+C:\Users\448386944\OneDrive - Office 365 GPI\Secret_shared_corner\Kledij_TestAPP_FeaturesSeparated_IdentityAuthenticationConfigured\ProjectCore\obj\Debug\net8.0\ProjectCore.AssemblyInfo.cs
+C:\Users\448386944\OneDrive - Office 365 GPI\Secret_shared_corner\Kledij_TestAPP_FeaturesSeparated_IdentityAuthenticationConfigured\ProjectCore\obj\Debug\net8.0\ProjectCore.csproj.CoreCompileInputs.cache
+C:\Users\448386944\OneDrive - Office 365 GPI\Secret_shared_corner\Kledij_TestAPP_FeaturesSeparated_IdentityAuthenticationConfigured\ProjectCore\obj\Debug\net8.0\ProjectCore.dll
+C:\Users\448386944\OneDrive - Office 365 GPI\Secret_shared_corner\Kledij_TestAPP_FeaturesSeparated_IdentityAuthenticationConfigured\ProjectCore\obj\Debug\net8.0\refint\ProjectCore.dll
+C:\Users\448386944\OneDrive - Office 365 GPI\Secret_shared_corner\Kledij_TestAPP_FeaturesSeparated_IdentityAuthenticationConfigured\ProjectCore\obj\Debug\net8.0\ProjectCore.pdb
+C:\Users\448386944\OneDrive - Office 365 GPI\Secret_shared_corner\Kledij_TestAPP_FeaturesSeparated_IdentityAuthenticationConfigured\ProjectCore\obj\Debug\net8.0\ProjectCore.genruntimeconfig.cache
+C:\Users\448386944\OneDrive - Office 365 GPI\Secret_shared_corner\Kledij_TestAPP_FeaturesSeparated_IdentityAuthenticationConfigured\ProjectCore\obj\Debug\net8.0\ref\ProjectCore.dll
+C:\Users\mdebr\OneDrive - Office 365 GPI\Secret_shared_corner\Kledij_TestAPP_FeaturesSeparated_IdentityAuthenticationConfigured\ProjectCore\bin\Debug\net8.0\ProjectCore.deps.json
+C:\Users\mdebr\OneDrive - Office 365 GPI\Secret_shared_corner\Kledij_TestAPP_FeaturesSeparated_IdentityAuthenticationConfigured\ProjectCore\bin\Debug\net8.0\ProjectCore.runtimeconfig.json
+C:\Users\mdebr\OneDrive - Office 365 GPI\Secret_shared_corner\Kledij_TestAPP_FeaturesSeparated_IdentityAuthenticationConfigured\ProjectCore\bin\Debug\net8.0\ProjectCore.dll
+C:\Users\mdebr\OneDrive - Office 365 GPI\Secret_shared_corner\Kledij_TestAPP_FeaturesSeparated_IdentityAuthenticationConfigured\ProjectCore\bin\Debug\net8.0\ProjectCore.pdb
+C:\Users\mdebr\OneDrive - Office 365 GPI\Secret_shared_corner\Kledij_TestAPP_FeaturesSeparated_IdentityAuthenticationConfigured\ProjectCore\obj\Debug\net8.0\ProjectCore.csproj.AssemblyReference.cache
+C:\Users\mdebr\OneDrive - Office 365 GPI\Secret_shared_corner\Kledij_TestAPP_FeaturesSeparated_IdentityAuthenticationConfigured\ProjectCore\obj\Debug\net8.0\ProjectCore.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mdebr\OneDrive - Office 365 GPI\Secret_shared_corner\Kledij_TestAPP_FeaturesSeparated_IdentityAuthenticationConfigured\ProjectCore\obj\Debug\net8.0\ProjectCore.AssemblyInfoInputs.cache
+C:\Users\mdebr\OneDrive - Office 365 GPI\Secret_shared_corner\Kledij_TestAPP_FeaturesSeparated_IdentityAuthenticationConfigured\ProjectCore\obj\Debug\net8.0\ProjectCore.AssemblyInfo.cs
+C:\Users\mdebr\OneDrive - Office 365 GPI\Secret_shared_corner\Kledij_TestAPP_FeaturesSeparated_IdentityAuthenticationConfigured\ProjectCore\obj\Debug\net8.0\ProjectCore.csproj.CoreCompileInputs.cache
+C:\Users\mdebr\OneDrive - Office 365 GPI\Secret_shared_corner\Kledij_TestAPP_FeaturesSeparated_IdentityAuthenticationConfigured\ProjectCore\obj\Debug\net8.0\ProjectCore.dll
+C:\Users\mdebr\OneDrive - Office 365 GPI\Secret_shared_corner\Kledij_TestAPP_FeaturesSeparated_IdentityAuthenticationConfigured\ProjectCore\obj\Debug\net8.0\refint\ProjectCore.dll
+C:\Users\mdebr\OneDrive - Office 365 GPI\Secret_shared_corner\Kledij_TestAPP_FeaturesSeparated_IdentityAuthenticationConfigured\ProjectCore\obj\Debug\net8.0\ProjectCore.pdb
+C:\Users\mdebr\OneDrive - Office 365 GPI\Secret_shared_corner\Kledij_TestAPP_FeaturesSeparated_IdentityAuthenticationConfigured\ProjectCore\obj\Debug\net8.0\ProjectCore.genruntimeconfig.cache
+C:\Users\mdebr\OneDrive - Office 365 GPI\Secret_shared_corner\Kledij_TestAPP_FeaturesSeparated_IdentityAuthenticationConfigured\ProjectCore\obj\Debug\net8.0\ref\ProjectCore.dll
+C:\Users\mdebr\OneDrive - Office 365 GPI\Secret_shared_corner\AfterMessingWithProductCategories\ProjectCore\bin\Debug\net8.0\ProjectCore.deps.json
+C:\Users\mdebr\OneDrive - Office 365 GPI\Secret_shared_corner\AfterMessingWithProductCategories\ProjectCore\bin\Debug\net8.0\ProjectCore.runtimeconfig.json
+C:\Users\mdebr\OneDrive - Office 365 GPI\Secret_shared_corner\AfterMessingWithProductCategories\ProjectCore\bin\Debug\net8.0\ProjectCore.dll
+C:\Users\mdebr\OneDrive - Office 365 GPI\Secret_shared_corner\AfterMessingWithProductCategories\ProjectCore\bin\Debug\net8.0\ProjectCore.pdb
+C:\Users\mdebr\OneDrive - Office 365 GPI\Secret_shared_corner\AfterMessingWithProductCategories\ProjectCore\obj\Debug\net8.0\ProjectCore.csproj.AssemblyReference.cache
+C:\Users\mdebr\OneDrive - Office 365 GPI\Secret_shared_corner\AfterMessingWithProductCategories\ProjectCore\obj\Debug\net8.0\ProjectCore.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mdebr\OneDrive - Office 365 GPI\Secret_shared_corner\AfterMessingWithProductCategories\ProjectCore\obj\Debug\net8.0\ProjectCore.AssemblyInfoInputs.cache
+C:\Users\mdebr\OneDrive - Office 365 GPI\Secret_shared_corner\AfterMessingWithProductCategories\ProjectCore\obj\Debug\net8.0\ProjectCore.AssemblyInfo.cs
+C:\Users\mdebr\OneDrive - Office 365 GPI\Secret_shared_corner\AfterMessingWithProductCategories\ProjectCore\obj\Debug\net8.0\ProjectCore.csproj.CoreCompileInputs.cache
+C:\Users\mdebr\OneDrive - Office 365 GPI\Secret_shared_corner\AfterMessingWithProductCategories\ProjectCore\obj\Debug\net8.0\ProjectCore.dll
+C:\Users\mdebr\OneDrive - Office 365 GPI\Secret_shared_corner\AfterMessingWithProductCategories\ProjectCore\obj\Debug\net8.0\refint\ProjectCore.dll
+C:\Users\mdebr\OneDrive - Office 365 GPI\Secret_shared_corner\AfterMessingWithProductCategories\ProjectCore\obj\Debug\net8.0\ProjectCore.pdb
+C:\Users\mdebr\OneDrive - Office 365 GPI\Secret_shared_corner\AfterMessingWithProductCategories\ProjectCore\obj\Debug\net8.0\ProjectCore.genruntimeconfig.cache
+C:\Users\mdebr\OneDrive - Office 365 GPI\Secret_shared_corner\AfterMessingWithProductCategories\ProjectCore\obj\Debug\net8.0\ref\ProjectCore.dll
+C:\Users\448386944\OneDrive - Office 365 GPI\Secret_shared_corner\AfterMessingWithProductCategories\ProjectCore\bin\Debug\net8.0\ProjectCore.deps.json
+C:\Users\448386944\OneDrive - Office 365 GPI\Secret_shared_corner\AfterMessingWithProductCategories\ProjectCore\bin\Debug\net8.0\ProjectCore.runtimeconfig.json
+C:\Users\448386944\OneDrive - Office 365 GPI\Secret_shared_corner\AfterMessingWithProductCategories\ProjectCore\bin\Debug\net8.0\ProjectCore.dll
+C:\Users\448386944\OneDrive - Office 365 GPI\Secret_shared_corner\AfterMessingWithProductCategories\ProjectCore\bin\Debug\net8.0\ProjectCore.pdb
+C:\Users\448386944\OneDrive - Office 365 GPI\Secret_shared_corner\AfterMessingWithProductCategories\ProjectCore\obj\Debug\net8.0\ProjectCore.csproj.AssemblyReference.cache
+C:\Users\448386944\OneDrive - Office 365 GPI\Secret_shared_corner\AfterMessingWithProductCategories\ProjectCore\obj\Debug\net8.0\ProjectCore.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\448386944\OneDrive - Office 365 GPI\Secret_shared_corner\AfterMessingWithProductCategories\ProjectCore\obj\Debug\net8.0\ProjectCore.AssemblyInfoInputs.cache
+C:\Users\448386944\OneDrive - Office 365 GPI\Secret_shared_corner\AfterMessingWithProductCategories\ProjectCore\obj\Debug\net8.0\ProjectCore.AssemblyInfo.cs
+C:\Users\448386944\OneDrive - Office 365 GPI\Secret_shared_corner\AfterMessingWithProductCategories\ProjectCore\obj\Debug\net8.0\ProjectCore.csproj.CoreCompileInputs.cache
+C:\Users\448386944\OneDrive - Office 365 GPI\Secret_shared_corner\AfterMessingWithProductCategories\ProjectCore\obj\Debug\net8.0\ProjectCore.dll
+C:\Users\448386944\OneDrive - Office 365 GPI\Secret_shared_corner\AfterMessingWithProductCategories\ProjectCore\obj\Debug\net8.0\refint\ProjectCore.dll
+C:\Users\448386944\OneDrive - Office 365 GPI\Secret_shared_corner\AfterMessingWithProductCategories\ProjectCore\obj\Debug\net8.0\ProjectCore.pdb
+C:\Users\448386944\OneDrive - Office 365 GPI\Secret_shared_corner\AfterMessingWithProductCategories\ProjectCore\obj\Debug\net8.0\ProjectCore.genruntimeconfig.cache
+C:\Users\448386944\OneDrive - Office 365 GPI\Secret_shared_corner\AfterMessingWithProductCategories\ProjectCore\obj\Debug\net8.0\ref\ProjectCore.dll
+C:\Users\ADM448386944\OneDrive - Office 365 GPI\Secret_shared_corner\Kledijmodule_latest\ProjectCore\bin\Debug\net8.0\ProjectCore.deps.json
+C:\Users\ADM448386944\OneDrive - Office 365 GPI\Secret_shared_corner\Kledijmodule_latest\ProjectCore\bin\Debug\net8.0\ProjectCore.runtimeconfig.json
+C:\Users\ADM448386944\OneDrive - Office 365 GPI\Secret_shared_corner\Kledijmodule_latest\ProjectCore\bin\Debug\net8.0\ProjectCore.dll
+C:\Users\ADM448386944\OneDrive - Office 365 GPI\Secret_shared_corner\Kledijmodule_latest\ProjectCore\bin\Debug\net8.0\ProjectCore.pdb
+C:\Users\ADM448386944\OneDrive - Office 365 GPI\Secret_shared_corner\Kledijmodule_latest\ProjectCore\obj\Debug\net8.0\ProjectCore.csproj.AssemblyReference.cache
+C:\Users\ADM448386944\OneDrive - Office 365 GPI\Secret_shared_corner\Kledijmodule_latest\ProjectCore\obj\Debug\net8.0\ProjectCore.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ADM448386944\OneDrive - Office 365 GPI\Secret_shared_corner\Kledijmodule_latest\ProjectCore\obj\Debug\net8.0\ProjectCore.AssemblyInfoInputs.cache
+C:\Users\ADM448386944\OneDrive - Office 365 GPI\Secret_shared_corner\Kledijmodule_latest\ProjectCore\obj\Debug\net8.0\ProjectCore.AssemblyInfo.cs
+C:\Users\ADM448386944\OneDrive - Office 365 GPI\Secret_shared_corner\Kledijmodule_latest\ProjectCore\obj\Debug\net8.0\ProjectCore.csproj.CoreCompileInputs.cache
+C:\Users\ADM448386944\OneDrive - Office 365 GPI\Secret_shared_corner\Kledijmodule_latest\ProjectCore\obj\Debug\net8.0\ProjectCore.dll
+C:\Users\ADM448386944\OneDrive - Office 365 GPI\Secret_shared_corner\Kledijmodule_latest\ProjectCore\obj\Debug\net8.0\refint\ProjectCore.dll
+C:\Users\ADM448386944\OneDrive - Office 365 GPI\Secret_shared_corner\Kledijmodule_latest\ProjectCore\obj\Debug\net8.0\ProjectCore.pdb
+C:\Users\ADM448386944\OneDrive - Office 365 GPI\Secret_shared_corner\Kledijmodule_latest\ProjectCore\obj\Debug\net8.0\ProjectCore.genruntimeconfig.cache
+C:\Users\ADM448386944\OneDrive - Office 365 GPI\Secret_shared_corner\Kledijmodule_latest\ProjectCore\obj\Debug\net8.0\ref\ProjectCore.dll
+C:\Users\448386944\OneDrive - Office 365 GPI\Secret_shared_corner\Kledijmodule_latest\ProjectCore\bin\Debug\net8.0\ProjectCore.deps.json
+C:\Users\448386944\OneDrive - Office 365 GPI\Secret_shared_corner\Kledijmodule_latest\ProjectCore\bin\Debug\net8.0\ProjectCore.runtimeconfig.json
+C:\Users\448386944\OneDrive - Office 365 GPI\Secret_shared_corner\Kledijmodule_latest\ProjectCore\bin\Debug\net8.0\ProjectCore.dll
+C:\Users\448386944\OneDrive - Office 365 GPI\Secret_shared_corner\Kledijmodule_latest\ProjectCore\bin\Debug\net8.0\ProjectCore.pdb
+C:\Users\448386944\OneDrive - Office 365 GPI\Secret_shared_corner\Kledijmodule_latest\ProjectCore\obj\Debug\net8.0\ProjectCore.csproj.AssemblyReference.cache
+C:\Users\448386944\OneDrive - Office 365 GPI\Secret_shared_corner\Kledijmodule_latest\ProjectCore\obj\Debug\net8.0\ProjectCore.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\448386944\OneDrive - Office 365 GPI\Secret_shared_corner\Kledijmodule_latest\ProjectCore\obj\Debug\net8.0\ProjectCore.AssemblyInfoInputs.cache
+C:\Users\448386944\OneDrive - Office 365 GPI\Secret_shared_corner\Kledijmodule_latest\ProjectCore\obj\Debug\net8.0\ProjectCore.AssemblyInfo.cs
+C:\Users\448386944\OneDrive - Office 365 GPI\Secret_shared_corner\Kledijmodule_latest\ProjectCore\obj\Debug\net8.0\ProjectCore.csproj.CoreCompileInputs.cache
+C:\Users\448386944\OneDrive - Office 365 GPI\Secret_shared_corner\Kledijmodule_latest\ProjectCore\obj\Debug\net8.0\ProjectCore.dll
+C:\Users\448386944\OneDrive - Office 365 GPI\Secret_shared_corner\Kledijmodule_latest\ProjectCore\obj\Debug\net8.0\refint\ProjectCore.dll
+C:\Users\448386944\OneDrive - Office 365 GPI\Secret_shared_corner\Kledijmodule_latest\ProjectCore\obj\Debug\net8.0\ProjectCore.pdb
+C:\Users\448386944\OneDrive - Office 365 GPI\Secret_shared_corner\Kledijmodule_latest\ProjectCore\obj\Debug\net8.0\ProjectCore.genruntimeconfig.cache
+C:\Users\448386944\OneDrive - Office 365 GPI\Secret_shared_corner\Kledijmodule_latest\ProjectCore\obj\Debug\net8.0\ref\ProjectCore.dll
+C:\Users\448386944\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule\ProjectCore\bin\Debug\net8.0\ProjectCore.deps.json
+C:\Users\448386944\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule\ProjectCore\bin\Debug\net8.0\ProjectCore.runtimeconfig.json
+C:\Users\448386944\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule\ProjectCore\bin\Debug\net8.0\ProjectCore.dll
+C:\Users\448386944\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule\ProjectCore\bin\Debug\net8.0\ProjectCore.pdb
+C:\Users\448386944\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule\ProjectCore\obj\Debug\net8.0\ProjectCore.csproj.AssemblyReference.cache
+C:\Users\448386944\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule\ProjectCore\obj\Debug\net8.0\ProjectCore.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\448386944\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule\ProjectCore\obj\Debug\net8.0\ProjectCore.AssemblyInfoInputs.cache
+C:\Users\448386944\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule\ProjectCore\obj\Debug\net8.0\ProjectCore.AssemblyInfo.cs
+C:\Users\448386944\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule\ProjectCore\obj\Debug\net8.0\ProjectCore.csproj.CoreCompileInputs.cache
+C:\Users\448386944\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule\ProjectCore\obj\Debug\net8.0\ProjectCore.dll
+C:\Users\448386944\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule\ProjectCore\obj\Debug\net8.0\refint\ProjectCore.dll
+C:\Users\448386944\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule\ProjectCore\obj\Debug\net8.0\ProjectCore.pdb
+C:\Users\448386944\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule\ProjectCore\obj\Debug\net8.0\ProjectCore.genruntimeconfig.cache
+C:\Users\448386944\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule\ProjectCore\obj\Debug\net8.0\ref\ProjectCore.dll
+C:\Users\mdebr\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule\ProjectCore\bin\Debug\net8.0\ProjectCore.deps.json
+C:\Users\mdebr\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule\ProjectCore\bin\Debug\net8.0\ProjectCore.runtimeconfig.json
+C:\Users\mdebr\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule\ProjectCore\bin\Debug\net8.0\ProjectCore.dll
+C:\Users\mdebr\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule\ProjectCore\bin\Debug\net8.0\ProjectCore.pdb
+C:\Users\mdebr\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule\ProjectCore\obj\Debug\net8.0\ProjectCore.csproj.AssemblyReference.cache
+C:\Users\mdebr\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule\ProjectCore\obj\Debug\net8.0\ProjectCore.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mdebr\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule\ProjectCore\obj\Debug\net8.0\ProjectCore.AssemblyInfoInputs.cache
+C:\Users\mdebr\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule\ProjectCore\obj\Debug\net8.0\ProjectCore.AssemblyInfo.cs
+C:\Users\mdebr\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule\ProjectCore\obj\Debug\net8.0\ProjectCore.csproj.CoreCompileInputs.cache
+C:\Users\mdebr\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule\ProjectCore\obj\Debug\net8.0\ProjectCore.dll
+C:\Users\mdebr\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule\ProjectCore\obj\Debug\net8.0\refint\ProjectCore.dll
+C:\Users\mdebr\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule\ProjectCore\obj\Debug\net8.0\ProjectCore.pdb
+C:\Users\mdebr\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule\ProjectCore\obj\Debug\net8.0\ProjectCore.genruntimeconfig.cache
+C:\Users\mdebr\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule\ProjectCore\obj\Debug\net8.0\ref\ProjectCore.dll
+C:\Users\449423733\OneDrive - Office 365 GPI\C#\KledijModule\ProjectCore\obj\Debug\net8.0\ProjectCore.csproj.AssemblyReference.cache
+C:\Users\449423733\OneDrive - Office 365 GPI\C#\KledijModule\ProjectCore\obj\Debug\net8.0\ProjectCore.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\449423733\OneDrive - Office 365 GPI\C#\KledijModule\ProjectCore\obj\Debug\net8.0\ProjectCore.AssemblyInfoInputs.cache
+C:\Users\449423733\OneDrive - Office 365 GPI\C#\KledijModule\ProjectCore\obj\Debug\net8.0\ProjectCore.AssemblyInfo.cs
+C:\Users\449423733\OneDrive - Office 365 GPI\C#\KledijModule\ProjectCore\obj\Debug\net8.0\ProjectCore.csproj.CoreCompileInputs.cache
+C:\Users\449423733\OneDrive - Office 365 GPI\C#\KledijModule\ProjectCore\obj\Debug\net8.0\ProjectCore.dll
+C:\Users\449423733\OneDrive - Office 365 GPI\C#\KledijModule\ProjectCore\obj\Debug\net8.0\refint\ProjectCore.dll
+C:\Users\449423733\OneDrive - Office 365 GPI\C#\KledijModule\ProjectCore\obj\Debug\net8.0\ProjectCore.pdb
+C:\Users\ADM448386944\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule\ProjectCore\bin\Debug\net8.0\ProjectCore.deps.json
+C:\Users\ADM448386944\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule\ProjectCore\bin\Debug\net8.0\ProjectCore.runtimeconfig.json
+C:\Users\ADM448386944\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule\ProjectCore\bin\Debug\net8.0\ProjectCore.dll
+C:\Users\ADM448386944\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule\ProjectCore\bin\Debug\net8.0\ProjectCore.pdb
+C:\Users\ADM448386944\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule\ProjectCore\obj\Debug\net8.0\ProjectCore.csproj.AssemblyReference.cache
+C:\Users\ADM448386944\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule\ProjectCore\obj\Debug\net8.0\ProjectCore.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ADM448386944\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule\ProjectCore\obj\Debug\net8.0\ProjectCore.AssemblyInfoInputs.cache
+C:\Users\ADM448386944\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule\ProjectCore\obj\Debug\net8.0\ProjectCore.AssemblyInfo.cs
+C:\Users\ADM448386944\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule\ProjectCore\obj\Debug\net8.0\ProjectCore.csproj.CoreCompileInputs.cache
+C:\Users\ADM448386944\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule\ProjectCore\obj\Debug\net8.0\ProjectCore.dll
+C:\Users\ADM448386944\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule\ProjectCore\obj\Debug\net8.0\refint\ProjectCore.dll
+C:\Users\ADM448386944\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule\ProjectCore\obj\Debug\net8.0\ProjectCore.pdb
+C:\Users\ADM448386944\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule\ProjectCore\obj\Debug\net8.0\ProjectCore.genruntimeconfig.cache
+C:\Users\ADM448386944\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule\ProjectCore\obj\Debug\net8.0\ref\ProjectCore.dll
+C:\Users\ADM448386944\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_withHTTPS19724\ProjectCore\bin\Debug\net8.0\ProjectCore.deps.json
+C:\Users\ADM448386944\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_withHTTPS19724\ProjectCore\bin\Debug\net8.0\ProjectCore.runtimeconfig.json
+C:\Users\ADM448386944\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_withHTTPS19724\ProjectCore\bin\Debug\net8.0\ProjectCore.dll
+C:\Users\ADM448386944\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_withHTTPS19724\ProjectCore\bin\Debug\net8.0\ProjectCore.pdb
+C:\Users\ADM448386944\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_withHTTPS19724\ProjectCore\obj\Debug\net8.0\ProjectCore.csproj.AssemblyReference.cache
+C:\Users\ADM448386944\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_withHTTPS19724\ProjectCore\obj\Debug\net8.0\ProjectCore.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ADM448386944\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_withHTTPS19724\ProjectCore\obj\Debug\net8.0\ProjectCore.AssemblyInfoInputs.cache
+C:\Users\ADM448386944\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_withHTTPS19724\ProjectCore\obj\Debug\net8.0\ProjectCore.AssemblyInfo.cs
+C:\Users\ADM448386944\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_withHTTPS19724\ProjectCore\obj\Debug\net8.0\ProjectCore.csproj.CoreCompileInputs.cache
+C:\Users\ADM448386944\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_withHTTPS19724\ProjectCore\obj\Debug\net8.0\ProjectCore.dll
+C:\Users\ADM448386944\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_withHTTPS19724\ProjectCore\obj\Debug\net8.0\refint\ProjectCore.dll
+C:\Users\ADM448386944\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_withHTTPS19724\ProjectCore\obj\Debug\net8.0\ProjectCore.pdb
+C:\Users\ADM448386944\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_withHTTPS19724\ProjectCore\obj\Debug\net8.0\ProjectCore.genruntimeconfig.cache
+C:\Users\ADM448386944\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_withHTTPS19724\ProjectCore\obj\Debug\net8.0\ref\ProjectCore.dll
+C:\Users\ADM448386944\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\ProjectCore\bin\Debug\net8.0\ProjectCore.deps.json
+C:\Users\ADM448386944\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\ProjectCore\bin\Debug\net8.0\ProjectCore.runtimeconfig.json
+C:\Users\ADM448386944\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\ProjectCore\bin\Debug\net8.0\ProjectCore.dll
+C:\Users\ADM448386944\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\ProjectCore\bin\Debug\net8.0\ProjectCore.pdb
+C:\Users\ADM448386944\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\ProjectCore\obj\Debug\net8.0\ProjectCore.csproj.AssemblyReference.cache
+C:\Users\ADM448386944\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\ProjectCore\obj\Debug\net8.0\ProjectCore.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ADM448386944\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\ProjectCore\obj\Debug\net8.0\ProjectCore.AssemblyInfoInputs.cache
+C:\Users\ADM448386944\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\ProjectCore\obj\Debug\net8.0\ProjectCore.AssemblyInfo.cs
+C:\Users\ADM448386944\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\ProjectCore\obj\Debug\net8.0\ProjectCore.csproj.CoreCompileInputs.cache
+C:\Users\ADM448386944\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\ProjectCore\obj\Debug\net8.0\ProjectCore.dll
+C:\Users\ADM448386944\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\ProjectCore\obj\Debug\net8.0\refint\ProjectCore.dll
+C:\Users\ADM448386944\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\ProjectCore\obj\Debug\net8.0\ProjectCore.pdb
+C:\Users\ADM448386944\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\ProjectCore\obj\Debug\net8.0\ProjectCore.genruntimeconfig.cache
+C:\Users\ADM448386944\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\ProjectCore\obj\Debug\net8.0\ref\ProjectCore.dll
+C:\Users\448386944\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\ProjectCore\bin\Debug\net8.0\ProjectCore.deps.json
+C:\Users\448386944\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\ProjectCore\bin\Debug\net8.0\ProjectCore.runtimeconfig.json
+C:\Users\448386944\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\ProjectCore\bin\Debug\net8.0\ProjectCore.dll
+C:\Users\448386944\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\ProjectCore\bin\Debug\net8.0\ProjectCore.pdb
+C:\Users\448386944\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\ProjectCore\obj\Debug\net8.0\ProjectCore.csproj.AssemblyReference.cache
+C:\Users\448386944\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\ProjectCore\obj\Debug\net8.0\ProjectCore.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\448386944\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\ProjectCore\obj\Debug\net8.0\ProjectCore.AssemblyInfoInputs.cache
+C:\Users\448386944\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\ProjectCore\obj\Debug\net8.0\ProjectCore.AssemblyInfo.cs
+C:\Users\448386944\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\ProjectCore\obj\Debug\net8.0\ProjectCore.csproj.CoreCompileInputs.cache
+C:\Users\448386944\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\ProjectCore\obj\Debug\net8.0\ProjectCore.dll
+C:\Users\448386944\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\ProjectCore\obj\Debug\net8.0\refint\ProjectCore.dll
+C:\Users\448386944\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\ProjectCore\obj\Debug\net8.0\ProjectCore.pdb
+C:\Users\448386944\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\ProjectCore\obj\Debug\net8.0\ProjectCore.genruntimeconfig.cache
+C:\Users\448386944\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\ProjectCore\obj\Debug\net8.0\ref\ProjectCore.dll
+C:\Users\mdebr\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\ProjectCore\bin\Debug\net8.0\ProjectCore.deps.json
+C:\Users\mdebr\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\ProjectCore\bin\Debug\net8.0\ProjectCore.runtimeconfig.json
+C:\Users\mdebr\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\ProjectCore\bin\Debug\net8.0\ProjectCore.dll
+C:\Users\mdebr\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\ProjectCore\bin\Debug\net8.0\ProjectCore.pdb
+C:\Users\mdebr\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\ProjectCore\obj\Debug\net8.0\ProjectCore.csproj.AssemblyReference.cache
+C:\Users\mdebr\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\ProjectCore\obj\Debug\net8.0\ProjectCore.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mdebr\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\ProjectCore\obj\Debug\net8.0\ProjectCore.AssemblyInfoInputs.cache
+C:\Users\mdebr\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\ProjectCore\obj\Debug\net8.0\ProjectCore.AssemblyInfo.cs
+C:\Users\mdebr\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\ProjectCore\obj\Debug\net8.0\ProjectCore.csproj.CoreCompileInputs.cache
+C:\Users\mdebr\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\ProjectCore\obj\Debug\net8.0\ProjectCore.dll
+C:\Users\mdebr\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\ProjectCore\obj\Debug\net8.0\refint\ProjectCore.dll
+C:\Users\mdebr\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\ProjectCore\obj\Debug\net8.0\ProjectCore.pdb
+C:\Users\mdebr\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\ProjectCore\obj\Debug\net8.0\ProjectCore.genruntimeconfig.cache
+C:\Users\mdebr\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\ProjectCore\obj\Debug\net8.0\ref\ProjectCore.dll
+C:\Users\ADM448386944\Downloads\KledijModule_dockerComposeAdded\ProjectCore\bin\Debug\net8.0\ProjectCore.deps.json
+C:\Users\ADM448386944\Downloads\KledijModule_dockerComposeAdded\ProjectCore\bin\Debug\net8.0\ProjectCore.runtimeconfig.json
+C:\Users\ADM448386944\Downloads\KledijModule_dockerComposeAdded\ProjectCore\bin\Debug\net8.0\ProjectCore.dll
+C:\Users\ADM448386944\Downloads\KledijModule_dockerComposeAdded\ProjectCore\bin\Debug\net8.0\ProjectCore.pdb
+C:\Users\ADM448386944\Downloads\KledijModule_dockerComposeAdded\ProjectCore\obj\Debug\net8.0\ProjectCore.csproj.AssemblyReference.cache
+C:\Users\ADM448386944\Downloads\KledijModule_dockerComposeAdded\ProjectCore\obj\Debug\net8.0\ProjectCore.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ADM448386944\Downloads\KledijModule_dockerComposeAdded\ProjectCore\obj\Debug\net8.0\ProjectCore.AssemblyInfoInputs.cache
+C:\Users\ADM448386944\Downloads\KledijModule_dockerComposeAdded\ProjectCore\obj\Debug\net8.0\ProjectCore.AssemblyInfo.cs
+C:\Users\ADM448386944\Downloads\KledijModule_dockerComposeAdded\ProjectCore\obj\Debug\net8.0\ProjectCore.csproj.CoreCompileInputs.cache
+C:\Users\ADM448386944\Downloads\KledijModule_dockerComposeAdded\ProjectCore\obj\Debug\net8.0\ProjectCore.dll
+C:\Users\ADM448386944\Downloads\KledijModule_dockerComposeAdded\ProjectCore\obj\Debug\net8.0\refint\ProjectCore.dll
+C:\Users\ADM448386944\Downloads\KledijModule_dockerComposeAdded\ProjectCore\obj\Debug\net8.0\ProjectCore.pdb
+C:\Users\ADM448386944\Downloads\KledijModule_dockerComposeAdded\ProjectCore\obj\Debug\net8.0\ProjectCore.genruntimeconfig.cache
+C:\Users\ADM448386944\Downloads\KledijModule_dockerComposeAdded\ProjectCore\obj\Debug\net8.0\ref\ProjectCore.dll

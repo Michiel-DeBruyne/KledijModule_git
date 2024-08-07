@@ -1,0 +1,39 @@
+﻿@model OrderItemsStatusCountListViewComponent.OrderItemSummaryListViewModel
+
+<div class="card">
+    <h5 class="card-header text-center">Openstaande bestellingen</h5>
+    <div class="card-body">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Status</th>
+                    <th>Count</th>
+                </tr>
+            </thead>
+            <tbody>
+                @if (!string.IsNullOrEmpty(Model.Error))
+                {
+                    <tr class="alert-warning text-center">
+                        <td colspan="2">@Model.Error</td>
+                    </tr>
+                }
+                else
+                {
+                    <tr>
+                        <td>Open</td>
+                        <td>@Model.OpenCount</td>
+                    </tr>
+                    <tr>
+                        <td>Besteld</td>
+                        <td>@Model.BesteldCount</td>
+                    </tr>
+                    <tr>
+                        <td>Op te halen bij logistiek</td>
+                        <td>@Model.OpTeHalenCount</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+
+    </div>
+</div>

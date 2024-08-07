@@ -1,0 +1,7 @@
+﻿@model IndexModel
+
+        @foreach (var product in Model.ProductenList)
+        {
+            <partial name="_ProductCard" model="@product" />
+        }
+

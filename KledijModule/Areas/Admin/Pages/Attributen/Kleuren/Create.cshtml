@@ -1,0 +1,23 @@
+﻿@page
+@using KledijModule.Areas.Admin.Pages.Attributen.Kleuren
+@model  CreateModel
+
+@{
+    ViewData["Title"] = "Create Kleur";
+}
+
+<h1>Nieuwe kleur toevoegen</h1>
+
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="All" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Color.Kleur" class="control-label"></label>
+                <input asp-for="Color.Kleur" class="form-control" autofocus />
+                <span asp-validation-for="Color.Kleur" class="text-danger"></span>
+            </div>
+            <button type="submit" class="btn btn-primary">Opslaan</button>
+        </form>
+    </div>
+</div>

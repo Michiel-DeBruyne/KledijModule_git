@@ -1,0 +1,85 @@
+﻿@page
+@using KledijModule.Areas.Admin.Pages.Catalogus.Producten
+@* TODO: Dit creeert op zich nog een directe link met het core project wat niet ideaal is, maar voor nu is het ok. Nodig voor enumselectlist van geslachten *@
+@using ProjectCore.Domain.Entities.Catalogus
+@model CreateModel
+@{
+}
+
+<div class="row">
+    <div class="col-md-12">
+        <form method="post">
+            <div id="accordion">
+
+                <div class="card mb-3 ">
+
+                    <div class="card-header">
+                        <h2 class="mb-0 d-grid">
+                            <button class="btn btn-light text-start collapsed p-3 rounded-0 border-bottom-custom" type="button" data-bs-toggle="collapse" data-bs-target="#info" aria-expanded="false" aria-controls="info">
+                                <i class="fas fa-info"></i>
+                                Product info
+                            </button>
+                        </h2>
+                    </div>
+
+                    <div id="info" class="collapse show p-2">
+                        <div asp-validation-summary="All" class="text-danger"></div>
+                        <div class="form-group">
+                            <label asp-for="Product.Naam" class="control-label"></label>
+                            <input asp-for="Product.Naam" class="form-control" autofocus />
+                            <span asp-validation-for="Product.Naam" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="Product.Beschrijving" class="control-label"></label>
+                            <input asp-for="Product.Beschrijving" class="form-control" />
+                            <span asp-validation-for="Product.Beschrijving" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="Product.Prijs" class="control-label"></label>
+                            <input asp-for="Product.Prijs" class="form-control" />
+                            <span asp-validation-for="Product.Prijs" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="Product.ArtikelNummer" class="control-label"></label>
+                            <input asp-for="Product.ArtikelNummer" class="form-control" />
+                            <span asp-validation-for="Product.ArtikelNummer" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="Product.CategorieId" class="control-label"></label>
+                            <select asp-for="Product.CategorieId" class="form-control" asp-items="ViewBag.Categories"></select>
+                            <span asp-validation-for="Product.CategorieId" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="Product.Geslacht" class="control-label"></label>
+                            <select asp-for="Product.Geslacht" class="form-control" asp-items="Html.GetEnumSelectList<Geslacht>()"></select>
+                            <span asp-validation-for="Product.Geslacht" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-check-label">
+                                <input class="form-check-input" asp-for="Product.Beschikbaar" /> @Html.DisplayNameFor(model => model.Product.Beschikbaar)
+                            </label>
+                        </div>
+                        <br/>
+                         <div class="form-group">
+                            <fieldset>
+                                <legend>Vervangingstermijn</legend>
+                                <div class="form-group">
+                                    <label asp-for="Product.MaxAantalBestelbaar" class="control-label"></label>
+                                    <input asp-for="Product.MaxAantalBestelbaar" class="form-control" />
+                                    <span asp-validation-for="Product.MaxAantalBestelbaar" class="text-danger"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label asp-for="Product.PerAantalJaar" class="control-label"></label>
+                                    <input asp-for="Product.PerAantalJaar" class="form-control" />
+                                    <span asp-validation-for="Product.PerAantalJaar" class="text-danger"></span>
+                                </div>
+                            </fieldset>
+                         </div>
+
+                         <br />
+                        <div class="form-group">
+                            <input type="submit" value="Opslaan" class="btn btn-dark" />
+                        </div>
+        </form>
+    </div>
+</div>

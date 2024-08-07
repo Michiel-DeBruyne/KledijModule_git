@@ -1,0 +1,43 @@
+﻿@page
+@model IndexModel
+@{
+}
+<div class="row">
+    <div class="col" id="categories" hx-get="@Url.Page("","CategoriesList")" hx-trigger="load" hx-target="#categories" hx-swap="innerHTML">
+        <img id="loading" class="htmx-indicator" src="~/img/loading.svg" alt="search" />
+    </div>
+
+    <div class="col-10">
+        <div class="card p-4 mb-3">
+        <form method="get">
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="search-addon">
+                    <img id="loading" class="htmx-indicator m-1" src="~/Images/bars.svg" alt="search"/>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </span>
+                <input type="text"
+                       asp-for="Query"
+                       id="query"
+                       autocomplete="off"
+                       hx-get="@Url.Page("Index")"
+                       hx-target="#results"
+                       hx-trigger="keyup changed delay:500ms"
+                       hx-indicator="#loading"
+                       placeholder="Search"
+                       class="form-control"
+                       aria-label="Username"
+                       aria-describedby="search-addon">
+                <input type="hidden" asp-for="Categorie" />
+            </div>
+        </form>
+
+            <section class="text-center" id="products">
+                <div class="row" id="results">
+                    <partial name="_ProductenLijst" model="@Model" />
+                </div>
+            </section>
+        </div>
+    </div>
+</div>
+
+

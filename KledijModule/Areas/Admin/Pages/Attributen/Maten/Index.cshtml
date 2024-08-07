@@ -1,0 +1,38 @@
+﻿@page
+@using KledijModule.Areas.Admin.Pages.Attributen.Maten
+@model  IndexModel
+@{
+}
+
+<div class="d-flex justify-content-end my-3 clearfix">
+    <h3 class="me-auto">Maten</h3>
+    <a asp-page="Create" class="btn btn-success me-1"><i class="fa-solid fa-plus"></i> Maat Toevoegen</a>
+    <a asp-page="#" class="btn btn-danger me-1"><i class="fa-solid fa-trash"></i> Verwijder (selected)</a>
+</div>
+
+<div class="container">
+    <div class="table-responsive">
+        <table class="table align-middle text-center">
+            <thead class="thead-dark">
+                <tr>
+                    <th>Maat</th>
+                    <th>Acties</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model.Maten)
+                {
+                    <tr>
+                        <td>@item.Maat</td>
+                        <td>
+                            <a class="btn btn-default" asp-page="./Edit" asp-route-Id="@item.Id"><i class="fa-solid fa-pen-to-square"></i> Edit</a> |
+                            <form asp-page="./Delete" asp-route-MatenToDelete="@item.Id" method="post" style="display: inline;"> @* asp-route-... moet overeenkomen met property binnen de command *@
+                                <button type="submit" class="btn btn-default" onclick="return confirm('Bent u zeker dat u dit item wil verwijderen?')"><i class="fa-solid fa-trash"></i> Delete</button>@* TODO: Dit type confirm behouden of een tussenpagina??*@
+                            </form>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

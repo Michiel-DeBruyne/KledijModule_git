@@ -1,0 +1,43 @@
+﻿@page
+@using KledijModule.Areas.Admin.Pages.Catalogus.Producten
+@model MapSizeToProductModel
+@{
+    Layout = "_AdminPopupLayout";
+}
+@if (Model.RefreshPage)
+{
+    <script>
+        try {
+            // Attempt to reload the opener window
+            if (window.opener) {
+                window.opener.location.reload();
+            }
+        } catch (error) {
+            // Log the error to the console
+            console.error("Error reloading opener window:", error);
+        } finally {
+            // Close the current window
+            window.close();
+        }
+
+    </script>
+}
+<div class="row">
+    <div class="col-md-12">
+        <form method="post">
+            <div class="clearfix mb-3">
+                <h3 class="float-start">@Model.MapSizeToProductViewModel.ProductNaam</h3>
+                <div class="float-end">
+                    <button type="submit" class="btn btn-outline-dark float-end">Submit</button>
+                </div>
+            </div>
+            <input type="hidden" asp-for="Data.Product" value="@Model.MapSizeToProductViewModel.ProductId"/>
+            <input type="hidden" asp-for="Data.ProductNaam" value="@Model.MapSizeToProductViewModel.ProductNaam" />
+            <div class="form-group">
+                <label asp-for="Data.Maten" class="control-label"></label>
+                <select asp-for="Data.Maten" class="form-control" asp-items="Model.MapSizeToProductViewModel.Maten.Select(maat => new SelectListItem { Value = maat.Id.ToString(), Text = maat.Maat })" multiple></select>
+                <span asp-validation-for="Data.Maten" class="text-danger"></span>
+            </div>
+        </form>
+    </div>
+</div>

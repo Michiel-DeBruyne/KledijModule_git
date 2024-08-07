@@ -1,0 +1,29 @@
+﻿@using KledijModule.Areas.Admin.Pages.Shared.Components.KleurenForProductTable
+@model KleurenForProductTableViewComponent.KleurenForProductViewModel
+@{
+}
+
+<table class="table align-middle text-center">
+    <thead>
+        <tr>
+            <th>Naam</th>
+            <th>Acties</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.Kleuren)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Kleur)
+                </td>
+                <td>
+                    <form hx-post="@Url.Page("DeleteColorFromProduct")" hx-vals='{"ProductId": "@Model.ProductId", "KleurId": "@item.Id"}' hx-target="#kleuren">
+                        @Html.AntiForgeryToken()
+                        <button type="submit" class="btn btn-default"><i class="fa-solid fa-trash"></i> Delete</button>
+                    </form>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

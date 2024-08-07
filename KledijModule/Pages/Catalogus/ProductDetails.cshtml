@@ -1,0 +1,40 @@
+﻿@page
+@model ProductDetailsModel
+@{
+    ViewData["Title"] = "ProductDetails";
+}
+
+<h2>@Model.Product.Naam</h2>
+
+<h3><span class="fw-bold">@Model.Product.Prijs</span> punten</h3>
+
+<form method="post">
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+    <input type="hidden" asp-for="ShoppingCartItem.ProductId" value="@Model.Product.Id" />
+
+    <div class="mb-2">
+        <label asp-for="ShoppingCartItem.Maat"></label>
+        <select asp-for="ShoppingCartItem.Maat" asp-items="@(new SelectList(Model.Product.Maten,"Maat","Maat"))"></select>
+        <span asp-validation-for="ShoppingCartItem.Maat" class="text-danger"></span>
+    </div>
+    <div class="mb-2">
+        <label asp-for="ShoppingCartItem.Kleur"></label>
+        <select asp-for="ShoppingCartItem.Kleur" asp-items="@(new SelectList(Model.Product.Kleuren,"Kleur","Kleur"))"></select>
+        <span asp-validation-for="ShoppingCartItem.Kleur" class="text-danger"></span>
+    </div>
+    <div class="mb-2">
+        <label asp-for="ShoppingCartItem.Hoeveelheid"></label>
+        <input type="number" asp-for="ShoppingCartItem.Hoeveelheid" min="1"  max="99"/>
+        <span asp-validation-for="ShoppingCartItem.Hoeveelheid" class="text-danger"></span>
+    </div>
+    <div class="mb-2">
+        <label asp-for="ShoppingCartItem.Opmerkingen"></label>
+        <textarea asp-for="ShoppingCartItem.Opmerkingen" class="form-control" rows="4"></textarea>
+        <span asp-validation-for="ShoppingCartItem.Opmerkingen" class="text-danger"></span>
+    </div>
+    <div class="d-grid">
+        <button type="submit" class="btn btn-dark btn-lg"><i class="fa fa-shopping-cart"></i> Voeg toe aan winkelkar!</button>
+    </div>
+</form>
+
+

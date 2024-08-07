@@ -1,0 +1,210 @@
+C:\Users\ADM448386944\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\bin\Debug\KledijModule.deps.json
+C:\Users\ADM448386944\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\bin\Debug\KledijModule.runtimeconfig.json
+C:\Users\ADM448386944\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\bin\Debug\appsettings.Development.json
+C:\Users\ADM448386944\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\bin\Debug\appsettings.json
+C:\Users\ADM448386944\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\bin\Debug\KledijModule.staticwebassets.runtime.json
+C:\Users\ADM448386944\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\bin\Debug\KledijModule.exe
+C:\Users\ADM448386944\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\bin\Debug\KledijModule.dll
+C:\Users\ADM448386944\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\bin\Debug\ProjectCore.dll
+C:\Users\ADM448386944\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\bin\Debug\MediatR.dll
+C:\Users\ADM448386944\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\bin\Debug\Htmx.TagHelpers.dll
+C:\Users\ADM448386944\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\bin\Debug\Microsoft.Identity.Web.dll
+C:\Users\ADM448386944\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\bin\Debug\Microsoft.Graph.dll
+C:\Users\ADM448386944\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\bin\Debug\Microsoft.Kiota.Abstractions.dll
+C:\Users\ADM448386944\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\bin\Debug\Htmx.dll
+C:\Users\ADM448386944\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\bin\Debug\Microsoft.Identity.Web.TokenAcquisition.dll
+C:\Users\ADM448386944\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\bin\Debug\Microsoft.Identity.Web.GraphServiceClient.dll
+C:\Users\ADM448386944\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\bin\Debug\Microsoft.Identity.Web.TokenCache.dll
+C:\Users\ADM448386944\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\bin\Debug\Microsoft.Identity.Web.UI.dll
+C:\Users\ADM448386944\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\bin\Debug\Microsoft.EntityFrameworkCore.dll
+C:\Users\ADM448386944\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\bin\Debug\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\ADM448386944\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\bin\Debug\Mapster.dll
+C:\Users\ADM448386944\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\bin\Debug\MediatR.Contracts.dll
+C:\Users\ADM448386944\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\bin\Debug\FluentValidation.dll
+C:\Users\ADM448386944\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\bin\Debug\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\ADM448386944\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\bin\Debug\Mapster.DependencyInjection.dll
+C:\Users\ADM448386944\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\bin\Debug\FluentValidation.DependencyInjectionExtensions.dll
+C:\Users\ADM448386944\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\bin\Debug\Newtonsoft.Json.dll
+C:\Users\ADM448386944\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\bin\Debug\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\ADM448386944\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\bin\Debug\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\ADM448386944\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\bin\Debug\System.Text.Json.dll
+C:\Users\ADM448386944\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\bin\Debug\Microsoft.Identity.Client.dll
+C:\Users\ADM448386944\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\bin\Debug\Microsoft.Extensions.Options.dll
+C:\Users\ADM448386944\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\bin\Debug\Azure.Core.dll
+C:\Users\ADM448386944\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\bin\Debug\Microsoft.IdentityModel.Tokens.dll
+C:\Users\ADM448386944\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\bin\Debug\Microsoft.Identity.Abstractions.dll
+C:\Users\ADM448386944\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\bin\Debug\Microsoft.IdentityModel.Validators.dll
+C:\Users\ADM448386944\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\bin\Debug\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\ADM448386944\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\bin\Debug\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\ADM448386944\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\bin\Debug\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\ADM448386944\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\bin\Debug\Microsoft.Identity.Web.Diagnostics.dll
+C:\Users\ADM448386944\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\bin\Debug\Microsoft.IdentityModel.Protocols.dll
+C:\Users\ADM448386944\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\bin\Debug\Microsoft.Extensions.Identity.Core.dll
+C:\Users\ADM448386944\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\bin\Debug\Microsoft.Identity.Web.Certificate.dll
+C:\Users\ADM448386944\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\bin\Debug\Microsoft.Graph.Core.dll
+C:\Users\ADM448386944\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\bin\Debug\Microsoft.Kiota.Serialization.Json.dll
+C:\Users\ADM448386944\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\bin\Debug\Microsoft.Kiota.Serialization.Text.dll
+C:\Users\ADM448386944\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\bin\Debug\Microsoft.Kiota.Serialization.Form.dll
+C:\Users\ADM448386944\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\bin\Debug\Microsoft.Kiota.Serialization.Multipart.dll
+C:\Users\ADM448386944\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\bin\Debug\Microsoft.Kiota.Authentication.Azure.dll
+C:\Users\ADM448386944\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\bin\Debug\Std.UriTemplate.dll
+C:\Users\ADM448386944\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\bin\Debug\Microsoft.Identity.Web.Certificateless.dll
+C:\Users\ADM448386944\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\bin\Debug\Microsoft.IdentityModel.Logging.dll
+C:\Users\ADM448386944\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\bin\Debug\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\ADM448386944\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\bin\Debug\Microsoft.IdentityModel.LoggingExtensions.dll
+C:\Users\ADM448386944\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\bin\Debug\Mapster.Core.dll
+C:\Users\ADM448386944\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\bin\Debug\Microsoft.Data.SqlClient.dll
+C:\Users\ADM448386944\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\bin\Debug\System.Memory.Data.dll
+C:\Users\ADM448386944\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\bin\Debug\System.ClientModel.dll
+C:\Users\ADM448386944\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\bin\Debug\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\ADM448386944\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\bin\Debug\Azure.Identity.dll
+C:\Users\ADM448386944\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\bin\Debug\Azure.Security.KeyVault.Certificates.dll
+C:\Users\ADM448386944\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\bin\Debug\Azure.Security.KeyVault.Secrets.dll
+C:\Users\ADM448386944\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\bin\Debug\Microsoft.Kiota.Http.HttpClientLibrary.dll
+C:\Users\ADM448386944\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\bin\Debug\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\ADM448386944\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\bin\Debug\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\ADM448386944\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\bin\Debug\KledijModule.pdb
+C:\Users\ADM448386944\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\bin\Debug\ProjectCore.pdb
+C:\Users\ADM448386944\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\obj\Debug\docker-compose.dcproj.AssemblyReference.cache
+C:\Users\ADM448386944\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\obj\Debug\docker-compose.dcproj.CoreCompileInputs.cache
+C:\Users\ADM448386944\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\obj\Debug\docker-compose.dcproj.CopyComplete
+C:\Users\mdebr\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\bin\Debug\appsettings.Development.json
+C:\Users\mdebr\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\bin\Debug\appsettings.json
+C:\Users\mdebr\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\bin\Debug\KledijModule.deps.json
+C:\Users\mdebr\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\bin\Debug\KledijModule.runtimeconfig.json
+C:\Users\mdebr\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\bin\Debug\KledijModule.staticwebassets.runtime.json
+C:\Users\mdebr\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\bin\Debug\KledijModule.exe
+C:\Users\mdebr\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\bin\Debug\KledijModule.dll
+C:\Users\mdebr\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\bin\Debug\ProjectCore.dll
+C:\Users\mdebr\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\bin\Debug\Microsoft.AspNetCore.Authentication.OpenIdConnect.dll
+C:\Users\mdebr\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\bin\Debug\MediatR.dll
+C:\Users\mdebr\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\bin\Debug\Htmx.TagHelpers.dll
+C:\Users\mdebr\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\bin\Debug\Microsoft.Identity.Web.dll
+C:\Users\mdebr\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\bin\Debug\Microsoft.Graph.dll
+C:\Users\mdebr\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\bin\Debug\Microsoft.Kiota.Abstractions.dll
+C:\Users\mdebr\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\bin\Debug\Htmx.dll
+C:\Users\mdebr\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\bin\Debug\Microsoft.Identity.Web.TokenAcquisition.dll
+C:\Users\mdebr\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\bin\Debug\Microsoft.Identity.Web.GraphServiceClient.dll
+C:\Users\mdebr\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\bin\Debug\Microsoft.Identity.Web.TokenCache.dll
+C:\Users\mdebr\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\bin\Debug\Microsoft.Extensions.Options.dll
+C:\Users\mdebr\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\bin\Debug\Microsoft.Identity.Web.UI.dll
+C:\Users\mdebr\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\bin\Debug\Microsoft.EntityFrameworkCore.dll
+C:\Users\mdebr\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\bin\Debug\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\mdebr\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\bin\Debug\Mapster.dll
+C:\Users\mdebr\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\bin\Debug\MediatR.Contracts.dll
+C:\Users\mdebr\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\bin\Debug\FluentValidation.dll
+C:\Users\mdebr\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\bin\Debug\Mapster.DependencyInjection.dll
+C:\Users\mdebr\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\bin\Debug\FluentValidation.DependencyInjectionExtensions.dll
+C:\Users\mdebr\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\bin\Debug\Newtonsoft.Json.dll
+C:\Users\mdebr\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\bin\Debug\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\mdebr\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\bin\Debug\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\mdebr\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\bin\Debug\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\mdebr\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\bin\Debug\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\mdebr\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\bin\Debug\System.Text.Json.dll
+C:\Users\mdebr\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\bin\Debug\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\mdebr\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\bin\Debug\Microsoft.IdentityModel.Tokens.dll
+C:\Users\mdebr\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\bin\Debug\Microsoft.IdentityModel.Protocols.dll
+C:\Users\mdebr\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\bin\Debug\Microsoft.Identity.Client.dll
+C:\Users\mdebr\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\bin\Debug\Azure.Core.dll
+C:\Users\mdebr\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\bin\Debug\Microsoft.Identity.Abstractions.dll
+C:\Users\mdebr\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\bin\Debug\Microsoft.IdentityModel.Validators.dll
+C:\Users\mdebr\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\bin\Debug\Microsoft.Identity.Web.Diagnostics.dll
+C:\Users\mdebr\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\bin\Debug\Microsoft.Extensions.Identity.Core.dll
+C:\Users\mdebr\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\bin\Debug\Microsoft.Identity.Web.Certificate.dll
+C:\Users\mdebr\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\bin\Debug\Microsoft.Graph.Core.dll
+C:\Users\mdebr\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\bin\Debug\Microsoft.Kiota.Serialization.Json.dll
+C:\Users\mdebr\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\bin\Debug\Microsoft.Kiota.Serialization.Text.dll
+C:\Users\mdebr\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\bin\Debug\Microsoft.Kiota.Serialization.Form.dll
+C:\Users\mdebr\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\bin\Debug\Microsoft.Kiota.Serialization.Multipart.dll
+C:\Users\mdebr\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\bin\Debug\Microsoft.Kiota.Authentication.Azure.dll
+C:\Users\mdebr\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\bin\Debug\Std.UriTemplate.dll
+C:\Users\mdebr\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\bin\Debug\Microsoft.Identity.Web.Certificateless.dll
+C:\Users\mdebr\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\bin\Debug\Microsoft.IdentityModel.Logging.dll
+C:\Users\mdebr\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\bin\Debug\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\mdebr\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\bin\Debug\Microsoft.IdentityModel.LoggingExtensions.dll
+C:\Users\mdebr\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\bin\Debug\Mapster.Core.dll
+C:\Users\mdebr\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\bin\Debug\Microsoft.Data.SqlClient.dll
+C:\Users\mdebr\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\bin\Debug\System.Memory.Data.dll
+C:\Users\mdebr\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\bin\Debug\System.ClientModel.dll
+C:\Users\mdebr\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\bin\Debug\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\mdebr\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\bin\Debug\Azure.Identity.dll
+C:\Users\mdebr\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\bin\Debug\Azure.Security.KeyVault.Certificates.dll
+C:\Users\mdebr\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\bin\Debug\Azure.Security.KeyVault.Secrets.dll
+C:\Users\mdebr\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\bin\Debug\Microsoft.Kiota.Http.HttpClientLibrary.dll
+C:\Users\mdebr\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\bin\Debug\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\mdebr\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\bin\Debug\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\mdebr\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\bin\Debug\KledijModule.pdb
+C:\Users\mdebr\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\bin\Debug\ProjectCore.pdb
+C:\Users\mdebr\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\obj\Debug\docker-compose.dcproj.AssemblyReference.cache
+C:\Users\mdebr\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\obj\Debug\docker-compose.dcproj.CoreCompileInputs.cache
+C:\Users\mdebr\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\obj\Debug\docker-c.35A3FFBA.Up2Date
+C:\Users\ADM448386944\Downloads\KledijModule_dockerComposeAdded\bin\Debug\appsettings.Development.json
+C:\Users\ADM448386944\Downloads\KledijModule_dockerComposeAdded\bin\Debug\appsettings.json
+C:\Users\ADM448386944\Downloads\KledijModule_dockerComposeAdded\bin\Debug\KledijModule.deps.json
+C:\Users\ADM448386944\Downloads\KledijModule_dockerComposeAdded\bin\Debug\KledijModule.runtimeconfig.json
+C:\Users\ADM448386944\Downloads\KledijModule_dockerComposeAdded\bin\Debug\KledijModule.staticwebassets.runtime.json
+C:\Users\ADM448386944\Downloads\KledijModule_dockerComposeAdded\bin\Debug\KledijModule.exe
+C:\Users\ADM448386944\Downloads\KledijModule_dockerComposeAdded\bin\Debug\KledijModule.dll
+C:\Users\ADM448386944\Downloads\KledijModule_dockerComposeAdded\bin\Debug\ProjectCore.dll
+C:\Users\ADM448386944\Downloads\KledijModule_dockerComposeAdded\bin\Debug\Microsoft.AspNetCore.Authentication.OpenIdConnect.dll
+C:\Users\ADM448386944\Downloads\KledijModule_dockerComposeAdded\bin\Debug\MediatR.dll
+C:\Users\ADM448386944\Downloads\KledijModule_dockerComposeAdded\bin\Debug\Htmx.TagHelpers.dll
+C:\Users\ADM448386944\Downloads\KledijModule_dockerComposeAdded\bin\Debug\Microsoft.Identity.Web.dll
+C:\Users\ADM448386944\Downloads\KledijModule_dockerComposeAdded\bin\Debug\Microsoft.Graph.dll
+C:\Users\ADM448386944\Downloads\KledijModule_dockerComposeAdded\bin\Debug\Microsoft.Kiota.Abstractions.dll
+C:\Users\ADM448386944\Downloads\KledijModule_dockerComposeAdded\bin\Debug\Htmx.dll
+C:\Users\ADM448386944\Downloads\KledijModule_dockerComposeAdded\bin\Debug\Microsoft.Identity.Web.TokenAcquisition.dll
+C:\Users\ADM448386944\Downloads\KledijModule_dockerComposeAdded\bin\Debug\Microsoft.Identity.Web.GraphServiceClient.dll
+C:\Users\ADM448386944\Downloads\KledijModule_dockerComposeAdded\bin\Debug\Microsoft.Identity.Web.TokenCache.dll
+C:\Users\ADM448386944\Downloads\KledijModule_dockerComposeAdded\bin\Debug\Microsoft.Extensions.Options.dll
+C:\Users\ADM448386944\Downloads\KledijModule_dockerComposeAdded\bin\Debug\Microsoft.Identity.Web.UI.dll
+C:\Users\ADM448386944\Downloads\KledijModule_dockerComposeAdded\bin\Debug\Microsoft.EntityFrameworkCore.dll
+C:\Users\ADM448386944\Downloads\KledijModule_dockerComposeAdded\bin\Debug\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\ADM448386944\Downloads\KledijModule_dockerComposeAdded\bin\Debug\Mapster.dll
+C:\Users\ADM448386944\Downloads\KledijModule_dockerComposeAdded\bin\Debug\MediatR.Contracts.dll
+C:\Users\ADM448386944\Downloads\KledijModule_dockerComposeAdded\bin\Debug\FluentValidation.dll
+C:\Users\ADM448386944\Downloads\KledijModule_dockerComposeAdded\bin\Debug\Mapster.DependencyInjection.dll
+C:\Users\ADM448386944\Downloads\KledijModule_dockerComposeAdded\bin\Debug\FluentValidation.DependencyInjectionExtensions.dll
+C:\Users\ADM448386944\Downloads\KledijModule_dockerComposeAdded\bin\Debug\Newtonsoft.Json.dll
+C:\Users\ADM448386944\Downloads\KledijModule_dockerComposeAdded\bin\Debug\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\ADM448386944\Downloads\KledijModule_dockerComposeAdded\bin\Debug\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\ADM448386944\Downloads\KledijModule_dockerComposeAdded\bin\Debug\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\ADM448386944\Downloads\KledijModule_dockerComposeAdded\bin\Debug\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\ADM448386944\Downloads\KledijModule_dockerComposeAdded\bin\Debug\System.Text.Json.dll
+C:\Users\ADM448386944\Downloads\KledijModule_dockerComposeAdded\bin\Debug\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\ADM448386944\Downloads\KledijModule_dockerComposeAdded\bin\Debug\Microsoft.IdentityModel.Tokens.dll
+C:\Users\ADM448386944\Downloads\KledijModule_dockerComposeAdded\bin\Debug\Microsoft.IdentityModel.Protocols.dll
+C:\Users\ADM448386944\Downloads\KledijModule_dockerComposeAdded\bin\Debug\Microsoft.Identity.Client.dll
+C:\Users\ADM448386944\Downloads\KledijModule_dockerComposeAdded\bin\Debug\Azure.Core.dll
+C:\Users\ADM448386944\Downloads\KledijModule_dockerComposeAdded\bin\Debug\Microsoft.Identity.Abstractions.dll
+C:\Users\ADM448386944\Downloads\KledijModule_dockerComposeAdded\bin\Debug\Microsoft.IdentityModel.Validators.dll
+C:\Users\ADM448386944\Downloads\KledijModule_dockerComposeAdded\bin\Debug\Microsoft.Identity.Web.Diagnostics.dll
+C:\Users\ADM448386944\Downloads\KledijModule_dockerComposeAdded\bin\Debug\Microsoft.Extensions.Identity.Core.dll
+C:\Users\ADM448386944\Downloads\KledijModule_dockerComposeAdded\bin\Debug\Microsoft.Identity.Web.Certificate.dll
+C:\Users\ADM448386944\Downloads\KledijModule_dockerComposeAdded\bin\Debug\Microsoft.Graph.Core.dll
+C:\Users\ADM448386944\Downloads\KledijModule_dockerComposeAdded\bin\Debug\Microsoft.Kiota.Serialization.Json.dll
+C:\Users\ADM448386944\Downloads\KledijModule_dockerComposeAdded\bin\Debug\Microsoft.Kiota.Serialization.Text.dll
+C:\Users\ADM448386944\Downloads\KledijModule_dockerComposeAdded\bin\Debug\Microsoft.Kiota.Serialization.Form.dll
+C:\Users\ADM448386944\Downloads\KledijModule_dockerComposeAdded\bin\Debug\Microsoft.Kiota.Serialization.Multipart.dll
+C:\Users\ADM448386944\Downloads\KledijModule_dockerComposeAdded\bin\Debug\Microsoft.Kiota.Authentication.Azure.dll
+C:\Users\ADM448386944\Downloads\KledijModule_dockerComposeAdded\bin\Debug\Std.UriTemplate.dll
+C:\Users\ADM448386944\Downloads\KledijModule_dockerComposeAdded\bin\Debug\Microsoft.Identity.Web.Certificateless.dll
+C:\Users\ADM448386944\Downloads\KledijModule_dockerComposeAdded\bin\Debug\Microsoft.IdentityModel.Logging.dll
+C:\Users\ADM448386944\Downloads\KledijModule_dockerComposeAdded\bin\Debug\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\ADM448386944\Downloads\KledijModule_dockerComposeAdded\bin\Debug\Microsoft.IdentityModel.LoggingExtensions.dll
+C:\Users\ADM448386944\Downloads\KledijModule_dockerComposeAdded\bin\Debug\Mapster.Core.dll
+C:\Users\ADM448386944\Downloads\KledijModule_dockerComposeAdded\bin\Debug\Microsoft.Data.SqlClient.dll
+C:\Users\ADM448386944\Downloads\KledijModule_dockerComposeAdded\bin\Debug\System.Memory.Data.dll
+C:\Users\ADM448386944\Downloads\KledijModule_dockerComposeAdded\bin\Debug\System.ClientModel.dll
+C:\Users\ADM448386944\Downloads\KledijModule_dockerComposeAdded\bin\Debug\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\ADM448386944\Downloads\KledijModule_dockerComposeAdded\bin\Debug\Azure.Identity.dll
+C:\Users\ADM448386944\Downloads\KledijModule_dockerComposeAdded\bin\Debug\Azure.Security.KeyVault.Certificates.dll
+C:\Users\ADM448386944\Downloads\KledijModule_dockerComposeAdded\bin\Debug\Azure.Security.KeyVault.Secrets.dll
+C:\Users\ADM448386944\Downloads\KledijModule_dockerComposeAdded\bin\Debug\Microsoft.Kiota.Http.HttpClientLibrary.dll
+C:\Users\ADM448386944\Downloads\KledijModule_dockerComposeAdded\bin\Debug\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\ADM448386944\Downloads\KledijModule_dockerComposeAdded\bin\Debug\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\ADM448386944\Downloads\KledijModule_dockerComposeAdded\bin\Debug\KledijModule.pdb
+C:\Users\ADM448386944\Downloads\KledijModule_dockerComposeAdded\bin\Debug\ProjectCore.pdb
+C:\Users\ADM448386944\Downloads\KledijModule_dockerComposeAdded\obj\Debug\docker-compose.dcproj.AssemblyReference.cache
+C:\Users\ADM448386944\Downloads\KledijModule_dockerComposeAdded\obj\Debug\docker-compose.dcproj.CoreCompileInputs.cache
+C:\Users\ADM448386944\Downloads\KledijModule_dockerComposeAdded\obj\Debug\docker-compose.dcproj.CopyComplete

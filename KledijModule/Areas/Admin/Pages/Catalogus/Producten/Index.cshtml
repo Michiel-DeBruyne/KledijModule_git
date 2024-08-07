@@ -1,0 +1,88 @@
+﻿@page
+@using KledijModule.Areas.Admin.Pages.Catalogus.Producten
+@model IndexModel
+@{
+}
+
+<div class="form-responsive">
+    <form  method="post">
+        <div class="d-flex justify-content-end my-3 clearfix">
+            <h3 class="me-auto">Producten</h3>
+
+            <a asp-page="Create" class="btn btn-success me-1"><i class="fa-solid fa-plus"></i> Artikel Toevoegen</a>
+            <button class="btn btn-info me-1" asp-page="./Deactiveer"><i class="fa-solid fa-circle-check"></i> (De)activeer (selected)</button>
+            <button  class="btn btn-danger me-1" asp-page="./Delete"><i class="fa-solid fa-trash"></i> Verwijder (selected)</button>
+        </div>
+        <table class="table align-middle text-center">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Producten[0].Fotos)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Producten[0].Naam)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Producten[0].Categorie)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Producten[0].Prijs)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Producten[0].Geslacht)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Producten[0].Beschikbaar)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Producten[0].DisplayVervangingsTermijn)
+                    </th>
+                    <th>Acties</th>
+                </tr>
+            </thead>
+            <tbody>
+
+                @foreach (var item in Model.Producten)
+                {
+                    <tr>
+                        <td>
+                            <input type="checkbox" name="Command.Products" class="product-checkbox" value="@item.Id" />
+                        </td>
+                        @if (item.Fotos.Count > 0)
+                        {
+                            <td>
+                                <img src="@item.Fotos[0].ImageUrl" style="width:75px; height:75px" />
+                            </td>
+                        }
+                        else
+                        {
+                            <td></td>
+                        }
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Naam)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Categorie.Naam)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Prijs)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Geslacht)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Beschikbaar)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.DisplayVervangingsTermijn)
+                        </td>
+                        <td>
+                            <a asp-page="./Edit" class="btn btn-default" asp-route-id="@item.Id"><i class="fa-solid fa-pen-to-square"></i> Edit</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </form>
+</div>

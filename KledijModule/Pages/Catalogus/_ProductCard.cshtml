@@ -1,0 +1,18 @@
+﻿@model IndexModel.ProductenListIndexViewModel
+
+<div class="col-lg-3 col-md-6 mb-4">
+    <div class="card h-100 rounded-3 shadow">
+        <a asp-page="ProductDetails" asp-route-Id="@Model.Id" class="text-reset text-decoration-none">
+            @if (Model.Fotos.Count > 0)
+            {
+                <img src="@Model.Fotos[0].ImageUrl" class="w-100 card-img-top" style="height:200px;" />
+            }
+
+            <div class="card-body">
+                <h5 class="card-title mb-3 fw-bolder">@Model.Naam</h5>
+                <p>@Model.Categorie.Naam</p>
+                <h6 class="mb-3 fw-bolder">@Model.Prijs punten</h6>
+            </div>
+        </a>
+    </div>
+</div>

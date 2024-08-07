@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "identityapp1": {
+      "connectionInfo": "App registration: L5460 - Export DL and FMB membership, Tenant: Office 365 GPI (police.belgium.eu - Microsoft Entra ID)",
+      "type": "identityapp.default"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+﻿@model KledijModule.Areas.Admin.Pages.Orders.DetailsModel.OrderDetailsViewModel.OrderItem
+@{
+    var id = $"person-{Model.Id}";
+}
+
+<tr id="@id">
+    <td class="text-center">@Model.ProductNaam</a></td>
+    <td class="text-center">@Model.Hoeveelheid</td>
+    <td class="text-center">@Model.Prijs punten</td>
+    <td class="text-center">
+        <strong>@((Model.Hoeveelheid * Model.Prijs)) punten</strong>
+    </td>
+    <td class="text-center">@Model.OrderStatus</td>
+    <td class="text-center">
+        <button class="btn btn-default"
+                hx-get="@Url.Page("Details", "Edit", new {Model.Id})"
+                hx-swap="outerHTML"
+                hx-target="closest tr">
+            <i class="fa-solid fa-pen-to-square"></i>
+            <span>Edit</span>
+        </button>
+    </td>
+</tr>
+

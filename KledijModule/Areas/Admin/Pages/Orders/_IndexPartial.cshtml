@@ -1,0 +1,40 @@
+﻿@model KledijModule.Areas.Admin.Pages.Orders.IndexModel
+@{
+    ArgumentNullException.ThrowIfNull(Model);
+}
+<div id="tabbed-content">
+    <ul class="nav nav-tabs">
+        @foreach (var tab in Model.Items)
+        {
+            <li class="nav-item">
+                <a href="#"
+                   hx-get="@Url.Page("Index",new {tab})"
+                   hx-target="#tabbed-content"
+                   class="nav-link @Model.IsSelectedCss(tab, "active")"
+                   aria-current="@Model.IsSelectedAria(tab)">
+                    @tab
+                </a>
+            </li>
+        }
+    </ul>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Orders[0].UserNaam)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Orders[0].CreatedDate)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Orders[0].TotaalPrijs)
+                </th>
+                <th>@Html.DisplayNameFor(model => model.Orders[0].OrderStatus)</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody id="bestellingen">
+            <partial name="_OrdersSummaryList" model="@Model" />
+        </tbody>
+    </table>
+</div>

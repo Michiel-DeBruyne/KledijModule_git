@@ -1,0 +1,134 @@
+﻿@page
+@using KledijModule.Common.Authorization
+@model IndexModel
+@{
+    var validationSummaryClasses = ModelState.IsValid ? "d-none" : "text-danger alert alert-warning sticky-top";
+    bool userIsAdmin = User.IsInRole(Roles.Admin);
+}
+
+
+<h1>Checkout</h1>
+
+<div class="d-flex justify-content-between">
+    <h4>Nieuwe bestelling</h4>
+    <a href="/Winkelmand/Index" class="text-end">Terug naar mijn winkelmand</a>
+</div>
+<hr />
+<div class="row">
+    <div class="col-md-12">
+        @if (!Model.IsWebShopOpen && !userIsAdmin)
+        {
+            <div class="alert alert-warning" role="alert">
+                De webshop is momenteel gesloten. U kan uw bestellingen opvolgen onder uw account.
+            </div>
+        }
+        else
+        {
+            <form method="post">
+                <div asp-validation-summary="All" class="@validationSummaryClasses"></div>
+                <div class="form-group row">
+                    <div class="row">
+                        <label asp-for="Order.UserId" class=" col-sm-2 col-form-label fw-bolder"></label>
+                        <div class="col-sm-10">
+                            @{
+                                if (userIsAdmin)
+                                {
+                                    <input id="userNaam" asp-for="Order.UserNaam" class="form-control" />
+                                }
+                                else
+                                {
+                                    <input type="text" id="userNaam" asp-for="Order.UserNaam" readonly class="form-control-plaintext">
+                                }
+                            }
+                        </div>
+                    </div>
+                    <input type="hidden" id="userId" asp-for="Order.UserId"/>
+                </div>
+
+                <div class="form-group d-none">
+                    <label asp-for="Order.TotaalPrijs" class="control-label"></label>
+                    <input asp-for="Order.TotaalPrijs" class="form-control" value="@ViewBag.Totaal" />
+                    <span asp-validation-for="Order.TotaalPrijs" class="text-danger"></span>
+                </div>
+                <br />
+                <div class="form-group">
+                    <input type="submit" value="Plaats bestelling" class="btn btn-dark" />
+                </div>
+            </form>
+        }
+    </div>
+</div>
+<hr/>
+
+<h2> Is uw bestelling volledig? </h2>
+<table class="table table-bordered text-center">
+    <thead class="thead-light">
+        <tr>
+            <th>Naam</th>
+            <th>Hoeveelheid</th>
+            <th>Kleur</th>
+            <th>Maat</th>
+            <th>Prijs</th>
+            <th>Opmerkingen</th>
+            <th class="text-right">Subtotaal</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.ShoppingCart.ShoppingCartItems)
+        {
+            <tr>
+                <td>@item.Product.Naam</td>
+                <td>@item.Hoeveelheid</td>
+                <td>@item.Kleur</td>
+                <td>@item.Maat</td>
+                <td>@item.Product.Prijs punten</td>
+                <td>@item.Opmerkingen</td>
+                <td >
+                    @((item.Hoeveelheid * item.Product.Prijs)) punten
+                </td>
+            </tr>
+        }
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="6"><strong>Totaal:</strong></td>
+            <td>
+                <strong>@ViewBag.Totaal</strong>
+            </td>
+        </tr>
+    </tfoot>
+</table>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+    <script>     
+        $(document).ready(function () {
+            $("#userNaam").autocomplete({
+                source: function (request, response) {
+                    // https://api.jqueryui.com/autocomplete/#method-option
+                    $.ajax({
+                        url: "@Url.Page("", "UsersList")",
+                        data: { term: request.term },
+                        success: function (data) {
+                            var users = data.map(function (user) {
+                                return {
+                                    label: user.displayName,
+                                    value: user.displayName, // Set the value to displayName
+                                    id: user.id // Store the ID separately
+                                };
+                            });
+                            response(users);
+                        }
+                    });
+                },
+                minLength: 5,
+                select: function (event, ui) {
+                    $("#userId").val(ui.item.id);
+                    console.log("Selected: " + ui.item.label + " with ID " + ui.item.value);
+                }
+            });
+        });
+    </script>
+}

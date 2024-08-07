@@ -1,0 +1,40 @@
+services:
+  mssql:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: sql_server_container
+    restart: unless-stopped
+    environment: #Complete list of env variables: https://docs.microsoft.com/en-us/sql/linux/sql-server-linux-configure-environment-variables?view=sql-server-2022
+      - MSSQL_SA_PASSWORD=A&VeryComplex123Password!
+      - ACCEPT_EULA=Y
+      - MSSQL_PID=Developer
+      - MSSQL_DATA_DIR=/var/opt/mssql/data
+      - MSSQL_LOG_DIR=/var/opt/mssql/logs
+      - MSSQL_BACKUP_DIR=/var/opt/mssql/backups
+      - MSSQL_MEMORY_LIMIT_MB=4096
+      - MSSQL_AGENT_ENABLED=true  #requires string, not bool
+      - MSSQL_TCP_PORT=1433
+      - MSSQL_COLLATION=Latin1_General_CI_AI
+      - TZ=Europe/Brussels
+    ports:
+      - '1433:1433'
+    volumes:
+      - ./SQLServer/data:/var/opt/mssql/data  
+      - ./SQLServer/logs:/var/opt/mssql/logs 
+      - ./SQLServer/backups:/var/opt/mssql/backups  
+  kledijmodule:
+    image: ${DOCKER_REGISTRY-}kledijmodule
+    restart: unless-stopped
+    build:
+      context: .
+      dockerfile: KledijModule/Dockerfile
+    ports:
+      - 5000:8080
+      # - 5001:8081
+    volumes:
+      # - ${APPDATA}/Microsoft/UserSecrets:/home/app/.microsoft/usersecrets:ro
+      # - ./Https:/home/app/.aspnet/https:ro
+      - ./KledijModule/wwwroot:/app/wwwroot:rw
+    depends_on: 
+      mssql: 
+        condition: service_started
+        restart: true

@@ -1,0 +1,29 @@
+﻿@model FotosForProductTable.FotosForProductTableViewComponent.FotosForProductViewModel
+
+<table class="table align-middle text-center">
+    <thead>
+        <tr>
+            <th>Foto</th>
+            <th>Display Order</th>
+            <th>Acties</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var foto in Model.Fotos)
+        {
+            <tr>
+                <td>
+                    <img src="@foto.ImageUrl" alt="" style="width:100px; height:100px;" />
+                </td>
+                <td>@foto.Volgorde</td>
+                <td>
+                <td>
+                        @*<a class="btn btn-default" asp-page="./Edit" asp-route-Id="@item.Id"><i class="fa-solid fa-pen-to-square"></i> Edit</a> |
+                <form asp-page="./Delete" asp-page-handler="Delete" asp-route-KleurenToDelete="@item.Id" style="display: inline;">
+                <button type="submit" class="btn btn-default" onclick="return confirm('Bent u zeker dat u dit item wil verwijderen?')"><i class="fa-solid fa-trash"></i> Delete</button>
+                </form>*@
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
