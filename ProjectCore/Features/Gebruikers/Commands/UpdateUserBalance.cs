@@ -1,6 +1,9 @@
 ﻿using FluentValidation;
+using FluentValidation.Results;
 using MediatR;
+using Microsoft.EntityFrameworkCore;
 using ProjectCore.Data;
+using ProjectCore.Domain.Entities.Bestellingen;
 using ProjectCore.Shared.Exceptions;
 using System;
 using System.Collections.Generic;
@@ -37,9 +40,37 @@ namespace ProjectCore.Features.Gebruikers.Commands
                 _context = context;
             }
 
-            public Task<Result> Handle(Command request, CancellationToken cancellationToken)
+            public async Task<Result> Handle(Command request, CancellationToken cancellationToken)
             {
-                throw new NotImplementedException();
+                try
+                {
+                    var validator = new CommandValidator();
+                    ValidationResult validationResult = await validator.ValidateAsync(request, cancellationToken);
+
+                    if (!validationResult.IsValid)
+                    {
+                        return new ValidationErrorResult("Validatie mislukt bij het updaten van de gebruiker zijn balans!", validationResult.Errors.Select(x => new ValidationError(x.PropertyName, x.ErrorMessage)).ToList());
+                    }
+                    var updatebalanceResult = await _context.Gebruikers.Where(gebr => gebr.Id == request.Id).ExecuteUpdateAsync(gebr => gebr.SetProperty(g => g.Balans,request.Balans));
+                    
+                    return new SuccessResult();
+                }
+                catch (DbUpdateException ex)
+                {
+                    // Log de uitzondering
+                    //_logger.LogError(ex, "Er is een databasefout opgetreden bij het maken van een product.");
+
+                    // Returneer een specifieke foutresultaat voor databasegerelateerde fouten
+                    return new ErrorResult("Er is een databasefout opgetreden bij updaten van de status voor het bestelitem");
+                }
+                catch (Exception ex)
+                {
+                    // Log de uitzondering
+                    //_logger.LogError(ex, "Er is een onverwachte fout opgetreden bij het maken van een product.");
+
+                    // Returneer een specifiek foutresultaat voor onverwachte fouten
+                    return new ErrorResult("Er is een onverwachte fout opgetreden bij het updaten van het bestelitem. Probeer het later opnieuw.");
+                }
             }
         }
     }
