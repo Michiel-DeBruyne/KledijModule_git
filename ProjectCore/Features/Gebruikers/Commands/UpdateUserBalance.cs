@@ -61,7 +61,7 @@ namespace ProjectCore.Features.Gebruikers.Commands
                     //_logger.LogError(ex, "Er is een databasefout opgetreden bij het maken van een product.");
 
                     // Returneer een specifieke foutresultaat voor databasegerelateerde fouten
-                    return new ErrorResult("Er is een databasefout opgetreden bij updaten van de status voor het bestelitem");
+                    return new ErrorResult("Er is een databasefout opgetreden bij het updaten van de gebruiker zijn balans! Contacteer ICT.");
                 }
                 catch (Exception ex)
                 {
@@ -69,7 +69,7 @@ namespace ProjectCore.Features.Gebruikers.Commands
                     //_logger.LogError(ex, "Er is een onverwachte fout opgetreden bij het maken van een product.");
 
                     // Returneer een specifiek foutresultaat voor onverwachte fouten
-                    return new ErrorResult("Er is een onverwachte fout opgetreden bij het updaten van het bestelitem. Probeer het later opnieuw.");
+                    return new ErrorResult("Er is een onverwachte fout opgetreden bij het updaten van de gebruiker zijn balans! Probeer het later opnieuw en ontacteer ICT.");
                 }
             }
         }
