@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "BltWi3cqEF0Yai4d6pj3+sQWSPhI86IpLPYGyDor1DGjZbKq4IykOSR5qgZizZvf0q/YAbS39zBCAxiTOa7laQ==",
+  "dgSpecHash": "5eSebW8hllrLji+Va3Uk6osjQFlHURejZIxxCCKTdHxq6OjmDYxeLPUNZDpNhaRlzvC/9B1g3Ut08IBIl62bhQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ADM448386944\\Downloads\\KledijModule_dockerComposeAdded\\ProjectCore\\ProjectCore.csproj",
+  "projectFilePath": "C:\\Users\\ADM448386944\\OneDrive - Office 365 GPI\\Secret_shared_corner\\KledijModule_git\\ProjectCore\\ProjectCore.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ADM448386944\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\ADM448386944\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

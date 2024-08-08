@@ -30,7 +30,7 @@ namespace KledijModule
                         .AddMicrosoftGraph(builder.Configuration.GetSection("DownstreamApis:MicrosoftGraph"))
                         .AddInMemoryTokenCaches();
 
-
+            //Add user to database if not exist. If user exist, do nothing. This is to make it so our admins can manage the balance of users.
 
             builder.Services.Configure<OpenIdConnectOptions>(OpenIdConnectDefaults.AuthenticationScheme, options =>
             {
@@ -71,9 +71,6 @@ namespace KledijModule
             builder.Services.AddAuthorization(options =>
             {
                 options.AddPolicy(AuthorizationPolicies.RequireAdminRole, policy => policy.RequireRole(Roles.Admin));
-                //options.AddPolicy(AuthorizationPolicies.RequireUserRole, policy => policy.RequireRole(Roles.User)); --> Might not be necessary as I will set user access based on group. every user will be user.
-
-                // By default, all incoming requests will be authorized according to the default policy.
                 options.FallbackPolicy = options.DefaultPolicy;
             });
             builder.Services.AddRazorPages(options =>
