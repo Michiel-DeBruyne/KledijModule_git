@@ -31,6 +31,12 @@ namespace ProjectCore.Features.Gebruikers.Commands
         public class CommandHandler : IRequestHandler<Command, Result>
         {
             private readonly ApplicationDbContext _context;
+
+            public CommandHandler(ApplicationDbContext context)
+            {
+                _context = context;
+            }
+
             public async Task<Result> Handle(Command request, CancellationToken cancellationToken)
             {
                 try

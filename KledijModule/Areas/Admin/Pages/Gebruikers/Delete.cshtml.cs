@@ -2,36 +2,41 @@ using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using ProjectCore.Features.Gebruikers.Commands;
-using ProjectCore.Features.ProductAttributen.Maten.Commands;
 using ProjectCore.Shared.Exceptions;
 
 namespace KledijModule.Areas.Admin.Pages.Gebruikers
 {
     public class DeleteModel : PageModel
     {
+
+        #region Properties
+
         private readonly IMediator _mediator;
 
+        #endregion Properties
+
+        #region ctor
         public DeleteModel(IMediator mediator)
         {
             _mediator = mediator;
         }
+        #endregion ctor
 
         public void OnGet()
         {
         }
 
-        public async Task<IActionResult> OnPost(DeleteUser.Command deleteCommand)
+        //TODO: ?? DeleteSizes behouden of nederlands maken en de entiteit veranderen van string Maat naar string Waarde fz??
+        public async Task<IActionResult> OnPost(DeleteUser.Command DeleteCommand)
         {
-            var deleteResult = await _mediator.Send(deleteCommand);
-            //else if(deleteResult is ValidationErrorResult validationError)
+            var result = await _mediator.Send(DeleteCommand);
+
+            //if(result.Success)
             //{
-            //   foreach (ValidationError error in validationError.Errors)
-            //    {
-            //        string modelStateKey = $"{nameof(Product)}.{error.PropertyName}"; // TODO: dit is misschien wat overkill, bespreken met Caitlin.
-            //        ModelState.AddModelError(modelStateKey, error.Details);
-            //    }
+            //    return RedirectToPage(nameof(Index));
             //}
-            if (deleteResult is ErrorResult errorResult)
+
+            if (result is ErrorResult errorResult)
             {
                 TempData["Errors"] = errorResult.Message;
             }

@@ -10,10 +10,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Remove="Areas\Admin\Pages\Gebruikers\Delete.cshtml" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="Htmx" Version="1.8.0" />
     <PackageReference Include="Htmx.TagHelpers" Version="1.8.0" />
     <PackageReference Include="Mapster" Version="7.4.0" />
@@ -38,18 +34,6 @@
   <ItemGroup>
     <Folder Include="Areas\Admin\Pages\Catalogus\Fotos\" />
     <Folder Include="wwwroot\Images\ProductImages\" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <UpToDateCheckInput Remove="Areas\Admin\Pages\Gebruikers\Delete.cshtml" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <_ContentIncludedByDefault Remove="Areas\Admin\Pages\Gebruikers\Delete.cshtml" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Include="Areas\Admin\Pages\Gebruikers\Delete.cshtml" />
   </ItemGroup>
 
 </Project>
