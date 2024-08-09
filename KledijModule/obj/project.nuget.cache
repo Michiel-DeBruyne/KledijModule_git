@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "HV5rVvspMVpyr6dsqiVvuOiaWAV77g8Zz6TjQVvXAsdlaPo1PH2uVxcrKBj2LcCIZvk2xedeeSLYVeCUm600sA==",
+  "dgSpecHash": "qsnNxov8cZGZBtz8xhi9qQJO9lfo0hhhe7YTdbEsY7cyRC3gpz7Oa8xZpo+ET2W9OxEBgHAw5+BHsGWZ8vWEQQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\ADM448386944\\OneDrive - Office 365 GPI\\Secret_shared_corner\\KledijModule_git\\KledijModule\\KledijModule.csproj",
   "expectedPackageFiles": [
@@ -152,7 +152,6 @@
     "C:\\Users\\ADM448386944\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\ADM448386944\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
     "C:\\Users\\ADM448386944\\.nuget\\packages\\microsoft.sqlserver.server\\1.0.0\\microsoft.sqlserver.server.1.0.0.nupkg.sha512",
-    "C:\\Users\\ADM448386944\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.21.0\\microsoft.visualstudio.azure.containers.tools.targets.1.21.0.nupkg.sha512",
     "C:\\Users\\ADM448386944\\.nuget\\packages\\microsoft.visualstudio.web.codegeneration\\8.0.3\\microsoft.visualstudio.web.codegeneration.8.0.3.nupkg.sha512",
     "C:\\Users\\ADM448386944\\.nuget\\packages\\microsoft.visualstudio.web.codegeneration.core\\8.0.3\\microsoft.visualstudio.web.codegeneration.core.8.0.3.nupkg.sha512",
     "C:\\Users\\ADM448386944\\.nuget\\packages\\microsoft.visualstudio.web.codegeneration.design\\8.0.3\\microsoft.visualstudio.web.codegeneration.design.8.0.3.nupkg.sha512",

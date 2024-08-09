@@ -1,6 +1,8 @@
 using Mapster;
 using MediatR;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using ProjectCore.Domain.Entities.Catalogus;
+using ProjectCore.Features.Gebruikers.Commands;
 using ProjectCore.Features.Gebruikers.Queries;
 using ProjectCore.Shared.Exceptions;
 

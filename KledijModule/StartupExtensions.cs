@@ -123,7 +123,7 @@ namespace KledijModule
                 }
            
 
-            app.UseHttpsRedirection();
+           // app.UseHttpsRedirection();
             app.UseStaticFiles();
 
             app.UseRouting();
