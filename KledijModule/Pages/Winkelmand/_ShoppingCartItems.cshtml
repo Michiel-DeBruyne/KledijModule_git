@@ -1,5 +1,7 @@
 ﻿@model IndexModel
-
+@{
+    var isDisabled = Model.ShoppingCart.ShoppingCartItems.Count == 0 ? "disabled" : "";
+}
     <div class="row p-3">
         <div class="col-6 bg-white border rounded">
             <div class="text-center">
@@ -58,10 +60,12 @@
             <div class="card sticky-top">
                 <div class="card-body">
                     <h5 class="card-title pb-3">Totaalprijs</h5>
+                    <p class="card-text"><strong>Balans: @Model.GebruikerBalans.Balans punten</strong></p>
                     <p class="card-text">Subtotaal: @Model.ShoppingCart.Totaal punten</p>
                     <hr />
-                <h6 class="card-text pb-3">Totaalprijs : @Model.ShoppingCart.Totaal punten</h6>
-                    <a asp-page="/Checkout/Index" class="btn btn-dark btn-lg w-100"><i class="fa fa-shopping-cart"></i> Checkout!</a>
+                    <h6 class="card-text pb-3">Totaalprijs : @Model.ShoppingCart.Totaal punten</h6>
+                <h6 class="card-text pb-3">Resterende punten : @(Model.GebruikerBalans.Balans - Model.ShoppingCart.Totaal) punten</h6>
+                <a asp-page="/Checkout/Index" class="btn btn-dark btn-lg w-100 @isDisabled"><i class="fa fa-shopping-cart"></i> Checkout!</a>
                 </div>
             </div>
         </div>

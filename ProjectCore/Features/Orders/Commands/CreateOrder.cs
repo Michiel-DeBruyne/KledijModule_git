@@ -102,6 +102,13 @@ namespace ProjectCore.Features.Orders.Commands
                         return new ValidationErrorResult("Fout bij het valideren van je bestelling...", validationResult.Errors.Select(x => new ValidationError(x.PropertyName, x.ErrorMessage)).ToList());
                     }
                     //Geen mapster gebruikt omdat addasync anders ook een nieuw product zal proberen maken, nadeel van navigation properties :/
+                    //controleer of gebruiker nog bestaat
+
+                    bool gebruikerBestaat = await _context.Gebruikers.AnyAsync(g => g.Id == request.UserId);
+                    if (!gebruikerBestaat)
+                    {
+                        return new NotFoundErrorResult($"Gebruiker met ID {request.UserId} kan niet worden gevonden. Werd deze gebruiker verwijderd?");
+                    }
                     var order = new Order
                     {
                         UserId = request.UserId,
@@ -121,7 +128,11 @@ namespace ProjectCore.Features.Orders.Commands
                     };
                     await _context.Orders.AddAsync(order);
                     await _context.SaveChangesAsync(cancellationToken);
-                    await _context.ShoppingCarts.Where(sh => sh.UserId == request.UserId).ExecuteDeleteAsync(cancellationToken);
+                    // Subtract the total price from the user's balance and update the balance in the database
+                    await _context.Gebruikers.Where(g => g.Id == request.UserId).ExecuteUpdateAsync(g => g.SetProperty(
+                                                    gebr => gebr.Balans,
+                                                    gebr => gebr.Balans - request.TotaalPrijs), cancellationToken);
+                    await _context.ShoppingCarts.Where(sh => sh.GebruikerId == request.UserId).ExecuteDeleteAsync(cancellationToken);
                     return new SuccessResult<Guid>(order.Id);
                 }
                 catch (DbUpdateException ex)

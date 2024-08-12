@@ -10,7 +10,7 @@ namespace ProjectCore.Domain.Entities.WinkelMand
         public Guid Id { get; set; }
 
         public Guid ShoppingCartId { get; set; }
-
+        [ForeignKey("ShoppingCartId")]
         public ShoppingCart ShoppingCart { get; set; }
         public Guid ProductId { get; set; }
 

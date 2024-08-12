@@ -42,7 +42,7 @@ namespace ProjectCore.Features.WinkelMand.Commands
                     {
                         return new ValidationErrorResult("Validatie voor het legen  van je winkelmand mislukt", validationResult.Errors.Select(x => new ValidationError(x.PropertyName, x.ErrorMessage)).ToList());
                     }
-                    await _context.ShoppingCarts.Where(sh => sh.UserId == request.UserId).ExecuteDeleteAsync(cancellationToken);
+                    await _context.ShoppingCarts.Where(sh => sh.GebruikerId == request.UserId).ExecuteDeleteAsync(cancellationToken);
                     return new SuccessResult();
                 }
                 catch (DbUpdateException ex)

@@ -43,7 +43,7 @@ namespace KledijModule.Pages.Shared.Components.ShoppingCartSummary
         {
             public Guid Id { get; set; }
             public Product Product { get; set; }
-            public int Hoeveelheid { get; set; }
+            public int Hoeveelheid { get; set; } = 0;
             public string? Kleur { get; set; }
             public string? Maat { get; set; }
         }

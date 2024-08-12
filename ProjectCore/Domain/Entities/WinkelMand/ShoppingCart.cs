@@ -8,9 +8,9 @@ namespace ProjectCore.Domain.Entities.WinkelMand
     {
         public Guid Id { get; set; }
 
-        public string UserId { get; set; }
-        public ApplicationUser Gebruiker { get; set; }
+        public string GebruikerId { get; set; }
 
         public List<ShoppingCartItem> ShoppingCartItems { get; set; } = new List<ShoppingCartItem>();
     }
 }
+

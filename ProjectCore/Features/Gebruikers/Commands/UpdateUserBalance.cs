@@ -51,6 +51,13 @@ namespace ProjectCore.Features.Gebruikers.Commands
                     {
                         return new ValidationErrorResult("Validatie mislukt bij het updaten van de gebruiker zijn balans!", validationResult.Errors.Select(x => new ValidationError(x.PropertyName, x.ErrorMessage)).ToList());
                     }
+                    bool gebruikerBestaat = await _context.Gebruikers
+                                            .AnyAsync(gebr => gebr.Id == request.Id, cancellationToken);
+
+                    if (!gebruikerBestaat)
+                    {
+                        return new NotFoundErrorResult("Geen gebruiker gevonden met het opgegeven ID.");
+                    }
                     var updatebalanceResult = await _context.Gebruikers.Where(gebr => gebr.Id == request.Id).ExecuteUpdateAsync(gebr => gebr.SetProperty(g => g.Balans,request.Balans));
                     
                     return new SuccessResult();

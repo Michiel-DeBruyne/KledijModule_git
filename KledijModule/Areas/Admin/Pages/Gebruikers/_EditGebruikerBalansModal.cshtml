@@ -1,0 +1,41 @@
+﻿@model KledijModule.Areas.Admin.Pages.Gebruikers.EditModel
+@{
+    ArgumentNullException.ThrowIfNull(Model);
+}
+<!-- Modal -->
+
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Update gebruiker balans</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-4">
+                        <form method="post" asp-page="./Edit">
+                            <div asp-validation-summary="All" class="text-danger"></div>
+                            <input type="hidden" asp-for="GebruikerMetBalans.Id" />
+                            <div class="form-group">
+                                <label asp-for="GebruikerMetBalans.FullName" class="control-label"></label>
+                                <input asp-for="GebruikerMetBalans.FullName" class="form-control" autofocus />
+                                <span asp-validation-for="GebruikerMetBalans.FullName" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="GebruikerMetBalans.Balans" class="control-label"></label>
+                                <input asp-for="GebruikerMetBalans.Balans" class="form-control" />
+                                <span asp-validation-for="GebruikerMetBalans.Balans" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <input type="submit" value="Save" class="btn btn-primary" />
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>

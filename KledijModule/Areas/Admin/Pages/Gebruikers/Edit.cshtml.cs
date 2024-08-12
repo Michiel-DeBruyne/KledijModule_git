@@ -35,6 +35,7 @@ namespace KledijModule.Areas.Admin.Pages.Gebruikers
             {
                 TempData["Errors"] = errorResult.Message;
             }
+            //return Partial("_EditGebruikerBalansModal", this);
         }
 
         public async Task<IActionResult> OnPostAsync()

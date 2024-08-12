@@ -15,7 +15,7 @@ namespace ProjectCore.Features.WinkelMand.Queries
         public class GetShoppingCartListVm
         {
             public Guid Id { get; set; }
-            public string UserId { get; set; }
+            public string GebruikerId { get; set; }
             public List<ShoppingCartItem> ShoppingCartItems { get; set; } = new List<ShoppingCartItem>();
             public record ShoppingCartItem
             {
@@ -51,8 +51,8 @@ namespace ProjectCore.Features.WinkelMand.Queries
                         .Include(sc => sc.ShoppingCartItems)
                         .ProjectToType<GetShoppingCartListVm>()
                         .AsNoTracking()
-                        .FirstOrDefaultAsync(sc => sc.UserId == request.UserId);
-                    return new SuccessResult<GetShoppingCartListVm>(shoppingCart == null ? new GetShoppingCartListVm() { UserId = request.UserId } : shoppingCart);
+                        .FirstOrDefaultAsync(sc => sc.GebruikerId == request.UserId);
+                    return new SuccessResult<GetShoppingCartListVm>(shoppingCart == null ? new GetShoppingCartListVm() { GebruikerId = request.UserId } : shoppingCart);
                 }
                 catch (Exception ex)
                 {

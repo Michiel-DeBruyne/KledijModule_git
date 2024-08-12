@@ -34,11 +34,54 @@
                 <td>
                     <a asp-page="./Edit" class="btn btn-default" asp-route-Id="@user.Id"><i class="fa-solid fa-pen-to-square"></i> Edit</a> |
                     <form asp-page="./Delete" asp-route-Id="@user.Id" method="post" style="display: inline;">
-                        @* asp-route-... moet overeenkomen met property binnen de command *@
-                        <button type="submit" class="btn btn-default" @* onclick="return confirm('Bent u zeker dat u deze gebruiker wil verwijderen?')" *@><i class="fa-solid fa-trash"></i> Delete</button>@* TODO: Dit type confirm behouden of een tussenpagina??*@
+                        <button type="submit" class="btn btn-default" onclick="return confirm('Bent u zeker dat u deze gebruiker wil verwijderen?')"><i class="fa-solid fa-trash"></i> Delete</button>
                     </form>
                 </td>
             </tr>
         }
     </tbody>
 </table>
+
+@* <table class="table align-middle text-center">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Users[0].FullName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Users[0].Email)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Users[0].Balans)
+            </th>
+            <th>Acties</th>
+        </tr>
+    </thead>
+    <tbody>
+
+        @foreach (var user in Model.Users)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => user.FullName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => user.Email)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => user.Balans)
+                </td>
+                <td>
+                    <a  hx-get="@Url.Page("Edit")"
+                        hx-route-id="@user.Id"
+                        hx-target="#EditGebruikerBalansModal" class="btn btn-default
+                        data-bs-toggle="modal" data-bs-target="#EditGebruikerBalansModal"><i class="fa-solid fa-pen-to-square"></i> Edit</a> |
+
+                    <form asp-page="./Delete" asp-route-Id="@user.Id" method="post" style="display: inline;">
+                        <button type="submit" class="btn btn-default"  onclick="return confirm('Bent u zeker dat u deze gebruiker wil verwijderen?')"><i class="fa-solid fa-trash"></i> Delete</button>
+                    </form>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table> *@

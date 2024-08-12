@@ -3,6 +3,7 @@ using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using ProjectCore.Domain.Entities.Catalogus;
+using ProjectCore.Features.Gebruikers.Queries;
 using ProjectCore.Features.WinkelMand.Commands;
 using ProjectCore.Features.WinkelMand.Queries;
 using ProjectCore.Shared.Exceptions;
@@ -15,6 +16,8 @@ namespace KledijModule.Pages.Winkelmand
         #region Properties
         private readonly IMediator _mediator;
         public ShoppingCartIndexViewModel ShoppingCart { get; set; }
+
+        public UserBalanceViewModel GebruikerBalans { get; set; }
 
         #endregion Properties
 
@@ -46,6 +49,7 @@ namespace KledijModule.Pages.Winkelmand
         public async Task OnGet()
         {
             await getShoppingCart();
+            await getUserBalance();
         }
 
         public async Task<IActionResult> OnPostUpdateShoppingCartItemAsync(Guid ShoppingCartItemId, int Hoeveelheid)
@@ -93,6 +97,24 @@ namespace KledijModule.Pages.Winkelmand
             }
             // als iets misging, ga terug naar get pagehandler, tempdata errors zal weergegeven worden op pagina (Normaal toch :P)
             return RedirectToAction("Get");
+        }
+
+        private async Task getUserBalance()
+        {
+            var result = await _mediator.Send(new GetUserBalans.Query() { Id = User.FindFirst(ClaimTypes.NameIdentifier)?.Value });
+            if (result is SuccessResult<GetUserBalans.GetUserBalanceVm> successResult)
+            {
+                GebruikerBalans = successResult.Data.Adapt<UserBalanceViewModel>();
+            }
+            else if (result is ErrorResult errorResult)
+            {
+                TempData["Errors"] = errorResult.Message;
+            }
+        }
+
+        public class UserBalanceViewModel
+        {
+            public int Balans { get; set; } = 0;
         }
 
     }

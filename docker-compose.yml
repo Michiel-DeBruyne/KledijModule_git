@@ -23,6 +23,7 @@ services:
       - ./SQLServer/backups:/var/opt/mssql/backups  
   kledijmodule:
     image: ${DOCKER_REGISTRY-}kledijmodule
+    container_name: kledijmodule_prod
     restart: unless-stopped
     build:
       context: .

@@ -58,16 +58,17 @@ namespace ProjectCore.Features.WinkelMand.Commands
 
                     // Zoek de winkelwagen van de gebruiker
                     var shoppingCart = await _context.ShoppingCarts.Include(sh => sh.ShoppingCartItems)
-                        .FirstOrDefaultAsync(sc => sc.UserId == request.UserId);
+                        .FirstOrDefaultAsync(sc => sc.GebruikerId == request.UserId);
 
                     // Als er geen winkelwagen bestaat, maak er dan een aan
                     if (shoppingCart == null)
                     {
-                        shoppingCart = new ShoppingCart { UserId = request.UserId };
+                        shoppingCart = new ShoppingCart { GebruikerId = request.UserId };
                         await _context.ShoppingCarts.AddAsync(shoppingCart); // Voeg nieuwe winkelwagen toe want er bestaat nog geen.
                     }
                     ShoppingCartItem shoppingCartItem = new ShoppingCartItem();
                     shoppingCartItem = request.Item.Adapt<ShoppingCartItem>();
+                    shoppingCartItem.ShoppingCartId = shoppingCart.Id;
 
                     var product = await _context.Producten.FindAsync(request.Item.ProductId, cancellationToken);
                     if (product == null)

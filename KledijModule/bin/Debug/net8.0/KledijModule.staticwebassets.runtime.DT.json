@@ -50,6 +50,20 @@
             },
             "Asset": null,
             "Patterns": null
+          },
+          "ProductImages": {
+            "Children": {
+              "yy5mrwbh.lc3.jpg": {
+                "Children": null,
+                "Asset": {
+                  "ContentRootIndex": 0,
+                  "SubPath": "Images/ProductImages/yy5mrwbh.lc3.jpg"
+                },
+                "Patterns": null
+              }
+            },
+            "Asset": null,
+            "Patterns": null
           }
         },
         "Asset": null,
