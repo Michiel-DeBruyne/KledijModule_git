@@ -32,7 +32,11 @@ namespace ProjectCore.Features.Gebruikers.Queries
             {
                 try
                 {
-                    var result = await _context.Gebruikers.ProjectToType<GetUserBalanceVm>().FirstOrDefaultAsync(cancellationToken);
+                    var result = await _context.Gebruikers.Where(user => user.Id == request.Id).ProjectToType<GetUserBalanceVm>().FirstOrDefaultAsync(cancellationToken);
+                    if(result == null)
+                    {
+                        return new NotFoundErrorResult($"Gebruiker met ID {request.Id} kon niet gevonden worden. Werd deze misschien verwijderd?");
+                    }
                     return new SuccessResult<GetUserBalanceVm>(result);
                 }
                 catch (Exception ex)

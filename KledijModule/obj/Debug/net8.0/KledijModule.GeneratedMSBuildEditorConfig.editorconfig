@@ -134,16 +134,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cUGFnZXNcR2VicnVpa2Vyc1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mdebr/OneDrive - Office 365 GPI/Secret_shared_corner/KledijModule_git/KledijModule/Areas/Admin/Pages/Gebruikers/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cUGFnZXNcR2VicnVpa2Vyc1xFZGl0LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/mdebr/OneDrive - Office 365 GPI/Secret_shared_corner/KledijModule_git/KledijModule/Areas/Admin/Pages/Gebruikers/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cUGFnZXNcR2VicnVpa2Vyc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/mdebr/OneDrive - Office 365 GPI/Secret_shared_corner/KledijModule_git/KledijModule/Areas/Admin/Pages/Gebruikers/_EditGebruikerBalansModal.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cUGFnZXNcR2VicnVpa2Vyc1xfRWRpdEdlYnJ1aWtlckJhbGFuc01vZGFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mdebr/OneDrive - Office 365 GPI/Secret_shared_corner/KledijModule_git/KledijModule/Areas/Admin/Pages/Gebruikers/_Gebruiker.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cUGFnZXNcR2VicnVpa2Vyc1xfR2VicnVpa2VyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/mdebr/OneDrive - Office 365 GPI/Secret_shared_corner/KledijModule_git/KledijModule/Areas/Admin/Pages/Index.cshtml]

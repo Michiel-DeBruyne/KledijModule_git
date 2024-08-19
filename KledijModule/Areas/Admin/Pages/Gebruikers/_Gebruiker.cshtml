@@ -1,0 +1,24 @@
+﻿@model IndexModel.GetusersListViewModel
+
+<tr id="Gebruiker-@Model.Id">
+    <td>
+        @Html.DisplayFor(modelItem => Model.FullName)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => Model.Email)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => Model.Balans)
+    </td>
+    <td>
+        <!-- Stuur de form naar de index pagina, naar de functie showmodal en geef de ID mee als parameter-->
+        <!--target wijst naar waar de div waar de id in gestoken wordt.-->
+        <a hx-get="@Url.Page("Index","ShowModal", new { @Model.Id})" 
+           hx-target="#modal-container"
+           class="btn btn-default"><i class="fa-solid fa-pen-to-square"></i> Edit</a> |
+
+        <form asp-page="./Delete" asp-route-Id="@Model.Id" method="post" style="display: inline;">
+            <button type="submit" class="btn btn-default" onclick="return confirm('Bent u zeker dat u deze gebruiker wil verwijderen?')"><i class="fa-solid fa-trash"></i> Delete</button>
+        </form>
+    </td>
+</tr>
