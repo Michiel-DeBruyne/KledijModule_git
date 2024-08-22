@@ -30,7 +30,7 @@ namespace KledijModule
                         .AddMicrosoftGraph(builder.Configuration.GetSection("DownstreamApis:MicrosoftGraph"))
                         .AddInMemoryTokenCaches();
 
-            //Add user to database if not exist. If user exist, do nothing. This is to make it so our admins can manage the balance of users.
+            // Add user to database if not exist.If user exist, do nothing.This is to make it so our admins can manage the balance of users.
 
             builder.Services.Configure<OpenIdConnectOptions>(OpenIdConnectDefaults.AuthenticationScheme, options =>
             {
@@ -81,12 +81,12 @@ namespace KledijModule
             builder.Services.AddHttpContextAccessor();
             builder.Services.AddScoped<IRequestContext, RequestContextService>();
             builder.Services.AddApplicationServices(builder.Configuration);
-            builder.Services.ConfigureApplicationCookie(options =>
-            {
-                options.Cookie.HttpOnly = true;
-                options.Cookie.SameSite = Microsoft.AspNetCore.Http.SameSiteMode.Strict;
-                options.Cookie.SecurePolicy = Microsoft.AspNetCore.Http.CookieSecurePolicy.Always;
-            });
+            //builder.Services.ConfigureApplicationCookie(options =>
+            //{
+            //    //options.Cookie.HttpOnly = true;
+            //    ////options.Cookie.SameSite = Microsoft.AspNetCore.Http.SameSiteMode.Strict;
+            //    ////options.Cookie.SecurePolicy = Microsoft.AspNetCore.Http.CookieSecurePolicy.Always;
+            //});
 
             //var PhysicalFilesProvider = new PhysicalFileProvider(Path.Combine(Directory.GetCurrentDirectory(), builder.Configuration.GetValue<string>("StoredFilesPath")));
             //builder.Services.AddSingleton<IFileProvider>(PhysicalFilesProvider);

@@ -110,7 +110,7 @@
                 source: function (request, response) {
                     // https://api.jqueryui.com/autocomplete/#method-option
                     $.ajax({
-                        url: "@Url.Page("", "UsersList")",
+                        url: "@Url.Page("", "UsersListAutoComplete")",
                         data: { term: request.term },
                         success: function (data) {
                             var users = data.map(function (user) {

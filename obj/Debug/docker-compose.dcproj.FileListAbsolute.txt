@@ -217,7 +217,6 @@ C:\Users\ADM448386944\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModul
 C:\Users\ADM448386944\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_git\bin\Debug\KledijModule.exe
 C:\Users\ADM448386944\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_git\bin\Debug\KledijModule.dll
 C:\Users\ADM448386944\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_git\bin\Debug\ProjectCore.dll
-C:\Users\ADM448386944\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_git\bin\Debug\Microsoft.AspNetCore.Authentication.OpenIdConnect.dll
 C:\Users\ADM448386944\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_git\bin\Debug\MediatR.dll
 C:\Users\ADM448386944\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_git\bin\Debug\Htmx.TagHelpers.dll
 C:\Users\ADM448386944\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_git\bin\Debug\Microsoft.Identity.Web.dll
@@ -348,3 +347,4 @@ C:\Users\mdebr\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_git\b
 C:\Users\mdebr\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_git\obj\Debug\docker-compose.dcproj.AssemblyReference.cache
 C:\Users\mdebr\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_git\obj\Debug\docker-compose.dcproj.CoreCompileInputs.cache
 C:\Users\mdebr\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_git\obj\Debug\docker-c.35A3FFBA.Up2Date
+C:\Users\ADM448386944\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_git\bin\Debug\Microsoft.AspNetCore.Authentication.OpenIdConnect.dll

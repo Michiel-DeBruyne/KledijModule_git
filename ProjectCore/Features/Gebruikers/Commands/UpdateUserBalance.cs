@@ -43,6 +43,7 @@ namespace ProjectCore.Features.Gebruikers.Commands
 
             public async Task<Result> Handle(Command request, CancellationToken cancellationToken)
             {
+                //return new NotFoundErrorResult("Geen gebruiker gevonden met het opgegeven ID"); // test om fout te simuleren.
                 try
                 {
                     // Valideer de input via de validator

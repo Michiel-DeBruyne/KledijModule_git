@@ -101,9 +101,11 @@ namespace KledijModule.Areas.Admin.Pages.Gebruikers
             if (result is ErrorResult errorResult)
             {
                 TempData["Errors"] = errorResult.Message;
+                return new BadRequestObjectResult(errorResult.Message);
             }
+            return new BadRequestObjectResult("test"); //TODO: test voor global error handling. K struggle
             //Iets misgelopen, return page met huidige data
-            return Page();
+            // return RedirectToPage(nameof(Index));
         }       
     }
 }

@@ -10,6 +10,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Areas\Admin\Pages\Catalogus\Fotos\**" />
+    <Content Remove="Areas\Admin\Pages\Catalogus\Fotos\**" />
+    <EmbeddedResource Remove="Areas\Admin\Pages\Catalogus\Fotos\**" />
+    <None Remove="Areas\Admin\Pages\Catalogus\Fotos\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Htmx" Version="1.8.0" />
     <PackageReference Include="Htmx.TagHelpers" Version="1.8.0" />
     <PackageReference Include="Mapster" Version="7.4.0" />
@@ -32,7 +39,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Areas\Admin\Pages\Catalogus\Fotos\" />
     <Folder Include="wwwroot\Images\ProductImages\" />
   </ItemGroup>
 

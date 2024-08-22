@@ -155,40 +155,39 @@ namespace KledijModule.Pages.Checkout
             }
         }
 
-        public async Task<IActionResult> OnGetUsersListAsync(string term)
+        public async Task OnGetUsersListAsync(string term)
         {
-            if(User.IsInRole(Roles.Admin))
-            {
-                var result = await _graphServiceClient.Users.GetAsync((requestConfiguration) =>
-                {
-                    if (!string.IsNullOrEmpty(term))
-                    {
-                        requestConfiguration.QueryParameters.Filter = $"startswith(displayName,'{term}')";
-                    }
-                    //requestConfiguration.QueryParameters.Filter = "userType eq 'Member'"; --> user.read.all permission required
-                    requestConfiguration.QueryParameters.Select = new[] { "id", "displayName", "mail" };
-                });
-
-                var users = new List<User>();
-                if (result != null && result.Value != null)
-                {
-                    foreach (var user in result.Value)
-                    {
-                        if (!string.IsNullOrEmpty(user.DisplayName))
-                        {
-                            users.Add(user);
-                        }
-                    }
-                }
-
-                return new JsonResult(users);
-            }
-            else
-            {
+            if (!User.IsInRole(Roles.Admin)) { 
                 Order.UserId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
                 Order.UserNaam = User.Identity.Name;
-                return null;
             }
+        }
+
+        public async Task<IActionResult> OnGetUsersListAutoCompleteAsync(string term)
+        {
+            var result = await _graphServiceClient.Users.GetAsync((requestConfiguration) =>
+            {
+                if (!string.IsNullOrEmpty(term))
+                {
+                    requestConfiguration.QueryParameters.Filter = $"startswith(displayName,'{term}')";
+                }
+                    //requestConfiguration.QueryParameters.Filter = "userType eq 'Member'";// --> user.read.all permission required
+                    requestConfiguration.QueryParameters.Select = new[] { "id", "displayName", "mail" };
+            });
+
+            var users = new List<User>();
+            if (result != null && result.Value != null)
+            {
+                foreach (var user in result.Value)
+                {
+                    if (!string.IsNullOrEmpty(user.DisplayName))
+                    {
+                        users.Add(user);
+                    }
+                }
+            }
+
+            return new JsonResult(users);
         }
 
 
