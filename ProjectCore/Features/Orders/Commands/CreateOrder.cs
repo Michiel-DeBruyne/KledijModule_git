@@ -14,6 +14,7 @@ namespace ProjectCore.Features.Orders.Commands
     {
         public record Command : IRequest<Result>
         {
+            public string RequesterId { get; set; } // is de aanvrager van de bestelling. Kan admin zijn. Is omdat als een admin een bestelling plaatst, moet het winkelmandje ook geleegd kunnen worden
             public string UserId { get; set; }
             public string UserNaam { get; set; }
             public List<OrderItem> OrderItems { get; set; }
@@ -40,9 +41,9 @@ namespace ProjectCore.Features.Orders.Commands
             public CommandValidator(ApplicationDbContext context)
             {
                 _context = context;
+                RuleFor(c => c.RequesterId).NotEmpty().NotNull();
                 RuleFor(c => c.UserId).NotEmpty().NotNull();
                 RuleFor(c => c.OrderItems).NotEmpty().NotNull();
-                //  RuleForEach(c => c.OrderItems).Must((c, orderItem) => AllowedToAdd(orderItem, c.UserId)).WithMessage((c, orderItem) => $"{orderItem.ProductNaam} kan niet worden besteld, vervangingstermijn nog niet overschreden.");
                 RuleForEach(c => c.OrderItems).Custom((item, context) =>
                 {
                     var command = context.InstanceToValidate as Command;
@@ -102,13 +103,17 @@ namespace ProjectCore.Features.Orders.Commands
                         return new ValidationErrorResult("Fout bij het valideren van je bestelling...", validationResult.Errors.Select(x => new ValidationError(x.PropertyName, x.ErrorMessage)).ToList());
                     }
                     //Geen mapster gebruikt omdat addasync anders ook een nieuw product zal proberen maken, nadeel van navigation properties :/
-                    //controleer of gebruiker nog bestaat
 
-                    bool gebruikerBestaat = await _context.Gebruikers.AnyAsync(g => g.Id == request.UserId);
-                    if (!gebruikerBestaat)
-                    {
-                        return new NotFoundErrorResult($"Gebruiker met ID {request.UserId} kan niet worden gevonden. Werd deze gebruiker verwijderd?");
+                    //controleer of gebruiker nog bestaat indien de gebruiker ook de requester is.
+                    if(request.RequesterId == request.UserId) {
+                        //Er moet geen foutmelding zijn als gebruiker niet bestaat indien requester Admin is. Gebruiker kan nog niet aan zone hangen maar er kan wel al kledij voor besteld worden.
+                        bool gebruikerBestaat = await _context.Gebruikers.AnyAsync(g => g.Id == request.UserId);
+                        if (!gebruikerBestaat)
+                        {
+                            return new NotFoundErrorResult($"Gebruiker met ID {request.UserId} kan niet worden gevonden. Werd deze gebruiker verwijderd?");
+                        }
                     }
+
                     var order = new Order
                     {
                         UserId = request.UserId,
@@ -132,7 +137,8 @@ namespace ProjectCore.Features.Orders.Commands
                     await _context.Gebruikers.Where(g => g.Id == request.UserId).ExecuteUpdateAsync(g => g.SetProperty(
                                                     gebr => gebr.Balans,
                                                     gebr => gebr.Balans - request.TotaalPrijs), cancellationToken);
-                    await _context.ShoppingCarts.Where(sh => sh.GebruikerId == request.UserId).ExecuteDeleteAsync(cancellationToken);
+                    // shoppingcart van de aanvrager legen.
+                    await _context.ShoppingCarts.Where(sh => sh.GebruikerId == request.RequesterId).ExecuteDeleteAsync(cancellationToken);
                     return new SuccessResult<Guid>(order.Id);
                 }
                 catch (DbUpdateException ex)

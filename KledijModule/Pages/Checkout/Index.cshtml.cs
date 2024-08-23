@@ -68,6 +68,9 @@ namespace KledijModule.Pages.Checkout
             [DisplayName("Gebruiker")]
             public string UserId { get; set; }
 
+            //dient om het mogelijk te maken dat een admin een bestelling plaatst voor een ander en de code weet dat de admin zijn/haar winkelmand moet geleegd worden.
+            public string RequesterId { get; set; } 
+
             public string UserNaam { get; set; }
             [DisplayName("Totaal")]
             public int TotaalPrijs { get; set; }
@@ -94,7 +97,7 @@ namespace KledijModule.Pages.Checkout
             var result = await GetShoppingCart();
             SetUIShoppingCart(result);
             await IsWebshopOpen();
-            await OnGetUsersListAsync("");
+            await OnGetUsersListAsync();
         }
 
         public async Task<IActionResult> OnPostAsync()
@@ -138,7 +141,6 @@ namespace KledijModule.Pages.Checkout
             var result = await _mediator.Send(new GetShoppingCartList.Query() { UserId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value });
             return result;
         }
-
         private void SetUIShoppingCart(Result result)
         {
             TypeAdapterConfig<GetShoppingCartList.GetShoppingCartListVm, CheckoutIndexViewModel>.NewConfig()
@@ -155,14 +157,13 @@ namespace KledijModule.Pages.Checkout
             }
         }
 
-        public async Task OnGetUsersListAsync(string term)
+        public async Task OnGetUsersListAsync()
         {
-            if (!User.IsInRole(Roles.Admin)) { 
+            //if (!User.IsInRole(Roles.Admin)) { 
                 Order.UserId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
                 Order.UserNaam = User.Identity.Name;
-            }
+            //}
         }
-
         public async Task<IActionResult> OnGetUsersListAutoCompleteAsync(string term)
         {
             var result = await _graphServiceClient.Users.GetAsync((requestConfiguration) =>
@@ -189,8 +190,6 @@ namespace KledijModule.Pages.Checkout
 
             return new JsonResult(users);
         }
-
-
         private async Task IsWebshopOpen()
         {
             var isWebShopOpenresult = await _mediator.Send(new GetIsWebShopOpen.Query());

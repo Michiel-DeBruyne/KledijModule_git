@@ -3,6 +3,7 @@ services:
     image: mcr.microsoft.com/mssql/server:2022-latest
     container_name: sql_server_container
     restart: unless-stopped
+    user: root
     environment: #Complete list of env variables: https://docs.microsoft.com/en-us/sql/linux/sql-server-linux-configure-environment-variables?view=sql-server-2022
       - MSSQL_SA_PASSWORD=A&VeryComplex123Password!
       - ACCEPT_EULA=Y

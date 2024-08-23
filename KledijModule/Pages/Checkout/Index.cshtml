@@ -42,6 +42,7 @@
                             }
                         </div>
                     </div>
+                    <input type="hidden" asp-for="Order.RequesterId" value="@Model.Order.UserId"/>
                     <input type="hidden" id="userId" asp-for="Order.UserId"/>
                 </div>
 
