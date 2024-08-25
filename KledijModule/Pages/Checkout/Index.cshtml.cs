@@ -74,6 +74,9 @@ namespace KledijModule.Pages.Checkout
             public string UserNaam { get; set; }
             [DisplayName("Totaal")]
             public int TotaalPrijs { get; set; }
+
+            [DisplayName("Overschrijf Vervangingstermijn")]
+            public bool IgnoreVervangingsTermijn { get; set; } = false;
             public List<OrderItem> OrderItems { get; set; } = new List<OrderItem>();
 
             public record OrderItem
@@ -129,7 +132,6 @@ namespace KledijModule.Pages.Checkout
                 TempData["Errors"] = error.Message;
             }
             SetUIShoppingCart(shoppingCart);
-          //await GetUsersListAsync();
             await IsWebshopOpen();
             //Als je hier komt is er iets misgelopen
             return Page();

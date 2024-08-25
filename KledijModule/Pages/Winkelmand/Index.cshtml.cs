@@ -59,6 +59,7 @@ namespace KledijModule.Pages.Winkelmand
             if (updateShoppingCartItemResult.Success)
             {
                 await getShoppingCart();
+                await getUserBalance();
                 return Partial("_ShoppingCartItems", this);
             }
             else if (updateShoppingCartItemResult is ErrorResult errorResult)
@@ -89,6 +90,7 @@ namespace KledijModule.Pages.Winkelmand
             if (removeFromShoppingCartResult.Success)
             {
                 await getShoppingCart();
+                await getUserBalance();
                 return Partial("_ShoppingCartItems", this);
             }
             if (removeFromShoppingCartResult is ErrorResult errorResult)

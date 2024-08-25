@@ -1,24 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\449423733\\OneDrive - Office 365 GPI\\C#\\KledijModule_git\\ProjectCore\\ProjectCore.csproj": {}
+    "C:\\Users\\mdebr\\OneDrive - Office 365 GPI\\Secret_shared_corner\\KledijModule_git\\ProjectCore\\ProjectCore.csproj": {}
   },
   "projects": {
-    "C:\\Users\\449423733\\OneDrive - Office 365 GPI\\C#\\KledijModule_git\\ProjectCore\\ProjectCore.csproj": {
+    "C:\\Users\\mdebr\\OneDrive - Office 365 GPI\\Secret_shared_corner\\KledijModule_git\\ProjectCore\\ProjectCore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\449423733\\OneDrive - Office 365 GPI\\C#\\KledijModule_git\\ProjectCore\\ProjectCore.csproj",
+        "projectUniqueName": "C:\\Users\\mdebr\\OneDrive - Office 365 GPI\\Secret_shared_corner\\KledijModule_git\\ProjectCore\\ProjectCore.csproj",
         "projectName": "ProjectCore",
-        "projectPath": "C:\\Users\\449423733\\OneDrive - Office 365 GPI\\C#\\KledijModule_git\\ProjectCore\\ProjectCore.csproj",
-        "packagesPath": "C:\\Users\\449423733\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\449423733\\OneDrive - Office 365 GPI\\C#\\KledijModule_git\\ProjectCore\\obj\\",
+        "projectPath": "C:\\Users\\mdebr\\OneDrive - Office 365 GPI\\Secret_shared_corner\\KledijModule_git\\ProjectCore\\ProjectCore.csproj",
+        "packagesPath": "C:\\Users\\mdebr\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\mdebr\\OneDrive - Office 365 GPI\\Secret_shared_corner\\KledijModule_git\\ProjectCore\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\449423733\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\mdebr\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -39,11 +38,68 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[11.9.2, )"
+            },
+            "FluentValidation.AspNetCore": {
+              "target": "Package",
+              "version": "[11.3.0, )"
+            },
+            "FluentValidation.DependencyInjectionExtensions": {
+              "target": "Package",
+              "version": "[11.9.2, )"
+            },
+            "Mapster": {
+              "target": "Package",
+              "version": "[7.4.0, )"
+            },
+            "Mapster.DependencyInjection": {
+              "target": "Package",
+              "version": "[1.0.1, )"
+            },
+            "MediatR": {
+              "target": "Package",
+              "version": "[12.3.0, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.7, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.7, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.7, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[8.0.7, )"
+            },
+            "Microsoft.Extensions.Options.ConfigurationExtensions": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -55,7 +111,12 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.201/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

@@ -19,6 +19,7 @@ namespace ProjectCore.Features.Orders.Commands
             public string UserNaam { get; set; }
             public List<OrderItem> OrderItems { get; set; }
             public int TotaalPrijs { get; set; }
+            public bool IgnoreVervangingsTermijn { get; set; }
             public record OrderItem
             {
                 public string ProductNaam { get; set; }
@@ -58,7 +59,7 @@ namespace ProjectCore.Features.Orders.Commands
                             context.AddFailure($"{item.ProductNaam} kan niet worden besteld, vervangingstermijn nog niet overschreden. U kunt nog {remainingAmountOrderable} stuk(s) bestellen.");
                         }
                     }
-                });
+                }).When(c => !c.IgnoreVervangingsTermijn);
             }
 
             private bool AllowedToAdd(Command.OrderItem item, string UserId, out int remainingAmountOrderable)

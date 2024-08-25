@@ -28,21 +28,27 @@
                 <div asp-validation-summary="All" class="@validationSummaryClasses"></div>
                 <div class="form-group row">
                     <div class="row">
-                        <label asp-for="Order.UserId" class=" col-sm-2 col-form-label fw-bolder"></label>
+                        
                         <div class="col-sm-10">
                             @{
                                 if (userIsAdmin)
                                 {
+                                    <label asp-for="Order.UserId" class=" col-sm-2 col-form-label fw-bolder"></label>
                                     <input id="userNaam" asp-for="Order.UserNaam" class="form-control" />
+
+                                    <label asp-for="Order.IgnoreVervangingsTermijn" class=" col-sm-3 col-form-label fw-bolder"></label>
+                                    <input type="checkbox" asp-for="Order.IgnoreVervangingsTermijn" />
                                 }
                                 else
                                 {
+                                    <label asp-for="Order.UserId" class=" col-sm-2 col-form-label fw-bolder"></label>
                                     <input type="text" id="userNaam" asp-for="Order.UserNaam" readonly class="form-control-plaintext">
+                                    <input type="hidden" asp-for="Order.IgnoreVervangingsTermijn" />
                                 }
                             }
                         </div>
                     </div>
-                    <input type="hidden" asp-for="Order.RequesterId" value="@Model.Order.UserId"/>
+                    <input type="hidden" asp-for="Order.RequesterId" value="Order.UserId" />
                     <input type="hidden" id="userId" asp-for="Order.UserId"/>
                 </div>
 
