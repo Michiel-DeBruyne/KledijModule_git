@@ -1,6 +1,7 @@
 using Htmx;
 using Mapster;
 using MediatR;
+using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using ProjectCore.Domain.Entities.Bestellingen;
@@ -21,6 +22,9 @@ namespace KledijModule.Areas.Admin.Pages.Orders
 
         [BindProperty(SupportsGet = true)]
         public Guid Id { get; set; }
+
+        [BindProperty]
+        public CommandModel Data { get; set; }
 
         #endregion Properties
 
@@ -61,6 +65,14 @@ namespace KledijModule.Areas.Admin.Pages.Orders
         }
         #endregion ViewModel
 
+        #region CommandModel
+        public class CommandModel
+        {
+            public List<Guid> OrderItems { get; set; } // Verkregen via GUI
+            public int OrderStatusValue { get; set; }
+        }
+        #endregion CommandModel
+
         public async Task OnGetAsync(GetOrderDetails.Query query)
         {
             var GetOrderDetailsresult = await _mediator.Send(query);
@@ -72,65 +84,43 @@ namespace KledijModule.Areas.Admin.Pages.Orders
             {
                 TempData["Errors"] = errorResult.Message;
             }
-
         }
 
-        public async Task<IActionResult> OnGetEdit()
+        public async Task<IActionResult> OnGetEditAsync()
         {
-            var orderItemResult = await _mediator.Send(new GetOrderItemDetails.Query() { Id = Id });
-            if (orderItemResult is SuccessResult<GetOrderItemDetails.OrderItemDetailsVm> successResult)
-            {
-                return Partial("_OrderItemEditRow", successResult.Data.Adapt<OrderDetailsViewModel.OrderItem>());
-            }
-            if (orderItemResult.Failure)
-            {
-                if (orderItemResult is ErrorResult errorResult)
-                {
-                    TempData["Errors"] = errorResult.Message;
-                }
-            }
-            return RedirectToAction("Get");
-        }
-        public async Task<IActionResult> OnGetRow()
-        {
-            var orderItemResult = await _mediator.Send(new GetOrderItemDetails.Query() { Id = Id });
-            if (orderItemResult is SuccessResult<GetOrderItemDetails.OrderItemDetailsVm> successResult)
-            {
-                return Partial("_OrderItemRow", successResult.Data.Adapt<OrderDetailsViewModel.OrderItem>());
-            }
-            if (orderItemResult.Failure)
-            {
-                if (orderItemResult is ErrorResult errorResult)
-                {
-                    TempData["Errors"] = errorResult.Message;
-                }
-            }
-            return RedirectToAction("Get");
+            return Partial("_UpdateOrderItemStatusModal",this);
         }
 
         // Normaal zou je hier zetten [FromForm] int Hoeveelheid, int OrderStatusId, om tegen overposting te beschermen, maar de back-end laat enkel de 2 properties toe, dus kan niet zo kwaad denk ik. OrderItem blijven gebruiken kan toekomstige aanpassingen vergemakkelijken.
-        public async Task<IActionResult> OnPostUpdate([FromForm] OrderDetailsViewModel.OrderItem OrderItem)
+        // Update methode voor de bestelling
+        public async Task<IActionResult> OnPostUpdateAsync()
         {
-            var updateResult = await _mediator.Send(new UpdateOrderItem.Command() { Id = Id, OrderStatus = (int)OrderItem.OrderStatus });
+            // Controleer of de ontvangen gegevens geldig zijn
+            if (!ModelState.IsValid)
+            {
+                return BadRequest("Onjuiste data ontvangen.");
+            }
+
+            // Update de bestelling met de nieuwe gegevens
+            var updateResult = await _mediator.Send(new UpdateOrderItems.Command()
+            {
+                OrderItems = Data.OrderItems,
+                OrderStatus = Data.OrderStatusValue
+            });
+
             if (updateResult.Success)
             {
-                var orderItemResult = await _mediator.Send(new GetOrderItemDetails.Query() { Id = Id });
-                if (orderItemResult is SuccessResult<GetOrderItemDetails.OrderItemDetailsVm> successResult)
-                {
-                    return Request.IsHtmx()
-                            ? Partial("_OrderItemRow", successResult.Data.Adapt<OrderDetailsViewModel.OrderItem>())
-                            : RedirectToPage("Details", new { OrderItem.Id });
-                }
-                if (orderItemResult is ErrorResult orderItemErrorResult)
-                {
-                    TempData["Errors"] = orderItemErrorResult.Message;
-                }
+                // Geef een successtatus terug
+                return new JsonResult(new { success = true });
             }
-            if (updateResult is ErrorResult errorResult)
+            else if (updateResult is ErrorResult errorResult)
             {
-                TempData["Errors"] = errorResult.Message;
+                // Verzend een foutmelding terug
+                return BadRequest(errorResult.Message);
             }
-            return RedirectToPage("Details", new { OrderItem.Id });
+
+            // Standaard response bij een onbepaalde fout
+            return StatusCode(500, "Internal server error.");
         }
     }
 }

@@ -166,16 +166,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cUGFnZXNcT3JkZXJzXF9JbmRleFBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mdebr/OneDrive - Office 365 GPI/Secret_shared_corner/KledijModule_git/KledijModule/Areas/Admin/Pages/Orders/_OrderItemEditRow.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cUGFnZXNcT3JkZXJzXF9PcmRlckl0ZW1FZGl0Um93LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/mdebr/OneDrive - Office 365 GPI/Secret_shared_corner/KledijModule_git/KledijModule/Areas/Admin/Pages/Orders/_OrderItemRow.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cUGFnZXNcT3JkZXJzXF9PcmRlckl0ZW1Sb3cuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/mdebr/OneDrive - Office 365 GPI/Secret_shared_corner/KledijModule_git/KledijModule/Areas/Admin/Pages/Orders/_OrdersSummaryList.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cUGFnZXNcT3JkZXJzXF9PcmRlcnNTdW1tYXJ5TGlzdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mdebr/OneDrive - Office 365 GPI/Secret_shared_corner/KledijModule_git/KledijModule/Areas/Admin/Pages/Orders/_UpdateOrderItemStatusModal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cUGFnZXNcT3JkZXJzXF9VcGRhdGVPcmRlckl0ZW1TdGF0dXNNb2RhbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/mdebr/OneDrive - Office 365 GPI/Secret_shared_corner/KledijModule_git/KledijModule/Areas/Admin/Pages/Shared/Components/FotosForProductTable/Default.cshtml]

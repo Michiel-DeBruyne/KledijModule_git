@@ -54,7 +54,7 @@
     </header>
     <div class="container">
         <main role="main" class="pb-3">
-            <div id="htmx-alert" class="alert alert-warning  sticky-top@(TempData.ContainsKey("Errors") ? "" : " d-none")">
+            <div id="ajax-alert" class="alert alert-warning  sticky-top@(TempData.ContainsKey("Errors") ? "" : " d-none")">
                  @TempData["Errors"]               
             </div>
             @RenderBody()

@@ -44,7 +44,21 @@
                 <tbody>
                     @foreach (var orderItem in Model.OrderDetails.OrderItems)
                     {
-                        @await Html.PartialAsync("_OrderItemRow",orderItem)
+                        <tr>
+                            <td><input type="checkbox" value="@orderItem.Id" /></td>
+                            <td class="text-center">@orderItem.ProductNaam</td>
+                            <td class="text-center">@orderItem.Hoeveelheid</td>
+                            <td class="text-center">@orderItem.Prijs punten</td>
+                            <td class="text-center">
+                                <strong>@((orderItem.Hoeveelheid * orderItem.Prijs)) punten</strong>
+                            </td>
+                            <td class="text-center">@orderItem.OrderStatus</td>
+                            <td class="text-center">
+                                <a hx-get="@Url.Page("Details","Edit")"
+                                   hx-target="#modal-container"
+                                   class="btn btn-default edit-status"><i class="fa-solid fa-pen-to-square"></i> Edit</a>
+                            </td>
+                        </tr>
                     }
                 </tbody>
                 <tfoot>
@@ -59,3 +73,53 @@
         </dd>
     </dl>
 </div>
+
+<div id="modal-container"></div>
+
+<script>
+    document.addEventListener('htmx:beforeRequest', function (event) {
+        // Check if the request was triggered by a button with the class 'edit-status'
+        if (event.target.classList.contains('edit-status')) {
+            // Count the number of selected checkboxes
+            var selectedItems = document.querySelectorAll('input[type="checkbox"]:checked').length;
+
+            // If no checkboxes are selected, prevent the request and show an alert
+            if (selectedItems === 0) {
+                event.preventDefault(); // Prevent the HTMX request
+                alert('Je moet minstens één item selecteren om de status aan te passen.');
+                return; // Exit the function
+            }
+
+            // // Collect the values of all selected checkboxes
+            // var selectedValues = Array.from(selectedItems).map(function (checkbox) {
+            //     return checkbox.value;
+            // });
+
+            // // Convert the selected values to a query string
+            // var queryString = selectedValues.map(function (value) {
+            //     return 'selectedOrderItems=' + encodeURIComponent(value);
+            // }).join('&');
+
+            // // Update the hx-get URL to include the selectedOrderItems as query parameters
+            // var hxGetUrl = event.target.getAttribute('hx-get');
+            // event.detail.requestConfig.url = hxGetUrl + '?' + queryString;
+        }
+    });
+</script>
+
+
+@* <script>
+    $(document).ready(function () {
+        $('.edit-button').on('click', function (e) {
+            var selectedItems = $('.order-item-checkbox:checked').length;
+
+            if (selectedItems === 0) {
+                e.preventDefault(); // Prevent the default action (e.g., opening the modal)
+                alert('Je moet minstens één item selecteren om de status aan te passen.');
+            } else {
+                var url = '@Url.Page("Details", "Edit")';
+                $('#modal-container').load(url); // Load the modal content via AJAX
+            }
+        });
+    });
+</script> *@

@@ -4,6 +4,7 @@
 }
 
 <tr id="@id">
+    <td><input type="checkbox"" value="@Model.Id" /></td>
     <td class="text-center">@Model.ProductNaam</a></td>
     <td class="text-center">@Model.Hoeveelheid</td>
     <td class="text-center">@Model.Prijs punten</td>
@@ -13,9 +14,7 @@
     <td class="text-center">@Model.OrderStatus</td>
     <td class="text-center">
         <button class="btn btn-default"
-                hx-get="@Url.Page("Details", "Edit", new {Model.Id})"
-                hx-swap="outerHTML"
-                hx-target="closest tr">
+                hx-get="@Url.Page("Details", "Edit")">
             <i class="fa-solid fa-pen-to-square"></i>
             <span>Edit</span>
         </button>

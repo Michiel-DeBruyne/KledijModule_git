@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "2jYUIQJ6CaTJQH4c+t9U2lYiuiMbyDN5/aJ9kJ2WyZU=",
+  "Hash": "x1amMNEwxEjvlkdKyNoVBSUmyf2zu7YLfZBzj9XrLxg=",
   "Source": "KledijModule",
   "BasePath": "_content/KledijModule",
   "Mode": "Default",
@@ -186,6 +186,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Images\\ProductImages\\fnby3fhn.hll.png"
+    },
+    {
+      "Identity": "C:\\Users\\mdebr\\OneDrive - Office 365 GPI\\Secret_shared_corner\\KledijModule_git\\KledijModule\\wwwroot\\Images\\ProductImages\\r5blvdp5.iyp.jpg",
+      "SourceId": "KledijModule",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\mdebr\\OneDrive - Office 365 GPI\\Secret_shared_corner\\KledijModule_git\\KledijModule\\wwwroot\\",
+      "BasePath": "_content/KledijModule",
+      "RelativePath": "Images/ProductImages/r5blvdp5.iyp.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\ProductImages\\r5blvdp5.iyp.jpg"
     },
     {
       "Identity": "C:\\Users\\mdebr\\OneDrive - Office 365 GPI\\Secret_shared_corner\\KledijModule_git\\KledijModule\\wwwroot\\Images\\ProductImages\\yy5mrwbh.lc3.jpg",

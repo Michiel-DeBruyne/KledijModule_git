@@ -1,7 +1,9 @@
 ﻿@page
 @using KledijModule.Areas.Identity.Pages.Account.Orders
+@using System.Security.Claims
 @model IndexModel
 @{
+    var gebruikerId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
 }
 <div>
     <h4>OrderDetails</h4>
@@ -35,7 +37,7 @@
                                 <td id="OrderItemStatus-@(orderItem.Id)">@orderItem.OrderStatus</td>
                                 <td>
                                     <form method="post" hx-post="@Url.Page("","Cancel")" hx-target="#OrderItemStatus-@(orderItem.Id)">
-                                        <input type="hidden" name="OrderItemId" value="@orderItem.Id">
+                                        <input type="hidden" asp-for="Data.OrderItems" value="@orderItem.Id">
                                         <button type="submit" class="btn btn-outline-danger">
                                             <i class="fa-solid fa-ban me-2"></i> Annuleer
                                         </button>
