@@ -33,7 +33,7 @@
                                 }
                                 <td>@orderItem.ProductNaam</td>
                                 <td>@orderItem.Hoeveelheid</td>
-                                <td>@(orderItem.Prijs * orderItem.Hoeveelheid)</td>
+                                <td>@(orderItem.Punten * orderItem.Hoeveelheid)</td>
                                 <td id="OrderItemStatus-@(orderItem.Id)">@orderItem.OrderStatus</td>
                                 <td>
                                     <form method="post" hx-post="@Url.Page("","Cancel")" hx-target="#OrderItemStatus-@(orderItem.Id)">

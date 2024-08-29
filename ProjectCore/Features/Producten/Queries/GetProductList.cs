@@ -109,7 +109,7 @@ namespace ProjectCore.Features.Producten.Queries
             public string Naam { get; init; }
             public Category Categorie { get; init; }
             public Geslacht Geslacht { get; init; }
-            public int Prijs { get; init; }
+            public int Punten { get; init; }
             public bool Beschikbaar { get; init; }
             [DisplayName("Foto")]
             public List<ProductImage> Fotos { get; init; }

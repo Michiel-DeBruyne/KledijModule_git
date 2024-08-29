@@ -36,7 +36,7 @@
             <input type="hidden" asp-for="Data.ProductNaam" value="@Model.MapColorToProductViewModel.ProductNaam" />
             <div class="form-group">
                 <label asp-for="Data.Kleuren" class="control-label"></label>
-                <select asp-for="Data.Kleuren" class="form-control" asp-items="Model.MapColorToProductViewModel.Kleuren.Select(kleur => new SelectListItem { Value = kleur.Id.ToString(), Text = kleur.Kleur })" multiple></select>
+                <select asp-for="Data.Kleuren" class="form-control" asp-items="Model.MapColorToProductViewModel.Kleuren.Select(kleur => new SelectListItem { Value = kleur.Id.ToString(), Text = kleur.Kleur })" multiple size="20"></select>
                 <span asp-validation-for="Data.Kleuren" class="text-danger"></span>
             </div>
         </form>

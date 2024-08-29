@@ -73,7 +73,7 @@ namespace KledijModule.Pages.Checkout
 
             public string UserNaam { get; set; }
             [DisplayName("Totaal")]
-            public int TotaalPrijs { get; set; }
+            public int TotaalPunten { get; set; }
 
             [DisplayName("Overschrijf Vervangingstermijn")]
             public bool IgnoreVervangingsTermijn { get; set; } = false;
@@ -86,7 +86,7 @@ namespace KledijModule.Pages.Checkout
                 public string? Kleur { get; set; }
                 public Guid? ProductId { get; set; }
                 public Product Product { get; set; }
-                public int Prijs { get; set; }
+                public int Punten { get; set; }
 
                 public int Hoeveelheid { get; set; }
 
@@ -112,7 +112,7 @@ namespace KledijModule.Pages.Checkout
                 TypeAdapterConfig<GetShoppingCartList.GetShoppingCartListVm.ShoppingCartItem, OrderCommandModel.OrderItem>.NewConfig()
                         .Map(dest => dest.ProductId, src => src.Product.Id)
                         .Map(dest => dest.ProductNaam, src => src.Product.Naam)
-                        .Map(dest => dest.Prijs, src => src.Product.Prijs);
+                        .Map(dest => dest.Punten, src => src.Product.Punten);
                 Order.OrderItems = shoppingCartSuccessResult.Data.ShoppingCartItems.Adapt<List<OrderCommandModel.OrderItem>>();
 
                 var CreateOrderResult = await _mediator.Send(Order.Adapt<CreateOrder.Command>());
@@ -151,7 +151,7 @@ namespace KledijModule.Pages.Checkout
             {
                 ShoppingCart = successResult.Data.Adapt<CheckoutIndexViewModel>();
                 Order.UserId = ShoppingCart.UserId;
-                ViewData["Totaal"] = ShoppingCart.ShoppingCartItems.Sum(p => p.Hoeveelheid * p.Product.Prijs);
+                ViewData["Totaal"] = ShoppingCart.ShoppingCartItems.Sum(p => p.Hoeveelheid * p.Product.Punten);
             }
             else if (result is ErrorResult getshoppingCartErrorResult)
             {

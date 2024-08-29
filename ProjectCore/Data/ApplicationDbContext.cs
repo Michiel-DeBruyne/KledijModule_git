@@ -52,17 +52,18 @@ public class ApplicationDbContext :DbContext
     public override Task<int> SaveChangesAsync(CancellationToken cancellationToken = new CancellationToken())
     {
         string userName = _requestContext.UserName;
+        TimeZoneInfo cest = TimeZoneInfo.FindSystemTimeZoneById("Central European Standard Time");
         foreach (var entry in ChangeTracker.Entries<AuditableEntity>())
         {
             switch (entry.State)
             {
                 case EntityState.Added:
                     entry.Entity.CreatedBy = userName;
-                    entry.Entity.CreatedDate = DateTime.Now;
+                    entry.Entity.CreatedDate = TimeZoneInfo.ConvertTimeFromUtc(DateTime.UtcNow, cest);
                     break;
                 case EntityState.Modified:
                     entry.Entity.LastModifiedBy = userName;
-                    entry.Entity.LastModifiedDate = DateTime.Now;
+                    entry.Entity.LastModifiedDate = TimeZoneInfo.ConvertTimeFromUtc(DateTime.UtcNow, cest);
                     break;
             }
         }

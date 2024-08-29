@@ -15,7 +15,7 @@ namespace ProjectCore.Domain.Entities.Bestellingen
         public Guid? ProductId { get; set; }
         [ForeignKey("ProductId")]
         public Product? Product { get; set; }
-        public int Prijs { get; set; }
+        public int Punten { get; set; }
 
         public Guid OrderId { get; set; }
         [ForeignKey("OrderId")]

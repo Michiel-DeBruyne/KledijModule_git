@@ -18,7 +18,7 @@ namespace ProjectCore.Features.Producten.Commands
             public string Naam { get; set; } = string.Empty;
             public string? Beschrijving { get; set; }
             public bool Beschikbaar { get; set; } = false;
-            public int Prijs { get; set; }
+            public int Punten { get; set; }
             public Geslacht Geslacht { get; set; }
             public int? ArtikelNummer { get; set; }
             public Guid CategorieId { get; set; }
@@ -38,7 +38,7 @@ namespace ProjectCore.Features.Producten.Commands
 
                 RuleFor(command => command.Beschrijving).MaximumLength(500).WithMessage("Beschrijving mag niet langer zijn dan 500 tekens.");
 
-                RuleFor(command => command.Prijs).GreaterThan(0).WithMessage("Prijs moet groter zijn dan 0.");
+                RuleFor(command => command.Punten).GreaterThan(0).WithMessage("Punten moet groter zijn dan 0.");
 
                 RuleFor(command => command.ArtikelNummer).GreaterThan(0).When(command => command.ArtikelNummer.HasValue).WithMessage("Artikelnummer moet groter zijn dan 0 als het is opgegeven.");
 

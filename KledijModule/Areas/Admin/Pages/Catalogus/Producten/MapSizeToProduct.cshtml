@@ -35,7 +35,7 @@
             <input type="hidden" asp-for="Data.ProductNaam" value="@Model.MapSizeToProductViewModel.ProductNaam" />
             <div class="form-group">
                 <label asp-for="Data.Maten" class="control-label"></label>
-                <select asp-for="Data.Maten" class="form-control" asp-items="Model.MapSizeToProductViewModel.Maten.Select(maat => new SelectListItem { Value = maat.Id.ToString(), Text = maat.Maat })" multiple></select>
+                <select asp-for="Data.Maten" class="form-control" asp-items="Model.MapSizeToProductViewModel.Maten.Select(maat => new SelectListItem { Value = maat.Id.ToString(), Text = maat.Maat })" multiple size="20"></select>
                 <span asp-validation-for="Data.Maten" class="text-danger"></span>
             </div>
         </form>

@@ -14,7 +14,7 @@
             <h3 class="me-auto">Categorieën</h3>
 
             <a asp-page="Create" class="btn btn-success me-1"><i class="fa-solid fa-plus"></i> Categorie Toevoegen</a>
-            <button class="btn btn-danger me-1" asp-page="./Delete"><i class="fa-solid fa-trash"></i> Verwijder (selected)</button>
+            <button class="btn btn-danger me-1" asp-page="./Delete" onclick="return confirm('Bent u zeker dat u dit item wil verwijderen?')"><i class="fa-solid fa-trash"></i> Verwijder (selected)</button>
         </div>
         <table class="table align-middle text-center">
             <thead>

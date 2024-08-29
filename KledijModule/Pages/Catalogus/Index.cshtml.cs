@@ -39,7 +39,7 @@ namespace KledijModule.Pages.Catalogus
             public string Naam { get; set; } = string.Empty;
 
             public Category Categorie { get; set; }
-            public int Prijs { get; set; }
+            public int Punten { get; set; }
             [DisplayName("Foto")]
             public List<ProductImage> Fotos { get; init; }
 

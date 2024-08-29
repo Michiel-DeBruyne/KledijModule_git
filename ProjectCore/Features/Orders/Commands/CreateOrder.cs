@@ -18,7 +18,7 @@ namespace ProjectCore.Features.Orders.Commands
             public string UserId { get; set; }
             public string UserNaam { get; set; }
             public List<OrderItem> OrderItems { get; set; }
-            public int TotaalPrijs { get; set; }
+            public int TotaalPunten { get; set; }
             public bool IgnoreVervangingsTermijn { get; set; }
             public record OrderItem
             {
@@ -27,7 +27,7 @@ namespace ProjectCore.Features.Orders.Commands
                 public string? Kleur { get; set; }
                 public Guid ProductId { get; set; }
                 public Product Product { get; set; }
-                public int Prijs { get; set; }
+                public int Punten { get; set; }
 
                 public int Hoeveelheid { get; set; }
                 public OrderStatus OrderStatus { get; set; } = OrderStatus.Open;
@@ -119,14 +119,14 @@ namespace ProjectCore.Features.Orders.Commands
                     {
                         UserId = request.UserId,
                         UserNaam = request.UserNaam,
-                        TotaalPrijs = request.TotaalPrijs,
+                        TotaalPunten = request.TotaalPunten,
                         OrderItems = request.OrderItems.Select(item => new OrderItem
                         {
                             ProductNaam = item.ProductNaam,
                             Maat = item.Maat,
                             Kleur = item.Kleur,
                             ProductId = item.ProductId,
-                            Prijs = item.Prijs,
+                            Punten = item.Punten,
                             Hoeveelheid = item.Hoeveelheid,
                             OrderStatus = item.OrderStatus,
                             Opmerkingen = item.Opmerkingen
@@ -137,7 +137,7 @@ namespace ProjectCore.Features.Orders.Commands
                     // Subtract the total price from the user's balance and update the balance in the database
                     await _context.Gebruikers.Where(g => g.Id == request.UserId).ExecuteUpdateAsync(g => g.SetProperty(
                                                     gebr => gebr.Balans,
-                                                    gebr => gebr.Balans - request.TotaalPrijs), cancellationToken);
+                                                    gebr => gebr.Balans - request.TotaalPunten), cancellationToken);
                     // shoppingcart van de aanvrager legen.
                     await _context.ShoppingCarts.Where(sh => sh.GebruikerId == request.RequesterId).ExecuteDeleteAsync(cancellationToken);
                     return new SuccessResult<Guid>(order.Id);

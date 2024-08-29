@@ -39,7 +39,7 @@ namespace KledijModule.Areas.Identity.Pages.Account.Orders
             public ApplicationUser User { get; set; }
             public DateTime CreatedDate { get; set; }
 
-            public int TotaalPrijs { get; set; }
+            public int TotaalPunten { get; set; }
             public string OrderStatus { get; set; }
 
             public List<OrderItem> OrderItems { get; set; }
@@ -51,7 +51,7 @@ namespace KledijModule.Areas.Identity.Pages.Account.Orders
                 public string? Maat { get; set; }
                 public string? Kleur { get; set; }
                 public Guid ProductId { get; set; }
-                public int Prijs { get; set; }
+                public int Punten { get; set; }
                 public int Hoeveelheid { get; set; }
                 public OrderStatus OrderStatus { get; set; }
                 public string? Opmerkingen { get; set; }

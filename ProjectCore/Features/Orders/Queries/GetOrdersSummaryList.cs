@@ -71,7 +71,7 @@ namespace ProjectCore.Features.Orders.Queries
             public string UserNaam { get; set; }
             public DateTime CreatedDate { get; set; }
 
-            public int TotaalPrijs { get; set; }
+            public int TotaalPunten { get; set; }
             public string OrderStatus { get; set; }
 
 

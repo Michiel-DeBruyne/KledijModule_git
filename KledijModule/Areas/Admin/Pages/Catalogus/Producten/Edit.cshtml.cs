@@ -47,7 +47,7 @@ namespace KledijModule.Areas.Admin.Pages.Catalogus.Producten
             public string Naam { get; set; } = string.Empty;
             public string? Beschrijving { get; set; }
             public bool Beschikbaar { get; set; } = false;
-            public int Prijs { get; set; }
+            public int Punten { get; set; }
             public Geslacht Geslacht { get; set; }
             public int? ArtikelNummer { get; set; }
             [DisplayName("Categorie")]
@@ -65,7 +65,6 @@ namespace KledijModule.Areas.Admin.Pages.Catalogus.Producten
 
             public List<ProductMaat> Maten { get; set; } = new List<ProductMaat>();
             public List<ProductKleur> Kleuren { get; set; } = new List<ProductKleur>();
-
             public record ProductFoto
             {
                 public Guid Id { get; set; }
@@ -84,6 +83,7 @@ namespace KledijModule.Areas.Admin.Pages.Catalogus.Producten
                 public Guid Id { get; set; }
                 public string Kleur { get; set; } = string.Empty;
             }
+
         }
         #endregion ViewModel
 

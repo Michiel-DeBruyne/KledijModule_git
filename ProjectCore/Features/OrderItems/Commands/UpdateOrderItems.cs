@@ -80,7 +80,7 @@ namespace ProjectCore.Features.OrderItems.Commands
                                 GebruikerId = group.Key,
                                 TotalRefund = group.SelectMany(o => o.OrderItems)
                                                    .Where(oi => request.OrderItems.Contains(oi.Id))
-                                                   .Sum(oi => oi.Hoeveelheid * oi.Prijs)
+                                                   .Sum(oi => oi.Hoeveelheid * oi.Punten)
                             })
                             .ToList();
 
@@ -115,7 +115,7 @@ namespace ProjectCore.Features.OrderItems.Commands
                     //    {
                     //        return new NotFoundErrorResult("Gebruiker waarvan het item moet geannuleerd worden kan niet teruggevonden worden");
                     //    }
-                    //    gebruiker.Balans += (orderItem.Hoeveelheid * orderItem.Prijs); // Tell de prijs van het item terug bij de balans van de gebruiker
+                    //    gebruiker.Balans += (orderItem.Hoeveelheid * orderItem.Punten); // Tell de Punten van het item terug bij de balans van de gebruiker
 
                     //}
                     //await _context.SaveChangesAsync();

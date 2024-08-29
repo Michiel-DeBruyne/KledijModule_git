@@ -14,7 +14,7 @@ namespace ProjectCore.Domain.Entities.Bestellingen
         public string UserNaam { get; set; }
 
         [DisplayName("Totaal")]
-        public int TotaalPrijs { get; set; } // onnodige complexiteit
+        public int TotaalPunten { get; set; } // onnodige complexiteit
         public List<OrderItem> OrderItems { get; set; }
 
     }

@@ -35,7 +35,7 @@ namespace KledijModule.Areas.Admin.Pages.Catalogus.Producten
                 public string Naam { get; set; }
             }
             public bool Beschikbaar { get; set; } = false;
-            public int Prijs { get; set; }
+            public int Punten { get; set; }
             public Geslacht Geslacht { get; set; }
             public int? ArtikelNummer { get; set; }
             [DisplayName("Foto")]

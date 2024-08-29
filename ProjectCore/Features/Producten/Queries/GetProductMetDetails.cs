@@ -58,15 +58,17 @@ namespace ProjectCore.Features.Producten.Queries
             public string Naam { get; set; } = string.Empty;
             public string? Beschrijving { get; set; }
             public bool Beschikbaar { get; set; } = false;
-            public int Prijs { get; set; }
+            public int Punten { get; set; }
             public Geslacht Geslacht { get; set; }
             public int? ArtikelNummer { get; set; }
 
-            public ProductCategorie Categorie { get; set; } = default!;
-            public record ProductCategorie
-            {
-                public string Naam { get; set; }
-            }
+            public Guid CategorieId { get; set; }
+            //public ProductCategorie Categorie { get; set; } = default!;
+            //public record ProductCategorie
+            //{
+            //    public Guid Id { get; set; }
+            //    public string Naam { get; set; }
+            //}
 
             #region VervangingsTermijn
 

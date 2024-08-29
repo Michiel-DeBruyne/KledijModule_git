@@ -42,7 +42,7 @@ namespace KledijModule.Areas.Admin.Pages.Orders
             [DisplayName("Besteldatum")]
             public DateTime CreatedDate { get; set; }
             [DisplayName("Totaal")]
-            public int TotaalPrijs { get; set; } // mogelijks onnodige complexiteit om het hier te steken.
+            public int TotaalPunten { get; set; } // mogelijks onnodige complexiteit om het hier te steken.
             [DisplayName("Gebruiker")]
 
             public string UserNaam { get; set; }
@@ -57,7 +57,7 @@ namespace KledijModule.Areas.Admin.Pages.Orders
                 public string? Kleur { get; set; }
                 public Guid? ProductId { get; set; }
                 public Product? Product { get; set; }
-                public int Prijs { get; set; }
+                public int Punten { get; set; }
                 public int Hoeveelheid { get; set; }
                 public OrderStatus OrderStatus { get; set; }
                 public string? Opmerkingen { get; set; }

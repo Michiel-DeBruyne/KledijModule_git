@@ -12,7 +12,7 @@ namespace ProjectCore.Domain.Entities.Catalogus
         public string? Beschrijving { get; set; }
         public bool Beschikbaar { get; set; } = false;
         // punten zijn altijd gehele getallen. Int is groot genoeg
-        public int Prijs { get; set; }
+        public int Punten { get; set; }
         public Geslacht Geslacht { get; set; }
         public int? ArtikelNummer { get; set; }
 

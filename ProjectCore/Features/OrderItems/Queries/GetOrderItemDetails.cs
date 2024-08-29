@@ -47,7 +47,7 @@ namespace ProjectCore.Features.OrderItems.Queries
             public string ProductNaam { get; set; }
             public string? Maat { get; set; }
             public string? Kleur { get; set; }
-            public int Prijs { get; set; }
+            public int Punten { get; set; }
             public int Hoeveelheid { get; set; }
             public OrderStatus OrderStatus { get; set; }
             public string? Opmerkingen { get; set; }

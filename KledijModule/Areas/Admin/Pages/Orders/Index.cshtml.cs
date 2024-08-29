@@ -55,7 +55,7 @@ namespace KledijModule.Areas.Admin.Pages.Orders
             [DisplayName("Aangemaakt")]
             public DateTime CreatedDate { get; set; }
             [DisplayName("Totaal")]
-            public int TotaalPrijs { get; set; }
+            public int TotaalPunten { get; set; }
 
             [DisplayName("Status")]
             public string OrderStatus { get; set; }

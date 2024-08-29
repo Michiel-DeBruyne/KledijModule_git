@@ -62,7 +62,7 @@ namespace KledijModule.Pages.Catalogus
             public Guid Id { get; set; }
             public string Naam { get; set; } = string.Empty;
             public string? Beschrijving { get; set; }
-            public int Prijs { get; set; }
+            public int Punten { get; set; }
             public Geslacht Geslacht { get; set; }
             public List<Foto> Fotos { get; set; } = new List<Foto>();
             public List<ProductMaat> Maten { get; set; } = new List<ProductMaat>();

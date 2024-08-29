@@ -76,7 +76,7 @@ namespace KledijModule.Pages.Winkelmand
             if (result is SuccessResult<GetShoppingCartList.GetShoppingCartListVm> successResult)
             {
                 ShoppingCart = successResult.Data.Adapt<ShoppingCartIndexViewModel>();
-                ShoppingCart.Totaal = ShoppingCart.ShoppingCartItems.Sum(p => p.Hoeveelheid * p.Product.Prijs);
+                ShoppingCart.Totaal = ShoppingCart.ShoppingCartItems.Sum(p => p.Hoeveelheid * p.Product.Punten);
             }
             else if (result is ErrorResult getshoppingCartErrorResult)
             {

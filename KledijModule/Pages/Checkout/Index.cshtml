@@ -48,14 +48,14 @@
                             }
                         </div>
                     </div>
-                    <input type="hidden" asp-for="Order.RequesterId" value="Order.UserId" />
+                    <input type="hidden" asp-for="Order.RequesterId" value="@Model.Order.UserId" />
                     <input type="hidden" id="userId" asp-for="Order.UserId"/>
                 </div>
 
                 <div class="form-group d-none">
-                    <label asp-for="Order.TotaalPrijs" class="control-label"></label>
-                    <input asp-for="Order.TotaalPrijs" class="form-control" value="@ViewBag.Totaal" />
-                    <span asp-validation-for="Order.TotaalPrijs" class="text-danger"></span>
+                    <label asp-for="Order.TotaalPunten" class="control-label"></label>
+                    <input asp-for="Order.TotaalPunten" class="form-control" value="@ViewBag.Totaal" />
+                    <span asp-validation-for="Order.TotaalPunten" class="text-danger"></span>
                 </div>
                 <br />
                 <div class="form-group">
@@ -76,7 +76,7 @@
             <th>Hoeveelheid</th>
             <th>Kleur</th>
             <th>Maat</th>
-            <th>Prijs</th>
+            <th>Punten</th>
             <th>Opmerkingen</th>
             <th class="text-right">Subtotaal</th>
         </tr>
@@ -89,10 +89,10 @@
                 <td>@item.Hoeveelheid</td>
                 <td>@item.Kleur</td>
                 <td>@item.Maat</td>
-                <td>@item.Product.Prijs punten</td>
+                <td>@item.Product.Punten punten</td>
                 <td>@item.Opmerkingen</td>
                 <td >
-                    @((item.Hoeveelheid * item.Product.Prijs)) punten
+                    @((item.Hoeveelheid * item.Product.Punten)) punten
                 </td>
             </tr>
         }
