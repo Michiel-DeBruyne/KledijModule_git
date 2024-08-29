@@ -24,7 +24,10 @@
     </div>
     <div class="mb-2">
         <label asp-for="ShoppingCartItem.Hoeveelheid"></label>
-        <input type="number" asp-for="ShoppingCartItem.Hoeveelheid" min="1"  max="99" value="1"/>
+        <div>
+            <input type="number" asp-for="ShoppingCartItem.Hoeveelheid" min="1" max="99" value="1" />
+            <p class="text-danger">Er kunnen @Model.Product.DisplayVervangingsTermijn producten besteld worden</p>
+        </div>
         <span asp-validation-for="ShoppingCartItem.Hoeveelheid" class="text-danger"></span>
     </div>
     <div class="mb-2">

@@ -64,6 +64,22 @@ namespace KledijModule.Pages.Catalogus
             public string? Beschrijving { get; set; }
             public int Punten { get; set; }
             public Geslacht Geslacht { get; set; }
+
+            #region VervangingsTermijn
+
+            public int MaxAantalBestelbaar { get; set; }
+
+            public int PerAantalJaar { get; set; }
+
+            public string DisplayVervangingsTermijn
+            {
+                get
+                {
+                    return $"{MaxAantalBestelbaar} per {PerAantalJaar} {(PerAantalJaar > 1 ? "jaren" : "jaar")}";
+                }
+            }
+
+            #endregion VervangingsTermijn
             public List<Foto> Fotos { get; set; } = new List<Foto>();
             public List<ProductMaat> Maten { get; set; } = new List<ProductMaat>();
             public List<ProductKleur> Kleuren { get; set; } = new List<ProductKleur>();
