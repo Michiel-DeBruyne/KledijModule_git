@@ -7,7 +7,7 @@ namespace KledijModule.Areas.Admin.Pages
     {
         private readonly ILogger<IndexModel> _logger;
 
-        public IDirectoryContents PhysicalFiles { get;private set; }
+        public IDirectoryContents PhysicalFiles { get; private set; }
         public IndexModel(ILogger<IndexModel> logger)
         {
             _logger = logger;

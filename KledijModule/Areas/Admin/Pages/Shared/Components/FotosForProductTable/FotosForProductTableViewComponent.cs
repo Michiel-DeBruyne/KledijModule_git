@@ -4,7 +4,6 @@ using Microsoft.AspNetCore.Mvc;
 using ProjectCore.Data;
 using ProjectCore.Features.Producten.Queries;
 using ProjectCore.Shared.Exceptions;
-using static KledijModule.Areas.Admin.Pages.Shared.Components.KleurenForProductTable.KleurenForProductTableViewComponent.KleurenForProductViewModel;
 using static ProjectCore.Features.Producten.Queries.GetFotosForProductList;
 
 namespace KledijModule.Areas.Admin.Pages.Shared.Components.FotosForProductTable

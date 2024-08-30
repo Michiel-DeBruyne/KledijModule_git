@@ -1,14 +1,17 @@
 ﻿@page
 @using KledijModule.Areas.Admin.Pages.Orders
+@using ProjectCore.Domain.Entities.Bestellingen
 @model DetailsModel
 @{
     ViewData["Title"] = "Details";
 }
 
-<h1>Details</h1>
-
 <div>
-    <h4>OrderDetails</h4>
+    <div class="d-flex justify-content-end my-3 clearfix">
+        <h3 class="me-auto">Details</h3>
+        <a asp-page="#" hx-get="@Url.Page("Details","Edit")"
+           hx-target="#modal-container" class="btn btn-dark me-1 edit-status"><i class="fa-solid fa-trash"></i> Update status (selected)</a>
+    </div>
     <hr />
     <dl class="row">
         <dt class="col-sm-2">
@@ -33,19 +36,26 @@
             <table class="table table-bordered">
                 <thead class="thead-light">
                     <tr>
+                        <th></th>
                         <th>Product</th>
                         <th>Hoeveelheid</th>
                         <th class="text-center">Punten</th>
                         <th class="text-center">Subtotaal</th>
                         <th class="text-center">Status</th>
-                        <th class="text-center">Acties</th>
                     </tr>
                 </thead>
                 <tbody>
                     @foreach (var orderItem in Model.OrderDetails.OrderItems)
                     {
                         <tr>
-                            <td><input type="checkbox" value="@orderItem.Id" /></td>
+                            @if (!(orderItem.OrderStatus == OrderStatus.Geannuleerd) || (orderItem.OrderStatus == OrderStatus.Retour))
+                            {
+                                <td><input type="checkbox" value="@orderItem.Id" /></td>
+                            }
+                            else
+                            {
+                                <td></td>
+                            }
                             <td class="text-center">@orderItem.ProductNaam</td>
                             <td class="text-center">@orderItem.Hoeveelheid</td>
                             <td class="text-center">@orderItem.Punten punten</td>
@@ -53,11 +63,11 @@
                                 <strong>@((orderItem.Hoeveelheid * orderItem.Punten)) punten</strong>
                             </td>
                             <td class="text-center">@orderItem.OrderStatus</td>
-                            <td class="text-center">
+@*                             <td class="text-center">
                                 <a hx-get="@Url.Page("Details","Edit")"
                                    hx-target="#modal-container"
                                    class="btn btn-default edit-status"><i class="fa-solid fa-pen-to-square"></i> Edit</a>
-                            </td>
+                            </td> *@
                         </tr>
                     }
                 </tbody>

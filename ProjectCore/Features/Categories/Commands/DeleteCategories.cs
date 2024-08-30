@@ -62,7 +62,7 @@ namespace ProjectCore.Features.Categories.Commands
                     #region checkifHasProducts
 
                     var categoriesWithProducts = await _context.Categories
-                        .Where( c => request.Categories.Contains(c.Id) && c.Products.Any())
+                        .Where(c => request.Categories.Contains(c.Id) && c.Products.Any())
                         .Select(c => c.Naam)
                         .ToListAsync();
 

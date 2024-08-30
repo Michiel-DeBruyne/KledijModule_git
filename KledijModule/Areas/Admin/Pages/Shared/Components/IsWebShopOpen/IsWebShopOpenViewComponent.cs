@@ -9,7 +9,7 @@ namespace KledijModule.Areas.Admin.Pages.Shared.Components.IsWebShopOpen
     {
         private readonly IMediator _mediator;
         public bool IsWebShopOpen { get; set; } = false;
-        public IsWebShopOpenViewComponent(IMediator mediator)  => _mediator = mediator;
+        public IsWebShopOpenViewComponent(IMediator mediator) => _mediator = mediator;
 
         public async Task<IViewComponentResult> InvokeAsync()
         {

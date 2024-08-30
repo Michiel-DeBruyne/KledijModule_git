@@ -3,11 +3,6 @@ using MediatR;
 using Microsoft.EntityFrameworkCore;
 using ProjectCore.Data;
 using ProjectCore.Shared.Exceptions;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ProjectCore.Features.Webshop.Queries
 {
@@ -41,7 +36,7 @@ namespace ProjectCore.Features.Webshop.Queries
                 try
                 {
                     var webshopConfigResult = await _context.WebShopConfigurations.Where(c => c.Id == request.Id).ProjectToType<WebShopConfigVm>().FirstOrDefaultAsync();
-                    if(webshopConfigResult == null)
+                    if (webshopConfigResult == null)
                     {
                         return new NotFoundErrorResult("Bestelperiode kon niet gevonden worden. Mogelijks werd het verwijderd?");
                     }

@@ -1,6 +1,4 @@
-﻿using Microsoft.AspNetCore.Identity;
-
-namespace ProjectCore.Domain.Entities.Gebruiker
+﻿namespace ProjectCore.Domain.Entities.Gebruiker
 {
     public class ApplicationUser
     {

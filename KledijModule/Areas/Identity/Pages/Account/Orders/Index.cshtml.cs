@@ -1,13 +1,12 @@
 using Mapster;
 using MediatR;
-using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using Microsoft.Graph.Models;
 using ProjectCore.Domain.Entities.Bestellingen;
 using ProjectCore.Domain.Entities.Gebruiker;
 using ProjectCore.Features.OrderItems.Commands;
 using ProjectCore.Features.Orders.Queries;
+using ProjectCore.Shared.Exceptions;
 using System.Security.Claims;
 
 namespace KledijModule.Areas.Identity.Pages.Account.Orders
@@ -62,9 +61,9 @@ namespace KledijModule.Areas.Identity.Pages.Account.Orders
         #endregion ViewModel
 
         #region CommandModel
-        public class CommandModel   
+        public class CommandModel
         {
-            public List<Guid> OrderItems { get; set; } // Verkregen via GUI
+            public List<Guid> OrderItems { get; set; } = new List<Guid>();
             public int OrderStatusValue { get; set; } = (int)OrderStatus.Geannuleerd;
         }
         #endregion CommandModel
@@ -84,8 +83,21 @@ namespace KledijModule.Areas.Identity.Pages.Account.Orders
 
         public async Task<IActionResult> OnPostCancelAsync(Guid OrderItemId)
         {
-            var cancelResult = await _mediator.Send(new UpdateOrderItems.Command() { OrderItems = Data.OrderItems, OrderStatus = Data.OrderStatusValue});
-            return Content($"<span>{OrderStatus.Geannuleerd}</span>", "text/html");
+            Data.OrderItems.Add(OrderItemId);
+            var cancelResult = await _mediator.Send(new UpdateOrderItems.Command() { OrderItems = Data.OrderItems, OrderStatus = Data.OrderStatusValue });
+            if (cancelResult.Success)
+            {
+                // Geef een successtatus terug
+                return new JsonResult(new { success = true });
+            }
+            else if (cancelResult is ErrorResult errorResult)
+            {
+                // Verzend een foutmelding terug
+                return BadRequest(errorResult.Message);
+            }
+
+            // Standaard response bij een onbepaalde fout
+            return StatusCode(500, "Internal server error.");
         }
 
         #endregion Methods

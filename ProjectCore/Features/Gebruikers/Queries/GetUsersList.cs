@@ -2,7 +2,6 @@
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 using ProjectCore.Data;
-using ProjectCore.Domain.Entities.Gebruiker;
 using ProjectCore.Shared.Exceptions;
 
 namespace ProjectCore.Features.Gebruikers.Queries

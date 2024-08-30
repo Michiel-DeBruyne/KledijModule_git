@@ -6,6 +6,7 @@ services:
       - ASPNETCORE_ENVIRONMENT=Development
       - ASPNETCORE_HTTP_PORTS=8080
       # - ASPNETCORE_HTTPS_PORTS=8081
+      - TZ=Europe/Brussels
     container_name: kledijmodule_dev
     ports:
       - 5000:8080
@@ -13,7 +14,8 @@ services:
     volumes:
       - ${APPDATA}/Microsoft/UserSecrets:/home/app/.microsoft/usersecrets:ro
       - ${APPDATA}/ASP.NET/Https:/home/app/.aspnet/https:ro
-      - ./KledijModule/wwwroot:/app/wwwroot:rw 
+      - ./KledijModule/wwwroot:/app/wwwroot:rw
+    
   mssql:
     image: mcr.microsoft.com/mssql/server:2022-latest
     container_name: sql_server_container_dev

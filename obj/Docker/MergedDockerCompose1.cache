@@ -1,8 +1,8 @@
-name: dockercompose4288636069821850313
+name: dockercompose18311467034277322261
 services:
   kledijmodule:
     build:
-      context: C:\Users\ADM448386944\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded
+      context: C:\Users\ADM448386944\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_git
       dockerfile: KledijModule/Dockerfile
       args:
         BUILD_CONFIGURATION: Debug
@@ -10,7 +10,7 @@ services:
         com.microsoft.created-by: visual-studio
         com.microsoft.visual-studio.project-name: KledijModule
       target: base
-    container_name: KledijModule
+    container_name: kledijmodule_dev
     entrypoint:
       - tail
       - -f
@@ -18,10 +18,10 @@ services:
     environment:
       ASPNETCORE_ENVIRONMENT: Development
       ASPNETCORE_HTTP_PORTS: "8080"
-      ASPNETCORE_HTTPS_PORTS: "8081"
       ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS: "true"
       DOTNET_USE_POLLING_FILE_WATCHER: "1"
       NUGET_FALLBACK_PACKAGES: ""
+      TZ: Europe/Brussels
     image: kledijmodule:dev
     labels:
       com.microsoft.visualstudio.debuggee.arguments: ' --additionalProbingPath /.nuget/packages  "/app/bin/Debug/net8.0/KledijModule.dll"'
@@ -33,12 +33,16 @@ services:
     ports:
       - mode: ingress
         target: 8080
+        published: "5000"
         protocol: tcp
-      - mode: ingress
-        target: 8081
-        protocol: tcp
+    restart: unless-stopped
     tty: true
     volumes:
+      - type: bind
+        source: C:\Users\ADM448386944\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_git\KledijModule\wwwroot
+        target: /app/wwwroot
+        bind:
+          create_host_path: true
       - type: bind
         source: C:\Users\ADM448386944\AppData\Roaming/Microsoft/UserSecrets
         target: /home/app/.microsoft/usersecrets
@@ -52,12 +56,12 @@ services:
         bind:
           create_host_path: true
       - type: bind
-        source: C:\Users\ADM448386944\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded\KledijModule
+        source: C:\Users\ADM448386944\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_git\KledijModule
         target: /app
         bind:
           create_host_path: true
       - type: bind
-        source: C:\Users\ADM448386944\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_dockerComposeAdded
+        source: C:\Users\ADM448386944\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_git
         target: /src
         bind:
           create_host_path: true
@@ -102,6 +106,46 @@ services:
         read_only: true
         bind:
           create_host_path: true
+  mssql:
+    container_name: sql_server_container_dev
+    environment:
+      ACCEPT_EULA: "Y"
+      MSSQL_AGENT_ENABLED: "true"
+      MSSQL_BACKUP_DIR: /var/opt/mssql/backups
+      MSSQL_COLLATION: Latin1_General_CI_AI
+      MSSQL_DATA_DIR: /var/opt/mssql/data
+      MSSQL_LOG_DIR: /var/opt/mssql/logs
+      MSSQL_MEMORY_LIMIT_MB: "4096"
+      MSSQL_PID: Developer
+      MSSQL_SA_PASSWORD: A&VeryComplex123Password!
+      MSSQL_TCP_PORT: "1433"
+      TZ: Europe/Brussels
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    networks:
+      default: null
+    ports:
+      - mode: ingress
+        target: 1433
+        published: "1433"
+        protocol: tcp
+    restart: unless-stopped
+    user: root
+    volumes:
+      - type: bind
+        source: C:\Users\ADM448386944\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_git\SQLServer\data
+        target: /var/opt/mssql/data
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Users\ADM448386944\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_git\SQLServer\logs
+        target: /var/opt/mssql/logs
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Users\ADM448386944\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_git\SQLServer\backups
+        target: /var/opt/mssql/backups
+        bind:
+          create_host_path: true
 networks:
   default:
-    name: dockercompose4288636069821850313_default
+    name: dockercompose18311467034277322261_default

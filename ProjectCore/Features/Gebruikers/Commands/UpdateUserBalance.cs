@@ -4,25 +4,19 @@ using Mapster;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 using ProjectCore.Data;
-using ProjectCore.Domain.Entities.Bestellingen;
 using ProjectCore.Shared.Exceptions;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ProjectCore.Features.Gebruikers.Commands
 {
     public class UpdateUserBalance
     {
-        public record Command:IRequest<Result>
+        public record Command : IRequest<Result>
         {
-            public string Id { get;set; }
-            public int Balans { get;set; }
+            public string Id { get; set; }
+            public int Balans { get; set; }
         }
 
-        public class CommandValidator:AbstractValidator<Command>
+        public class CommandValidator : AbstractValidator<Command>
         {
             public CommandValidator()
             {
@@ -88,7 +82,7 @@ namespace ProjectCore.Features.Gebruikers.Commands
                             await transaction.RollbackAsync(cancellationToken);
 
                             // Log de databasefout
-                          //  _logger.LogError(dbEx, "Er is een databasefout opgetreden bij het updaten van de gebruiker zijn balans met ID {Id}.", request.Id);
+                            //  _logger.LogError(dbEx, "Er is een databasefout opgetreden bij het updaten van de gebruiker zijn balans met ID {Id}.", request.Id);
 
                             // Return een foutbericht
                             return new ErrorResult("Er is een databasefout opgetreden bij het updaten van de gebruiker zijn balans! Contacteer ICT.");
@@ -99,7 +93,7 @@ namespace ProjectCore.Features.Gebruikers.Commands
                             await transaction.RollbackAsync(cancellationToken);
 
                             // Log de onverwachte fout
-                          //  _logger.LogError(ex, "Er is een onverwachte fout opgetreden bij het updaten van de gebruiker zijn balans met ID {Id}.", request.Id);
+                            //  _logger.LogError(ex, "Er is een onverwachte fout opgetreden bij het updaten van de gebruiker zijn balans met ID {Id}.", request.Id);
 
                             // Return een foutbericht
                             return new ErrorResult("Er is een onverwachte fout opgetreden bij het updaten van de gebruiker zijn balans! Probeer het later opnieuw en contacteer ICT.");
@@ -109,7 +103,7 @@ namespace ProjectCore.Features.Gebruikers.Commands
                 catch (Exception ex)
                 {
                     // Dit vangt uitzonderingen op die buiten de transacties kunnen plaatsvinden
-                   // _logger.LogError(ex, "Er is een onverwachte fout opgetreden buiten de transactie bij het updaten van de gebruiker zijn balans met ID {Id}.", request.Id);
+                    // _logger.LogError(ex, "Er is een onverwachte fout opgetreden buiten de transactie bij het updaten van de gebruiker zijn balans met ID {Id}.", request.Id);
 
                     // Return een foutbericht
                     return new ErrorResult("Er is een onverwachte fout opgetreden bij het verwerken van de balans update! Probeer het later opnieuw.");

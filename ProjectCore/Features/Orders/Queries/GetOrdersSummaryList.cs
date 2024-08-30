@@ -3,7 +3,6 @@ using MediatR;
 using Microsoft.EntityFrameworkCore;
 using ProjectCore.Data;
 using ProjectCore.Domain.Entities.Bestellingen;
-using ProjectCore.Domain.Entities.Gebruiker;
 using ProjectCore.Shared.Exceptions;
 
 namespace ProjectCore.Features.Orders.Queries
@@ -33,8 +32,12 @@ namespace ProjectCore.Features.Orders.Queries
                                                                 oi.OrderStatus == OrderStatus.Besteld ||
                                                                 oi.OrderStatus == OrderStatus.OpTeHalen ||
                                                                 oi.OrderStatus == OrderStatus.Retour) ? "in behandeling" : "Afgehandeld");
-                    var ordersQuery =  _context.Orders.AsQueryable();
-                    if(request.Status == "Openstaande bestellingen") //Hardcoded I know. Later misschien evalueren?
+                    var ordersQuery = _context.Orders.AsQueryable();
+                    if(request.UserNaam != null)
+                    {
+                        ordersQuery = ordersQuery.Where(order => order.UserNaam.Contains(request.UserNaam));
+                    }
+                    if (request.Status == "Openstaande bestellingen") //Hardcoded I know. Later misschien evalueren?
                     {
                         ordersQuery = ordersQuery.Where(order => order.OrderItems.Any(oi =>
                             oi.OrderStatus == OrderStatus.Open ||

@@ -3,13 +3,12 @@ using MediatR;
 using Microsoft.EntityFrameworkCore;
 using ProjectCore.Data;
 using ProjectCore.Shared.Exceptions;
-using static ProjectCore.Features.Producten.Queries.GetKleurenForProduct;
 
 namespace ProjectCore.Features.Producten.Queries
 {
     public class GetFotosForProductList
     {
-        public record Query: IRequest<Result>
+        public record Query : IRequest<Result>
         {
             public Guid ProductId { get; set; }
         }

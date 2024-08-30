@@ -1,47 +1,5 @@
 ﻿@page
 @model KledijModule.Areas.Admin.Pages.Gebruikers.IndexModel
-@* 
-@{
-}
-<table class="table align-middle text-center">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Users[0].FullName)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Users[0].Email)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Users[0].Balans)
-            </th>
-            <th>Acties</th>
-        </tr>
-    </thead>
-    <tbody>
-
-        @foreach (var user in Model.Users)
-        {
-            <tr>
-                <td>
-                    @Html.DisplayFor(modelItem => user.FullName)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => user.Email)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => user.Balans)
-                </td>
-                <td>
-                    <a asp-page="./Edit" class="btn btn-default" asp-route-Id="@user.Id"><i class="fa-solid fa-pen-to-square"></i> Edit</a> |
-                    <form asp-page="./Delete" asp-route-Id="@user.Id" method="post" style="display: inline;">
-                        <button type="submit" class="btn btn-default" onclick="return confirm('Bent u zeker dat u deze gebruiker wil verwijderen?')"><i class="fa-solid fa-trash"></i> Delete</button>
-                    </form>
-                </td>
-            </tr>
-        }
-    </tbody>
-</table> *@
 
 <table class="table align-middle text-center">
     <thead>
@@ -62,27 +20,6 @@
 
         @foreach (var user in Model.Users)
         {
-@*             <tr>
-                <td>
-                    @Html.DisplayFor(modelItem => user.FullName)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => user.Email)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => user.Balans)
-                </td>
-                <td>
-                    <a  hx-get="@Url.Page("Edit", new { @user.Id})"
-                        hx-target="#modal-container"
-                        class="btn btn-default"
-                       ><i class="fa-solid fa-pen-to-square"></i> Edit</a> |
-
-                    <form asp-page="./Delete" asp-route-Id="@user.Id" method="post" style="display: inline;">
-                        <button type="submit" class="btn btn-default"  onclick="return confirm('Bent u zeker dat u deze gebruiker wil verwijderen?')"><i class="fa-solid fa-trash"></i> Delete</button>
-                    </form>
-                </td>
-            </tr> *@
             @await Html.PartialAsync("_Gebruiker",user);
         }
     </tbody>

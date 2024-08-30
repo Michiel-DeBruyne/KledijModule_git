@@ -3,7 +3,6 @@ using MediatR;
 using Microsoft.EntityFrameworkCore;
 using ProjectCore.Data;
 using ProjectCore.Domain.Entities.Bestellingen;
-using ProjectCore.Domain.Entities.Gebruiker;
 
 namespace ProjectCore.Features.Orders.Queries
 {

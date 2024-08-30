@@ -3,5 +3,30 @@
 @model IndexModel
 @{
 }
+<div class="card p-4 mb-3">
+    <form method="get">
+        <div class="input-group mb-3">
+            <span class="input-group-text" id="search-addon">
+                <img id="loading" class="htmx-indicator m-1" src="~/Images/bars.svg" alt="search" />
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </span>
+            <input type="text"
+                   asp-for="SearchString"
+                   id="query"
+                   autocomplete="off"
+                   hx-get="@Url.Page("Index")"
+                   hx-target="#results"
+                   hx-trigger="keyup changed delay:500ms"
+                   hx-indicator="#loading"
+                   placeholder="Zoek op gebruiker"
+                   class="form-control"
+                   aria-label="Username"
+                   aria-describedby="search-addon">
+            <input type="hidden" asp-for="CurrentTab" />
+        </div>
+    </form>
+</div>
 
-@await Html.PartialAsync("_IndexPartial")
+<div id="results">
+    @await Html.PartialAsync("_IndexPartial")
+</div>

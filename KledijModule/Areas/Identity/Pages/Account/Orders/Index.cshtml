@@ -26,22 +26,25 @@
                     <tbody>
                         @foreach (var orderItem in order.OrderItems)
                         {
-                            <tr>
-                                @if (order.OrderItems.IndexOf(orderItem) == 0) 
+                            <tr id="OrderItemRow-@orderItem.Id">
+                                @if (order.OrderItems.IndexOf(orderItem) == 0)
                                 {
-                                    <td rowspan="@order.OrderItems.Count">@order.CreatedDate</td> <!-- Rowspan set to the count of order items -->
+                                    <td rowspan="@order.OrderItems.Count">@order.CreatedDate</td>
                                 }
                                 <td>@orderItem.ProductNaam</td>
                                 <td>@orderItem.Hoeveelheid</td>
                                 <td>@(orderItem.Punten * orderItem.Hoeveelheid)</td>
-                                <td id="OrderItemStatus-@(orderItem.Id)">@orderItem.OrderStatus</td>
-                                <td>
-                                    <form method="post" hx-post="@Url.Page("","Cancel")" hx-target="#OrderItemStatus-@(orderItem.Id)">
-                                        <input type="hidden" asp-for="Data.OrderItems" value="@orderItem.Id">
-                                        <button type="submit" class="btn btn-outline-danger">
+                                <td id="OrderItemStatus-@orderItem.Id">
+                                    @orderItem.OrderStatus
+                                </td>
+                                <td id="OrderItemActies-@orderItem.Id">
+                                    <form id="cancel-form">
+                                        @Html.AntiForgeryToken()
+                                        <button type="submit" class="btn btn-outline-danger cancel-btn" data-id="@orderItem.Id">
                                             <i class="fa-solid fa-ban me-2"></i> Annuleer
                                         </button>
-                                </form></td>
+                                    </form>
+                                </td>
                             </tr>
                         }
                     </tbody>
@@ -51,3 +54,39 @@
         </dd>
     </dl>
 </div>
+@section Scripts{
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            // Haal de tokenwaarde uit de meta-tag of andere bron
+            var antiForgeryToken = $('input[name="__RequestVerificationToken"]').val();
+
+            // Event handler for the cancel button
+            $('.cancel-btn').on('click', function (event) {
+                event.preventDefault();
+
+                var button = $(this);
+                var orderId = button.data('id');
+
+                $.ajax({
+                    url: '@Url.Page("", "Cancel")',
+                    type: 'POST',
+                    headers: {
+                        'RequestVerificationToken': antiForgeryToken
+                    },
+                    data: { OrderItemId: orderId },
+                    success: function (response) {
+                        $('#OrderItemStatus-' + orderId).html('<span>Geannuleerd</span>');
+                        $('#OrderItemActies-' + orderId).html('');
+                    },
+                    error: function (xhr, status, error) {
+                        alert('Er is een fout opgetreden: ' + xhr.responseText);
+                        console.error('An error occurred:', error);
+                    }
+                });
+            });
+        });
+    </script>
+
+
+}

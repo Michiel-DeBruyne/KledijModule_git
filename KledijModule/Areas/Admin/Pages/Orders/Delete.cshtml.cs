@@ -30,7 +30,7 @@ namespace KledijModule.Areas.Admin.Pages.Orders
                     TempData["Errors"] = errorResult.Message;
                 }
             }
-            return RedirectToPage(nameof(Index));
+            return Content(""); // door lege content, verdwijnt de rij gewoon
         }
     }
 }

@@ -5,23 +5,18 @@ using Microsoft.EntityFrameworkCore;
 using ProjectCore.Data;
 using ProjectCore.Domain.Entities.Catalogus;
 using ProjectCore.Shared.Exceptions;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ProjectCore.Features.ProductAttributen.ProductImages.Commands
 {
     public class AddImageToProduct
     {
-        public record AddCommand :IRequest<Result>
+        public record AddCommand : IRequest<Result>
         {
             public string ImagePath { get; set; }
             public Guid ProductId { get; set; }
         }
 
-        public class CommandValidator:AbstractValidator<AddCommand>
+        public class CommandValidator : AbstractValidator<AddCommand>
         {
             public CommandValidator()
             {
@@ -45,7 +40,7 @@ namespace ProjectCore.Features.ProductAttributen.ProductImages.Commands
                 ValidationResult validationResult = await validator.ValidateAsync(request);
                 if (!validationResult.IsValid)
                 {
-                    return new ValidationErrorResult("validatie voor het toevoegen van de foto aan het product mislukt", validationResult.Errors.Select(x => new ValidationError(x.PropertyName,x.ErrorMessage)).ToList());
+                    return new ValidationErrorResult("validatie voor het toevoegen van de foto aan het product mislukt", validationResult.Errors.Select(x => new ValidationError(x.PropertyName, x.ErrorMessage)).ToList());
                 }
                 try
                 {

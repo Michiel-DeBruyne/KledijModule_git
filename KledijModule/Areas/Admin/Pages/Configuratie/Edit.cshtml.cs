@@ -36,7 +36,7 @@ namespace KledijModule.Areas.Admin.Pages.Configuratie
         public async Task OnGet(GetWebShopConfig.Query query)
         {
             var result = await _mediator.Send(query);
-            if(result is SuccessResult<GetWebShopConfig.WebShopConfigVm> successResult)
+            if (result is SuccessResult<GetWebShopConfig.WebShopConfigVm> successResult)
             {
                 BestelPeriode = successResult.Data.Adapt<WebShopConfigEditViewModel>();
             }

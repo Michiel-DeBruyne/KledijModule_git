@@ -1,15 +1,8 @@
 ﻿using Mapster;
 using MediatR;
-using Microsoft.AspNetCore.Http;
 using Microsoft.EntityFrameworkCore;
 using ProjectCore.Data;
 using ProjectCore.Shared.Exceptions;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using static ProjectCore.Features.Gebruikers.Queries.GetUsersList;
 
 namespace ProjectCore.Features.Gebruikers.Queries
 {
@@ -33,7 +26,7 @@ namespace ProjectCore.Features.Gebruikers.Queries
                 try
                 {
                     var result = await _context.Gebruikers.Where(user => user.Id == request.Id).ProjectToType<GetUserBalanceVm>().FirstOrDefaultAsync(cancellationToken);
-                    if(result == null)
+                    if (result == null)
                     {
                         return new NotFoundErrorResult($"Gebruiker met ID {request.Id} kon niet gevonden worden. Werd deze misschien verwijderd?");
                     }

@@ -3,7 +3,6 @@ using Mapster;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using Microsoft.Graph.Models.Security;
 using ProjectCore.Features.Orders.Queries;
 using ProjectCore.Shared.Exceptions;
 using System.ComponentModel;
@@ -24,6 +23,9 @@ namespace KledijModule.Areas.Admin.Pages.Orders
             set => _currentTab = value;
         }
 
+        [BindProperty(SupportsGet = true)] // property mag leeg zijn, maar moet get requests ondersteunen
+        public string? SearchString { get; set; }
+
         public IndexModel(IMediator mediator)
         {
             _mediator = mediator;
@@ -31,8 +33,8 @@ namespace KledijModule.Areas.Admin.Pages.Orders
 
 
         public async Task<IActionResult> OnGetAsync()
-        {
-            var ordersResult = await _mediator.Send(new GetOrdersSummaryList.Query() { Status = CurrentTab});
+       {
+            var ordersResult = await _mediator.Send(new GetOrdersSummaryList.Query() { Status = CurrentTab, UserNaam = SearchString });
             if (ordersResult is SuccessResult<List<GetOrdersSummaryList.OrdersSummaryListVm>> SuccessResult)
             {
                 Orders = SuccessResult.Data.Adapt<List<OrdersIndexListViewModel>>();

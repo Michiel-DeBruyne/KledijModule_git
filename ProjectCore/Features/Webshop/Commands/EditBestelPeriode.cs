@@ -3,13 +3,7 @@ using Mapster;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 using ProjectCore.Data;
-using ProjectCore.Domain.Entities.WebShop;
 using ProjectCore.Shared.Exceptions;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ProjectCore.Features.Webshop.Commands
 {
@@ -57,8 +51,8 @@ namespace ProjectCore.Features.Webshop.Commands
             {
                 try
                 {
-                    var bestelperiode = await _context.WebShopConfigurations.FindAsync(request.Id,cancellationToken);
-                    if(bestelperiode == null)
+                    var bestelperiode = await _context.WebShopConfigurations.FindAsync(request.Id, cancellationToken);
+                    if (bestelperiode == null)
                     {
                         return new NotFoundErrorResult("Bestelperiode die u wenst te bewerken kon niet langer gevonden worden. Mogelijks werd het verwijderd?");
                     }

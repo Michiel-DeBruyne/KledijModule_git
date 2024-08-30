@@ -1,13 +1,10 @@
-using KledijModule.Common.Authorization;
 using Mapster;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.Graph;
 using Microsoft.Graph.Models;
 using Microsoft.Identity.Web;
-using Microsoft.IdentityModel.Tokens;
 using ProjectCore.Domain.Entities.Catalogus;
 using ProjectCore.Features.Orders.Commands;
 using ProjectCore.Features.Webshop.Queries;
@@ -15,7 +12,6 @@ using ProjectCore.Features.WinkelMand.Queries;
 using ProjectCore.Shared.Exceptions;
 using System.ComponentModel;
 using System.Security.Claims;
-using System.Text;
 
 namespace KledijModule.Pages.Checkout
 {
@@ -69,7 +65,7 @@ namespace KledijModule.Pages.Checkout
             public string UserId { get; set; }
 
             //dient om het mogelijk te maken dat een admin een bestelling plaatst voor een ander en de code weet dat de admin zijn/haar winkelmand moet geleegd worden.
-            public string RequesterId { get; set; } 
+            public string RequesterId { get; set; }
 
             public string UserNaam { get; set; }
             [DisplayName("Totaal")]
@@ -162,8 +158,8 @@ namespace KledijModule.Pages.Checkout
         public async Task OnGetUsersListAsync()
         {
             //if (!User.IsInRole(Roles.Admin)) { 
-                Order.UserId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
-                Order.UserNaam = User.Identity.Name;
+            Order.UserId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+            Order.UserNaam = User.Identity.Name;
             //}
         }
         public async Task<IActionResult> OnGetUsersListAutoCompleteAsync(string term)
@@ -174,8 +170,8 @@ namespace KledijModule.Pages.Checkout
                 {
                     requestConfiguration.QueryParameters.Filter = $"startswith(displayName,'{term}')";
                 }
-                    //requestConfiguration.QueryParameters.Filter = "userType eq 'Member'";// --> user.read.all permission required
-                    requestConfiguration.QueryParameters.Select = new[] { "id", "displayName", "mail" };
+                //requestConfiguration.QueryParameters.Filter = "userType eq 'Member'";// --> user.read.all permission required
+                requestConfiguration.QueryParameters.Select = new[] { "id", "displayName", "mail" };
             });
 
             var users = new List<User>();

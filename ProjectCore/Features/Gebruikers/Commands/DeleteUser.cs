@@ -1,21 +1,15 @@
 ﻿using FluentValidation;
 using FluentValidation.Results;
 using MediatR;
-using MediatR.Wrappers;
 using Microsoft.EntityFrameworkCore;
 using ProjectCore.Data;
 using ProjectCore.Shared.Exceptions;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ProjectCore.Features.Gebruikers.Commands
 {
     public class DeleteUser
     {
-        public record Command:IRequest<Result>
+        public record Command : IRequest<Result>
         {
             public string Id { get; set; }
         }
@@ -49,7 +43,7 @@ namespace ProjectCore.Features.Gebruikers.Commands
                         return new ValidationErrorResult("Validatie mislukt voor het verwijderen van de gebruiker", validationResult.Errors.Select(x => new ValidationError(x.PropertyName, x.ErrorMessage)).ToList());
                     }
                     var user = await _context.Gebruikers.FindAsync(request.Id);
-                    if(user == null)
+                    if (user == null)
                     {
                         return new NotFoundErrorResult($"Gebruiker met Id {request.Id} kon niet worden gevonden. Mogelijks werd deze al verwijderd?");
                     }

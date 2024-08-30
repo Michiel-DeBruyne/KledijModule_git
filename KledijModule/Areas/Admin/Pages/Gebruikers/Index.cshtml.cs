@@ -94,7 +94,7 @@ namespace KledijModule.Areas.Admin.Pages.Gebruikers
             {
                 foreach (ValidationError error in validationErrorResult.Errors)
                 {
-                    string modelStateKey = $"{nameof(Product)}.{error.PropertyName}"; // TODO: dit is misschien wat overkill, bespreken met Caitlin.
+                    string modelStateKey = $"{nameof(Product)}.{error.PropertyName}";
                     ModelState.AddModelError(modelStateKey, error.Details);
                 }
             }
@@ -103,9 +103,8 @@ namespace KledijModule.Areas.Admin.Pages.Gebruikers
                 TempData["Errors"] = errorResult.Message;
                 return new BadRequestObjectResult(errorResult.Message);
             }
-            return new BadRequestObjectResult("test"); //TODO: test voor global error handling. K struggle
-            //Iets misgelopen, return page met huidige data
-            // return RedirectToPage(nameof(Index));
-        }       
+            // Standaard response bij een onbepaalde fout
+            return StatusCode(500, "Internal server error. Contacteer ICT");
+        }
     }
 }

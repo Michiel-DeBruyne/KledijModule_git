@@ -106,7 +106,8 @@ namespace ProjectCore.Features.Orders.Commands
                     //Geen mapster gebruikt omdat addasync anders ook een nieuw product zal proberen maken, nadeel van navigation properties :/
 
                     //controleer of gebruiker nog bestaat indien de gebruiker ook de requester is.
-                    if(request.RequesterId == request.UserId) {
+                    if (request.RequesterId == request.UserId)
+                    {
                         //Er moet geen foutmelding zijn als gebruiker niet bestaat indien requester Admin is. Gebruiker kan nog niet aan zone hangen maar er kan wel al kledij voor besteld worden.
                         bool gebruikerBestaat = await _context.Gebruikers.AnyAsync(g => g.Id == request.UserId);
                         if (!gebruikerBestaat)

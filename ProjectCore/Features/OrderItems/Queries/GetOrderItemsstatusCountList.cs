@@ -3,11 +3,6 @@ using Microsoft.EntityFrameworkCore;
 using ProjectCore.Data;
 using ProjectCore.Domain.Entities.Bestellingen;
 using ProjectCore.Shared.Exceptions;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ProjectCore.Features.OrderItems.Queries
 {

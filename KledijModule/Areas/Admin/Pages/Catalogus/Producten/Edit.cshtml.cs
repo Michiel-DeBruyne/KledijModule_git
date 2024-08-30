@@ -31,7 +31,7 @@ namespace KledijModule.Areas.Admin.Pages.Catalogus.Producten
 
         #region ctor
 
-        public EditModel(IConfiguration config, IMediator mediator,IWebHostEnvironment webHostEnvironment)
+        public EditModel(IConfiguration config, IMediator mediator, IWebHostEnvironment webHostEnvironment)
         {
             _mediator = mediator;
             _fileSizeLimit = config.GetValue<long>("FileSizeLimit");
@@ -129,20 +129,22 @@ namespace KledijModule.Areas.Admin.Pages.Catalogus.Producten
         }
         public async Task<IActionResult> OnPostUploadImagesAsync()
         {
-            foreach(var imageFile in ProductImages)
+            foreach (var imageFile in ProductImages)
             {
                 //Kijk of extensie van bestand toegelaten is.
                 var ext = Path.GetExtension(imageFile.FileName).ToLowerInvariant();
-                if(string.IsNullOrEmpty(ext) || !permittedFileExtensions.Contains(ext)){
+                if (string.IsNullOrEmpty(ext) || !permittedFileExtensions.Contains(ext))
+                {
                     throw new Exception("Foto extensie is niet toegelaten. De toegelaten extensies zijn png, jpg.");
                 }
 
-                if(imageFile.Length > _fileSizeLimit)
+                if (imageFile.Length > _fileSizeLimit)
                 {
                     throw new Exception("Afbeelding is te groot. Gelieve een kleinere afbeelding te selecteren.");
                 }
 
-                if(!ModelState.IsValid){
+                if (!ModelState.IsValid)
+                {
                     return Page();
                 }
                 string wwwRootPath = _webHostEnvironment.WebRootPath;
@@ -155,7 +157,7 @@ namespace KledijModule.Areas.Admin.Pages.Catalogus.Producten
                     {
                         await imageFile.CopyToAsync(fileStream);
                     }
-                    var result =  await _mediator.Send(new AddImageToProduct.AddCommand { ImagePath = _targetFilePath+trustedFileNameForFileStorage, ProductId = ProductMetDetails.Id });
+                    var result = await _mediator.Send(new AddImageToProduct.AddCommand { ImagePath = _targetFilePath + trustedFileNameForFileStorage, ProductId = ProductMetDetails.Id });
                     if (result is SuccessResult successResult)
                     {
                         continue;
@@ -173,10 +175,10 @@ namespace KledijModule.Areas.Admin.Pages.Catalogus.Producten
                         TempData["Errors"] = errorResult.Message;
                     }
                 }
-                catch(Exception ex)
+                catch (Exception ex)
                 {
                     //TODO: error handlen
-                }               
+                }
             }
             return ViewComponent("FotosForProductTable", new { ProductId = ProductMetDetails.Id });
         }

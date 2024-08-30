@@ -1,12 +1,8 @@
 ﻿using KledijModule.Common.Authorization;
 using KledijModule.Common.RequestContext;
 using Microsoft.AspNetCore.Authentication.OpenIdConnect;
-using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpOverrides;
-using Microsoft.AspNetCore.Mvc.Authorization;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.FileProviders;
 using Microsoft.Identity.Web;
 using Microsoft.Identity.Web.UI;
 using ProjectCore;
@@ -30,6 +26,7 @@ namespace KledijModule
                     .EnableTokenAcquisitionToCallDownstreamApi(initialScopes)
                         .AddMicrosoftGraph(builder.Configuration.GetSection("DownstreamApis:MicrosoftGraph"))
                         .AddInMemoryTokenCaches();
+            ;
 
             // Add user to database if not exist.If user exist, do nothing.This is to make it so our admins can manage the balance of users.
 
@@ -76,18 +73,18 @@ namespace KledijModule
             });
             builder.Services.AddRazorPages(options =>
             {
-                options.Conventions.AuthorizeAreaFolder("Admin","/", AuthorizationPolicies.RequireAdminRole);
+                options.Conventions.AuthorizeAreaFolder("Admin", "/", AuthorizationPolicies.RequireAdminRole);
             }).AddMicrosoftIdentityUI();
 
             builder.Services.AddHttpContextAccessor();
             builder.Services.AddScoped<IRequestContext, RequestContextService>();
             builder.Services.AddApplicationServices(builder.Configuration);
-            //builder.Services.ConfigureApplicationCookie(options =>
-            //{
-            //    //options.Cookie.HttpOnly = true;
-            //    ////options.Cookie.SameSite = Microsoft.AspNetCore.Http.SameSiteMode.Strict;
-            //    ////options.Cookie.SecurePolicy = Microsoft.AspNetCore.Http.CookieSecurePolicy.Always;
-            //});
+            builder.Services.ConfigureApplicationCookie(options =>
+            {
+                //options.Cookie.HttpOnly = true;
+                ////options.Cookie.SameSite = Microsoft.AspNetCore.Http.SameSiteMode.Strict;
+                ////options.Cookie.SecurePolicy = Microsoft.AspNetCore.Http.CookieSecurePolicy.Always;
+            });
 
             //var PhysicalFilesProvider = new PhysicalFileProvider(Path.Combine(Directory.GetCurrentDirectory(), builder.Configuration.GetValue<string>("StoredFilesPath")));
             //builder.Services.AddSingleton<IFileProvider>(PhysicalFilesProvider);
@@ -112,27 +109,34 @@ namespace KledijModule
             {
                 app.UseDeveloperExceptionPage();
             }
-                using (var scope = app.Services.CreateScope())
+            using (var scope = app.Services.CreateScope())
+            {
+                var services = scope.ServiceProvider;
+                try
                 {
-                    var services = scope.ServiceProvider;
-                    try
+                    var context = services.GetRequiredService<ApplicationDbContext>();
+                    if (!context.Database.CanConnect())
                     {
-                        var context = services.GetRequiredService<ApplicationDbContext>();
-                        if (!context.Database.CanConnect())
-                        {
-                            // This will ensure the database is created and all migrations are applied
-                            context.Database.Migrate();
-                        }
-                    }
-                    catch (Exception ex)
-                    {
-                        var logger = services.GetRequiredService<ILogger<Program>>();
-                        logger.LogError(ex, "An error occurred while applying migrations.");
+                        // This will ensure the database is created and all migrations are applied
+                        context.Database.Migrate();
                     }
                 }
-           
+                catch (Exception ex)
+                {
+                    var logger = services.GetRequiredService<ILogger<Program>>();
+                    logger.LogError(ex, "An error occurred while applying migrations.");
+                }
+            }
+            var supportedCultures = new[] { "nl-BE" };
 
-           // app.UseHttpsRedirection();
+            var localizationOptions = new RequestLocalizationOptions()
+                .SetDefaultCulture(supportedCultures[0])
+                .AddSupportedCultures(supportedCultures)
+                .AddSupportedUICultures(supportedCultures);
+
+            app.UseRequestLocalization(localizationOptions);
+
+            // app.UseHttpsRedirection();
             app.UseStaticFiles();
 
             app.UseRouting();

@@ -1,13 +1,10 @@
-using Htmx;
 using Mapster;
 using MediatR;
-using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using ProjectCore.Domain.Entities.Bestellingen;
 using ProjectCore.Domain.Entities.Catalogus;
 using ProjectCore.Features.OrderItems.Commands;
-using ProjectCore.Features.OrderItems.Queries;
 using ProjectCore.Features.Orders.Queries;
 using ProjectCore.Shared.Exceptions;
 using System.ComponentModel;
@@ -88,7 +85,7 @@ namespace KledijModule.Areas.Admin.Pages.Orders
 
         public async Task<IActionResult> OnGetEditAsync()
         {
-            return Partial("_UpdateOrderItemStatusModal",this);
+            return Partial("_UpdateOrderItemStatusModal", this);
         }
 
         // Normaal zou je hier zetten [FromForm] int Hoeveelheid, int OrderStatusId, om tegen overposting te beschermen, maar de back-end laat enkel de 2 properties toe, dus kan niet zo kwaad denk ik. OrderItem blijven gebruiken kan toekomstige aanpassingen vergemakkelijken.

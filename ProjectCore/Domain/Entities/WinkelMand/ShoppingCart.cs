@@ -1,6 +1,5 @@
 ﻿using ProjectCore.Domain.Common;
 using ProjectCore.Domain.contract;
-using ProjectCore.Domain.Entities.Gebruiker;
 
 namespace ProjectCore.Domain.Entities.WinkelMand
 {

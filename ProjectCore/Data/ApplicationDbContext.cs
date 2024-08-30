@@ -1,5 +1,4 @@
-﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using ProjectCore.Domain.Common;
 using ProjectCore.Domain.Entities.Bestellingen;
 using ProjectCore.Domain.Entities.Catalogus;
@@ -12,7 +11,7 @@ using ProjectCore.Shared.RequestContext;
 
 namespace ProjectCore.Data;
 
-public class ApplicationDbContext :DbContext
+public class ApplicationDbContext : DbContext
 {
     private readonly IRequestContext _requestContext;
 
@@ -59,11 +58,11 @@ public class ApplicationDbContext :DbContext
             {
                 case EntityState.Added:
                     entry.Entity.CreatedBy = userName;
-                    entry.Entity.CreatedDate = TimeZoneInfo.ConvertTimeFromUtc(DateTime.UtcNow, cest);
+                    entry.Entity.CreatedDate = DateTime.Now; /*TimeZoneInfo.ConvertTimeFromUtc(DateTime.UtcNow, cest);*/
                     break;
                 case EntityState.Modified:
                     entry.Entity.LastModifiedBy = userName;
-                    entry.Entity.LastModifiedDate = TimeZoneInfo.ConvertTimeFromUtc(DateTime.UtcNow, cest);
+                    entry.Entity.LastModifiedDate = DateTime.Now;/*TimeZoneInfo.ConvertTimeFromUtc(DateTime.UtcNow, cest);*/
                     break;
             }
         }
