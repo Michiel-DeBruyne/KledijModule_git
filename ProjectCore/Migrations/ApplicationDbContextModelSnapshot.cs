@@ -176,6 +176,41 @@ namespace ProjectCore.Migrations
                     b.ToTable("Categories");
                 });
 
+            modelBuilder.Entity("ProjectCore.Domain.Entities.Catalogus.Favoriet", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("CreatedBy")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("CreatedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("GebruikerId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("LastModifiedBy")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime?>("LastModifiedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<Guid>("ProductId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ProductId");
+
+                    b.HasIndex("GebruikerId", "ProductId")
+                        .IsUnique();
+
+                    b.ToTable("Favorieten", (string)null);
+                });
+
             modelBuilder.Entity("ProjectCore.Domain.Entities.Catalogus.Foto", b =>
                 {
                     b.Property<Guid>("Id")
@@ -507,6 +542,25 @@ namespace ProjectCore.Migrations
                     b.Navigation("ParentCategorie");
                 });
 
+            modelBuilder.Entity("ProjectCore.Domain.Entities.Catalogus.Favoriet", b =>
+                {
+                    b.HasOne("ProjectCore.Domain.Entities.Gebruiker.ApplicationUser", "Gebruiker")
+                        .WithMany("ProductFavorieten")
+                        .HasForeignKey("GebruikerId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("ProjectCore.Domain.Entities.Catalogus.Product", "Product")
+                        .WithMany()
+                        .HasForeignKey("ProductId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Gebruiker");
+
+                    b.Navigation("Product");
+                });
+
             modelBuilder.Entity("ProjectCore.Domain.Entities.Catalogus.Foto", b =>
                 {
                     b.HasOne("ProjectCore.Domain.Entities.Catalogus.Product", "Product")
@@ -563,6 +617,11 @@ namespace ProjectCore.Migrations
             modelBuilder.Entity("ProjectCore.Domain.Entities.Catalogus.Product", b =>
                 {
                     b.Navigation("Fotos");
+                });
+
+            modelBuilder.Entity("ProjectCore.Domain.Entities.Gebruiker.ApplicationUser", b =>
+                {
+                    b.Navigation("ProductFavorieten");
                 });
 
             modelBuilder.Entity("ProjectCore.Domain.Entities.WinkelMand.ShoppingCart", b =>

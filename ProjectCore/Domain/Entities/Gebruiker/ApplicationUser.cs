@@ -1,4 +1,6 @@
-﻿namespace ProjectCore.Domain.Entities.Gebruiker
+﻿using ProjectCore.Domain.Entities.Catalogus;
+
+namespace ProjectCore.Domain.Entities.Gebruiker
 {
     public class ApplicationUser
     {
@@ -20,5 +22,7 @@
         //public string? Subdivisie { get; set; } = string.Empty;
         //public bool Actief { get; set; }
         public int Balans { get; set; } = 0;
+
+        public List<Favoriet> ProductFavorieten { get; set;} = new List<Favoriet>();
     }
 }

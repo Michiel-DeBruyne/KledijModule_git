@@ -3,6 +3,74 @@
   "WorkspaceRootPath": "C:\\Users\\mdebr\\OneDrive - Office 365 GPI\\Secret_shared_corner\\KledijModule_git\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{F42C3E0D-F09A-4F7B-8BD6-A6E85BCB56A7}|KledijModule\\KledijModule.csproj|c:\\users\\mdebr\\onedrive - office 365 gpi\\secret_shared_corner\\kledijmodule_git\\kledijmodule\\pages\\shared\\components\\categorynavigation\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F42C3E0D-F09A-4F7B-8BD6-A6E85BCB56A7}|KledijModule\\KledijModule.csproj|solutionrelative:kledijmodule\\pages\\shared\\components\\categorynavigation\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F42C3E0D-F09A-4F7B-8BD6-A6E85BCB56A7}|KledijModule\\KledijModule.csproj|c:\\users\\mdebr\\onedrive - office 365 gpi\\secret_shared_corner\\kledijmodule_git\\kledijmodule\\pages\\catalogus\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F42C3E0D-F09A-4F7B-8BD6-A6E85BCB56A7}|KledijModule\\KledijModule.csproj|solutionrelative:kledijmodule\\pages\\catalogus\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F42C3E0D-F09A-4F7B-8BD6-A6E85BCB56A7}|KledijModule\\KledijModule.csproj|c:\\users\\mdebr\\onedrive - office 365 gpi\\secret_shared_corner\\kledijmodule_git\\kledijmodule\\pages\\catalogus\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F42C3E0D-F09A-4F7B-8BD6-A6E85BCB56A7}|KledijModule\\KledijModule.csproj|solutionrelative:kledijmodule\\pages\\catalogus\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F42C3E0D-F09A-4F7B-8BD6-A6E85BCB56A7}|KledijModule\\KledijModule.csproj|c:\\users\\mdebr\\onedrive - office 365 gpi\\secret_shared_corner\\kledijmodule_git\\kledijmodule\\pages\\catalogus\\_productenlijst.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F42C3E0D-F09A-4F7B-8BD6-A6E85BCB56A7}|KledijModule\\KledijModule.csproj|solutionrelative:kledijmodule\\pages\\catalogus\\_productenlijst.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F42C3E0D-F09A-4F7B-8BD6-A6E85BCB56A7}|KledijModule\\KledijModule.csproj|c:\\users\\mdebr\\onedrive - office 365 gpi\\secret_shared_corner\\kledijmodule_git\\kledijmodule\\pages\\catalogus\\_productcard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F42C3E0D-F09A-4F7B-8BD6-A6E85BCB56A7}|KledijModule\\KledijModule.csproj|solutionrelative:kledijmodule\\pages\\catalogus\\_productcard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F42C3E0D-F09A-4F7B-8BD6-A6E85BCB56A7}|KledijModule\\KledijModule.csproj|c:\\users\\mdebr\\onedrive - office 365 gpi\\secret_shared_corner\\kledijmodule_git\\kledijmodule\\areas\\admin\\pages\\catalogus\\producten\\edit.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F42C3E0D-F09A-4F7B-8BD6-A6E85BCB56A7}|KledijModule\\KledijModule.csproj|solutionrelative:kledijmodule\\areas\\admin\\pages\\catalogus\\producten\\edit.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{85273864-EA55-48DD-88D4-076AFF005357}|ProjectCore\\ProjectCore.csproj|c:\\users\\mdebr\\onedrive - office 365 gpi\\secret_shared_corner\\kledijmodule_git\\projectcore\\features\\favorieten\\updatefavorite.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{85273864-EA55-48DD-88D4-076AFF005357}|ProjectCore\\ProjectCore.csproj|solutionrelative:projectcore\\features\\favorieten\\updatefavorite.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F42C3E0D-F09A-4F7B-8BD6-A6E85BCB56A7}|KledijModule\\KledijModule.csproj|c:\\users\\mdebr\\onedrive - office 365 gpi\\secret_shared_corner\\kledijmodule_git\\kledijmodule\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F42C3E0D-F09A-4F7B-8BD6-A6E85BCB56A7}|KledijModule\\KledijModule.csproj|solutionrelative:kledijmodule\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F42C3E0D-F09A-4F7B-8BD6-A6E85BCB56A7}|KledijModule\\KledijModule.csproj|c:\\users\\mdebr\\onedrive - office 365 gpi\\secret_shared_corner\\kledijmodule_git\\kledijmodule\\common\\requestcontext\\requestcontextservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F42C3E0D-F09A-4F7B-8BD6-A6E85BCB56A7}|KledijModule\\KledijModule.csproj|solutionrelative:kledijmodule\\common\\requestcontext\\requestcontextservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F42C3E0D-F09A-4F7B-8BD6-A6E85BCB56A7}|KledijModule\\KledijModule.csproj|c:\\users\\mdebr\\onedrive - office 365 gpi\\secret_shared_corner\\kledijmodule_git\\kledijmodule\\areas\\admin\\pages\\orders\\details.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F42C3E0D-F09A-4F7B-8BD6-A6E85BCB56A7}|KledijModule\\KledijModule.csproj|solutionrelative:kledijmodule\\areas\\admin\\pages\\orders\\details.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F42C3E0D-F09A-4F7B-8BD6-A6E85BCB56A7}|KledijModule\\KledijModule.csproj|c:\\users\\mdebr\\onedrive - office 365 gpi\\secret_shared_corner\\kledijmodule_git\\kledijmodule\\areas\\admin\\pages\\orders\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F42C3E0D-F09A-4F7B-8BD6-A6E85BCB56A7}|KledijModule\\KledijModule.csproj|solutionrelative:kledijmodule\\areas\\admin\\pages\\orders\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{85273864-EA55-48DD-88D4-076AFF005357}|ProjectCore\\ProjectCore.csproj|c:\\users\\mdebr\\onedrive - office 365 gpi\\secret_shared_corner\\kledijmodule_git\\projectcore\\features\\orders\\commands\\createorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{85273864-EA55-48DD-88D4-076AFF005357}|ProjectCore\\ProjectCore.csproj|solutionrelative:projectcore\\features\\orders\\commands\\createorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F42C3E0D-F09A-4F7B-8BD6-A6E85BCB56A7}|KledijModule\\KledijModule.csproj|c:\\users\\mdebr\\onedrive - office 365 gpi\\secret_shared_corner\\kledijmodule_git\\kledijmodule\\areas\\admin\\pages\\orders\\_updateorderitemstatusmodal.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F42C3E0D-F09A-4F7B-8BD6-A6E85BCB56A7}|KledijModule\\KledijModule.csproj|solutionrelative:kledijmodule\\areas\\admin\\pages\\orders\\_updateorderitemstatusmodal.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F42C3E0D-F09A-4F7B-8BD6-A6E85BCB56A7}|KledijModule\\KledijModule.csproj|c:\\users\\mdebr\\onedrive - office 365 gpi\\secret_shared_corner\\kledijmodule_git\\kledijmodule\\areas\\admin\\pages\\gebruikers\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F42C3E0D-F09A-4F7B-8BD6-A6E85BCB56A7}|KledijModule\\KledijModule.csproj|solutionrelative:kledijmodule\\areas\\admin\\pages\\gebruikers\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F42C3E0D-F09A-4F7B-8BD6-A6E85BCB56A7}|KledijModule\\KledijModule.csproj|c:\\users\\mdebr\\onedrive - office 365 gpi\\secret_shared_corner\\kledijmodule_git\\kledijmodule\\areas\\admin\\pages\\gebruikers\\_editgebruikerbalansmodal.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F42C3E0D-F09A-4F7B-8BD6-A6E85BCB56A7}|KledijModule\\KledijModule.csproj|solutionrelative:kledijmodule\\areas\\admin\\pages\\gebruikers\\_editgebruikerbalansmodal.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F42C3E0D-F09A-4F7B-8BD6-A6E85BCB56A7}|KledijModule\\KledijModule.csproj|c:\\users\\mdebr\\onedrive - office 365 gpi\\secret_shared_corner\\kledijmodule_git\\kledijmodule\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{F42C3E0D-F09A-4F7B-8BD6-A6E85BCB56A7}|KledijModule\\KledijModule.csproj|solutionrelative:kledijmodule\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F42C3E0D-F09A-4F7B-8BD6-A6E85BCB56A7}|KledijModule\\KledijModule.csproj|c:\\users\\mdebr\\onedrive - office 365 gpi\\secret_shared_corner\\kledijmodule_git\\kledijmodule\\areas\\admin\\pages\\shared\\_adminlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F42C3E0D-F09A-4F7B-8BD6-A6E85BCB56A7}|KledijModule\\KledijModule.csproj|solutionrelative:kledijmodule\\areas\\admin\\pages\\shared\\_adminlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{C09DB945-D6E3-4295-AC2A-C87C5D940D20}|docker-compose.dcproj|c:\\users\\mdebr\\onedrive - office 365 gpi\\secret_shared_corner\\kledijmodule_git\\docker-compose.yml||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{C09DB945-D6E3-4295-AC2A-C87C5D940D20}|docker-compose.dcproj|solutionrelative:docker-compose.yml||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
@@ -13,10 +81,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{F42C3E0D-F09A-4F7B-8BD6-A6E85BCB56A7}|KledijModule\\KledijModule.csproj|c:\\users\\mdebr\\onedrive - office 365 gpi\\secret_shared_corner\\kledijmodule_git\\kledijmodule\\areas\\identity\\pages\\account\\orders\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{F42C3E0D-F09A-4F7B-8BD6-A6E85BCB56A7}|KledijModule\\KledijModule.csproj|solutionrelative:kledijmodule\\areas\\identity\\pages\\account\\orders\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F42C3E0D-F09A-4F7B-8BD6-A6E85BCB56A7}|KledijModule\\KledijModule.csproj|c:\\users\\mdebr\\onedrive - office 365 gpi\\secret_shared_corner\\kledijmodule_git\\kledijmodule\\common\\helpers\\datetimehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F42C3E0D-F09A-4F7B-8BD6-A6E85BCB56A7}|KledijModule\\KledijModule.csproj|solutionrelative:kledijmodule\\common\\helpers\\datetimehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{85273864-EA55-48DD-88D4-076AFF005357}|ProjectCore\\ProjectCore.csproj|c:\\users\\mdebr\\onedrive - office 365 gpi\\secret_shared_corner\\kledijmodule_git\\projectcore\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -74,40 +138,8 @@
       "RelativeMoniker": "D:0:0:{F42C3E0D-F09A-4F7B-8BD6-A6E85BCB56A7}|KledijModule\\KledijModule.csproj|solutionrelative:kledijmodule\\areas\\admin\\pages\\attributen\\maten\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F42C3E0D-F09A-4F7B-8BD6-A6E85BCB56A7}|KledijModule\\KledijModule.csproj|c:\\users\\mdebr\\onedrive - office 365 gpi\\secret_shared_corner\\kledijmodule_git\\kledijmodule\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F42C3E0D-F09A-4F7B-8BD6-A6E85BCB56A7}|KledijModule\\KledijModule.csproj|solutionrelative:kledijmodule\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F42C3E0D-F09A-4F7B-8BD6-A6E85BCB56A7}|KledijModule\\KledijModule.csproj|c:\\users\\mdebr\\onedrive - office 365 gpi\\secret_shared_corner\\kledijmodule_git\\kledijmodule\\areas\\admin\\pages\\shared\\_adminlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F42C3E0D-F09A-4F7B-8BD6-A6E85BCB56A7}|KledijModule\\KledijModule.csproj|solutionrelative:kledijmodule\\areas\\admin\\pages\\shared\\_adminlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F42C3E0D-F09A-4F7B-8BD6-A6E85BCB56A7}|KledijModule\\KledijModule.csproj|c:\\users\\mdebr\\onedrive - office 365 gpi\\secret_shared_corner\\kledijmodule_git\\kledijmodule\\areas\\admin\\pages\\orders\\_updateorderitemstatusmodal.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F42C3E0D-F09A-4F7B-8BD6-A6E85BCB56A7}|KledijModule\\KledijModule.csproj|solutionrelative:kledijmodule\\areas\\admin\\pages\\orders\\_updateorderitemstatusmodal.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F42C3E0D-F09A-4F7B-8BD6-A6E85BCB56A7}|KledijModule\\KledijModule.csproj|c:\\users\\mdebr\\onedrive - office 365 gpi\\secret_shared_corner\\kledijmodule_git\\kledijmodule\\areas\\admin\\pages\\orders\\details.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F42C3E0D-F09A-4F7B-8BD6-A6E85BCB56A7}|KledijModule\\KledijModule.csproj|solutionrelative:kledijmodule\\areas\\admin\\pages\\orders\\details.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F42C3E0D-F09A-4F7B-8BD6-A6E85BCB56A7}|KledijModule\\KledijModule.csproj|c:\\users\\mdebr\\onedrive - office 365 gpi\\secret_shared_corner\\kledijmodule_git\\kledijmodule\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{F42C3E0D-F09A-4F7B-8BD6-A6E85BCB56A7}|KledijModule\\KledijModule.csproj|solutionrelative:kledijmodule\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F42C3E0D-F09A-4F7B-8BD6-A6E85BCB56A7}|KledijModule\\KledijModule.csproj|c:\\users\\mdebr\\onedrive - office 365 gpi\\secret_shared_corner\\kledijmodule_git\\kledijmodule\\areas\\admin\\pages\\orders\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F42C3E0D-F09A-4F7B-8BD6-A6E85BCB56A7}|KledijModule\\KledijModule.csproj|solutionrelative:kledijmodule\\areas\\admin\\pages\\orders\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{F42C3E0D-F09A-4F7B-8BD6-A6E85BCB56A7}|KledijModule\\KledijModule.csproj|c:\\users\\mdebr\\onedrive - office 365 gpi\\secret_shared_corner\\kledijmodule_git\\kledijmodule\\areas\\admin\\pages\\gebruikers\\_gebruiker.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{F42C3E0D-F09A-4F7B-8BD6-A6E85BCB56A7}|KledijModule\\KledijModule.csproj|solutionrelative:kledijmodule\\areas\\admin\\pages\\gebruikers\\_gebruiker.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F42C3E0D-F09A-4F7B-8BD6-A6E85BCB56A7}|KledijModule\\KledijModule.csproj|c:\\users\\mdebr\\onedrive - office 365 gpi\\secret_shared_corner\\kledijmodule_git\\kledijmodule\\areas\\admin\\pages\\gebruikers\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F42C3E0D-F09A-4F7B-8BD6-A6E85BCB56A7}|KledijModule\\KledijModule.csproj|solutionrelative:kledijmodule\\areas\\admin\\pages\\gebruikers\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F42C3E0D-F09A-4F7B-8BD6-A6E85BCB56A7}|KledijModule\\KledijModule.csproj|c:\\users\\mdebr\\onedrive - office 365 gpi\\secret_shared_corner\\kledijmodule_git\\kledijmodule\\areas\\admin\\pages\\gebruikers\\_editgebruikerbalansmodal.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F42C3E0D-F09A-4F7B-8BD6-A6E85BCB56A7}|KledijModule\\KledijModule.csproj|solutionrelative:kledijmodule\\areas\\admin\\pages\\gebruikers\\_editgebruikerbalansmodal.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F42C3E0D-F09A-4F7B-8BD6-A6E85BCB56A7}|KledijModule\\KledijModule.csproj|c:\\users\\mdebr\\onedrive - office 365 gpi\\secret_shared_corner\\kledijmodule_git\\kledijmodule\\areas\\admin\\pages\\gebruikers\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -128,10 +160,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{85273864-EA55-48DD-88D4-076AFF005357}|ProjectCore\\ProjectCore.csproj|c:\\users\\mdebr\\onedrive - office 365 gpi\\secret_shared_corner\\kledijmodule_git\\projectcore\\features\\winkelmand\\queries\\getshoppingcartlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{85273864-EA55-48DD-88D4-076AFF005357}|ProjectCore\\ProjectCore.csproj|solutionrelative:projectcore\\features\\winkelmand\\queries\\getshoppingcartlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{85273864-EA55-48DD-88D4-076AFF005357}|ProjectCore\\ProjectCore.csproj|c:\\users\\mdebr\\onedrive - office 365 gpi\\secret_shared_corner\\kledijmodule_git\\projectcore\\features\\orders\\commands\\createorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{85273864-EA55-48DD-88D4-076AFF005357}|ProjectCore\\ProjectCore.csproj|solutionrelative:projectcore\\features\\orders\\commands\\createorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F42C3E0D-F09A-4F7B-8BD6-A6E85BCB56A7}|KledijModule\\KledijModule.csproj|c:\\users\\mdebr\\onedrive - office 365 gpi\\secret_shared_corner\\kledijmodule_git\\kledijmodule\\pages\\winkelmand\\_shoppingcartitems.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -155,10 +183,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{85273864-EA55-48DD-88D4-076AFF005357}|ProjectCore\\ProjectCore.csproj|c:\\users\\mdebr\\onedrive - office 365 gpi\\secret_shared_corner\\kledijmodule_git\\projectcore\\features\\gebruikers\\queries\\getuserbalans.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{85273864-EA55-48DD-88D4-076AFF005357}|ProjectCore\\ProjectCore.csproj|solutionrelative:projectcore\\features\\gebruikers\\queries\\getuserbalans.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F42C3E0D-F09A-4F7B-8BD6-A6E85BCB56A7}|KledijModule\\KledijModule.csproj|c:\\users\\mdebr\\onedrive - office 365 gpi\\secret_shared_corner\\kledijmodule_git\\kledijmodule\\areas\\admin\\pages\\catalogus\\producten\\edit.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F42C3E0D-F09A-4F7B-8BD6-A6E85BCB56A7}|KledijModule\\KledijModule.csproj|solutionrelative:kledijmodule\\areas\\admin\\pages\\catalogus\\producten\\edit.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F42C3E0D-F09A-4F7B-8BD6-A6E85BCB56A7}|KledijModule\\KledijModule.csproj|c:\\users\\mdebr\\onedrive - office 365 gpi\\secret_shared_corner\\kledijmodule_git\\kledijmodule\\areas\\admin\\pages\\catalogus\\producten\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -244,6 +268,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{85273864-EA55-48DD-88D4-076AFF005357}|ProjectCore\\ProjectCore.csproj|c:\\users\\mdebr\\onedrive - office 365 gpi\\secret_shared_corner\\kledijmodule_git\\projectcore\\domain\\entities\\bestellingen\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{85273864-EA55-48DD-88D4-076AFF005357}|ProjectCore\\ProjectCore.csproj|solutionrelative:projectcore\\domain\\entities\\bestellingen\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\mdebr\\OneDrive - Office 365 GPI\\Secret_shared_corner\\KledijModule_git\\KledijModule\\Common\\Helpers\\DateTimeHelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:KledijModule\\Common\\Helpers\\DateTimeHelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -253,7 +281,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -261,59 +289,46 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Delete.cshtml.cs",
-              "DocumentMoniker": "C:\\Users\\mdebr\\OneDrive - Office 365 GPI\\Secret_shared_corner\\KledijModule_git\\KledijModule\\Areas\\Admin\\Pages\\Orders\\Delete.cshtml.cs",
-              "RelativeDocumentMoniker": "KledijModule\\Areas\\Admin\\Pages\\Orders\\Delete.cshtml.cs",
-              "ToolTip": "C:\\Users\\mdebr\\OneDrive - Office 365 GPI\\Secret_shared_corner\\KledijModule_git\\KledijModule\\Areas\\Admin\\Pages\\Orders\\Delete.cshtml.cs",
-              "RelativeToolTip": "KledijModule\\Areas\\Admin\\Pages\\Orders\\Delete.cshtml.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACAAAAAfAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-29T19:05:45.772Z",
+              "DocumentIndex": 0,
+              "Title": "Default.cshtml",
+              "DocumentMoniker": "C:\\Users\\mdebr\\OneDrive - Office 365 GPI\\Secret_shared_corner\\KledijModule_git\\KledijModule\\Pages\\Shared\\Components\\CategoryNavigation\\Default.cshtml",
+              "RelativeDocumentMoniker": "KledijModule\\Pages\\Shared\\Components\\CategoryNavigation\\Default.cshtml",
+              "ToolTip": "C:\\Users\\mdebr\\OneDrive - Office 365 GPI\\Secret_shared_corner\\KledijModule_git\\KledijModule\\Pages\\Shared\\Components\\CategoryNavigation\\Default.cshtml",
+              "RelativeToolTip": "KledijModule\\Pages\\Shared\\Components\\CategoryNavigation\\Default.cshtml",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAsAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-30T19:20:11.214Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "_OrderItemRow.cshtml",
-              "DocumentMoniker": "C:\\Users\\mdebr\\OneDrive - Office 365 GPI\\Secret_shared_corner\\KledijModule_git\\KledijModule\\Areas\\Admin\\Pages\\Orders\\_OrderItemRow.cshtml",
-              "RelativeDocumentMoniker": "KledijModule\\Areas\\Admin\\Pages\\Orders\\_OrderItemRow.cshtml",
-              "ToolTip": "C:\\Users\\mdebr\\OneDrive - Office 365 GPI\\Secret_shared_corner\\KledijModule_git\\KledijModule\\Areas\\Admin\\Pages\\Orders\\_OrderItemRow.cshtml",
-              "RelativeToolTip": "KledijModule\\Areas\\Admin\\Pages\\Orders\\_OrderItemRow.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
+              "DocumentIndex": 3,
+              "Title": "_ProductenLijst.cshtml",
+              "DocumentMoniker": "C:\\Users\\mdebr\\OneDrive - Office 365 GPI\\Secret_shared_corner\\KledijModule_git\\KledijModule\\Pages\\Catalogus\\_ProductenLijst.cshtml",
+              "RelativeDocumentMoniker": "KledijModule\\Pages\\Catalogus\\_ProductenLijst.cshtml",
+              "ToolTip": "C:\\Users\\mdebr\\OneDrive - Office 365 GPI\\Secret_shared_corner\\KledijModule_git\\KledijModule\\Pages\\Catalogus\\_ProductenLijst.cshtml",
+              "RelativeToolTip": "KledijModule\\Pages\\Catalogus\\_ProductenLijst.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-27T18:59:29.974Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "_OrdersSummaryList.cshtml",
-              "DocumentMoniker": "C:\\Users\\mdebr\\OneDrive - Office 365 GPI\\Secret_shared_corner\\KledijModule_git\\KledijModule\\Areas\\Admin\\Pages\\Orders\\_OrdersSummaryList.cshtml",
-              "RelativeDocumentMoniker": "KledijModule\\Areas\\Admin\\Pages\\Orders\\_OrdersSummaryList.cshtml",
-              "ToolTip": "C:\\Users\\mdebr\\OneDrive - Office 365 GPI\\Secret_shared_corner\\KledijModule_git\\KledijModule\\Areas\\Admin\\Pages\\Orders\\_OrdersSummaryList.cshtml",
-              "RelativeToolTip": "KledijModule\\Areas\\Admin\\Pages\\Orders\\_OrdersSummaryList.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAB3AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-29T19:07:26.676Z",
+              "WhenOpened": "2024-08-30T19:14:53.482Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\mdebr\\OneDrive - Office 365 GPI\\Secret_shared_corner\\KledijModule_git\\KledijModule\\Areas\\Identity\\Pages\\Account\\Orders\\Index.cshtml",
-              "RelativeDocumentMoniker": "KledijModule\\Areas\\Identity\\Pages\\Account\\Orders\\Index.cshtml",
-              "ToolTip": "C:\\Users\\mdebr\\OneDrive - Office 365 GPI\\Secret_shared_corner\\KledijModule_git\\KledijModule\\Areas\\Identity\\Pages\\Account\\Orders\\Index.cshtml",
-              "RelativeToolTip": "KledijModule\\Areas\\Identity\\Pages\\Account\\Orders\\Index.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAAcAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-04T19:10:02.459Z",
+              "Title": "Index.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\mdebr\\OneDrive - Office 365 GPI\\Secret_shared_corner\\KledijModule_git\\KledijModule\\Pages\\Catalogus\\Index.cshtml.cs",
+              "RelativeDocumentMoniker": "KledijModule\\Pages\\Catalogus\\Index.cshtml.cs",
+              "ToolTip": "C:\\Users\\mdebr\\OneDrive - Office 365 GPI\\Secret_shared_corner\\KledijModule_git\\KledijModule\\Pages\\Catalogus\\Index.cshtml.cs",
+              "RelativeToolTip": "KledijModule\\Pages\\Catalogus\\Index.cshtml.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAkwBEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-30T18:11:40.364Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 17,
               "Title": "docker-compose.yml",
               "DocumentMoniker": "C:\\Users\\mdebr\\OneDrive - Office 365 GPI\\Secret_shared_corner\\KledijModule_git\\docker-compose.yml",
               "RelativeDocumentMoniker": "docker-compose.yml",
@@ -326,20 +341,163 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "UpdateFavorite.cs",
+              "DocumentMoniker": "C:\\Users\\mdebr\\OneDrive - Office 365 GPI\\Secret_shared_corner\\KledijModule_git\\ProjectCore\\Features\\Favorieten\\UpdateFavorite.cs",
+              "RelativeDocumentMoniker": "ProjectCore\\Features\\Favorieten\\UpdateFavorite.cs",
+              "ToolTip": "C:\\Users\\mdebr\\OneDrive - Office 365 GPI\\Secret_shared_corner\\KledijModule_git\\ProjectCore\\Features\\Favorieten\\UpdateFavorite.cs",
+              "RelativeToolTip": "ProjectCore\\Features\\Favorieten\\UpdateFavorite.cs",
+              "ViewState": "AQIAAC0AAAAAAAAAAAAAAEkAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-30T18:12:20.795Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "CreateOrder.cs",
+              "DocumentMoniker": "C:\\Users\\mdebr\\OneDrive - Office 365 GPI\\Secret_shared_corner\\KledijModule_git\\ProjectCore\\Features\\Orders\\Commands\\CreateOrder.cs",
+              "RelativeDocumentMoniker": "ProjectCore\\Features\\Orders\\Commands\\CreateOrder.cs",
+              "ToolTip": "C:\\Users\\mdebr\\OneDrive - Office 365 GPI\\Secret_shared_corner\\KledijModule_git\\ProjectCore\\Features\\Orders\\Commands\\CreateOrder.cs",
+              "RelativeToolTip": "ProjectCore\\Features\\Orders\\Commands\\CreateOrder.cs",
+              "ViewState": "AQIAACEAAAAAAAAAAAAQwD0AAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-12T10:48:39.252Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\mdebr\\OneDrive - Office 365 GPI\\Secret_shared_corner\\KledijModule_git\\KledijModule\\Areas\\Admin\\Pages\\Orders\\Details.cshtml",
+              "RelativeDocumentMoniker": "KledijModule\\Areas\\Admin\\Pages\\Orders\\Details.cshtml",
+              "ToolTip": "C:\\Users\\mdebr\\OneDrive - Office 365 GPI\\Secret_shared_corner\\KledijModule_git\\KledijModule\\Areas\\Admin\\Pages\\Orders\\Details.cshtml",
+              "RelativeToolTip": "KledijModule\\Areas\\Admin\\Pages\\Orders\\Details.cshtml",
+              "ViewState": "AQIAAF0AAAAAAAAAAAASwCwAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-27T18:57:39.715Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\mdebr\\OneDrive - Office 365 GPI\\Secret_shared_corner\\KledijModule_git\\KledijModule\\Pages\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "KledijModule\\Pages\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\mdebr\\OneDrive - Office 365 GPI\\Secret_shared_corner\\KledijModule_git\\KledijModule\\Pages\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "KledijModule\\Pages\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAABBAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-28T20:18:31.131Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "docker-compose.override.yml",
-              "DocumentMoniker": "C:\\Users\\mdebr\\OneDrive - Office 365 GPI\\Secret_shared_corner\\KledijModule_git\\docker-compose.override.yml",
-              "RelativeDocumentMoniker": "docker-compose.override.yml",
-              "ToolTip": "C:\\Users\\mdebr\\OneDrive - Office 365 GPI\\Secret_shared_corner\\KledijModule_git\\docker-compose.override.yml",
-              "RelativeToolTip": "docker-compose.override.yml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAuAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
-              "WhenOpened": "2024-08-02T10:27:12.311Z",
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\mdebr\\OneDrive - Office 365 GPI\\Secret_shared_corner\\KledijModule_git\\KledijModule\\Pages\\Catalogus\\Index.cshtml",
+              "RelativeDocumentMoniker": "KledijModule\\Pages\\Catalogus\\Index.cshtml",
+              "ToolTip": "C:\\Users\\mdebr\\OneDrive - Office 365 GPI\\Secret_shared_corner\\KledijModule_git\\KledijModule\\Pages\\Catalogus\\Index.cshtml",
+              "RelativeToolTip": "KledijModule\\Pages\\Catalogus\\Index.cshtml",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAACEAAAA7AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-30T17:49:18.732Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
+              "Title": "Edit.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\mdebr\\OneDrive - Office 365 GPI\\Secret_shared_corner\\KledijModule_git\\KledijModule\\Areas\\Admin\\Pages\\Catalogus\\Producten\\Edit.cshtml.cs",
+              "RelativeDocumentMoniker": "KledijModule\\Areas\\Admin\\Pages\\Catalogus\\Producten\\Edit.cshtml.cs",
+              "ToolTip": "C:\\Users\\mdebr\\OneDrive - Office 365 GPI\\Secret_shared_corner\\KledijModule_git\\KledijModule\\Areas\\Admin\\Pages\\Catalogus\\Producten\\Edit.cshtml.cs",
+              "RelativeToolTip": "KledijModule\\Areas\\Admin\\Pages\\Catalogus\\Producten\\Edit.cshtml.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAhwFsAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-20T11:30:10.131Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "_ProductCard.cshtml",
+              "DocumentMoniker": "C:\\Users\\mdebr\\OneDrive - Office 365 GPI\\Secret_shared_corner\\KledijModule_git\\KledijModule\\Pages\\Catalogus\\_ProductCard.cshtml",
+              "RelativeDocumentMoniker": "KledijModule\\Pages\\Catalogus\\_ProductCard.cshtml",
+              "ToolTip": "C:\\Users\\mdebr\\OneDrive - Office 365 GPI\\Secret_shared_corner\\KledijModule_git\\KledijModule\\Pages\\Catalogus\\_ProductCard.cshtml",
+              "RelativeToolTip": "KledijModule\\Pages\\Catalogus\\_ProductCard.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-30T17:50:00.317Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Details.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\mdebr\\OneDrive - Office 365 GPI\\Secret_shared_corner\\KledijModule_git\\KledijModule\\Areas\\Admin\\Pages\\Orders\\Details.cshtml.cs",
+              "RelativeDocumentMoniker": "KledijModule\\Areas\\Admin\\Pages\\Orders\\Details.cshtml.cs",
+              "ToolTip": "C:\\Users\\mdebr\\OneDrive - Office 365 GPI\\Secret_shared_corner\\KledijModule_git\\KledijModule\\Areas\\Admin\\Pages\\Orders\\Details.cshtml.cs",
+              "RelativeToolTip": "KledijModule\\Areas\\Admin\\Pages\\Orders\\Details.cshtml.cs",
+              "ViewState": "AQIAAFMAAAAAAAAAAAAgwF4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-20T12:03:06.43Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "RequestContextService.cs",
+              "DocumentMoniker": "C:\\Users\\mdebr\\OneDrive - Office 365 GPI\\Secret_shared_corner\\KledijModule_git\\KledijModule\\Common\\RequestContext\\RequestContextService.cs",
+              "RelativeDocumentMoniker": "KledijModule\\Common\\RequestContext\\RequestContextService.cs",
+              "ToolTip": "C:\\Users\\mdebr\\OneDrive - Office 365 GPI\\Secret_shared_corner\\KledijModule_git\\KledijModule\\Common\\RequestContext\\RequestContextService.cs",
+              "RelativeToolTip": "KledijModule\\Common\\RequestContext\\RequestContextService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAABxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-30T18:37:53.913Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "_UpdateOrderItemStatusModal.cshtml",
+              "DocumentMoniker": "C:\\Users\\mdebr\\OneDrive - Office 365 GPI\\Secret_shared_corner\\KledijModule_git\\KledijModule\\Areas\\Admin\\Pages\\Orders\\_UpdateOrderItemStatusModal.cshtml",
+              "RelativeDocumentMoniker": "KledijModule\\Areas\\Admin\\Pages\\Orders\\_UpdateOrderItemStatusModal.cshtml",
+              "ToolTip": "C:\\Users\\mdebr\\OneDrive - Office 365 GPI\\Secret_shared_corner\\KledijModule_git\\KledijModule\\Areas\\Admin\\Pages\\Orders\\_UpdateOrderItemStatusModal.cshtml",
+              "RelativeToolTip": "KledijModule\\Areas\\Admin\\Pages\\Orders\\_UpdateOrderItemStatusModal.cshtml",
+              "ViewState": "AQIAAIMAAAAAAAAAAAAUwKQAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-27T18:54:59.587Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\mdebr\\OneDrive - Office 365 GPI\\Secret_shared_corner\\KledijModule_git\\KledijModule\\Areas\\Admin\\Pages\\Gebruikers\\Index.cshtml",
+              "RelativeDocumentMoniker": "KledijModule\\Areas\\Admin\\Pages\\Gebruikers\\Index.cshtml",
+              "ToolTip": "C:\\Users\\mdebr\\OneDrive - Office 365 GPI\\Secret_shared_corner\\KledijModule_git\\KledijModule\\Areas\\Admin\\Pages\\Gebruikers\\Index.cshtml",
+              "RelativeToolTip": "KledijModule\\Areas\\Admin\\Pages\\Gebruikers\\Index.cshtml",
+              "ViewState": "AQIAABsAAAAAAAAAAAAAABsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-02T18:08:07.147Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "_EditGebruikerBalansModal.cshtml",
+              "DocumentMoniker": "C:\\Users\\mdebr\\OneDrive - Office 365 GPI\\Secret_shared_corner\\KledijModule_git\\KledijModule\\Areas\\Admin\\Pages\\Gebruikers\\_EditGebruikerBalansModal.cshtml",
+              "RelativeDocumentMoniker": "KledijModule\\Areas\\Admin\\Pages\\Gebruikers\\_EditGebruikerBalansModal.cshtml",
+              "ToolTip": "C:\\Users\\mdebr\\OneDrive - Office 365 GPI\\Secret_shared_corner\\KledijModule_git\\KledijModule\\Areas\\Admin\\Pages\\Gebruikers\\_EditGebruikerBalansModal.cshtml",
+              "RelativeToolTip": "KledijModule\\Areas\\Admin\\Pages\\Gebruikers\\_EditGebruikerBalansModal.cshtml",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAACgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-12T11:29:45.209Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
               "Title": "Index.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\mdebr\\OneDrive - Office 365 GPI\\Secret_shared_corner\\KledijModule_git\\KledijModule\\Pages\\Checkout\\Index.cshtml.cs",
               "RelativeDocumentMoniker": "KledijModule\\Pages\\Checkout\\Index.cshtml.cs",
@@ -352,7 +510,93 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "docker-compose.override.yml",
+              "DocumentMoniker": "C:\\Users\\mdebr\\OneDrive - Office 365 GPI\\Secret_shared_corner\\KledijModule_git\\docker-compose.override.yml",
+              "RelativeDocumentMoniker": "docker-compose.override.yml",
+              "ToolTip": "C:\\Users\\mdebr\\OneDrive - Office 365 GPI\\Secret_shared_corner\\KledijModule_git\\docker-compose.override.yml",
+              "RelativeToolTip": "docker-compose.override.yml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
+              "WhenOpened": "2024-08-02T10:27:12.311Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\mdebr\\OneDrive - Office 365 GPI\\Secret_shared_corner\\KledijModule_git\\KledijModule\\Areas\\Identity\\Pages\\Account\\Orders\\Index.cshtml",
+              "RelativeDocumentMoniker": "KledijModule\\Areas\\Identity\\Pages\\Account\\Orders\\Index.cshtml",
+              "ToolTip": "C:\\Users\\mdebr\\OneDrive - Office 365 GPI\\Secret_shared_corner\\KledijModule_git\\KledijModule\\Areas\\Identity\\Pages\\Account\\Orders\\Index.cshtml",
+              "RelativeToolTip": "KledijModule\\Areas\\Identity\\Pages\\Account\\Orders\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-04T19:10:02.459Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "_OrdersSummaryList.cshtml",
+              "DocumentMoniker": "C:\\Users\\mdebr\\OneDrive - Office 365 GPI\\Secret_shared_corner\\KledijModule_git\\KledijModule\\Areas\\Admin\\Pages\\Orders\\_OrdersSummaryList.cshtml",
+              "RelativeDocumentMoniker": "KledijModule\\Areas\\Admin\\Pages\\Orders\\_OrdersSummaryList.cshtml",
+              "ToolTip": "C:\\Users\\mdebr\\OneDrive - Office 365 GPI\\Secret_shared_corner\\KledijModule_git\\KledijModule\\Areas\\Admin\\Pages\\Orders\\_OrdersSummaryList.cshtml",
+              "RelativeToolTip": "KledijModule\\Areas\\Admin\\Pages\\Orders\\_OrdersSummaryList.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAB3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-29T19:07:26.676Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "_AdminLayout.cshtml",
+              "DocumentMoniker": "C:\\Users\\mdebr\\OneDrive - Office 365 GPI\\Secret_shared_corner\\KledijModule_git\\KledijModule\\Areas\\Admin\\Pages\\Shared\\_AdminLayout.cshtml",
+              "RelativeDocumentMoniker": "KledijModule\\Areas\\Admin\\Pages\\Shared\\_AdminLayout.cshtml",
+              "ToolTip": "C:\\Users\\mdebr\\OneDrive - Office 365 GPI\\Secret_shared_corner\\KledijModule_git\\KledijModule\\Areas\\Admin\\Pages\\Shared\\_AdminLayout.cshtml",
+              "RelativeToolTip": "KledijModule\\Areas\\Admin\\Pages\\Shared\\_AdminLayout.cshtml",
+              "ViewState": "AQIAACcAAAAAAAAAAAAAABMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-28T19:31:07.364Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "site.js",
+              "DocumentMoniker": "C:\\Users\\mdebr\\OneDrive - Office 365 GPI\\Secret_shared_corner\\KledijModule_git\\KledijModule\\wwwroot\\js\\site.js",
+              "RelativeDocumentMoniker": "KledijModule\\wwwroot\\js\\site.js",
+              "ToolTip": "C:\\Users\\mdebr\\OneDrive - Office 365 GPI\\Secret_shared_corner\\KledijModule_git\\KledijModule\\wwwroot\\js\\site.js",
+              "RelativeToolTip": "KledijModule\\wwwroot\\js\\site.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-08-28T19:30:04.625Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "_OrderItemRow.cshtml",
+              "DocumentMoniker": "C:\\Users\\mdebr\\OneDrive - Office 365 GPI\\Secret_shared_corner\\KledijModule_git\\KledijModule\\Areas\\Admin\\Pages\\Orders\\_OrderItemRow.cshtml",
+              "RelativeDocumentMoniker": "KledijModule\\Areas\\Admin\\Pages\\Orders\\_OrderItemRow.cshtml",
+              "ToolTip": "C:\\Users\\mdebr\\OneDrive - Office 365 GPI\\Secret_shared_corner\\KledijModule_git\\KledijModule\\Areas\\Admin\\Pages\\Orders\\_OrderItemRow.cshtml",
+              "RelativeToolTip": "KledijModule\\Areas\\Admin\\Pages\\Orders\\_OrderItemRow.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-27T18:59:29.974Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 24,
+              "Title": "Delete.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\mdebr\\OneDrive - Office 365 GPI\\Secret_shared_corner\\KledijModule_git\\KledijModule\\Areas\\Admin\\Pages\\Orders\\Delete.cshtml.cs",
+              "RelativeDocumentMoniker": "KledijModule\\Areas\\Admin\\Pages\\Orders\\Delete.cshtml.cs",
+              "ToolTip": "C:\\Users\\mdebr\\OneDrive - Office 365 GPI\\Secret_shared_corner\\KledijModule_git\\KledijModule\\Areas\\Admin\\Pages\\Orders\\Delete.cshtml.cs",
+              "RelativeToolTip": "KledijModule\\Areas\\Admin\\Pages\\Orders\\Delete.cshtml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACAAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-29T19:05:45.772Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
               "Title": "_Gebruiker.cshtml",
               "DocumentMoniker": "C:\\Users\\mdebr\\OneDrive - Office 365 GPI\\Secret_shared_corner\\KledijModule_git\\KledijModule\\Areas\\Admin\\Pages\\Gebruikers\\_Gebruiker.cshtml",
               "RelativeDocumentMoniker": "KledijModule\\Areas\\Admin\\Pages\\Gebruikers\\_Gebruiker.cshtml",
@@ -364,7 +608,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 20,
               "Title": "ApplicationDbContext.cs",
               "DocumentMoniker": "C:\\Users\\mdebr\\OneDrive - Office 365 GPI\\Secret_shared_corner\\KledijModule_git\\ProjectCore\\Data\\ApplicationDbContext.cs",
               "RelativeDocumentMoniker": "ProjectCore\\Data\\ApplicationDbContext.cs",
@@ -372,12 +616,11 @@
               "RelativeToolTip": "ProjectCore\\Data\\ApplicationDbContext.cs",
               "ViewState": "AQIAACcAAAAAAAAAAIA1wDYAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-02T18:00:55.026Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-02T18:00:55.026Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 68,
               "Title": "DateTimeHelper.cs",
               "DocumentMoniker": "C:\\Users\\mdebr\\OneDrive - Office 365 GPI\\Secret_shared_corner\\KledijModule_git\\KledijModule\\Common\\Helpers\\DateTimeHelper.cs",
               "RelativeDocumentMoniker": "KledijModule\\Common\\Helpers\\DateTimeHelper.cs",
@@ -385,12 +628,11 @@
               "RelativeToolTip": "KledijModule\\Common\\Helpers\\DateTimeHelper.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-29T19:39:43.175Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-29T19:39:43.175Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 28,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\mdebr\\OneDrive - Office 365 GPI\\Secret_shared_corner\\KledijModule_git\\KledijModule\\Areas\\Admin\\Pages\\Attributen\\Kleuren\\Index.cshtml",
               "RelativeDocumentMoniker": "KledijModule\\Areas\\Admin\\Pages\\Attributen\\Kleuren\\Index.cshtml",
@@ -398,25 +640,11 @@
               "RelativeToolTip": "KledijModule\\Areas\\Admin\\Pages\\Attributen\\Kleuren\\Index.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAmAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-29T18:12:02.419Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-29T18:12:02.419Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\mdebr\\OneDrive - Office 365 GPI\\Secret_shared_corner\\KledijModule_git\\KledijModule\\Pages\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "KledijModule\\Pages\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\mdebr\\OneDrive - Office 365 GPI\\Secret_shared_corner\\KledijModule_git\\KledijModule\\Pages\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "KledijModule\\Pages\\Shared\\_Layout.cshtml",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAAACMAAAAYAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-28T20:18:31.131Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 25,
               "Title": "_IndexPartial.cshtml",
               "DocumentMoniker": "C:\\Users\\mdebr\\OneDrive - Office 365 GPI\\Secret_shared_corner\\KledijModule_git\\KledijModule\\Areas\\Admin\\Pages\\Orders\\_IndexPartial.cshtml",
               "RelativeDocumentMoniker": "KledijModule\\Areas\\Admin\\Pages\\Orders\\_IndexPartial.cshtml",
@@ -424,36 +652,11 @@
               "RelativeToolTip": "KledijModule\\Areas\\Admin\\Pages\\Orders\\_IndexPartial.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAACUAAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-29T19:04:27.442Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-29T19:04:27.442Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\mdebr\\OneDrive - Office 365 GPI\\Secret_shared_corner\\KledijModule_git\\KledijModule\\Areas\\Admin\\Pages\\Gebruikers\\Index.cshtml",
-              "RelativeDocumentMoniker": "KledijModule\\Areas\\Admin\\Pages\\Gebruikers\\Index.cshtml",
-              "ToolTip": "C:\\Users\\mdebr\\OneDrive - Office 365 GPI\\Secret_shared_corner\\KledijModule_git\\KledijModule\\Areas\\Admin\\Pages\\Gebruikers\\Index.cshtml",
-              "RelativeToolTip": "KledijModule\\Areas\\Admin\\Pages\\Gebruikers\\Index.cshtml",
-              "ViewState": "AQIAADMAAAAAAAAAAAAAAFoAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-02T18:08:07.147Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "_UpdateOrderItemStatusModal.cshtml",
-              "DocumentMoniker": "C:\\Users\\mdebr\\OneDrive - Office 365 GPI\\Secret_shared_corner\\KledijModule_git\\KledijModule\\Areas\\Admin\\Pages\\Orders\\_UpdateOrderItemStatusModal.cshtml",
-              "RelativeDocumentMoniker": "KledijModule\\Areas\\Admin\\Pages\\Orders\\_UpdateOrderItemStatusModal.cshtml",
-              "ToolTip": "C:\\Users\\mdebr\\OneDrive - Office 365 GPI\\Secret_shared_corner\\KledijModule_git\\KledijModule\\Areas\\Admin\\Pages\\Orders\\_UpdateOrderItemStatusModal.cshtml",
-              "RelativeToolTip": "KledijModule\\Areas\\Admin\\Pages\\Orders\\_UpdateOrderItemStatusModal.cshtml",
-              "ViewState": "AQIAAIkAAAAAAAAAAAAUwKQAAAAUAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-27T18:54:59.587Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 32,
               "Title": "Add.cshtml",
               "DocumentMoniker": "C:\\Users\\mdebr\\OneDrive - Office 365 GPI\\Secret_shared_corner\\KledijModule_git\\KledijModule\\Areas\\Admin\\Pages\\Configuratie\\Add.cshtml",
               "RelativeDocumentMoniker": "KledijModule\\Areas\\Admin\\Pages\\Configuratie\\Add.cshtml",
@@ -461,12 +664,11 @@
               "RelativeToolTip": "KledijModule\\Areas\\Admin\\Pages\\Configuratie\\Add.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-29T18:31:07.211Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-29T18:31:07.211Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 27,
               "Title": "Delete.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\mdebr\\OneDrive - Office 365 GPI\\Secret_shared_corner\\KledijModule_git\\KledijModule\\Areas\\Admin\\Pages\\Gebruikers\\Delete.cshtml.cs",
               "RelativeDocumentMoniker": "KledijModule\\Areas\\Admin\\Pages\\Gebruikers\\Delete.cshtml.cs",
@@ -479,7 +681,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 26,
               "Title": "DeleteUser.cs",
               "DocumentMoniker": "C:\\Users\\mdebr\\OneDrive - Office 365 GPI\\Secret_shared_corner\\KledijModule_git\\ProjectCore\\Features\\Gebruikers\\Commands\\DeleteUser.cs",
               "RelativeDocumentMoniker": "ProjectCore\\Features\\Gebruikers\\Commands\\DeleteUser.cs",
@@ -487,22 +689,20 @@
               "RelativeToolTip": "ProjectCore\\Features\\Gebruikers\\Commands\\DeleteUser.cs",
               "ViewState": "AQIAABQAAAAAAAAAAAAhwDIAAAAUAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-19T18:25:14.438Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-19T18:25:14.438Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 30,
               "Title": "dbo.WebShopConfigurations [Data]",
               "DocumentMoniker": "ViewDataWindow_MSSQL__/localhost/KledijModule_dev/SA/SqlTable/dbo.WebShopConfigurations.sql",
               "ToolTip": "dbo.WebShopConfigurations [Data]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2024-08-29T18:44:48.842Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-29T18:44:48.842Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 29,
               "Title": "StartupExtensions.cs",
               "DocumentMoniker": "C:\\Users\\mdebr\\OneDrive - Office 365 GPI\\Secret_shared_corner\\KledijModule_git\\KledijModule\\StartupExtensions.cs",
               "RelativeDocumentMoniker": "KledijModule\\StartupExtensions.cs",
@@ -510,12 +710,11 @@
               "RelativeToolTip": "KledijModule\\StartupExtensions.cs",
               "ViewState": "AQIAAGkAAAAAAAAAAAAuwIUAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-04T19:32:16.91Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-04T19:32:16.91Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 31,
               "Title": "ProductDetails.cshtml",
               "DocumentMoniker": "C:\\Users\\mdebr\\OneDrive - Office 365 GPI\\Secret_shared_corner\\KledijModule_git\\KledijModule\\Pages\\Catalogus\\ProductDetails.cshtml",
               "RelativeDocumentMoniker": "KledijModule\\Pages\\Catalogus\\ProductDetails.cshtml",
@@ -523,36 +722,11 @@
               "RelativeToolTip": "KledijModule\\Pages\\Catalogus\\ProductDetails.cshtml",
               "ViewState": "AQIAAAYAAAAAAAAAAAAewBwAAABTAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-12T10:52:01.338Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-12T10:52:01.338Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "Details.cshtml",
-              "DocumentMoniker": "C:\\Users\\mdebr\\OneDrive - Office 365 GPI\\Secret_shared_corner\\KledijModule_git\\KledijModule\\Areas\\Admin\\Pages\\Orders\\Details.cshtml",
-              "RelativeDocumentMoniker": "KledijModule\\Areas\\Admin\\Pages\\Orders\\Details.cshtml",
-              "ToolTip": "C:\\Users\\mdebr\\OneDrive - Office 365 GPI\\Secret_shared_corner\\KledijModule_git\\KledijModule\\Areas\\Admin\\Pages\\Orders\\Details.cshtml",
-              "RelativeToolTip": "KledijModule\\Areas\\Admin\\Pages\\Orders\\Details.cshtml",
-              "ViewState": "AQIAAF0AAAAAAAAAAAASwCwAAAAvAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-27T18:57:39.715Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "Details.cshtml.cs",
-              "DocumentMoniker": "C:\\Users\\mdebr\\OneDrive - Office 365 GPI\\Secret_shared_corner\\KledijModule_git\\KledijModule\\Areas\\Admin\\Pages\\Orders\\Details.cshtml.cs",
-              "RelativeDocumentMoniker": "KledijModule\\Areas\\Admin\\Pages\\Orders\\Details.cshtml.cs",
-              "ToolTip": "C:\\Users\\mdebr\\OneDrive - Office 365 GPI\\Secret_shared_corner\\KledijModule_git\\KledijModule\\Areas\\Admin\\Pages\\Orders\\Details.cshtml.cs",
-              "RelativeToolTip": "KledijModule\\Areas\\Admin\\Pages\\Orders\\Details.cshtml.cs",
-              "ViewState": "AQIAAFgAAAAAAAAAAAA5wF8AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-20T12:03:06.43Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 33,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\mdebr\\OneDrive - Office 365 GPI\\Secret_shared_corner\\KledijModule_git\\KledijModule\\Areas\\Admin\\Pages\\Attributen\\Maten\\Index.cshtml",
               "RelativeDocumentMoniker": "KledijModule\\Areas\\Admin\\Pages\\Attributen\\Maten\\Index.cshtml",
@@ -560,48 +734,11 @@
               "RelativeToolTip": "KledijModule\\Areas\\Admin\\Pages\\Attributen\\Maten\\Index.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAhAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-29T18:12:18.755Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-29T18:12:18.755Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "_AdminLayout.cshtml",
-              "DocumentMoniker": "C:\\Users\\mdebr\\OneDrive - Office 365 GPI\\Secret_shared_corner\\KledijModule_git\\KledijModule\\Areas\\Admin\\Pages\\Shared\\_AdminLayout.cshtml",
-              "RelativeDocumentMoniker": "KledijModule\\Areas\\Admin\\Pages\\Shared\\_AdminLayout.cshtml",
-              "ToolTip": "C:\\Users\\mdebr\\OneDrive - Office 365 GPI\\Secret_shared_corner\\KledijModule_git\\KledijModule\\Areas\\Admin\\Pages\\Shared\\_AdminLayout.cshtml",
-              "RelativeToolTip": "KledijModule\\Areas\\Admin\\Pages\\Shared\\_AdminLayout.cshtml",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAABMAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-28T19:31:07.364Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "site.js",
-              "DocumentMoniker": "C:\\Users\\mdebr\\OneDrive - Office 365 GPI\\Secret_shared_corner\\KledijModule_git\\KledijModule\\wwwroot\\js\\site.js",
-              "RelativeDocumentMoniker": "KledijModule\\wwwroot\\js\\site.js",
-              "ToolTip": "C:\\Users\\mdebr\\OneDrive - Office 365 GPI\\Secret_shared_corner\\KledijModule_git\\KledijModule\\wwwroot\\js\\site.js",
-              "RelativeToolTip": "KledijModule\\wwwroot\\js\\site.js",
-              "ViewState": "AQIAADoAAAAAAAAAAADwv0EAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-08-28T19:30:04.625Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "_EditGebruikerBalansModal.cshtml",
-              "DocumentMoniker": "C:\\Users\\mdebr\\OneDrive - Office 365 GPI\\Secret_shared_corner\\KledijModule_git\\KledijModule\\Areas\\Admin\\Pages\\Gebruikers\\_EditGebruikerBalansModal.cshtml",
-              "RelativeDocumentMoniker": "KledijModule\\Areas\\Admin\\Pages\\Gebruikers\\_EditGebruikerBalansModal.cshtml",
-              "ToolTip": "C:\\Users\\mdebr\\OneDrive - Office 365 GPI\\Secret_shared_corner\\KledijModule_git\\KledijModule\\Areas\\Admin\\Pages\\Gebruikers\\_EditGebruikerBalansModal.cshtml",
-              "RelativeToolTip": "KledijModule\\Areas\\Admin\\Pages\\Gebruikers\\_EditGebruikerBalansModal.cshtml",
-              "ViewState": "AQIAABUAAAAAAAAAAAAAACgAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-12T11:29:45.209Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 41,
               "Title": "Index.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\mdebr\\OneDrive - Office 365 GPI\\Secret_shared_corner\\KledijModule_git\\KledijModule\\Pages\\Winkelmand\\Index.cshtml.cs",
               "RelativeDocumentMoniker": "KledijModule\\Pages\\Winkelmand\\Index.cshtml.cs",
@@ -609,24 +746,12 @@
               "RelativeToolTip": "KledijModule\\Pages\\Winkelmand\\Index.cshtml.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAFwAAAAnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-12T10:59:42.539Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "CreateOrder.cs",
-              "DocumentMoniker": "C:\\Users\\mdebr\\OneDrive - Office 365 GPI\\Secret_shared_corner\\KledijModule_git\\ProjectCore\\Features\\Orders\\Commands\\CreateOrder.cs",
-              "RelativeDocumentMoniker": "ProjectCore\\Features\\Orders\\Commands\\CreateOrder.cs",
-              "ToolTip": "C:\\Users\\mdebr\\OneDrive - Office 365 GPI\\Secret_shared_corner\\KledijModule_git\\ProjectCore\\Features\\Orders\\Commands\\CreateOrder.cs",
-              "RelativeToolTip": "ProjectCore\\Features\\Orders\\Commands\\CreateOrder.cs",
-              "ViewState": "AQIAAC0AAAAAAAAAAAAwwD0AAAAQAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-12T10:48:39.252Z",
+              "WhenOpened": "2024-08-12T10:59:42.539Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 35,
               "Title": "Index.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\mdebr\\OneDrive - Office 365 GPI\\Secret_shared_corner\\KledijModule_git\\KledijModule\\Areas\\Admin\\Pages\\Gebruikers\\Index.cshtml.cs",
               "RelativeDocumentMoniker": "KledijModule\\Areas\\Admin\\Pages\\Gebruikers\\Index.cshtml.cs",
@@ -634,11 +759,12 @@
               "RelativeToolTip": "KledijModule\\Areas\\Admin\\Pages\\Gebruikers\\Index.cshtml.cs",
               "ViewState": "AQIAABMAAAAAAAAAAAAQwFMAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-02T18:08:08.918Z"
+              "WhenOpened": "2024-08-02T18:08:08.918Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 36,
               "Title": "Index.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\mdebr\\OneDrive - Office 365 GPI\\Secret_shared_corner\\KledijModule_git\\KledijModule\\Areas\\Identity\\Pages\\Account\\Orders\\Index.cshtml.cs",
               "RelativeDocumentMoniker": "KledijModule\\Areas\\Identity\\Pages\\Account\\Orders\\Index.cshtml.cs",
@@ -646,11 +772,12 @@
               "RelativeToolTip": "KledijModule\\Areas\\Identity\\Pages\\Account\\Orders\\Index.cshtml.cs",
               "ViewState": "AQIAABkAAAAAAAAAAAAQwFUAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-04T19:10:02.456Z"
+              "WhenOpened": "2024-06-04T19:10:02.456Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 37,
               "Title": "UpdateOrderItems.cs",
               "DocumentMoniker": "C:\\Users\\mdebr\\OneDrive - Office 365 GPI\\Secret_shared_corner\\KledijModule_git\\ProjectCore\\Features\\OrderItems\\Commands\\UpdateOrderItems.cs",
               "RelativeDocumentMoniker": "ProjectCore\\Features\\OrderItems\\Commands\\UpdateOrderItems.cs",
@@ -662,7 +789,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 42,
               "Title": "dbo.Gebruikers [Data]",
               "DocumentMoniker": "ViewDataWindow_MSSQL__/localhost/KledijModule_dev/SA/SqlTable/dbo.Gebruikers.sql",
               "ToolTip": "dbo.Gebruikers [Data]",
@@ -671,7 +798,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 38,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\mdebr\\OneDrive - Office 365 GPI\\Secret_shared_corner\\KledijModule_git\\KledijModule\\Pages\\Checkout\\Index.cshtml",
               "RelativeDocumentMoniker": "KledijModule\\Pages\\Checkout\\Index.cshtml",
@@ -683,7 +810,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 39,
               "Title": "GetShoppingCartList.cs",
               "DocumentMoniker": "C:\\Users\\mdebr\\OneDrive - Office 365 GPI\\Secret_shared_corner\\KledijModule_git\\ProjectCore\\Features\\WinkelMand\\Queries\\GetShoppingCartList.cs",
               "RelativeDocumentMoniker": "ProjectCore\\Features\\WinkelMand\\Queries\\GetShoppingCartList.cs",
@@ -695,7 +822,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 40,
               "Title": "_ShoppingCartItems.cshtml",
               "DocumentMoniker": "C:\\Users\\mdebr\\OneDrive - Office 365 GPI\\Secret_shared_corner\\KledijModule_git\\KledijModule\\Pages\\Winkelmand\\_ShoppingCartItems.cshtml",
               "RelativeDocumentMoniker": "KledijModule\\Pages\\Winkelmand\\_ShoppingCartItems.cshtml",
@@ -707,7 +834,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 43,
               "Title": "UpdateUserBalance.cs",
               "DocumentMoniker": "C:\\Users\\mdebr\\OneDrive - Office 365 GPI\\Secret_shared_corner\\KledijModule_git\\ProjectCore\\Features\\Gebruikers\\Commands\\UpdateUserBalance.cs",
               "RelativeDocumentMoniker": "ProjectCore\\Features\\Gebruikers\\Commands\\UpdateUserBalance.cs",
@@ -719,7 +846,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 44,
               "Title": "ApplicationUser.cs",
               "DocumentMoniker": "C:\\Users\\mdebr\\OneDrive - Office 365 GPI\\Secret_shared_corner\\KledijModule_git\\ProjectCore\\Domain\\Entities\\Gebruiker\\ApplicationUser.cs",
               "RelativeDocumentMoniker": "ProjectCore\\Domain\\Entities\\Gebruiker\\ApplicationUser.cs",
@@ -731,20 +858,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
-              "Title": "Edit.cshtml.cs",
-              "DocumentMoniker": "C:\\Users\\mdebr\\OneDrive - Office 365 GPI\\Secret_shared_corner\\KledijModule_git\\KledijModule\\Areas\\Admin\\Pages\\Catalogus\\Producten\\Edit.cshtml.cs",
-              "RelativeDocumentMoniker": "KledijModule\\Areas\\Admin\\Pages\\Catalogus\\Producten\\Edit.cshtml.cs",
-              "ToolTip": "C:\\Users\\mdebr\\OneDrive - Office 365 GPI\\Secret_shared_corner\\KledijModule_git\\KledijModule\\Areas\\Admin\\Pages\\Catalogus\\Producten\\Edit.cshtml.cs",
-              "RelativeToolTip": "KledijModule\\Areas\\Admin\\Pages\\Catalogus\\Producten\\Edit.cshtml.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAIMAAAAlAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-20T11:30:10.131Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 45,
               "Title": "GetUserBalans.cs",
               "DocumentMoniker": "C:\\Users\\mdebr\\OneDrive - Office 365 GPI\\Secret_shared_corner\\KledijModule_git\\ProjectCore\\Features\\Gebruikers\\Queries\\GetUserBalans.cs",
               "RelativeDocumentMoniker": "ProjectCore\\Features\\Gebruikers\\Queries\\GetUserBalans.cs",
@@ -756,7 +870,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 46,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "C:\\Users\\mdebr\\OneDrive - Office 365 GPI\\Secret_shared_corner\\KledijModule_git\\KledijModule\\Areas\\Admin\\Pages\\Catalogus\\Producten\\Edit.cshtml",
               "RelativeDocumentMoniker": "KledijModule\\Areas\\Admin\\Pages\\Catalogus\\Producten\\Edit.cshtml",
@@ -768,7 +882,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 49,
               "Title": "ShoppingCartSummary.cs",
               "DocumentMoniker": "C:\\Users\\mdebr\\OneDrive - Office 365 GPI\\Secret_shared_corner\\KledijModule_git\\KledijModule\\Pages\\Shared\\Components\\ShoppingCartSummary\\ShoppingCartSummary.cs",
               "RelativeDocumentMoniker": "KledijModule\\Pages\\Shared\\Components\\ShoppingCartSummary\\ShoppingCartSummary.cs",
@@ -780,7 +894,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 52,
               "Title": "dbo.ShoppingCartItems [Data]",
               "DocumentMoniker": "ViewDataWindow_MSSQL__/localhost/KledijModule_dev/SA/SqlTable/dbo.ShoppingCartItems.sql",
               "ToolTip": "dbo.ShoppingCartItems [Data]",
@@ -789,7 +903,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 47,
               "Title": "AddToShoppingCart.cs",
               "DocumentMoniker": "C:\\Users\\mdebr\\OneDrive - Office 365 GPI\\Secret_shared_corner\\KledijModule_git\\ProjectCore\\Features\\WinkelMand\\Commands\\AddToShoppingCart.cs",
               "RelativeDocumentMoniker": "ProjectCore\\Features\\WinkelMand\\Commands\\AddToShoppingCart.cs",
@@ -801,7 +915,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 48,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\mdebr\\OneDrive - Office 365 GPI\\Secret_shared_corner\\KledijModule_git\\KledijModule\\Pages\\Winkelmand\\Index.cshtml",
               "RelativeDocumentMoniker": "KledijModule\\Pages\\Winkelmand\\Index.cshtml",
@@ -813,7 +927,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 53,
               "Title": "dbo.ShoppingCarts [Data]",
               "DocumentMoniker": "ViewDataWindow_MSSQL__/localhost/KledijModule_dev/SA/SqlTable/dbo.ShoppingCarts.sql",
               "ToolTip": "dbo.ShoppingCarts [Data]",
@@ -822,7 +936,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 51,
               "Title": "ShoppingCart.cs",
               "DocumentMoniker": "C:\\Users\\mdebr\\OneDrive - Office 365 GPI\\Secret_shared_corner\\KledijModule_git\\ProjectCore\\Domain\\Entities\\WinkelMand\\ShoppingCart.cs",
               "RelativeDocumentMoniker": "ProjectCore\\Domain\\Entities\\WinkelMand\\ShoppingCart.cs",
@@ -834,7 +948,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 50,
               "Title": "Default.cshtml",
               "DocumentMoniker": "C:\\Users\\mdebr\\OneDrive - Office 365 GPI\\Secret_shared_corner\\KledijModule_git\\KledijModule\\Pages\\Shared\\Components\\ShoppingCartSummary\\Default.cshtml",
               "RelativeDocumentMoniker": "KledijModule\\Pages\\Shared\\Components\\ShoppingCartSummary\\Default.cshtml",
@@ -846,7 +960,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
+              "DocumentIndex": 54,
               "Title": "_LoginPartial.cshtml",
               "DocumentMoniker": "C:\\Users\\mdebr\\OneDrive - Office 365 GPI\\Secret_shared_corner\\KledijModule_git\\KledijModule\\Pages\\Shared\\_LoginPartial.cshtml",
               "RelativeDocumentMoniker": "KledijModule\\Pages\\Shared\\_LoginPartial.cshtml",
@@ -858,7 +972,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 50,
+              "DocumentIndex": 56,
               "Title": "appsettings.Development.json",
               "DocumentMoniker": "C:\\Users\\mdebr\\OneDrive - Office 365 GPI\\Secret_shared_corner\\KledijModule_git\\KledijModule\\appsettings.Development.json",
               "RelativeDocumentMoniker": "KledijModule\\appsettings.Development.json",
@@ -870,7 +984,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 49,
+              "DocumentIndex": 55,
               "Title": "GetUsersList.cs",
               "DocumentMoniker": "C:\\Users\\mdebr\\OneDrive - Office 365 GPI\\Secret_shared_corner\\KledijModule_git\\ProjectCore\\Features\\Gebruikers\\Queries\\GetUsersList.cs",
               "RelativeDocumentMoniker": "ProjectCore\\Features\\Gebruikers\\Queries\\GetUsersList.cs",
@@ -882,7 +996,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 51,
+              "DocumentIndex": 57,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\mdebr\\OneDrive - Office 365 GPI\\Secret_shared_corner\\KledijModule_git\\KledijModule\\appsettings.json",
               "RelativeDocumentMoniker": "KledijModule\\appsettings.json",
@@ -894,7 +1008,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 52,
+              "DocumentIndex": 58,
               "Title": "20240802182302_AddedLocaluserData.cs",
               "DocumentMoniker": "C:\\Users\\mdebr\\OneDrive - Office 365 GPI\\Secret_shared_corner\\KledijModule_dockerComposeAdded\\ProjectCore\\Migrations\\20240802182302_AddedLocaluserData.cs",
               "RelativeDocumentMoniker": "..\\KledijModule_dockerComposeAdded\\ProjectCore\\Migrations\\20240802182302_AddedLocaluserData.cs",
@@ -906,7 +1020,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 56,
+              "DocumentIndex": 62,
               "Title": "MapSizeToProduct.cshtml",
               "DocumentMoniker": "C:\\Users\\mdebr\\OneDrive - Office 365 GPI\\Secret_shared_corner\\KledijModule_git\\KledijModule\\Areas\\Admin\\Pages\\Catalogus\\Producten\\MapSizeToProduct.cshtml",
               "RelativeDocumentMoniker": "KledijModule\\Areas\\Admin\\Pages\\Catalogus\\Producten\\MapSizeToProduct.cshtml",
@@ -918,7 +1032,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 57,
+              "DocumentIndex": 63,
               "Title": "MapColorToProduct.cshtml",
               "DocumentMoniker": "C:\\Users\\mdebr\\OneDrive - Office 365 GPI\\Secret_shared_corner\\KledijModule_git\\KledijModule\\Areas\\Admin\\Pages\\Catalogus\\Producten\\MapColorToProduct.cshtml",
               "RelativeDocumentMoniker": "KledijModule\\Areas\\Admin\\Pages\\Catalogus\\Producten\\MapColorToProduct.cshtml",
@@ -930,7 +1044,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 53,
+              "DocumentIndex": 59,
               "Title": "Roles.cs",
               "DocumentMoniker": "C:\\Users\\mdebr\\OneDrive - Office 365 GPI\\Secret_shared_corner\\KledijModule_git\\KledijModule\\Common\\Authorization\\Roles.cs",
               "RelativeDocumentMoniker": "KledijModule\\Common\\Authorization\\Roles.cs",
@@ -942,7 +1056,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 55,
+              "DocumentIndex": 61,
               "Title": "MapColorToProduct.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\mdebr\\OneDrive - Office 365 GPI\\Secret_shared_corner\\KledijModule_git\\KledijModule\\Areas\\Admin\\Pages\\Catalogus\\Producten\\MapColorToProduct.cshtml.cs",
               "RelativeDocumentMoniker": "KledijModule\\Areas\\Admin\\Pages\\Catalogus\\Producten\\MapColorToProduct.cshtml.cs",
@@ -954,7 +1068,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 54,
+              "DocumentIndex": 60,
               "Title": "MapSizeToProduct.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\mdebr\\OneDrive - Office 365 GPI\\Secret_shared_corner\\KledijModule_git\\KledijModule\\Areas\\Admin\\Pages\\Catalogus\\Producten\\MapSizeToProduct.cshtml.cs",
               "RelativeDocumentMoniker": "KledijModule\\Areas\\Admin\\Pages\\Catalogus\\Producten\\MapSizeToProduct.cshtml.cs",
@@ -966,7 +1080,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 61,
+              "DocumentIndex": 67,
               "Title": "Order.cs",
               "DocumentMoniker": "C:\\Users\\mdebr\\OneDrive - Office 365 GPI\\Secret_shared_corner\\KledijModule_git\\ProjectCore\\Domain\\Entities\\Bestellingen\\Order.cs",
               "RelativeDocumentMoniker": "ProjectCore\\Domain\\Entities\\Bestellingen\\Order.cs",
@@ -978,7 +1092,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 58,
+              "DocumentIndex": 64,
               "Title": "_ViewImports.cshtml",
               "DocumentMoniker": "C:\\Users\\mdebr\\OneDrive - Office 365 GPI\\Secret_shared_corner\\KledijModule_git\\KledijModule\\Areas\\Identity\\Pages\\_ViewImports.cshtml",
               "RelativeDocumentMoniker": "KledijModule\\Areas\\Identity\\Pages\\_ViewImports.cshtml",
@@ -990,7 +1104,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 59,
+              "DocumentIndex": 65,
               "Title": "_ViewImports.cshtml",
               "DocumentMoniker": "C:\\Users\\mdebr\\OneDrive - Office 365 GPI\\Secret_shared_corner\\KledijModule_git\\KledijModule\\Areas\\Identity\\Pages\\Account\\_ViewImports.cshtml",
               "RelativeDocumentMoniker": "KledijModule\\Areas\\Identity\\Pages\\Account\\_ViewImports.cshtml",
@@ -1002,7 +1116,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 60,
+              "DocumentIndex": 66,
               "Title": "AuthorizationPolicies.cs",
               "DocumentMoniker": "C:\\Users\\mdebr\\OneDrive - Office 365 GPI\\Secret_shared_corner\\KledijModule_git\\KledijModule\\Common\\Authorization\\AuthorizationPolicies.cs",
               "RelativeDocumentMoniker": "KledijModule\\Common\\Authorization\\AuthorizationPolicies.cs",

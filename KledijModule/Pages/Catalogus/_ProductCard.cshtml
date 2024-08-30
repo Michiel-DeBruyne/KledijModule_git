@@ -14,5 +14,8 @@
                 <h6 class="mb-3 fw-bolder">@Model.Punten punten</h6>
             </div>
         </a>
+            <div class="card-footer">
+                <i class="@(Model.IsFavoriet ? "fas" : "far") fa-star m-2 text-warning favoriteStar" data-product-id="@Model.Id"></i>
+            </div>
     </div>
 </div>

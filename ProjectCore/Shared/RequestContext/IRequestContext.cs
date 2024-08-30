@@ -2,6 +2,7 @@
 {
     public interface IRequestContext
     {
+        public string UserId { get; }
         string UserName { get; }
         string RequestScheme { get; }
         string RequestHost { get; }

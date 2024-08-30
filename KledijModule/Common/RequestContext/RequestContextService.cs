@@ -1,4 +1,5 @@
 ﻿using ProjectCore.Shared.RequestContext;
+using System.Security.Claims;
 namespace KledijModule.Common.RequestContext
 {
     public class RequestContextService : IRequestContext
@@ -9,7 +10,7 @@ namespace KledijModule.Common.RequestContext
         {
             _httpContextAccessor = httpContextAccessor;
         }
-
+        public string UserId => _httpContextAccessor.HttpContext?.User?.FindFirstValue(ClaimTypes.NameIdentifier) ?? string.Empty;
         public string UserName => _httpContextAccessor.HttpContext?.User?.Identity?.Name ?? string.Empty;
 
         public string RequestScheme => _httpContextAccessor.HttpContext?.Request.Scheme;

@@ -10534,19 +10534,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ADM448386944\\.nuget\\packages\\": {}
+    "C:\\Users\\mdebr\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ADM448386944\\OneDrive - Office 365 GPI\\Secret_shared_corner\\KledijModule_git\\KledijModule\\KledijModule.csproj",
+      "projectUniqueName": "C:\\Users\\mdebr\\OneDrive - Office 365 GPI\\Secret_shared_corner\\KledijModule_git\\KledijModule\\KledijModule.csproj",
       "projectName": "KledijModule",
-      "projectPath": "C:\\Users\\ADM448386944\\OneDrive - Office 365 GPI\\Secret_shared_corner\\KledijModule_git\\KledijModule\\KledijModule.csproj",
-      "packagesPath": "C:\\Users\\ADM448386944\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ADM448386944\\OneDrive - Office 365 GPI\\Secret_shared_corner\\KledijModule_git\\KledijModule\\obj\\",
+      "projectPath": "C:\\Users\\mdebr\\OneDrive - Office 365 GPI\\Secret_shared_corner\\KledijModule_git\\KledijModule\\KledijModule.csproj",
+      "packagesPath": "C:\\Users\\mdebr\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\mdebr\\OneDrive - Office 365 GPI\\Secret_shared_corner\\KledijModule_git\\KledijModule\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
-        "C:\\Users\\ADM448386944\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\mdebr\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -10554,14 +10558,15 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\ADM448386944\\OneDrive - Office 365 GPI\\Secret_shared_corner\\KledijModule_git\\ProjectCore\\ProjectCore.csproj": {
-              "projectPath": "C:\\Users\\ADM448386944\\OneDrive - Office 365 GPI\\Secret_shared_corner\\KledijModule_git\\ProjectCore\\ProjectCore.csproj"
+            "C:\\Users\\mdebr\\OneDrive - Office 365 GPI\\Secret_shared_corner\\KledijModule_git\\ProjectCore\\ProjectCore.csproj": {
+              "projectPath": "C:\\Users\\mdebr\\OneDrive - Office 365 GPI\\Secret_shared_corner\\KledijModule_git\\ProjectCore\\ProjectCore.csproj"
             }
           }
         }
@@ -10570,6 +10575,11 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -10652,7 +10662,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.201/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

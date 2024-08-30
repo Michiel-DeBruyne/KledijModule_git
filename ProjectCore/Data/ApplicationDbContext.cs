@@ -38,6 +38,8 @@ public class ApplicationDbContext : DbContext
 
     public DbSet<ApplicationUser> Gebruikers { get; set; }
 
+    public DbSet<Favoriet> Favorieten { get; set; }
+
 
     protected override void OnModelCreating(ModelBuilder builder)
     {

@@ -5,7 +5,10 @@ using Microsoft.EntityFrameworkCore;
 using ProjectCore.Data;
 using ProjectCore.Domain.Entities.Catalogus;
 using ProjectCore.Shared.Exceptions;
+using ProjectCore.Shared.RequestContext;
 using System.ComponentModel;
+using System.Security.Claims;
+using static ProjectCore.Features.Gebruikers.Commands.UpdateUserBalance;
 
 namespace ProjectCore.Features.Producten.Queries
 {
@@ -17,23 +20,36 @@ namespace ProjectCore.Features.Producten.Queries
             public string? Categorie { get; set; }
             public bool? OnlyPublished { get; set; }
             public bool? IncludeSubCategorieProducts { get; set; }
+
+            public  bool? EnkelFavorieten {get;set;} // Om de favorieten van de gebruiker op te halen nz
         }
 
         public class GetProductsListQueryHandler : IRequestHandler<GetProductsListQuery, Result>
         {
             private readonly IMapper _mapper;
             private readonly ApplicationDbContext _context;
+            private readonly IRequestContext _requestContext;
 
-            public GetProductsListQueryHandler(IMapper mapper, ApplicationDbContext context)
+            public GetProductsListQueryHandler(IMapper mapper, ApplicationDbContext context, IRequestContext requestContext)
             {
                 _mapper = mapper;
                 _context = context;
+                _requestContext = requestContext;
             }
 
             public async Task<Result> Handle(GetProductsListQuery request, CancellationToken cancellationToken)
             {
                 try
                 {
+                    string gebruikerId = _requestContext.UserId;
+                    
+
+                    var config = new TypeAdapterConfig();
+                    config.NewConfig<Product, ProductsListVm>()
+                    .Map(dest => dest.IsFavoriet, src =>
+                            _context.Favorieten.Any(f => f.GebruikerId == gebruikerId && f.ProductId == src.Id));
+
+
                     IQueryable<Product> query = _context.Producten
                                          .Include(p => p.Fotos.Take(1))
                                          .Include(p => p.Categorie)
@@ -65,8 +81,18 @@ namespace ProjectCore.Features.Producten.Queries
                         }
 
                     }
+                    // Als enkel favorieten is ingesteld, filter alleen favorieten
+                    if (request.EnkelFavorieten == true)
+                    {
+                        var favorieteProductIds = await _context.Favorieten
+                            .Where(f => f.GebruikerId == gebruikerId)
+                            .Select(f => f.ProductId)
+                            .ToListAsync(cancellationToken);
 
-                    var products = await query.ProjectToType<ProductsListVm>().ToListAsync(cancellationToken);
+                        query = query.Where(p => favorieteProductIds.Contains(p.Id));
+                    }
+
+                    var products = await query.ProjectToType<ProductsListVm>(config).ToListAsync(cancellationToken);
 
                     return new SuccessResult<List<ProductsListVm>>(products);
                 }
@@ -108,6 +134,8 @@ namespace ProjectCore.Features.Producten.Queries
             public Guid Id { get; init; }
             public string Naam { get; init; }
             public Category Categorie { get; init; }
+
+            public bool IsFavoriet { get; set; }
             public Geslacht Geslacht { get; init; }
             public int Punten { get; init; }
             public bool Beschikbaar { get; init; }
