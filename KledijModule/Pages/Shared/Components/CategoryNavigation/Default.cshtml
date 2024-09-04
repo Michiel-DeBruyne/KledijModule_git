@@ -81,33 +81,3 @@
     </ul>
 </div>
 
-    // <script>
-    //     $(document).ready(function () {
-    //         console.log("for categorie");
-    //         $(".category-link").click(function (e) {
-    //             e.preventDefault();
-    //             var category = $(this).data("category");
-
-    //             // Stuur de categorie mee met de zoekbalk als data-attribute
-    //             $("#query").data("category", category);
-
-    //             // Maak een AJAX-verzoek om de producten te filteren op basis van de categorie
-    //             $.ajax({
-    //                 url: '@Url.Page("Index")',
-    //                 type: 'GET',
-    //                 data: {
-    //                     Categorie: category,
-    //                     Query: $("#query").val(),
-    //                 OnlyFavorites: $("#onlyFavoritesCheckbox").is(":checked")
-    //                 },
-    //                 success: function (response) {
-    //                     // Update de resultaten in de #results-div
-    //                     $("#results").html($(response).find("#results").html());
-    //                 },
-    //                 error: function () {
-    //                     console.error('Er is een fout opgetreden bij het laden van de categorie.');
-    //                 }
-    //             });
-    //         });
-    //     });
-    // </script>
