@@ -48,6 +48,10 @@ namespace ProjectCore.Features.ProductAttributen.Kleuren.Commands
                     {
                         return new NotFoundErrorResult($"Kleur met id {request.Id} & kleur {request.Kleur} werd niet gevonden, mogelijks werd het door een andere gebruiker verwijderd?");
                     }
+                    if (kleur.Kleur == "Standaard")
+                    {
+                        return new ErrorResult($"Standaardkleur mag niet worden bewerkt.");
+                    }
                     kleur.Kleur = request.Kleur;
                     await _context.SaveChangesAsync();
                     return new SuccessResult();

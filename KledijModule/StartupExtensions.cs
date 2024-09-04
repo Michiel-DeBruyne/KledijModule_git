@@ -120,6 +120,7 @@ namespace KledijModule
                         // This will ensure the database is created and all migrations are applied
                         context.Database.Migrate();
                     }
+                    DatabaseInitializer.Seed(context);
                 }
                 catch (Exception ex)
                 {

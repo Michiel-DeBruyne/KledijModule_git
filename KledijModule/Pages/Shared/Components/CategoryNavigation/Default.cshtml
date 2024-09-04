@@ -2,7 +2,7 @@
 @model List<CategoryNavigationViewComponent.CategorieNavModel>
 
 
-@functions{
+@* @functions{
 
     async Task CategorieLijn(CategorieNavModel categorielijn)
     {
@@ -40,4 +40,74 @@
             }
         }
     </ul>
+</div> *@
+
+@functions {
+    async Task CategorieLijn(CategorieNavModel categorielijn)
+    {
+        <li>
+            <a href="#" class="nav-link px-0 align-middle text-dark category-link"
+               data-category="@categorielijn.Naam">
+                <i class="fs-4 bi-speedometer2"></i>
+                <span class="ms-1 d-none d-sm-inline">@categorielijn.Naam</span>
+            </a>
+            @{
+                if (categorielijn.SubCategorieën.Count > 0)
+                {
+                    <ul class="collapse nav flex-column ms-2" id="submenu-@categorielijn.Id">
+                        @foreach (var subCategory in categorielijn.SubCategorieën)
+                        {
+                            await CategorieLijn(subCategory);
+                        }
+                    </ul>
+                }
+            }
+        </li>
+    }
+}
+
+<div>
+    <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start text-dark">
+        <li>
+            <a class="nav-link px-0 align-middle text-dark" asp-area="" asp-page="/Catalogus/Index">Catalogus</a>
+        </li>
+        @if (Model.Count > 0)
+        {
+            @foreach (var categorie in Model)
+            {
+                await CategorieLijn(categorie);
+            }
+        }
+    </ul>
 </div>
+
+    // <script>
+    //     $(document).ready(function () {
+    //         console.log("for categorie");
+    //         $(".category-link").click(function (e) {
+    //             e.preventDefault();
+    //             var category = $(this).data("category");
+
+    //             // Stuur de categorie mee met de zoekbalk als data-attribute
+    //             $("#query").data("category", category);
+
+    //             // Maak een AJAX-verzoek om de producten te filteren op basis van de categorie
+    //             $.ajax({
+    //                 url: '@Url.Page("Index")',
+    //                 type: 'GET',
+    //                 data: {
+    //                     Categorie: category,
+    //                     Query: $("#query").val(),
+    //                 OnlyFavorites: $("#onlyFavoritesCheckbox").is(":checked")
+    //                 },
+    //                 success: function (response) {
+    //                     // Update de resultaten in de #results-div
+    //                     $("#results").html($(response).find("#results").html());
+    //                 },
+    //                 error: function () {
+    //                     console.error('Er is een fout opgetreden bij het laden van de categorie.');
+    //                 }
+    //             });
+    //         });
+    //     });
+    // </script>

@@ -1,5 +1,25 @@
 ﻿@model IndexModel
-
+<div class="filters-summary">
+        <p>
+            <strong>Toegepaste Filters:</strong>
+            @if (!string.IsNullOrEmpty(Model.Query))
+            {
+                <span>Zoekopdracht: @Model.Query | </span>
+            }
+            @if (!string.IsNullOrEmpty(Model.Categorie))
+            {
+                <span>Categorie: @Model.Categorie | </span>
+            }
+            @if (Model.OnlyFavorites)
+            {
+                <span>Enkel favorieten: Ja | </span>
+            }
+            @if (string.IsNullOrEmpty(Model.Query) && string.IsNullOrEmpty(Model.Categorie) && !Model.OnlyFavorites)
+            {
+                <span>Geen filters toegepast</span>
+            }
+        </p>
+</div>
         @foreach (var product in Model.ProductenList)
         {
             <partial name="_ProductCard" model="@product" />

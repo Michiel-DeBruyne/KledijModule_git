@@ -19,3 +19,30 @@
             </div>
     </div>
 </div>
+@* <script>
+    $(document).ready(function () {
+        console.log("test");
+        $(".favoriteStar").click(function () {
+            var productId = $(this).data("product-id");
+            var userId = $('input[name="userId"]').val();
+            var $star = $(this);
+            var token = $('input[name="__RequestVerificationToken"]').val();
+
+            $.ajax({
+                url: '@Url.Page("", "SetFavorite")',
+                type: 'POST',
+                data: {
+                    __RequestVerificationToken: token,
+                    ProductId: productId,
+                    UserId: userId
+                },
+                success: function (response) {
+                    $star.toggleClass('far fas');
+                },
+                error: function () {
+                    console.error('Er is een fout opgetreden.');
+                }
+            });
+        });
+    });
+</script> *@

@@ -36,7 +36,7 @@ namespace KledijModule.Areas.Admin.Pages.Attributen.Kleuren
             //}
             if (result is ErrorResult errorResult)
             {
-                TempData["ErrorMessage"] = errorResult.Message;
+                TempData["Errors"] = errorResult.Message;
             }
             //Raak je hier, was er een probleem.
             return RedirectToPage(nameof(Index));

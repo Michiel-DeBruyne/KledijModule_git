@@ -37,6 +37,14 @@ namespace ProjectCore.Features.ProductAttributen.Maten.Commands
                 {
                     var validator = new CommandValidator();
                     ValidationResult validationResult = await validator.ValidateAsync(request, cancellationToken);
+                    //Niet toelaten dat standaardMaat verwijderd wordt
+                    var standaardMaat = await _context.ProductMaten
+                                        .Where(m => m.Maat.Equals("Standaard"))
+                                        .FirstOrDefaultAsync();
+                    if (request.MatenToDelete.Contains(standaardMaat.Id))
+                    {
+                        return new ErrorResult("Standaardmaat mag niet worden verwijderd.");
+                    }
                     var numberOfMatenDeleted = await _context.ProductMaten.Where(pk => request.MatenToDelete.Contains(pk.Id)).ExecuteDeleteAsync();
 
                     return new SuccessResult<int>(numberOfMatenDeleted);

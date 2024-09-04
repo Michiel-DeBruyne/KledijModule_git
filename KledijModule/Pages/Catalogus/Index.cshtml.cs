@@ -62,8 +62,11 @@ namespace KledijModule.Pages.Catalogus
         #endregion ViewModel
 
 
-        public async Task<IActionResult> OnGetAsync()
+        public async Task<IActionResult> OnGetAsync(string? Categorie, string? Query, bool? OnlyFavorites)
         {
+            this.Categorie = Categorie;
+            this.Query = Query;
+            this.OnlyFavorites = OnlyFavorites.HasValue ? OnlyFavorites.Value : false; // omdat je anders conflict hebt met nullable to niet nullable gebruik je hier hasvalue en value
             var result = await _mediator.Send(new GetProductList.GetProductsListQuery() { Categorie = Categorie, SearchQuery = Query, OnlyPublished = true, IncludeSubCategorieProducts = true, EnkelFavorieten = OnlyFavorites });
 
             if (result is SuccessResult<List<GetProductList.ProductsListVm>> successResult) ProductenList = successResult.Data.Adapt<List<ProductenListIndexViewModel>>();
@@ -73,10 +76,6 @@ namespace KledijModule.Pages.Catalogus
             {
                 return Page();
             }
-            Response.Htmx(h =>
-            {
-                h.Push(Request.GetEncodedUrl());
-            });
             return Partial("_ProductenLijst", this);
 
         }

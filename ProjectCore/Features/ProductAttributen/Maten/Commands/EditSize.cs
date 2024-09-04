@@ -48,7 +48,10 @@ namespace ProjectCore.Features.ProductAttributen.Maten.Commands
                     {
                         return new NotFoundErrorResult($"de maat met id {request.Id} kon niet worden gevonden, mogelijks werd het verwijderd?");
                     }
-
+                    if (maat.Maat == "Standaard")
+                    {
+                        return new ErrorResult($"Standaardmaat mag niet worden bewerkt.");
+                    }
                     maat.Maat = request.Maat;
                     await _context.SaveChangesAsync();
 

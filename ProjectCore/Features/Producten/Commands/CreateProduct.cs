@@ -89,6 +89,19 @@ namespace ProjectCore.Features.Producten.Commands
                         return new NotFoundErrorResult($"Categorie met categorieID {request.CategorieId} kon niet worden gevonden. Mogelijks bestaat het niet langer");
                     }
                     var product = _mapper.Map<Product>(request);
+                    // add standaard kleur en maat
+                    var standaardKleur = await _context.ProductKleuren
+                        .Where(k => k.Kleur.Equals("Standaard"))
+                        .FirstOrDefaultAsync();
+                    if (standaardKleur == null) { return new NotFoundErrorResult("Standaard als kleur kon niet gevonden worden. Product wordt niet toegevoegd."); }
+                    product.Kleuren.Add(standaardKleur);
+                    var standaardMaat = await _context.ProductMaten
+                                            .Where(m => m.Maat.Equals("Standaard"))
+                                            .FirstOrDefaultAsync();
+                    if (standaardMaat == null) { return new NotFoundErrorResult("Standaard als Maat kon niet gevonden worden. Product wordt niet toegevoegd."); }
+
+                    product.Maten.Add(standaardMaat);
+
                     await _context.Producten.AddAsync(product);
                     await _context.SaveChangesAsync();
                     return new SuccessResult<Guid>(product.Id);

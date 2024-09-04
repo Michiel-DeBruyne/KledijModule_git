@@ -1,47 +1,132 @@
 ﻿@page
 @model ProductDetailsModel
 @{
-    ViewData["Title"] = "ProductDetails";
+    ViewData["Title"] = "Product Details";
 }
 
-<h2>@Model.Product.Naam</h2>
+<div class="container mt-4">
+    <div class="row">
+        <!-- Foto-galerij -->
+        <div class="col-md-6 mb-4 d-flex equal-height">
+            <div id="productCarousel" class="carousel slide flex-grow-1" data-bs-ride="carousel">
+                <div class="carousel-inner flex-grow-1">
+                    @if (Model.Product.Fotos.Any())
+                    {
+                        int index = 0;
+                        foreach (var foto in Model.Product.Fotos)
+                        {
+                            <div class="carousel-item @(index == 0 ? "active" : "")">
+                                <img src="@foto.ImageUrl" class="d-block w-100" alt="Product Image">
+                            </div>
+                            index++;
+                        }
+                    }
+                    else
+                    {
+                        <div class="carousel-item active">
+                            <img src="~/images/placeholder.png" class="d-block w-100" alt="No Image Available">
+                        </div>
+                    }
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#productCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#productCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
 
-<h3><span class="fw-bold">@Model.Product.Punten</span> punten</h3>
-
-<form method="post">
-    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-    <input type="hidden" asp-for="ShoppingCartItem.ProductId" value="@Model.Product.Id" />
-
-    <div class="mb-2">
-        <label asp-for="ShoppingCartItem.Maat"></label>
-        <select asp-for="ShoppingCartItem.Maat" asp-items="@(new SelectList(Model.Product.Maten,"Maat","Maat"))">
-            <option value="">Selecteer een waarde</option>
-        </select>
-        <span asp-validation-for="ShoppingCartItem.Maat" class="text-danger"></span>
-    </div>
-    <div class="mb-2">
-        <label asp-for="ShoppingCartItem.Kleur"></label>
-        <select asp-for="ShoppingCartItem.Kleur" asp-items="@(new SelectList(Model.Product.Kleuren,"Kleur","Kleur"))">
-            <option value="">Selecteer een waarde</option>
-        </select>
-        <span asp-validation-for="ShoppingCartItem.Kleur" class="text-danger"></span>
-    </div>
-    <div class="mb-2">
-        <label asp-for="ShoppingCartItem.Hoeveelheid"></label>
-        <div>
-            <input type="number" asp-for="ShoppingCartItem.Hoeveelheid" min="1" max="99" value="1" />
-            <p class="text-danger">Maximum @Model.Product.DisplayVervangingsTermijn</p>
+            <!-- Thumbnail gallery -->
+            <div class="d-flex justify-content-start mt-3">
+                @foreach (var foto in Model.Product.Fotos)
+                {
+                    <img src="@foto.ImageUrl" class="img-thumbnail mx-1" style="cursor: pointer;" data-bs-target="#productCarousel" data-bs-slide-to="@Model.Product.Fotos.IndexOf(foto)" alt="Thumbnail">
+                }
+            </div>
         </div>
-        <span asp-validation-for="ShoppingCartItem.Hoeveelheid" class="text-danger"></span>
-    </div>
-    <div class="mb-2">
-        <label asp-for="ShoppingCartItem.Opmerkingen"></label>
-        <textarea asp-for="ShoppingCartItem.Opmerkingen" class="form-control" rows="4"></textarea>
-        <span asp-validation-for="ShoppingCartItem.Opmerkingen" class="text-danger"></span>
-    </div>
-    <div class="d-grid">
-        <button type="submit" class="btn btn-dark btn-lg"><i class="fa fa-shopping-cart"></i> Voeg toe aan winkelkar!</button>
-    </div>
-</form>
 
+        <!-- Product formulier -->
+        <div class="col-md-6 d-flex equal-height">
+            <div class="d-flex flex-column flex-grow-1">
+                <h2>@Model.Product.Naam</h2>
+                <h3><span class="fw-bold text-success">@Model.Product.Punten</span> punten</h3>
+                <p>@Model.Product.Beschrijving</p>
 
+                <form method="post" class="flex-grow-1">
+                    <div asp-validation-summary="ModelOnly" class="alert alert-danger"></div>
+                    <input type="hidden" asp-for="ShoppingCartItem.ProductId" value="@Model.Product.Id" />
+
+                    <div class="mb-3">
+                        <label asp-for="ShoppingCartItem.Maat" class="form-label"></label>
+                        <select asp-for="ShoppingCartItem.Maat" class="form-select" asp-items="@(new SelectList(Model.Product.Maten, "Maat", "Maat"))">
+                            @if (Model.Product.Maten.Count > 1)
+                            {
+                                <option value="">Selecteer een maat</option>
+                            }
+                        </select>
+                        <span asp-validation-for="ShoppingCartItem.Maat" class="text-danger"></span>
+                    </div>
+
+                    <div class="mb-3">
+                        <label asp-for="ShoppingCartItem.Kleur" class="form-label"></label>
+                        <select asp-for="ShoppingCartItem.Kleur" class="form-select" asp-items="@(new SelectList(Model.Product.Kleuren, "Kleur", "Kleur"))">
+                            @if (Model.Product.Kleuren.Count > 1)
+                            {
+                                <option value="">Selecteer een kleur</option>
+                            }
+                        </select>
+                        <span asp-validation-for="ShoppingCartItem.Kleur" class="text-danger"></span>
+                    </div>
+
+                    <div class="mb-3">
+                        <label asp-for="ShoppingCartItem.Hoeveelheid" class="form-label"></label>
+                        <div class="input-group">
+                            <input type="number" asp-for="ShoppingCartItem.Hoeveelheid" class="form-control" min="1" max="99" value="1" />
+                            <span class="input-group-text">stuks</span>
+                        </div>
+                        <small class="form-text text-muted">Maximum: @Model.Product.DisplayVervangingsTermijn stuks per klant.</small>
+                        <span asp-validation-for="ShoppingCartItem.Hoeveelheid" class="text-danger"></span>
+                    </div>
+
+                    <div class="mb-3">
+                        <label asp-for="ShoppingCartItem.Opmerkingen" class="form-label"></label>
+                        <textarea asp-for="ShoppingCartItem.Opmerkingen" class="form-control" rows="4" placeholder="Eventuele opmerkingen..."></textarea>
+                        <span asp-validation-for="ShoppingCartItem.Opmerkingen" class="text-danger"></span>
+                    </div>
+
+                    <div class="d-grid">
+                        <button type="submit" class="btn btn-dark btn-lg">
+                            <i class="fa fa-shopping-cart"></i> Voeg toe aan winkelkar!
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .carousel-item img {
+        width: 100%;
+        height: 100%; /* Zorg ervoor dat de afbeelding de volledige hoogte van de container vult */
+        object-fit: cover; /* Zorgt ervoor dat de afbeelding proportioneel wordt bijgesneden */
+    }
+
+    .equal-height {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+        .equal-height > .carousel-inner, .equal-height > form {
+            flex: 1;
+        }
+</style>
+
+@* @section Scripts {
+    <script src="https://cdn.jsdelivr.net/npm/popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz4fnFO9P1rcaI6IINgJ8jA3dA9/ff7k4F+V+l+gAmO8Fbf8Ih4b9y+9h6" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-OggXhRS2eFvEwHBG8qF+v6XlS7G12P6hN5F3fX1Q3u2B7A0Rx7r9PB7KkQwrjC9w5" crossorigin="anonymous"></script>
+}
+ *@

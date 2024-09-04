@@ -19,6 +19,7 @@ namespace ProjectCore.Features.ProductAttributen.Kleuren.Commands
             public CommandValidator()
             {
                 RuleFor(c => c.KleurenToDelete).NotNull().NotEmpty().WithMessage("Er werden geen kleuren geselecteerd om te verwijderen");
+                
             }
         }
 
@@ -40,6 +41,14 @@ namespace ProjectCore.Features.ProductAttributen.Kleuren.Commands
                     if (!validationResult.IsValid)
                     {
                         return new ValidationErrorResult("Validatie mislukt voor het verwijderen van kleuren", validationResult.Errors.Select(x => new ValidationError(x.PropertyName, x.ErrorMessage)).ToList());
+                    }
+                    //Niet toelaten dat standaardkleur verwijderd wordt
+                    var standaardKleur = await _context.ProductKleuren
+                                        .Where(k => k.Kleur.Equals("Standaard"))
+                                        .FirstOrDefaultAsync();
+                    if (request.KleurenToDelete.Contains(standaardKleur.Id))
+                    {
+                        return new ErrorResult("Standaardkleur mag niet worden verwijderd.");
                     }
                     var numberOfKleurenDeleted = await _context.ProductKleuren.Where(pk => request.KleurenToDelete.Contains(pk.Id)).ExecuteDeleteAsync();
                     return new SuccessResult<int>(numberOfKleurenDeleted);

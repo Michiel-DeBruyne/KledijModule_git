@@ -102,8 +102,8 @@ namespace KledijModule.Pages.Catalogus
         {
             public Guid ProductId { get; set; }
             public int Hoeveelheid { get; set; }
-            public string? Kleur { get; set; }
-            public string? Maat { get; set; }
+            public string Kleur { get; set; }
+            public string Maat { get; set; }
             public string? Opmerkingen { get; set; }
         }
     }

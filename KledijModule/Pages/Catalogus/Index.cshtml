@@ -5,7 +5,7 @@
 }
 <div class="row">
     <div class="col" id="categories" hx-get="@Url.Page("","CategoriesList")" hx-trigger="load" hx-target="#categories" hx-swap="innerHTML">
-        <img id="loading" class="htmx-indicator" src="~/img/loading.svg" alt="search" />
+        <img id="loading" class="htmx-indicator" src="~/Images/bars.svg" alt="search" />
     </div>
 
     <div class="col-10">
@@ -16,24 +16,24 @@
                     <img id="loading" class="htmx-indicator m-1" src="~/Images/bars.svg" alt="search"/>
                     <i class="fa-solid fa-magnifying-glass"></i>
                 </span>
-                <input type="text"
-                       asp-for="Query"
-                       id="query"
-                       autocomplete="off"
-                       hx-get="@Url.Page("Index")"
-                       hx-target="#results"
-                       hx-trigger="keyup changed delay:500ms"
-                       hx-indicator="#loading"
-                       placeholder="Zoek een artikel"
-                       class="form-control"
-                       aria-label="Username"
-                       aria-describedby="search-addon">
-                <input type="hidden" asp-for="Categorie" />
-                <input type="hidden" name="userId" value="@User.FindFirst(ClaimTypes.NameIdentifier)?.Value" /> <!--Voor gebruik in javascript-->
+                    <input type="text"
+                           asp-for="Query"
+                           id="query"
+                           autocomplete="off"
+                           data-category=""
+                           placeholder="Zoek een artikel"
+                           class="form-control"
+                           aria-label="Username"
+                           aria-describedby="search-addon">
+                    <input type="hidden" asp-for="Categorie" id="selectedCategory" />
+                    <input type="hidden" name="userId" value="@User.FindFirst(ClaimTypes.NameIdentifier)?.Value" />
+
             </div>
-            <label asp-for="OnlyFavorites">Enkel favorieten 
-                    <input type="checkbox" asp-for="OnlyFavorites" hx-trigger="change" hx-get="@Url.Page("Index")" hx-target="#results" hx-indicator="#loading" hx-push-url="true" />
-            </label>          
+                <label asp-for="OnlyFavorites">
+                    Enkel favorieten
+                    <input type="checkbox" asp-for="OnlyFavorites" id="onlyFavoritesCheckbox" />
+                </label>
+                <hr/>
             @Html.AntiForgeryToken()
         </form>
 
@@ -45,44 +45,88 @@
         </div>
     </div>
 </div>
-<script>
-    //om ervoor te zorgen dat als htmx de inhoud swapt, de click event terug geconnecteerd wordt aan de favoritestar
-    document.addEventListener('htmx:afterSwap', function (event) {
-        // Inside this function, your existing jQuery code searching for ".favoriteStar" will work
-        $(document).ready(function () {
-            console.log("test");
-            $(".favoriteStar").click(function () {
-                var productId = $(this).data("product-id");
-                var userId = $('input[name="userId"]').val();
-                var $star = $(this);
-                var token = $('input[name="__RequestVerificationToken"]').val();
-
-                $.ajax({
-                    url: '@Url.Page("", "SetFavorite")',
-                    type: 'POST',
-                    data: {
-                        __RequestVerificationToken: token,
-                        ProductId: productId,
-                        UserId: userId
-                    },
-                    success: function (response) {
-                        $star.toggleClass('far fas');
-                    },
-                    error: function () {
-                        console.error('Er is een fout opgetreden.');
-                    }
-                });
-            });
-        });
-    });
-</script>
 
 @section Scripts {
     <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            let debounceTimeout;
 
-        $(document).ready(function () {
-            console.log("test");
-            $(".favoriteStar").click(function () {
+            console.log("Document loaded and script initialized");
+
+            const queryElement = document.getElementById('query');
+            const selectedCategoryElement = document.getElementById('selectedCategory');
+            const onlyFavoritesElement = document.getElementById('onlyFavoritesCheckbox');
+
+            if (!queryElement) {
+                console.error("Element with ID 'query' not found.");
+                return;
+            }
+
+            // Function to perform AJAX request
+            function performAjaxRequest() {
+                const query = queryElement.value;
+                const category = queryElement.dataset.category || ''; // Default to empty string if not found
+                const onlyFavorites = onlyFavoritesElement ? onlyFavoritesElement.checked : false;
+
+                $.ajax({
+                    url: '@Url.Page("Index")',
+                    type: 'GET',
+                    data: {
+                        Categorie: category,
+                        Query: query,
+                        OnlyFavorites: onlyFavorites
+                    },
+                    beforeSend: function () {
+                        // Show loading indicator
+                        $("#loading").show();
+                    },
+                    complete: function () {
+                        // Hide loading indicator
+                        $("#loading").hide();
+                    },
+                    success: function (response) {
+                        $("#results").html($(response).find("#results").html());
+                    },
+                    error: function () {
+                        console.error('Er is een fout opgetreden bij het zoeken.');
+                    }
+                });
+            }
+
+            // Handle keyup event for search input with debounce
+            queryElement.addEventListener('keyup', function () {
+                clearTimeout(debounceTimeout); // Annuleer de vorige timer
+
+                debounceTimeout = setTimeout(function () {
+                    performAjaxRequest();
+                }, 500); // 500ms delay
+            });
+
+            // Event delegation for category links
+            document.addEventListener('click', function (e) {
+                // Check if the clicked element or one of its parents has the category-link class
+                const linkElement = e.target.closest('.category-link');
+
+                if (linkElement) {
+                    e.preventDefault();
+
+                    // Retrieve the category from the closest <a> element
+                    const category = linkElement.dataset.category;
+
+                    // Update hidden category input and search query
+                    queryElement.dataset.category = category;
+                    selectedCategoryElement.value = category;
+
+                    performAjaxRequest();
+                }
+            });
+
+            // Handle change event for the "OnlyFavorites" checkbox
+            $("#onlyFavoritesCheckbox").change(function () {
+                performAjaxRequest();
+            });
+            // Event delegation voor favoriteStar
+            $(document).on('click', '.favoriteStar', function () {
                 var productId = $(this).data("product-id");
                 var userId = $('input[name="userId"]').val();
                 var $star = $(this);
@@ -104,6 +148,8 @@
                     }
                 });
             });
+
         });
+
     </script>
 }
