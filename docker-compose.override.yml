@@ -14,7 +14,7 @@ services:
     volumes:
       - ${APPDATA}/Microsoft/UserSecrets:/home/app/.microsoft/usersecrets:ro
       - ${APPDATA}/ASP.NET/Https:/home/app/.aspnet/https:ro
-      - ./KledijModule/wwwroot:/app/wwwroot:rw
+      - ./KledijModule/wwwroot/Images/ProductImages:/app/wwwroot/Images/ProductImages:rw
     
   mssql:
     image: mcr.microsoft.com/mssql/server:2022-latest

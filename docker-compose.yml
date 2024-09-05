@@ -35,10 +35,6 @@ services:
     volumes:
       # - ${APPDATA}/Microsoft/UserSecrets:/home/app/.microsoft/usersecrets:ro
       # - ./Https:/home/app/.aspnet/https:ro
-      - ./KledijModule/wwwroot:/app/wwwroot:rw
+      - ./KledijModule/wwwroot/Images/ProductImages:/app/wwwroot/Images/ProductImages:rw
     environment:
     - TZ=Europe/Brussels
-    # depends_on: 
-    #   mssql: 
-    #     condition: service_completed_successfully
-    #     restart: true

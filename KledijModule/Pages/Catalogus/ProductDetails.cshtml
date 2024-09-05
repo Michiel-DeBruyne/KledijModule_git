@@ -6,49 +6,57 @@
 
 <div class="container mt-4">
     <div class="row">
-        <!-- Foto-galerij -->
-        <div class="col-md-6 mb-4 d-flex equal-height">
-            <div id="productCarousel" class="carousel slide flex-grow-1" data-bs-ride="carousel">
-                <div class="carousel-inner flex-grow-1">
-                    @if (Model.Product.Fotos.Any())
-                    {
-                        int index = 0;
-                        foreach (var foto in Model.Product.Fotos)
-                        {
-                            <div class="carousel-item @(index == 0 ? "active" : "")">
-                                <img src="@foto.ImageUrl" class="d-block w-100" alt="Product Image">
-                            </div>
-                            index++;
-                        }
-                    }
-                    else
-                    {
-                        <div class="carousel-item active">
-                            <img src="~/images/placeholder.png" class="d-block w-100" alt="No Image Available">
-                        </div>
-                    }
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#productCarousel" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#productCarousel" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
-
-            <!-- Thumbnail gallery -->
-            <div class="d-flex justify-content-start mt-3">
-                @foreach (var foto in Model.Product.Fotos)
+<!-- Foto-galerij -->
+<div class="col-md-6 mb-2 d-flex equal-height">
+    <div id="productCarousel" class="carousel slide flex-grow-1" data-bs-ride="carousel">
+        <!-- Carousel Indicators -->
+        <div class="carousel-indicators">
+            @if (Model.Product.Fotos.Any())
+            {
+                int index = 0;
+                foreach (var foto in Model.Product.Fotos)
                 {
-                    <img src="@foto.ImageUrl" class="img-thumbnail mx-1" style="cursor: pointer;" data-bs-target="#productCarousel" data-bs-slide-to="@Model.Product.Fotos.IndexOf(foto)" alt="Thumbnail">
+                    <button type="button" data-bs-target="#productCarousel" data-bs-slide-to="@index" class="@(index == 0 ? "active" : "")" aria-current="@(index == 0 ? "true" : "false")" aria-label="Slide @(index + 1)"></button>
+                    index++;
                 }
-            </div>
+            }
+        </div>
+        
+        <div class="carousel-inner flex-grow-1">
+            @if (Model.Product.Fotos.Any())
+            {
+                int index = 0;
+                foreach (var foto in Model.Product.Fotos)
+                {
+                    <div class="carousel-item @(index == 0 ? "active" : "")">
+                        <img src="@foto.ImageUrl" class="d-block w-100" alt="Product Image">
+                    </div>
+                    index++;
+                }
+            }
+            else
+            {
+                <div class="carousel-item active">
+                    <img src="~/images/placeholder.png" class="d-block w-100" alt="No Image Available">
+                </div>
+            }
         </div>
 
+        <!-- Carousel Controls -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#productCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#productCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</div>
+
+
         <!-- Product formulier -->
-        <div class="col-md-6 d-flex equal-height">
+        <div class="col-md-6 d-flex equal-height mb-4">
             <div class="d-flex flex-column flex-grow-1">
                 <h2>@Model.Product.Naam</h2>
                 <h3><span class="fw-bold text-success">@Model.Product.Punten</span> punten</h3>

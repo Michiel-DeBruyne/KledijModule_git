@@ -149,7 +149,13 @@ namespace KledijModule.Areas.Admin.Pages.Catalogus.Producten
                 }
                 string wwwRootPath = _webHostEnvironment.WebRootPath;
                 string trustedFileNameForFileStorage = Path.GetRandomFileName() + Path.GetExtension(imageFile.FileName);
+                string storageLocation = Path.Combine(wwwRootPath + _targetFilePath);
                 string filePath = Path.Combine(wwwRootPath + _targetFilePath, trustedFileNameForFileStorage);
+
+                if(!Directory.Exists(storageLocation))
+                {
+
+                }
 
                 try
                 {
