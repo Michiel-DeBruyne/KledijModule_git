@@ -47,8 +47,8 @@ namespace KledijModule.Areas.Identity.Pages.Account.Orders
             {
                 public Guid Id { get; set; }
                 public string ProductNaam { get; set; }
-                public string? Maat { get; set; }
-                public string? Kleur { get; set; }
+                public string Maat { get; set; }
+                public string Kleur { get; set; }
                 public Guid ProductId { get; set; }
                 public int Punten { get; set; }
                 public int Hoeveelheid { get; set; }

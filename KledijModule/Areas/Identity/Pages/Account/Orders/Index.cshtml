@@ -18,6 +18,7 @@
                             <th>Datum bestelling</th>
                             <th>Artikel</th>
                             <th>Aantal</th>
+                            <th>Maat</th>
                             <th>Subtotaal</th>
                             <th>Status</th>
                             <th>Acties</th>
@@ -31,8 +32,18 @@
                                 {
                                     <td rowspan="@order.OrderItems.Count">@order.CreatedDate</td>
                                 }
-                                <td>@orderItem.ProductNaam</td>
+                                <td>
+                                    @if(orderItem.ProductId != Guid.Empty)
+                                    {
+                                        <a href="@Url.Page("/Catalogus/ProductDetails", new { Id = orderItem.ProductId })">@orderItem.ProductNaam</a>
+                                    }
+                                    else
+                                    {
+                                        @orderItem.ProductNaam
+                                    }
+                                </td>
                                 <td>@orderItem.Hoeveelheid</td>
+                                <td>@orderItem.Maat</td>
                                 <td>@(orderItem.Punten * orderItem.Hoeveelheid)</td>
                                 <td id="OrderItemStatus-@orderItem.Id">
                                     @orderItem.OrderStatus
