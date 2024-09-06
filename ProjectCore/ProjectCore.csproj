@@ -14,6 +14,7 @@
 
   <ItemGroup>
     <Folder Include="Domain\Entities\Gebruiker\" />
+    <Folder Include="Features\Images\Queries\" />
     <Folder Include="Features\ProductAttributen\ProductImages\Queries\" />
     <Folder Include="Migrations\" />
   </ItemGroup>

@@ -53,6 +53,14 @@
           },
           "ProductImages": {
             "Children": {
+              "ftwdzsfk.0re.jpg": {
+                "Children": null,
+                "Asset": {
+                  "ContentRootIndex": 0,
+                  "SubPath": "Images/ProductImages/ftwdzsfk.0re.jpg"
+                },
+                "Patterns": null
+              },
               "ucnco5ds.a4d.jpg": {
                 "Children": null,
                 "Asset": {

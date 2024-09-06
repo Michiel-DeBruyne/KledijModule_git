@@ -90,6 +90,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cUGFnZXNcQ2F0YWxvZ3VzXFByb2R1Y3RlblxEZWxldGVDb2xvckZyb21Qcm9kdWN0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/ADM448386944/OneDrive - Office 365 GPI/Secret_shared_corner/KledijModule_git/KledijModule/Areas/Admin/Pages/Catalogus/Producten/DeleteImageFromProduct.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cUGFnZXNcQ2F0YWxvZ3VzXFByb2R1Y3RlblxEZWxldGVJbWFnZUZyb21Qcm9kdWN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/ADM448386944/OneDrive - Office 365 GPI/Secret_shared_corner/KledijModule_git/KledijModule/Areas/Admin/Pages/Catalogus/Producten/DeleteSizeFromProduct.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cUGFnZXNcQ2F0YWxvZ3VzXFByb2R1Y3RlblxEZWxldGVTaXplRnJvbVByb2R1Y3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
