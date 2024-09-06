@@ -1,8 +1,8 @@
 ﻿@model IndexModel.ProductenListIndexViewModel
 
 <div class="col-lg-3 col-md-6 mb-4">
-    <div class="card h-100 rounded-3 shadow">
-        <a asp-page="ProductDetails" asp-route-Id="@Model.Id" class="text-reset text-decoration-none">
+    <div class="card h-100 rounded-3 shadow d-flex flex-column">
+        <a asp-page="ProductDetails" asp-route-Id="@Model.Id" class="text-reset text-decoration-none flex-grow-1">
             @if (Model.Fotos.Count > 0)
             {
                 <img src="@Model.Fotos[0].ImageUrl" class="w-100 card-img-top" style="height:200px;" />
@@ -14,35 +14,8 @@
                 <h6 class="mb-3 fw-bolder">@Model.Punten punten</h6>
             </div>
         </a>
-            <div class="card-footer">
-                <i class="@(Model.IsFavoriet ? "fas" : "far") fa-star m-2 text-warning favoriteStar" data-product-id="@Model.Id"></i>
-            </div>
+        <div class="card-footer mt-auto">
+            <i class="@(Model.IsFavoriet ? "fas" : "far") fa-star m-2 text-warning favoriteStar" data-product-id="@Model.Id"></i>
+        </div>
     </div>
 </div>
-@* <script>
-    $(document).ready(function () {
-        console.log("test");
-        $(".favoriteStar").click(function () {
-            var productId = $(this).data("product-id");
-            var userId = $('input[name="userId"]').val();
-            var $star = $(this);
-            var token = $('input[name="__RequestVerificationToken"]').val();
-
-            $.ajax({
-                url: '@Url.Page("", "SetFavorite")',
-                type: 'POST',
-                data: {
-                    __RequestVerificationToken: token,
-                    ProductId: productId,
-                    UserId: userId
-                },
-                success: function (response) {
-                    $star.toggleClass('far fas');
-                },
-                error: function () {
-                    console.error('Er is een fout opgetreden.');
-                }
-            });
-        });
-    });
-</script> *@

@@ -1,52 +1,11 @@
 ﻿@using static KledijModule.Pages.Shared.Components.CategoryNavigation.CategoryNavigationViewComponent
 @model List<CategoryNavigationViewComponent.CategorieNavModel>
 
-
-@* @functions{
-
-    async Task CategorieLijn(CategorieNavModel categorielijn)
-    {
-        <li >
-            <a href="#submenu-@categorielijn.Id" data-bs-toggle="collapse" class="nav-link px-0 align-middle text-dark" 
-               hx-get="@Url.Page("")"
-               hx-target="#results"
-               hx-vals='{"Categorie": "@categorielijn.Naam"}'>
-                <i class="fs-4 bi-speedometer2"></i> <span class="ms-1 d-none d-sm-inline">@categorielijn.Naam</span>
-            </a>
-            @{
-                if (categorielijn.SubCategorieën.Count > 0)
-                    {
-                    <ul class="collapse nav flex-column ms-2" id="submenu-@categorielijn.Id">
-                        @foreach (var subCategory in categorielijn.SubCategorieën)
-                            {
-                                await CategorieLijn(subCategory);
-                            }
-                        </ul>
-                    }
-                }            
-        </li>
-    }
-}
-
-
-<div>
-    <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start text-dark">
-        <li><a class="nav-link px-0 align-middle text-dark"  asp-area="" asp-page="/Catalogus/Index">Catalogus</a></li>
-        @if (Model.Count > 0)
-        {
-            @foreach (var categorie in Model)
-            {
-                await CategorieLijn(categorie);
-            }
-        }
-    </ul>
-</div> *@
-
 @functions {
     async Task CategorieLijn(CategorieNavModel categorielijn)
     {
         <li>
-            <a href="#" class="nav-link px-0 align-middle text-dark category-link"
+            <a href="#submenu-@categorielijn.Id" data-bs-toggle="collapse" class="nav-link px-0 align-middle text-dark category-link"
                data-category="@categorielijn.Naam">
                 <i class="fs-4 bi-speedometer2"></i>
                 <span class="ms-1 d-none d-sm-inline">@categorielijn.Naam</span>
@@ -80,4 +39,3 @@
         }
     </ul>
 </div>
-
