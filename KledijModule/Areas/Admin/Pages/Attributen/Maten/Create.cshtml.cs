@@ -25,9 +25,9 @@ namespace KledijModule.Areas.Admin.Pages.Attributen.Maten
 
         public async Task<IActionResult> OnPostAsync()
         {
-            if (Size.Maat.Contains("."))
+            if (Size.Maat.Contains('.'))
             {
-                Size.Maat.Replace(".", ",");
+                Size.Maat = Size.Maat.Replace('.', ',');
             }
             var result = await _mediator.Send(Size.Adapt<AddSize.AddSizeCommand>());
 
