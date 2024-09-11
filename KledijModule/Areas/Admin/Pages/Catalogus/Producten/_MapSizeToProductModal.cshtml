@@ -1,0 +1,66 @@
+﻿@model KledijModule.Areas.Admin.Pages.Catalogus.Producten.MapSizeToProductModel
+@{
+    ArgumentNullException.ThrowIfNull(Model);
+}
+
+<!-- Modal -->
+<div id="my-modal" class="modal fade" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <!-- Modal header with black background and white text -->
+            <div class="modal-header bg-dark text-white">
+                <h5 class="modal-title">Voeg maat toe aan product</h5>
+                <button type="button"
+                        class="btn-close btn-close-white"
+                        data-bs-dismiss="modal"
+                        aria-label="Close">
+                </button>
+            </div>
+
+            <!-- Modal body with a custom background -->
+            <div class="modal-body" style="background: #f8f9fa;">
+                <form method="post"
+                      hx-post="@Url.Page("MapSizeToProduct")"
+                      hx-target="#maten"
+                      hx-swap="innerHTML">
+
+                    <!-- Product name and submit button in one row -->
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <h3 class="m-0">@Model.MapSizeToProductViewModel.ProductNaam</h3>
+                        <button type="submit" class="btn btn-outline-dark">Opslaan</button>
+                    </div>
+
+                    <!-- Hidden inputs for product details -->
+                    <input type="hidden" asp-for="Data.Product" value="@Model.MapSizeToProductViewModel.ProductId" />
+                    <input type="hidden" asp-for="Data.ProductNaam" value="@Model.MapSizeToProductViewModel.ProductNaam" />
+
+                    <!-- Size selection field -->
+                    <div class="form-group mb-3">
+                        <label asp-for="Data.Maten" class="form-label">Kies maten:</label>
+                        <select asp-for="Data.Maten" class="form-control" asp-items="Model.MapSizeToProductViewModel.Maten.Select(maat => new SelectListItem { Value = maat.Id.ToString(), Text = maat.Maat })" multiple size="10"></select>
+                        <span asp-validation-for="Data.Maten" class="text-danger"></span>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    // Sluit de modal na een succesvolle HTMX request
+    document.body.addEventListener('htmx:afterRequest', function (event) {
+        const modalElement = document.getElementById('my-modal');
+        const modalInstance = bootstrap.Modal.getInstance(modalElement);
+
+        if (modalInstance) {
+            modalInstance.hide();  // Sluit de modal
+        }
+    });
+    function showModal() {
+        const modal = new bootstrap.Modal('#my-modal');
+        modal.show();
+    }
+    // scopes the modal so we can keep creating them
+    showModal();
+</script>

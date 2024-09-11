@@ -135,12 +135,12 @@ namespace KledijModule.Areas.Admin.Pages.Catalogus.Producten
                 var ext = Path.GetExtension(imageFile.FileName).ToLowerInvariant();
                 if (string.IsNullOrEmpty(ext) || !permittedFileExtensions.Contains(ext))
                 {
-                    throw new Exception("Foto extensie is niet toegelaten. De toegelaten extensies zijn png, jpg.");
+                    return BadRequest("Foto extensie is niet toegelaten. De toegelaten extensies zijn png, jpg.");
                 }
 
                 if (imageFile.Length > _fileSizeLimit)
                 {
-                    throw new Exception("Afbeelding is te groot. Gelieve een kleinere afbeelding te selecteren.");
+                    return BadRequest("Afbeelding is te groot. Gelieve een kleinere afbeelding te selecteren.");
                 }
 
                 if (!ModelState.IsValid)

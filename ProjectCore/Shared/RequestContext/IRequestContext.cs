@@ -4,6 +4,7 @@
     {
         public string UserId { get; }
         string UserName { get; }
+        //string Zone { get; }
         string RequestScheme { get; }
         string RequestHost { get; }
         string RequestPath { get; }

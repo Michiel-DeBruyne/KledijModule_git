@@ -53,8 +53,12 @@ namespace KledijModule.Areas.Admin.Pages.Catalogus.Producten
         }
         #endregion ViewModel
 
-        public async Task OnGetAsync(Guid ProductId, string ProductNaam)
+        public async Task<IActionResult> OnGetAsync(Guid ProductId, string ProductNaam)
         {
+            if(ProductId == Guid.Empty)
+            {
+                return BadRequest("Geen product meegegeven om een kleur aan te koppelen");
+            }
             // Initialiseren van het viewmodel met behulp van object-initialisatiesyntax
             MapColorToProductViewModel = new ColorMappingViewModel(ProductId, ProductNaam);
             var beschikbareKleuren = await _mediator.Send(new GetKleurenList.GetKleurenListQuery() { ProductId = ProductId });
@@ -66,18 +70,17 @@ namespace KledijModule.Areas.Admin.Pages.Catalogus.Producten
             {
                 TempData["Errors"] = errorResult.Message;
             }
+            return Partial("_MapColorToProductModal", this);
+
         }
 
 
         public async Task<IActionResult> OnPostAsync()
         {
-
             var result = await _mediator.Send(Data.Adapt<MapColorToProduct.Command>());
             if (result.Success)
             {
-                RefreshPage = true;
-                //TODO: Hier zal productNaam ook moeten meegegeven worden...
-                return RedirectToPage("./MapColorToProduct", new { ProductId = Data.Product, ProductNaam = Data.ProductNaam });
+                return ViewComponent("KleurenForProductTable", new { ProductId = Data.Product });
             }
             //ALs je hier geraakt was iets niet juist
             MapColorToProductViewModel = new ColorMappingViewModel(Data.Product, Data.ProductNaam);
@@ -89,14 +92,14 @@ namespace KledijModule.Areas.Admin.Pages.Catalogus.Producten
                 {
                     string modelStateKey = $"{nameof(Product)}.{error.PropertyName}"; // TODO: dit is misschien wat overkill, bespreken met Caitlin.
                     ModelState.AddModelError(modelStateKey, error.Details);
-                    //ModelState.AddModelError(error.PropertyName, error.Details);
+                    return BadRequest(validationErrorResult.Errors.Select(err => err.Details.ToString()));
                 }
             }
             if (result is ErrorResult errorResult)
             {
                 TempData["Errors"] = errorResult.Message;
             }
-            return Page();
+            return BadRequest("Onverwachte fout tijdens het koppelen van de kleuren aan het product, contacteer ICT");
         }
 
 

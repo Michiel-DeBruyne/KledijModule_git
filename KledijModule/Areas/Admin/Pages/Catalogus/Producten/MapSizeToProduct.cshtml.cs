@@ -52,8 +52,21 @@ namespace KledijModule.Areas.Admin.Pages.Catalogus.Producten
         }
         #endregion ViewModel
 
-        public async Task OnGetAsync(Guid ProductId, string ProductNaam)
+        #region CommandModel
+        public class CommandData
         {
+            public Guid Product { get; set; }
+            public string ProductNaam { get; set; }
+            public List<Guid> Maten { get; set; } = new List<Guid>();
+        }
+        #endregion CommandModel
+
+        public async Task<IActionResult> OnGetAsync(Guid ProductId, string ProductNaam)
+        {
+            if(ProductId == Guid.Empty)
+            {
+                return BadRequest("Geen product meegegeven om maten aan toe te voegen");
+            }
             // Initialiseren van het viewmodel met behulp van object-initialisatiesyntax
             MapSizeToProductViewModel = new SizeMappingViewModel(ProductId, ProductNaam);
             var beschikbareMaten = await _mediator.Send(new GetMatenList.GetMatenListQuery() { ProductId = ProductId });
@@ -65,17 +78,15 @@ namespace KledijModule.Areas.Admin.Pages.Catalogus.Producten
             {
                 TempData["Errors"] = errorResult.Message;
             }
+            return Partial("_MapSizeToProductModal", this);
         }
-
 
         public async Task<IActionResult> OnPostAsync()
         {
             var result = await _mediator.Send(Data.Adapt<MapSizeToProduct.Command>());
             if (result.Success)
             {
-                RefreshPage = true;
-                //TODO: Hier zal productNaam ook moeten meegegeven worden...
-                return RedirectToPage("./MapSizeToProduct", new { ProductId = Data.Product, ProductNaam = Data.ProductNaam });
+                return ViewComponent("MatenForProductTable", new { ProductId = Data.Product });
             }
 
             if (result is ValidationErrorResult validationErrorResult)
@@ -84,24 +95,18 @@ namespace KledijModule.Areas.Admin.Pages.Catalogus.Producten
                 {
                     string modelStateKey = $"{nameof(Product)}.{error.PropertyName}"; // TODO: dit is misschien wat overkill, bespreken met Caitlin.
                     ModelState.AddModelError(modelStateKey, error.Details);
-                    //ModelState.AddModelError(error.PropertyName, error.Details);
+                    return BadRequest(validationErrorResult.Errors.Select( err => err.Details.ToString()));
                 }
             }
             if (result is ErrorResult errorResult)
             {
                 TempData["Errors"] = errorResult.Message;
+                return BadRequest(errorResult.Message);
             }
-            return Page();
+            return BadRequest("Onverwachte fout tijdens het koppelen van de maten aan het product, contacteer ICT");
         }
 
 
-        #region CommandModel
-        public class CommandData
-        {
-            public Guid Product { get; set; }
-            public string ProductNaam { get; set; }
-            public List<Guid> Maten { get; set; } = new List<Guid>();
-        }
-        #endregion CommandModel
+
     }
 }

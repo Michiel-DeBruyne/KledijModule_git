@@ -2279,7 +2279,6 @@ C:\Users\ADM448386944\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModul
 C:\Users\ADM448386944\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_git\KledijModule\bin\Debug\net8.0\System.Runtime.Caching.dll
 C:\Users\ADM448386944\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_git\KledijModule\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\ADM448386944\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_git\KledijModule\bin\Debug\net8.0\System.Security.Permissions.dll
-C:\Users\ADM448386944\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_git\KledijModule\bin\Debug\net8.0\System.Text.Json.dll
 C:\Users\ADM448386944\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_git\KledijModule\bin\Debug\net8.0\System.Windows.Extensions.dll
 C:\Users\ADM448386944\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_git\KledijModule\bin\Debug\net8.0\af\Humanizer.resources.dll
 C:\Users\ADM448386944\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_git\KledijModule\bin\Debug\net8.0\ar\Humanizer.resources.dll
@@ -2454,9 +2453,10 @@ C:\Users\ADM448386944\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModul
 C:\Users\ADM448386944\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_git\KledijModule\obj\Debug\net8.0\scopedcss\Pages\Shared\_Layout.cshtml.rz.scp.css
 C:\Users\ADM448386944\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_git\KledijModule\obj\Debug\net8.0\scopedcss\bundle\KledijModule.styles.css
 C:\Users\ADM448386944\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_git\KledijModule\obj\Debug\net8.0\scopedcss\projectbundle\KledijModule.bundle.scp.css
-C:\Users\ADM448386944\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_git\KledijModule\obj\Debug\net8.0\KledijModule.csproj.CopyComplete
 C:\Users\ADM448386944\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_git\KledijModule\obj\Debug\net8.0\KledijModule.dll
 C:\Users\ADM448386944\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_git\KledijModule\obj\Debug\net8.0\refint\KledijModule.dll
 C:\Users\ADM448386944\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_git\KledijModule\obj\Debug\net8.0\KledijModule.pdb
 C:\Users\ADM448386944\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_git\KledijModule\obj\Debug\net8.0\KledijModule.genruntimeconfig.cache
 C:\Users\ADM448386944\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_git\KledijModule\obj\Debug\net8.0\ref\KledijModule.dll
+C:\Users\ADM448386944\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_git\KledijModule\bin\Debug\net8.0\System.Text.Json.dll
+C:\Users\ADM448386944\OneDrive - Office 365 GPI\Secret_shared_corner\KledijModule_git\KledijModule\obj\Debug\net8.0\KledijModule.csproj.CopyComplete

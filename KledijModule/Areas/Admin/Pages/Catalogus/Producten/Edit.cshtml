@@ -56,7 +56,7 @@
                             <span asp-validation-for="ProductMetDetails.Geslacht" class="text-danger"></span>
                         </div>
                         <br />
-                        <div class="form-group">
+                        <div class="form-group mb-2">
                             <fieldset>
                                 <legend>Vervangingstermijn</legend>
                                 <div class="form-group">
@@ -72,7 +72,7 @@
                             </fieldset>
                         </div>
 
-                        <div class="form-group form-check">
+                        <div class="form-group form-check mb-2">
                             <label class="form-check-label">
                                 <input class="form-check-input" asp-for="ProductMetDetails.Beschikbaar" /> @Html.DisplayNameFor(model => model.ProductMetDetails.Beschikbaar)
                             </label>
@@ -95,8 +95,11 @@
     </div>
         <div class="card-body" id="matencard-body">
             <div id="maten"><partial name="_ProductMatenList" model="@Model.ProductMetDetails" /></div>
-            <a class="btn btn-outline-dark" onclick="javascript:OpenWindow('@(Url.Page("./MapSizeToProduct", new { ProductId = Model.ProductMetDetails.Id, ProductNaam = Model.ProductMetDetails.Naam }))', 800, 750, true);return false;">Voeg waarde toe</a>
-        </div>
+        <a hx-get="@Url.Page("MapSizeToProduct","", new { ProductId = Model.ProductMetDetails.Id, ProductNaam = Model.ProductMetDetails.Naam })"
+           hx-target="#modal-container"
+           class="btn btn-default mb-2"><i class="fa-solid fa-pen-to-square"></i> Voeg waarde toe</a>
+@*             <a class="btn btn-outline-dark" onclick="javascript:OpenWindow('@(Url.Page("./MapSizeToProduct", new { ProductId = Model.ProductMetDetails.Id, ProductNaam = Model.ProductMetDetails.Naam }))', 800, 750, true);return false;">Voeg waarde toe</a>
+ *@        </div>
 </div>
 
 
@@ -111,8 +114,11 @@
     </div>
     <div class="card-body" id="kleurencard-body">
             <div id="kleuren">@await Component.InvokeAsync("KleurenForProductTable", new { ProductId = Model.ProductMetDetails.Id }) </div>
-            <a class="btn btn-outline-dark" onclick="javascript:OpenWindow('@(Url.Page("./MapColorToProduct", new { ProductId = Model.ProductMetDetails.Id, ProductNaam = Model.ProductMetDetails.Naam}))',800,750,true);return false;">Voeg waarde toe</a>
-    </div>
+        <a hx-get="@Url.Page("MapColorToProduct","", new { ProductId = Model.ProductMetDetails.Id, ProductNaam = Model.ProductMetDetails.Naam })"
+           hx-target="#modal-container"
+           class="btn btn-default mb-2"><i class="fa-solid fa-pen-to-square"></i> Voeg waarde toe</a>
+@*             <a class="btn btn-outline-dark" onclick="javascript:OpenWindow('@(Url.Page("./MapColorToProduct", new { ProductId = Model.ProductMetDetails.Id, ProductNaam = Model.ProductMetDetails.Naam}))',800,750,true);return false;">Voeg waarde toe</a>
+ *@    </div>
 </div>
 <div class="card mb-3">
     <div class="card-header">
@@ -137,3 +143,5 @@
         </form>
     </div>
 </div>
+
+<div id="modal-container"></div>

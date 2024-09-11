@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 using ProjectCore.Domain.Common;
 using ProjectCore.Domain.Entities.Bestellingen;
 using ProjectCore.Domain.Entities.Catalogus;
@@ -14,11 +15,13 @@ namespace ProjectCore.Data;
 public class ApplicationDbContext : DbContext
 {
     private readonly IRequestContext _requestContext;
+    private readonly IConfiguration _configuration;
 
-    public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options, IRequestContext requestContext)
+    public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options, IRequestContext requestContext, IConfiguration configuration)
         : base(options)
     {
         _requestContext = requestContext;
+        _configuration = configuration;
         // Dit niet verwijderen pls. anders gaan navigation properties hun data laden en gecombineerd met de shoppingcartsummarylist, krijg je een stack overflow omdat je een enorme loop krijgt.
         this.ChangeTracker.LazyLoadingEnabled = false;
     }
@@ -50,6 +53,25 @@ public class ApplicationDbContext : DbContext
         // For example, you can rename the ASP.NET Identity table names and more.
         // Add your customizations after calling base.OnModelCreating(builder);
     }
+
+    //protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+    //{
+    //    // Haal tenant op en gebruik de bijbehorende connectiestring
+    //    var tenant = _requestContext.Zone;
+    //    if (string.IsNullOrEmpty(tenant))
+    //    {
+    //        throw new InvalidOperationException("Zone not found");
+    //    }
+
+    //    var connectionString = _configuration.GetConnectionString(tenant);
+    //    if (string.IsNullOrEmpty(connectionString))
+    //    {
+    //        throw new InvalidOperationException($"Connection string for tenant '{tenant}' not found.");
+    //    }
+
+    //    optionsBuilder.UseSqlServer(connectionString);
+    //    base.OnConfiguring(optionsBuilder);
+    //}
 
     public override Task<int> SaveChangesAsync(CancellationToken cancellationToken = new CancellationToken())
     {

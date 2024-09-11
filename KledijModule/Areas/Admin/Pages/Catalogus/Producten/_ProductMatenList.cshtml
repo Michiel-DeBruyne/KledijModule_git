@@ -18,7 +18,7 @@
 @*                     <form method="post" asp-page="./DeleteSizeFromProduct" asp-route-ProductId="@Model.Id" asp-route-MaatId="@item.Id">
                         <button type="submit" class="btn btn-default"><i class="fa-solid fa-trash"></i> Delete</button>
                     </form> *@
-                    <form hx-post="@Url.Page("DeleteSizeFromProduct")" hx-vals='{"ProductId": "@Model.Id", "MaatId": "@item.Id"}' hx-target="#maten">
+                    <form hx-post="@Url.Page("DeleteSizeFromProduct")" hx-vals='{"ProductId": "@Model.Id", "MaatId": "@item.Id"}' hx-target="#maten" hx-confirm="Bent u zeker dat u dit item wil verwijderen?">
                         @Html.AntiForgeryToken()
                         <button type="submit" class="btn btn-default"><i class="fa-solid fa-trash"></i> Delete</button>
                     </form>

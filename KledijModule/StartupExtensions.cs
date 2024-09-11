@@ -17,6 +17,7 @@ namespace KledijModule
     {
         public static WebApplication ConfigureServices(this WebApplicationBuilder builder)
         {
+
             //to call graph api
             var initialScopes = builder.Configuration["DownstreamApi:Scopes"]?.Split(' ') ?? builder.Configuration["MicrosoftGraph:Scopes"]?.Split(' ');
 

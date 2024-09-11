@@ -18,7 +18,7 @@
                     @Html.DisplayFor(modelItem => item.Kleur)
                 </td>
                 <td>
-                    <form hx-post="@Url.Page("DeleteColorFromProduct")" hx-vals='{"ProductId": "@Model.ProductId", "KleurId": "@item.Id"}' hx-target="#kleuren">
+                    <form hx-post="@Url.Page("DeleteColorFromProduct")" hx-vals='{"ProductId": "@Model.ProductId", "KleurId": "@item.Id"}' hx-target="#kleuren" hx-confirm="Bent u zeker dat u dit item wil verwijderen?">
                         @Html.AntiForgeryToken()
                         <button type="submit" class="btn btn-default"><i class="fa-solid fa-trash"></i> Delete</button>
                     </form>

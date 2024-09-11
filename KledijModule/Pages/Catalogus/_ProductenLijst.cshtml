@@ -1,7 +1,7 @@
 ﻿@model IndexModel
 <div class="filters-summary">
         <p>
-            <strong>Zoek eigenschappen:</strong>
+            <strong>Zoektermen:</strong>
             @if (!string.IsNullOrEmpty(Model.Query))
             {
                 <span>Zoekopdracht: @Model.Query | </span>
@@ -16,7 +16,7 @@
             }
             @if (string.IsNullOrEmpty(Model.Query) && string.IsNullOrEmpty(Model.Categorie) && !Model.OnlyFavorites)
             {
-                <span>Geen zoek eigenschappen toegepast</span>
+                <span>Geen zoektermen toegepast</span>
             }
         </p>
 </div>
