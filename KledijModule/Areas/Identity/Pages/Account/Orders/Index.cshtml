@@ -1,6 +1,7 @@
 ﻿@page
 @using KledijModule.Areas.Identity.Pages.Account.Orders
 @using System.Security.Claims
+@using ProjectCore.Domain.Entities.Bestellingen
 @model IndexModel
 @{
     var gebruikerId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
@@ -49,12 +50,15 @@
                                     @orderItem.OrderStatus
                                 </td>
                                 <td id="OrderItemActies-@orderItem.Id">
-                                    <form id="cancel-form">
-                                        @Html.AntiForgeryToken()
-                                        <button type="submit" class="btn btn-outline-danger cancel-btn" data-id="@orderItem.Id">
-                                            <i class="fa-solid fa-ban me-2"></i> Annuleer
-                                        </button>
-                                    </form>
+                                    @if(orderItem.OrderStatus != OrderStatus.Geannuleerd)
+                                    {
+                                        <form id="cancel-form">
+                                            @Html.AntiForgeryToken()
+                                            <button type="submit" class="btn btn-outline-danger cancel-btn" data-id="@orderItem.Id">
+                                                <i class="fa-solid fa-ban me-2"></i> Annuleer
+                                            </button>
+                                        </form>
+                                    }
                                 </td>
                             </tr>
                         }

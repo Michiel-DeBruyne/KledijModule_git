@@ -36,6 +36,10 @@ namespace KledijModule.Areas.Admin.Pages.Attributen.Maten
 
         public async Task OnGetAsync(GetMaat.Query query)
         {
+            if (Size.Maat.Contains("."))
+            {
+                Size.Maat.Replace(".", ",");
+            }
             var result = await _mediator.Send(query);
 
             if (result is SuccessResult<GetMaatVm> successResult)
