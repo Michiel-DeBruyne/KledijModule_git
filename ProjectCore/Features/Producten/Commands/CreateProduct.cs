@@ -16,6 +16,7 @@ namespace ProjectCore.Features.Producten.Commands
             public string Naam { get; set; } = string.Empty;
             public string? Beschrijving { get; set; }
             public bool Beschikbaar { get; set; } = false;
+            public bool BeschikbaarVoorCalog { get; set; } = false;
             public int Punten { get; set; }
             public Geslacht Geslacht { get; set; }
             public int? ArtikelNummer { get; set; }

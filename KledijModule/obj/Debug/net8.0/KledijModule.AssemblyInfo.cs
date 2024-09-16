@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("KledijModule")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d13fbcfeb93517d8ea20d1d57cd4ef5923c1a20b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+db2656f501c6f269903bdd43f3c2461e2522d40b")]
 [assembly: System.Reflection.AssemblyProductAttribute("KledijModule")]
 [assembly: System.Reflection.AssemblyTitleAttribute("KledijModule")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,4 +1,5 @@
 using Htmx;
+using KledijModule.Common.Authorization;
 using KledijModule.Pages.Shared.Components.CategoryNavigation;
 using Mapster;
 using MediatR;
@@ -28,6 +29,8 @@ namespace KledijModule.Pages.Catalogus
 
         [BindProperty(SupportsGet = true)]
         public bool OnlyFavorites { get; set; } = false;
+        [BindProperty(SupportsGet = true)]
+        public bool OnlyCalog { get; set; } = false;
         #endregion Properties
 
         #region ctor
@@ -67,7 +70,8 @@ namespace KledijModule.Pages.Catalogus
             this.Categorie = Categorie;
             this.Query = Query;
             this.OnlyFavorites = OnlyFavorites.HasValue ? OnlyFavorites.Value : false; // omdat je anders conflict hebt met nullable to niet nullable gebruik je hier hasvalue en value
-            var result = await _mediator.Send(new GetProductList.GetProductsListQuery() { Categorie = Categorie, SearchQuery = Query, OnlyPublished = true, IncludeSubCategorieProducts = true, EnkelFavorieten = OnlyFavorites });
+            this.OnlyCalog = User.IsInRole(Roles.Calog);
+            var result = await _mediator.Send(new GetProductList.GetProductsListQuery() { Categorie = Categorie, SearchQuery = Query, OnlyPublished = true, IncludeSubCategorieProducts = true, EnkelFavorieten = OnlyFavorites,  EnkelCalog = OnlyCalog });;
 
             if (result is SuccessResult<List<GetProductList.ProductsListVm>> successResult) ProductenList = successResult.Data.Adapt<List<ProductenListIndexViewModel>>();
             if (result is ErrorResult errorResult) TempData["Errors"] = errorResult.Message;

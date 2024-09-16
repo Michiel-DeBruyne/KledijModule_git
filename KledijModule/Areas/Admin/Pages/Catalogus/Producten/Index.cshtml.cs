@@ -30,6 +30,9 @@ namespace KledijModule.Areas.Admin.Pages.Catalogus.Producten
             public string Naam { get; set; } = string.Empty;
             public Category Categorie { get; init; }
 
+            [DisplayName("Calog?")]
+            public bool BeschikbaarVoorCalog { get; init; }
+
             public record Category
             {
                 public string Naam { get; set; }

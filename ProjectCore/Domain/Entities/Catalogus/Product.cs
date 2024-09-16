@@ -10,17 +10,17 @@ namespace ProjectCore.Domain.Entities.Catalogus
         public Guid Id { get; set; }
         public string Naam { get; set; } = string.Empty;
         public string? Beschrijving { get; set; }
+        public int? ArtikelNummer { get; set; }
         public bool Beschikbaar { get; set; } = false;
         // punten zijn altijd gehele getallen. Int is groot genoeg
         public int Punten { get; set; }
         public Geslacht Geslacht { get; set; }
-        public int? ArtikelNummer { get; set; }
 
         //Dit misschien naar IEntity verhuizen zodat het bij elke entiteit bijgehouden wordt.
         public DateTime Aangemaakt { get; set; }
         public DateTime Gewijzigd { get; set; }
 
-        // Toevoegen wie laatste wijziging gedaan heeft.
+        public bool BeschikbaarVoorCalog { get; set; } = false;
 
         #region Categorie
         [Required(ErrorMessage = "Categorie is required.")]

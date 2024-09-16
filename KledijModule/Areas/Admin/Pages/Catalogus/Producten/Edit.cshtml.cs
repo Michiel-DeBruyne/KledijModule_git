@@ -47,6 +47,8 @@ namespace KledijModule.Areas.Admin.Pages.Catalogus.Producten
             public string Naam { get; set; } = string.Empty;
             public string? Beschrijving { get; set; }
             public bool Beschikbaar { get; set; } = false;
+            [DisplayName("Beschikbaar voor calog?")]
+            public bool BeschikbaarVoorCalog { get; set; } = false;
             public int Punten { get; set; }
             public Geslacht Geslacht { get; set; }
             public int? ArtikelNummer { get; set; }

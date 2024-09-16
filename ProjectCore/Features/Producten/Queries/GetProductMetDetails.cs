@@ -61,7 +61,7 @@ namespace ProjectCore.Features.Producten.Queries
             public int Punten { get; set; }
             public Geslacht Geslacht { get; set; }
             public int? ArtikelNummer { get; set; }
-
+            public bool BeschikbaarVoorCalog { get; set; } = false;
             public Guid CategorieId { get; set; }
             //public ProductCategorie Categorie { get; set; } = default!;
             //public record ProductCategorie

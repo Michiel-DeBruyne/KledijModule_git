@@ -261,6 +261,9 @@ namespace ProjectCore.Migrations
                     b.Property<bool>("Beschikbaar")
                         .HasColumnType("bit");
 
+                    b.Property<bool>("BeschikbaarVoorCalog")
+                        .HasColumnType("bit");
+
                     b.Property<string>("Beschrijving")
                         .HasColumnType("nvarchar(max)");
 

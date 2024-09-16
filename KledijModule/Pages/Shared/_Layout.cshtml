@@ -2,16 +2,11 @@
 @using KledijModule.Common.Authorization
 @using Microsoft.AspNetCore.Identity
 @using ProjectCore.Domain.Entities.Gebruiker
-@* @inject UserManager<ApplicationUser> UserManager *@
-
-@* @{
-    var userId = UserManager.GetUserId(User);
-    bool userIsAdmin = User.IsInRole("Admin");
-} *@
 
 @{
     var userId =User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
     bool userIsAdmin = User.IsInRole(Roles.Admin);
+    ViewData["UserId"] = userId;
 }
 <!DOCTYPE html>
 <html lang="en">

@@ -28,6 +28,8 @@ namespace KledijModule.Areas.Admin.Pages.Catalogus.Producten
             public int Punten { get; set; }
             public Geslacht Geslacht { get; set; }
             public int? ArtikelNummer { get; set; }
+            [DisplayName("Beschikbaar voor calog?")]
+            public bool BeschikbaarVoorCalog { get; set; } = false;
 
             [DisplayName("Categorieën")]
             public Guid CategorieId { get; set; }

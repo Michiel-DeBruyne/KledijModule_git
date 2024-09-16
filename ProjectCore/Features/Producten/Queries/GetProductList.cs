@@ -21,6 +21,8 @@ namespace ProjectCore.Features.Producten.Queries
             public bool? OnlyPublished { get; set; }
             public bool? IncludeSubCategorieProducts { get; set; }
 
+            public bool? EnkelCalog { get; set; } // ALs gebruiker enkel calog items mag zien
+
             public  bool? EnkelFavorieten {get;set;} // Om de favorieten van de gebruiker op te halen nz
         }
 
@@ -81,6 +83,11 @@ namespace ProjectCore.Features.Producten.Queries
                         }
 
                     }
+                    //Als een calog de catalogus opvraagt
+                    if(request.EnkelCalog != null && request.EnkelCalog == true)
+                    {
+                        query = query.Where(p => p.BeschikbaarVoorCalog);
+                    }
                     // Als enkel favorieten is ingesteld, filter alleen favorieten
                     if (request.EnkelFavorieten == true)
                     {
@@ -139,6 +146,8 @@ namespace ProjectCore.Features.Producten.Queries
             public Geslacht Geslacht { get; init; }
             public int Punten { get; init; }
             public bool Beschikbaar { get; init; }
+            public bool BeschikbaarVoorCalog { get; init; }
+
             [DisplayName("Foto")]
             public List<ProductImage> Fotos { get; init; }
             public int MaxAantalBestelbaar { get; set; }
