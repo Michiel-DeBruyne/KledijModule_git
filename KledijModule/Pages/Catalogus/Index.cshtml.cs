@@ -70,7 +70,7 @@ namespace KledijModule.Pages.Catalogus
             this.Categorie = Categorie;
             this.Query = Query;
             this.OnlyFavorites = OnlyFavorites.HasValue ? OnlyFavorites.Value : false; // omdat je anders conflict hebt met nullable to niet nullable gebruik je hier hasvalue en value
-            this.OnlyCalog = User.IsInRole(Roles.Calog);
+            this.OnlyCalog = (User.IsInRole(Roles.Calog) && !User.IsInRole(Roles.Admin));
             var result = await _mediator.Send(new GetProductList.GetProductsListQuery() { Categorie = Categorie, SearchQuery = Query, OnlyPublished = true, IncludeSubCategorieProducts = true, EnkelFavorieten = OnlyFavorites,  EnkelCalog = OnlyCalog });;
 
             if (result is SuccessResult<List<GetProductList.ProductsListVm>> successResult) ProductenList = successResult.Data.Adapt<List<ProductenListIndexViewModel>>();
