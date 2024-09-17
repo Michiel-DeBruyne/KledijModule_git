@@ -10,7 +10,7 @@ namespace ProjectCore.Domain.Entities.Catalogus
         public Guid Id { get; set; }
         public string Naam { get; set; } = string.Empty;
         public string? Beschrijving { get; set; }
-        public int? ArtikelNummer { get; set; }
+        public string? ArtikelNummer { get; set; }
         public bool Beschikbaar { get; set; } = false;
         // punten zijn altijd gehele getallen. Int is groot genoeg
         public int Punten { get; set; }
