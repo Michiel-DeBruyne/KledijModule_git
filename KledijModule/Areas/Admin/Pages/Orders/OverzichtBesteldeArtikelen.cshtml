@@ -1,0 +1,151 @@
+﻿@page
+@using ProjectCore.Domain.Entities.Bestellingen
+@model KledijModule.Areas.Admin.Pages.Orders.OverzichtBesteldeArtikelenModel
+@{
+}
+<div class="d-flex justify-content-end my-3 clearfix">
+    <h3 class="me-auto">Overzicht bestelde artikels</h3>
+    <a asp-page="#" hx-get="@Url.Page("Details","Edit")"
+       hx-target="#modal-container" class="btn btn-dark me-1 edit-status"><i class="fa-solid fa-trash"></i> Update status (selected)</a>
+</div>
+<hr />
+
+<div class="modal fade" id="OpmerkingenModal" tabindex="-1" aria-labelledby="OpmerkingenModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="opmerkingenModalLabel">Informatie</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p id="opmerkingenContent"></p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Sluiten</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="card p-4 mb-3">
+    <form method="get" id="filterForm">
+        <div class="input-group mb-3">
+            <span class="input-group-text" id="search-addon">
+                <img id="loading" class="htmx-indicator m-1" src="~/Images/bars.svg" alt="search" />
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </span>
+            <input type="text"
+                   asp-for="ProductSearchString"
+                   id="query"
+                   autocomplete="off"
+                   hx-indicator="#loading"
+                   placeholder="Zoek op Artikel"
+                   class="form-control"
+                   aria-label="Artikel"
+                   aria-describedby="search-addon">
+            
+        </div>
+        <div class="form-group">
+            <label asp-for="ToonAfgesloten">
+                <input type="checkbox" asp-for="ToonAfgesloten" />
+                 Toon ook afgesloten bestellingen
+            </label>
+        </div>
+    </form>
+</div>
+<table class="table table-bordered text-center">
+    <thead class="thead-light">
+        <tr >
+            <th><input type="checkbox" id="checkAll"></th>
+            <th>Product</th>
+            <th>Gebruiker</th>
+            <th>Besteldatum</th>
+            <th>Hoeveelheid</th>
+            <th>Maat</th>
+            <th>Punten per artikel</th>
+            <th>Subtotaal</th>
+            <th>Status</th>
+            <th>Acties</th>
+        </tr>
+    </thead>
+    <tbody id="BesteldeArtikelenOverzicht">
+        @await Html.PartialAsync("_OverzichtBesteldeArtikel_ArtikelRow")
+    </tbody>
+</table>
+
+
+<div id="modal-container"></div>
+
+
+
+
+
+@section Scripts{
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var opmerkingenModal = document.getElementById('OpmerkingenModal');
+            opmerkingenModal.addEventListener('show.bs.modal', function (event) {
+                var button = event.relatedTarget; // De knop die de modal opende
+                var opmerkingen = button.getAttribute('data-opmerkingen'); // Haalt de opmerkingen van de knop op
+                var product = button.getAttribute('data-product'); // Haalt de productnaam van de knop op
+
+                // Update de inhoud van de modal
+                var modalTitle = opmerkingenModal.querySelector('.modal-title');
+                var modalBodyOpmerkingen = opmerkingenModal.querySelector('#opmerkingenContent');
+                var modalBodyProduct = opmerkingenModal.querySelector('#productNameContent');
+
+                modalTitle.textContent = 'Opmerkingen voor ' + product;
+                modalBodyOpmerkingen.textContent = opmerkingen;
+                modalBodyProduct.textContent = 'Product: ' + product;
+            });
+
+            $('#checkAll').click(function () {
+                if (this.checked) {
+                    $('.item-checkbox').prop("checked", true);
+                } else {
+                    $('.item-checkbox').prop("checked", false);
+                }
+            });
+        });
+
+        document.addEventListener('htmx:beforeRequest', function (event) {
+            // Check if the request was triggered by a button with the class 'edit-status'
+            if (event.target.classList.contains('edit-status')) {
+                // Count the number of selected checkboxes
+                var selectedItems = document.querySelectorAll('input[type="checkbox"]:checked').length;
+
+                // If no checkboxes are selected, prevent the request and show an alert
+                if (selectedItems === 0) {
+                    event.preventDefault(); // Prevent the HTMX request
+                    alert('Je moet minstens één item selecteren om de status aan te passen.');
+                    return; // Exit the function
+                }
+            }
+        });
+
+        document.addEventListener('htmx:afterRequest', function (event) {
+            opmerkingenModal.addEventListener('show.bs.modal', function (event) {
+                var button = event.relatedTarget; // De knop die de modal opende
+                var opmerkingen = button.getAttribute('data-opmerkingen'); // Haalt de opmerkingen van de knop op
+                var product = button.getAttribute('data-product'); // Haalt de productnaam van de knop op
+
+                // Update de inhoud van de modal
+                var modalTitle = opmerkingenModal.querySelector('.modal-title');
+                var modalBodyOpmerkingen = opmerkingenModal.querySelector('#opmerkingenContent');
+                var modalBodyProduct = opmerkingenModal.querySelector('#productNameContent');
+
+                modalTitle.textContent = 'Opmerkingen voor ' + product;
+                modalBodyOpmerkingen.textContent = opmerkingen;
+                modalBodyProduct.textContent = 'Product: ' + product;
+            });
+
+            $('#checkAll').click(function () {
+                if (this.checked) {
+                    $('.item-checkbox').prop("checked", true);
+                } else {
+                    $('.item-checkbox').prop("checked", false);
+                }
+            });
+        })
+    </script>
+}

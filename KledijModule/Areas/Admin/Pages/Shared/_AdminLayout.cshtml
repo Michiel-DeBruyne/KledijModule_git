@@ -38,8 +38,21 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="Admin" asp-page="/Attributen/Kleuren/Index">Kleuren</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="Admin" asp-page="/Orders/Index">Bestellingen</a>
+                        <li class="nav-item dropdown">
+                            <a id="manage" class="nav-link text-dark dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Bestellingen
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li>
+                                    <a class="dropdown-item" asp-area="Admin" asp-page="/Orders/Index">Overzicht bestellingen</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" asp-area="Admin" asp-page="/Orders/AantalBestellingenPerArtikel">Aantal per artikel</a>
+                                </li>                                
+                                <li>
+                                    <a class="dropdown-item" asp-area="Admin" asp-page="/Orders/OverzichtBesteldeArtikelen">Overzicht bestelde producten</a>
+                                </li>
+                            </ul>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="Admin" asp-page="/Gebruikers/Index">Gebruikers</a>

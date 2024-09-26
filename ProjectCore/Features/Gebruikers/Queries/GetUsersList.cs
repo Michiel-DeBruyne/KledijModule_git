@@ -30,7 +30,7 @@ namespace ProjectCore.Features.Gebruikers.Queries
                 //            .Map(dest => dest.UserId, src => src.Id);
                 try
                 {
-                    var result = await _context.Gebruikers.ProjectToType<GetusersListVm>().ToListAsync(cancellationToken);
+                    var result = await _context.Gebruikers.ProjectToType<GetusersListVm>().OrderBy(gebr => gebr.VoorNaam).ToListAsync(cancellationToken);
                     return new SuccessResult<List<GetusersListVm>>(result);
                 }
                 catch (Exception ex)

@@ -2,6 +2,7 @@ using Mapster;
 using MediatR;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using ProjectCore.Domain.Entities.Catalogus;
+using ProjectCore.Features.Mail.Commands;
 using ProjectCore.Features.Producten.Queries;
 using ProjectCore.Shared.Exceptions;
 using System.ComponentModel;
@@ -75,6 +76,16 @@ namespace KledijModule.Areas.Admin.Pages.Catalogus.Producten
             {
                 // Handle error result
                 TempData["Errors"] = errorResult.Message;
+            }
+        }
+
+        public async void OnPost()
+        {
+            var result = await _mediator.Send(new SendMail.Command { FromEmail = "pz.polder.log.support@police.belgium.eu", Subject = "test", Body = "tester", ToEmail = "Michiel.DeBruyne@police.belgium.eu" });
+
+            if(result is SuccessResult successResult)
+            {
+
             }
         }
     }

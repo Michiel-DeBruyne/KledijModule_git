@@ -10539,11 +10539,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ADM448386944\\OneDrive - Office 365 GPI\\Secret_shared_corner\\KledijModule_git\\KledijModule\\KledijModule.csproj",
+      "projectUniqueName": "C:\\Users\\ADM448386944\\OneDrive - Office 365 GPI\\Shared_Caitlin\\KledijModule_git\\KledijModule\\KledijModule.csproj",
       "projectName": "KledijModule",
-      "projectPath": "C:\\Users\\ADM448386944\\OneDrive - Office 365 GPI\\Secret_shared_corner\\KledijModule_git\\KledijModule\\KledijModule.csproj",
+      "projectPath": "C:\\Users\\ADM448386944\\OneDrive - Office 365 GPI\\Shared_Caitlin\\KledijModule_git\\KledijModule\\KledijModule.csproj",
       "packagesPath": "C:\\Users\\ADM448386944\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ADM448386944\\OneDrive - Office 365 GPI\\Secret_shared_corner\\KledijModule_git\\KledijModule\\obj\\",
+      "outputPath": "C:\\Users\\ADM448386944\\OneDrive - Office 365 GPI\\Shared_Caitlin\\KledijModule_git\\KledijModule\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ADM448386944\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -10560,8 +10560,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\ADM448386944\\OneDrive - Office 365 GPI\\Secret_shared_corner\\KledijModule_git\\ProjectCore\\ProjectCore.csproj": {
-              "projectPath": "C:\\Users\\ADM448386944\\OneDrive - Office 365 GPI\\Secret_shared_corner\\KledijModule_git\\ProjectCore\\ProjectCore.csproj"
+            "C:\\Users\\ADM448386944\\OneDrive - Office 365 GPI\\Shared_Caitlin\\KledijModule_git\\ProjectCore\\ProjectCore.csproj": {
+              "projectPath": "C:\\Users\\ADM448386944\\OneDrive - Office 365 GPI\\Shared_Caitlin\\KledijModule_git\\ProjectCore\\ProjectCore.csproj"
             }
           }
         }

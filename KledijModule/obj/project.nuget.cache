@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "qsnNxov8cZGZBtz8xhi9qQJO9lfo0hhhe7YTdbEsY7cyRC3gpz7Oa8xZpo+ET2W9OxEBgHAw5+BHsGWZ8vWEQQ==",
+  "dgSpecHash": "yx2LDGprG+sDlxxBJA6nPNN5P6UjMBUV8JfTT+8QyyntqPtLjIj3iGcIGgEMN5nbPlSl5YbJAGdBvSnuK7iZ+A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ADM448386944\\OneDrive - Office 365 GPI\\Secret_shared_corner\\KledijModule_git\\KledijModule\\KledijModule.csproj",
+  "projectFilePath": "C:\\Users\\ADM448386944\\OneDrive - Office 365 GPI\\Shared_Caitlin\\KledijModule_git\\KledijModule\\KledijModule.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ADM448386944\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\ADM448386944\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

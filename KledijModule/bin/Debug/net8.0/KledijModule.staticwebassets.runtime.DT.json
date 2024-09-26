@@ -53,6 +53,14 @@
           },
           "ProductImages": {
             "Children": {
+              "0bznuja0.lwm.png": {
+                "Children": null,
+                "Asset": {
+                  "ContentRootIndex": 0,
+                  "SubPath": "Images/ProductImages/0bznuja0.lwm.png"
+                },
+                "Patterns": null
+              },
               "adlkxd0s.o3q.jpg": {
                 "Children": null,
                 "Asset": {

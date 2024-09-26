@@ -255,8 +255,8 @@ namespace ProjectCore.Migrations
                     b.Property<DateTime>("Aangemaakt")
                         .HasColumnType("datetime2");
 
-                    b.Property<int?>("ArtikelNummer")
-                        .HasColumnType("int");
+                    b.Property<string>("ArtikelNummer")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<bool>("Beschikbaar")
                         .HasColumnType("bit");

@@ -1,0 +1,82 @@
+﻿@page
+@model KledijModule.Areas.Admin.Pages.Orders.AantalBestellingenPerArtikelModel
+@{
+}
+
+<form method="get">
+    <div class="d-flex justify-content-center">
+        <!-- Start Date Picker -->
+        <div class="form-group me-5">
+            <label asp-for="VanDatum">Van datum</label>
+            <input asp-for="VanDatum" type="date" class="form-control" />
+            <span asp-validation-for="VanDatum" class="text-danger"></span>
+        </div>
+
+        <!-- End Date Picker -->
+        <div class="form-group">
+            <label asp-for="TotDatum">Tot datum</label>
+            <input asp-for="TotDatum" type="date" class="form-control" />
+            <span asp-validation-for="TotDatum" class="text-danger"></span>
+        </div>
+        <!-- Submit Button -->
+        <div class="form-group ms-3">
+            <input type="submit" value="Opslaan" class="btn btn-dark" />
+        </div>
+    </div>
+</form>
+
+@foreach (var product in Model.ProductOverzicht)
+{
+    <dl class="row">
+        <dt class="col-sm-2">Product Naam:</dt>
+        <dd class="col-sm-10">@product.ProductNaam</dd>
+
+        <dt class="col-sm-2">Totaal Besteld:</dt>
+        <dd class="col-sm-10">@product.TotaalBesteld</dd>
+
+        <dd class="col-sm-12">
+            <table class="table table-bordered table-striped">
+                <thead class="thead-light">
+                    <tr>
+                        <th>Maat</th>
+                        <th>Aantal</th>
+                        <th>Kleur</th>
+                        <th>Kleur Aantal</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var maatDetail in product.MaatDetails)
+                    {
+                        var isFirstRow = true;
+                        foreach (var kleurDetail in maatDetail.KleurDetails)
+                        {
+                            if (isFirstRow)
+                            {
+                                <tr>
+                                    <td>@maatDetail.Maat</td>
+                                    <td>@maatDetail.Aantal</td>
+                                    <td>@kleurDetail.Kleur</td>
+                                    <td>@kleurDetail.Aantal</td>
+                                </tr>
+                                isFirstRow = false;
+                            }
+                            else
+                            {
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td>@kleurDetail.Kleur</td>
+                                    <td>@kleurDetail.Aantal</td>
+                                </tr>
+                            }
+                        }
+                        // Voeg een scheidingslijn toe na het weergeven van alle kleuren voor deze maat
+                        <tr>
+                            <td colspan="4" style="border-top: 2px solid black;"></td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </dd>
+    </dl>
+}

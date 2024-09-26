@@ -1,0 +1,76 @@
+﻿@using ProjectCore.Domain.Entities.Bestellingen
+@model OverzichtBesteldeArtikelenModel
+@{
+    var nextPage = Model.Pagina + 1;
+}
+    @foreach (var orderItem in Model.OrderItemsList)
+    {
+        <tr>
+            @if (!(orderItem.OrderStatus == OrderStatus.Geannuleerd) || (orderItem.OrderStatus == OrderStatus.Retour))
+            {
+                <td><input type="checkbox" value="@orderItem.Id" class="item-checkbox" /></td>
+            }
+            else
+            {
+                <td></td>
+            }
+            <td class="text-center">@orderItem.ProductNaam</td>
+            <td>@orderItem.UserNaam</td>
+            <td>@orderItem.CreatedDate</td>
+            <td class="text-center">@orderItem.Hoeveelheid</td>
+            <td>@orderItem.Maat</td>
+            <td class="text-center">@orderItem.Punten punten</td>
+            <td class="text-center">
+                <strong>@((orderItem.Hoeveelheid * orderItem.Punten)) punten</strong>
+            </td>
+            <td class="text-center">@orderItem.OrderStatus</td>
+            <td>
+                @if (orderItem.Opmerkingen != null && orderItem.Opmerkingen.Length > 0)
+                {
+                    <button type="button" class="btn btn-link p-0" data-bs-toggle="modal" data-bs-target="#OpmerkingenModal" data-opmerkingen="@orderItem.Opmerkingen" data-product="@orderItem.ProductNaam" aria-label="Info">
+                        <i class="fa-solid fa-circle-info"></i>
+                    </button>
+                }
+            </td>
+        </tr>
+    }
+
+<!-- Infinite scroll trigger -->
+@if (Model.HasMoreItems)
+{ 
+<!--TODO: hier misschien herbekijken met URL.PAge omdat ik problemen ondervond om het werkende te krijgen raar genoeg URL wou niet dynamisch bouwen-->
+    <tr hx-get="@Url.Page("OverzichtBesteldeArtikelen", new { pagina = nextPage })"
+    hx-trigger="revealed"
+    hx-vals="#filterForm"
+    hx-swap="afterend">
+</tr>
+
+ }
+@* @{
+    ArgumentNullException.ThrowIfNull(Model);
+    var end = Model.Cursor + 19;
+}
+
+@for (var i = Model.Cursor; i <= end; i++)
+{
+    <div class="card mb-4 ms-1" aria-hidden="true"
+    @if (i == end)
+    {
+        // conditional attributes
+        <text>
+                                hx-get="@Url.Page("OverzichtBesteldeArtikelen", new { cursor = end + 1 })"
+                        hx-trigger="revealed"
+                        hx-swap="afterend"
+        </text>
+    }>
+            <img alt="random image"
+                 width="125"
+                 height="125"
+                 src="https://picsum.photos/125/125?cache=@DateTime.Now.Ticks" class="card-img-top"/>
+            <div class="card-body bg-dark text-white">
+                <div class="h6 card-title text-center ">
+                    Card #@i
+                </div>
+            </div>
+        </div>
+} *@
